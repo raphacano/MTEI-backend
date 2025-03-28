@@ -1,0 +1,2652 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<xs:schema xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+<xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+<xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="rdf.xsd"/>
+<xs:annotation id="version">
+<xs:documentation>Issue number: 6</xs:documentation>
+<xs:documentation>Issue date: 2024-06-19</xs:documentation>
+<xs:documentation>URL: http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd</xs:documentation>
+<xs:documentation>Root element: dmodule</xs:documentation>
+<xs:documentation>Remarks: none</xs:documentation>
+</xs:annotation>
+<xs:annotation id="copyright">
+<xs:documentation>Copyright © 2024 by Aerospace, Security and Defence Industries Association of Europe - ASD Publishers: Aerospace, Security and Defence Industries Association of Europe Aerospace Industries Association of America ATA e-Business Program Limitations of Liability: 1. This material is provided 'As Is' and neither ASD nor any person who has contributed to the creation, revision or maintenance of the material makes any representations or warranties, express or implied, including but not limited to, warranties of merchantability or fitness for any particular purpose. 2. Neither ASD nor any person who has contributed to the creation, revision or maintenance of this material shall be liable for any direct, indirect, special or consequential damages or any other liability arising from any use of this material. 3. Revisions to this document may occur after its issuance. The user is responsible for determining if revisions to the material contained in this document have occurred and are applicable. The details for copyright can be found in the S1000D Specification.</xs:documentation>
+</xs:annotation>
+<xs:element name="dmodule" type="dmoduleElemType"/>
+<xs:complexType name="dmoduleElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="rdf:Description"/>
+<xs:element ref="identAndStatusSection"/>
+<xs:element ref="content"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="identAndStatusSection" type="identAndStatusSectionElemType"/>
+<xs:complexType name="identAndStatusSectionElemType">
+<xs:sequence>
+<xs:element ref="dmAddress"/>
+<xs:element ref="dmStatus"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="dmAddress" type="dmAddressElemType"/>
+<xs:complexType name="dmAddressElemType">
+<xs:sequence>
+<xs:element ref="dmIdent"/>
+<xs:element ref="dmAddressItems"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="dmIdent" type="dmIdentElemType"/>
+<xs:complexType name="dmIdentElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="identExtension"/>
+<xs:element ref="dmCode"/>
+<xs:element ref="language"/>
+<xs:element ref="issueInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="identExtension" type="identExtensionElemType"/>
+<xs:complexType name="identExtensionElemType">
+<xs:attribute ref="extensionProducer" use="required"/>
+<xs:attribute ref="extensionCode" use="required"/>
+</xs:complexType>
+<xs:attribute name="extensionProducer" type="xs:string"/>
+<xs:attribute name="extensionCode" type="xs:string"/>
+<xs:element name="dmCode" type="dmCodeElemType"/>
+<xs:complexType name="dmCodeElemType">
+<xs:attribute ref="modelIdentCode" use="required"/>
+<xs:attribute ref="systemDiffCode" use="required"/>
+<xs:attribute ref="systemCode" use="required"/>
+<xs:attribute ref="subSystemCode" use="required"/>
+<xs:attribute ref="subSubSystemCode" use="required"/>
+<xs:attribute ref="assyCode" use="required"/>
+<xs:attribute ref="disassyCode" use="required"/>
+<xs:attribute ref="disassyCodeVariant" use="required"/>
+<xs:attribute ref="infoCode" use="required"/>
+<xs:attribute ref="infoCodeVariant" use="required"/>
+<xs:attribute ref="itemLocationCode" use="required"/>
+<xs:attribute ref="learnCode"/>
+<xs:attribute ref="learnEventCode"/>
+</xs:complexType>
+<xs:attribute name="modelIdentCode" type="modelIdentCodeAttType"/>
+<xs:simpleType name="modelIdentCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{2,14}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="systemDiffCode" type="systemDiffCodeAttType"/>
+<xs:simpleType name="systemDiffCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{1,4}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="systemCode" type="systemCodeAttType"/>
+<xs:simpleType name="systemCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{2,3}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="subSystemCode" type="subSystemCodeAttType"/>
+<xs:simpleType name="subSystemCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{1}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="subSubSystemCode" type="subSubSystemCodeAttType"/>
+<xs:simpleType name="subSubSystemCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{1}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="assyCode" type="assyCodeAttType"/>
+<xs:simpleType name="assyCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="([A-Z0-9]{2}|[A-Z0-9]{4})"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="disassyCode" type="disassyCodeAttType"/>
+<xs:simpleType name="disassyCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{2}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="disassyCodeVariant" type="disassyCodeVariantAttType"/>
+<xs:simpleType name="disassyCodeVariantAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{1,3}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="infoCode" type="infoCodeAttType"/>
+<xs:simpleType name="infoCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{3}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="infoCodeVariant" type="infoCodeVariantAttType"/>
+<xs:simpleType name="infoCodeVariantAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{1}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="itemLocationCode" type="itemLocationCodeAttType"/>
+<xs:simpleType name="itemLocationCodeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="learnCode" type="learnCodeAttType"/>
+<xs:simpleType name="learnCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="([T|H][A-Z0-9]{2})"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="learnEventCode" type="learnEventCodeAttType"/>
+<xs:simpleType name="learnEventCodeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="language" type="languageElemType"/>
+<xs:complexType name="languageElemType">
+<xs:attribute ref="languageIsoCode" use="required"/>
+<xs:attribute ref="countryIsoCode" use="required"/>
+</xs:complexType>
+<xs:attribute name="languageIsoCode" type="languageIsoCodeAttType"/>
+<xs:simpleType name="languageIsoCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[a-z]{2,3}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="countryIsoCode" type="countryIsoCodeAttType"/>
+<xs:simpleType name="countryIsoCodeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z]{2}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="issueInfo" type="issueInfoGenericElemType"/>
+<xs:complexType name="issueInfoGenericElemType">
+<xs:attribute ref="issueNumber" use="required"/>
+<xs:attribute ref="inWork" use="required"/>
+</xs:complexType>
+<xs:attribute name="issueNumber" type="issueNumberAttType"/>
+<xs:simpleType name="issueNumberAttType">
+<xs:restriction base="xs:nonNegativeInteger">
+<xs:pattern value="\d{3,5}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="inWork" type="inWorkAttType"/>
+<xs:simpleType name="inWorkAttType">
+<xs:restriction base="xs:nonNegativeInteger">
+<xs:pattern value="\d{2}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="dmAddressItems" type="dmAddressItemsElemType"/>
+<xs:complexType name="dmAddressItemsElemType">
+<xs:sequence>
+<xs:element ref="issueDate"/>
+<xs:element ref="dmTitle"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="issueDate" type="issueDateElemType"/>
+<xs:complexType name="issueDateElemType">
+<xs:attributeGroup ref="dateAttGroup"/>
+</xs:complexType>
+<xs:attributeGroup name="dateAttGroup">
+<xs:attribute ref="year" use="required"/>
+<xs:attribute ref="month" use="required"/>
+<xs:attribute ref="day" use="required"/>
+</xs:attributeGroup>
+<xs:attribute name="year" type="yearAttType"/>
+<xs:simpleType name="yearAttType">
+<xs:restriction base="xs:gYear">
+<xs:pattern value="\d{4}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="month" type="monthAttType"/>
+<xs:simpleType name="monthAttType">
+<xs:restriction base="xs:positiveInteger">
+<xs:maxInclusive value="12"/>
+<xs:pattern value="\d{2}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="day" type="dayAttType"/>
+<xs:simpleType name="dayAttType">
+<xs:restriction base="xs:positiveInteger">
+<xs:maxInclusive value="31"/>
+<xs:pattern value="\d{2}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="dmTitle" type="dmTitleElemType"/>
+<xs:complexType name="dmTitleElemType">
+<xs:sequence>
+<xs:element ref="techName"/>
+<xs:element minOccurs="0" ref="infoName"/>
+<xs:element minOccurs="0" ref="infoNameVariant"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="techName" type="techNameElemType"/>
+<xs:complexType mixed="true" name="techNameElemType">
+<xs:attributeGroup ref="securityAttGroup"/>
+</xs:complexType>
+<xs:attributeGroup name="securityAttGroup">
+<xs:attribute ref="securityClassification"/>
+<xs:attributeGroup ref="commercialSecurityAttGroup"/>
+<xs:attribute ref="derivativeClassificationRefId"/>
+</xs:attributeGroup>
+<xs:attribute name="securityClassification" type="securityClassificationAttType"/>
+<xs:simpleType name="securityClassificationAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attributeGroup name="commercialSecurityAttGroup">
+<xs:attribute ref="commercialClassification"/>
+<xs:attribute ref="caveat"/>
+</xs:attributeGroup>
+<xs:attribute name="commercialClassification" type="commercialClassificationAttType"/>
+<xs:simpleType name="commercialClassificationAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="caveat" type="caveatAttType"/>
+<xs:simpleType name="caveatAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="derivativeClassificationRefId" type="xs:IDREF"/>
+<xs:element name="infoName" type="infoNameElemType"/>
+<xs:complexType mixed="true" name="infoNameElemType">
+<xs:attributeGroup ref="securityAttGroup"/>
+</xs:complexType>
+<xs:element name="infoNameVariant" type="infoNameElemType"/>
+<xs:element name="dmStatus" type="dmStatusGenericElemType"/>
+<xs:complexType name="dmStatusGenericElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="sourceDmIdent"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="repositorySourceDmIdent"/>
+<xs:element ref="security"/>
+<xs:element minOccurs="0" ref="derivativeClassification"/>
+<xs:element minOccurs="0" ref="controlAuthorityGroup"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="dataRestrictions"/>
+<xs:element minOccurs="0" ref="logo"/>
+<xs:element ref="responsiblePartnerCompany"/>
+<xs:element ref="originator"/>
+<xs:element minOccurs="0" ref="applicCrossRefTableRef"/>
+<xs:choice>
+<xs:element ref="applic"/>
+<xs:element ref="applicRef"/>
+</xs:choice>
+<xs:element minOccurs="0" ref="techStandard"/>
+<xs:element ref="brexDmRef"/>
+<xs:element maxOccurs="unbounded" ref="qualityAssurance"/>
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="systemBreakdownCode"/>
+<xs:element ref="functionalItemCode"/>
+<xs:element ref="functionalItemRef"/>
+</xs:choice>
+<xs:element minOccurs="0" ref="skillLevel"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="reasonForUpdate"/>
+<xs:element minOccurs="0" ref="productSafety"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="remarks"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attribute ref="issueType"/>
+</xs:complexType>
+<xs:element name="sourceDmIdent" type="sourceDmIdentGenericElemType"/>
+<xs:complexType name="sourceDmIdentGenericElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="identExtension"/>
+<xs:element ref="dmCode"/>
+<xs:element ref="language"/>
+<xs:element ref="issueInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="repositorySourceDmIdent" type="sourceDmIdentGenericElemType"/>
+<xs:element name="security" type="securityElemType"/>
+<xs:complexType name="securityElemType">
+<xs:attribute ref="securityClassification" use="required"/>
+<xs:attributeGroup ref="commercialSecurityAttGroup"/>
+<xs:attribute ref="derivativeClassificationRefId"/>
+</xs:complexType>
+<xs:element name="derivativeClassification" type="derivativeClassificationElemType"/>
+<xs:complexType name="derivativeClassificationElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="classificationActionGroup"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="classificationActionGroup" type="classificationActionGroupElemType"/>
+<xs:complexType name="classificationActionGroupElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="classificationAction"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+</xs:complexType>
+<xs:element name="classificationAction" type="classificationActionElemType"/>
+<xs:complexType name="classificationActionElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="valueAfterAction"/>
+<xs:element ref="businessUnit"/>
+<xs:element ref="derivativeSource"/>
+</xs:sequence>
+<xs:attribute ref="actionIdentType" use="required"/>
+<xs:attributeGroup ref="dateAttGroup"/>
+</xs:complexType>
+<xs:element name="valueAfterAction" type="valueAfterActionElemType"/>
+<xs:complexType name="valueAfterActionElemType">
+<xs:attribute ref="actionIdentType" use="required"/>
+<xs:attributeGroup ref="dateAttGroup"/>
+</xs:complexType>
+<xs:attribute name="actionIdentType" type="actionIdentTypeAttType"/>
+<xs:simpleType name="actionIdentTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="businessUnit" type="businessUnitElemType"/>
+<xs:complexType name="businessUnitElemType">
+<xs:sequence>
+<xs:element ref="businessUnitName"/>
+<xs:element minOccurs="0" ref="businessUnitAddress"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="contactPerson"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="businessUnitName" type="xs:string"/>
+<xs:element name="businessUnitAddress" type="addressElemType"/>
+<xs:complexType name="addressElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="department"/>
+<xs:element minOccurs="0" ref="street"/>
+<xs:element minOccurs="0" ref="postOfficeBox"/>
+<xs:element minOccurs="0" ref="postalZipCode"/>
+<xs:element ref="city"/>
+<xs:element ref="country"/>
+<xs:element minOccurs="0" ref="state"/>
+<xs:element minOccurs="0" ref="province"/>
+<xs:element minOccurs="0" ref="building"/>
+<xs:element minOccurs="0" ref="room"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="phoneNumber"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="faxNumber"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="email"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="internet"/>
+<xs:element minOccurs="0" ref="SITA"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="department" type="xs:string"/>
+<xs:element name="street" type="xs:string"/>
+<xs:element name="postOfficeBox" type="xs:string"/>
+<xs:element name="postalZipCode" type="xs:string"/>
+<xs:element name="city" type="xs:string"/>
+<xs:element name="country" type="xs:string"/>
+<xs:element name="state" type="xs:string"/>
+<xs:element name="province" type="xs:string"/>
+<xs:element name="building" type="xs:string"/>
+<xs:element name="room" type="xs:string"/>
+<xs:element name="phoneNumber" type="phoneNumberElemType"/>
+<xs:complexType mixed="true" name="phoneNumberElemType">
+<xs:attribute ref="contactRole"/>
+</xs:complexType>
+<xs:attribute name="contactRole" type="xs:string"/>
+<xs:element name="faxNumber" type="faxNumberElemType"/>
+<xs:complexType mixed="true" name="faxNumberElemType">
+<xs:attribute ref="contactRole"/>
+</xs:complexType>
+<xs:element name="email" type="emailElemType"/>
+<xs:complexType mixed="true" name="emailElemType">
+<xs:attribute ref="contactRole"/>
+</xs:complexType>
+<xs:element name="internet" type="internetElemType"/>
+<xs:complexType mixed="true" name="internetElemType">
+<xs:attribute ref="contactRole"/>
+</xs:complexType>
+<xs:element name="SITA" type="xs:string"/>
+<xs:attribute name="id" type="xs:ID"/>
+<xs:attributeGroup name="changeAttGroup">
+<xs:attribute ref="changeType"/>
+<xs:attribute ref="changeMark"/>
+<xs:attribute ref="reasonForUpdateRefIds"/>
+</xs:attributeGroup>
+<xs:attribute name="changeType" type="changeTypeAttType"/>
+<xs:simpleType name="changeTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="changeMark" type="yesOrNoAttType"/>
+<xs:simpleType name="yesOrNoAttType">
+<xs:restriction base="xs:int">
+<xs:pattern value="[01]"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="reasonForUpdateRefIds" type="xs:IDREFS"/>
+<xs:attribute name="controlAuthorityRefs" type="xs:IDREFS"/>
+<xs:element name="contactPerson" type="contactPersonElemType"/>
+<xs:complexType name="contactPersonElemType">
+<xs:sequence>
+<xs:element ref="lastName"/>
+<xs:element minOccurs="0" ref="middleName"/>
+<xs:element minOccurs="0" ref="firstName"/>
+<xs:element minOccurs="0" ref="jobTitle"/>
+<xs:element minOccurs="0" ref="contactPersonAddress"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attribute ref="personPrefix"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="lastName" type="xs:string"/>
+<xs:element name="middleName" type="xs:string"/>
+<xs:element name="firstName" type="xs:string"/>
+<xs:element name="jobTitle" type="xs:string"/>
+<xs:element name="contactPersonAddress" type="addressElemType"/>
+<xs:attribute name="personPrefix" type="xs:string"/>
+<xs:element name="derivativeSource" type="xs:string"/>
+<xs:element name="controlAuthorityGroup" type="controlAuthorityGroupElemType"/>
+<xs:complexType name="controlAuthorityGroupElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="controlAuthority"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+</xs:complexType>
+<xs:element name="controlAuthority" type="controlAuthorityElemType"/>
+<xs:complexType name="controlAuthorityElemType">
+<xs:sequence>
+<xs:choice>
+<xs:element minOccurs="0" ref="controlAuthorityText"/>
+<xs:element minOccurs="0" ref="dmRef"/>
+</xs:choice>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="symbol"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id" use="required"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="controlAuthorityAttGroup"/>
+</xs:complexType>
+<xs:element name="controlAuthorityText" type="controlAuthorityTextElemType"/>
+<xs:complexType name="controlAuthorityTextElemType">
+<xs:sequence>
+<xs:element ref="para"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="para" type="paraElemType"/>
+<xs:complexType mixed="true" name="paraElemType">
+<xs:sequence>
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="paraContentElemGroup"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:group name="paraContentElemGroup">
+<xs:choice>
+<xs:group ref="textElemGroup"/>
+<xs:group ref="listElemGroup"/>
+</xs:choice>
+</xs:group>
+<xs:group name="textElemGroup">
+<xs:choice>
+<xs:element ref="functionalItemRef"/>
+<xs:element ref="circuitBreakerRef"/>
+<xs:element ref="controlIndicatorRef"/>
+<xs:element ref="inlineSignificantData"/>
+<xs:element ref="quantity"/>
+<xs:element ref="zoneRef"/>
+<xs:element ref="accessPointRef"/>
+<xs:element ref="identNumber"/>
+<xs:element ref="internalRef"/>
+<xs:element ref="indexFlag"/>
+<xs:element ref="changeInline"/>
+<xs:element ref="emphasis"/>
+<xs:element ref="symbol"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="dmRef"/>
+<xs:element ref="pmRef"/>
+<xs:element ref="externalPubRef"/>
+<xs:element ref="terminologyRef"/>
+<xs:element ref="footnote"/>
+<xs:element ref="footnoteRef"/>
+<xs:element ref="acronym"/>
+<xs:element ref="acronymTerm"/>
+<xs:element ref="captionGroup"/>
+<xs:element ref="caption"/>
+<xs:element ref="verbatimText"/>
+</xs:choice>
+</xs:group>
+<xs:element name="functionalItemRef" type="functionalItemRefElemType"/>
+<xs:complexType name="functionalItemRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="name"/>
+<xs:element minOccurs="0" ref="shortName"/>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attribute ref="functionalItemNumber" use="required"/>
+<xs:attribute ref="functionalItemType"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="installationIdent"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="vendorInfoAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="name" type="nameElemType"/>
+<xs:complexType mixed="true" name="nameElemType">
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="shortName" type="shortNameElemType"/>
+<xs:complexType mixed="true" name="shortNameElemType">
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="refs" type="refsElemType"/>
+<xs:complexType name="refsElemType">
+<xs:choice maxOccurs="unbounded">
+<xs:element ref="dmRef"/>
+<xs:element ref="pmRef"/>
+<xs:element ref="externalPubRef"/>
+</xs:choice>
+</xs:complexType>
+<xs:element name="dmRef" type="dmRefElemType"/>
+<xs:complexType name="dmRefElemType">
+<xs:sequence>
+<xs:element ref="dmRefIdent"/>
+<xs:element minOccurs="0" ref="dmRefAddressItems"/>
+<xs:element minOccurs="0" ref="behavior"/>
+</xs:sequence>
+<xs:attribute ref="referredFragment"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="referenceUsage" use="optional"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="xlink:XLINKATT"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="dmRefIdent" type="dmRefIdentElemType"/>
+<xs:complexType name="dmRefIdentElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="identExtension"/>
+<xs:element ref="dmCode"/>
+<xs:element minOccurs="0" ref="issueInfo"/>
+<xs:element minOccurs="0" ref="language"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="dmRefAddressItems" type="dmRefAddressItemsElemType"/>
+<xs:complexType name="dmRefAddressItemsElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="dmTitle"/>
+<xs:element minOccurs="0" ref="issueDate"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="behavior" type="behaviorElemType"/>
+<xs:complexType name="behaviorElemType">
+<xs:attribute ref="linkShow"/>
+<xs:attribute ref="linkActuate"/>
+</xs:complexType>
+<xs:attribute name="linkShow" type="linkShowAttType"/>
+<xs:simpleType name="linkShowAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="linkActuate" type="linkActuateAttType"/>
+<xs:simpleType name="linkActuateAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="referredFragment" type="xs:string"/>
+<xs:attribute name="applicRefId" type="xs:IDREF"/>
+<xs:attribute name="referenceUsage" type="referenceUsageAttType"/>
+<xs:simpleType name="referenceUsageAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="pmRef" type="pmRefElemType"/>
+<xs:complexType name="pmRefElemType">
+<xs:sequence>
+<xs:element ref="pmRefIdent"/>
+<xs:element minOccurs="0" ref="pmRefAddressItems"/>
+<xs:element minOccurs="0" ref="behavior"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="referenceUsage" use="optional"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="xlink:XLINKATT"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="pmRefIdent" type="pmRefIdentElemType"/>
+<xs:complexType name="pmRefIdentElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="identExtension"/>
+<xs:element ref="pmCode"/>
+<xs:element minOccurs="0" ref="issueInfo"/>
+<xs:element minOccurs="0" ref="language"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="pmCode" type="pmCodeElemType"/>
+<xs:complexType name="pmCodeElemType">
+<xs:attribute ref="modelIdentCode" use="required"/>
+<xs:attribute ref="pmIssuer" use="required"/>
+<xs:attribute ref="pmNumber" use="required"/>
+<xs:attribute ref="pmVolume" use="required"/>
+</xs:complexType>
+<xs:attribute name="pmIssuer" type="pmIssuerAttType"/>
+<xs:simpleType name="pmIssuerAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{5}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="pmNumber" type="pmNumberAttType"/>
+<xs:simpleType name="pmNumberAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{5}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="pmVolume" type="pmVolumeAttType"/>
+<xs:simpleType name="pmVolumeAttType">
+<xs:restriction base="xs:nonNegativeInteger">
+<xs:pattern value="\d{2}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="pmRefAddressItems" type="pmRefAddressItemsElemType"/>
+<xs:complexType name="pmRefAddressItemsElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="pmTitle"/>
+<xs:element minOccurs="0" ref="issueDate"/>
+<xs:element minOccurs="0" ref="security"/>
+<xs:element minOccurs="0" ref="responsiblePartnerCompany"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="pubMedia"/>
+<xs:element minOccurs="0" ref="shortPmTitle"/>
+</xs:sequence>
+<xs:attributeGroup ref="xlink:XLINKATT"/>
+</xs:complexType>
+<xs:element name="pmTitle" type="xs:string"/>
+<xs:element name="responsiblePartnerCompany" type="responsiblePartnerCompanyElemType"/>
+<xs:complexType name="responsiblePartnerCompanyElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="enterpriseName"/>
+</xs:sequence>
+<xs:attribute ref="enterpriseCode"/>
+<xs:attribute ref="id"/>
+</xs:complexType>
+<xs:element name="enterpriseName" type="xs:string"/>
+<xs:attribute name="enterpriseCode" type="xs:string"/>
+<xs:element name="pubMedia" type="pubMediaElemType"/>
+<xs:complexType name="pubMediaElemType">
+<xs:attribute ref="pubMediaType" use="required"/>
+<xs:attribute ref="pubMediaCode" use="required"/>
+<xs:attribute ref="volumeNumber"/>
+<xs:attribute ref="mediaLocation"/>
+</xs:complexType>
+<xs:attribute name="pubMediaType" type="xs:string"/>
+<xs:attribute name="pubMediaCode" type="xs:string"/>
+<xs:attribute name="volumeNumber" type="xs:string"/>
+<xs:attribute name="mediaLocation" type="xs:string"/>
+<xs:element name="shortPmTitle" type="xs:string"/>
+<xs:element name="externalPubRef" type="externalPubRefElemType"/>
+<xs:complexType name="externalPubRefElemType">
+<xs:sequence>
+<xs:element ref="externalPubRefIdent"/>
+<xs:element minOccurs="0" ref="externalPubRefAddressItems"/>
+<xs:element minOccurs="0" ref="behavior"/>
+</xs:sequence>
+<xs:attribute ref="extEntityIdent" use="optional"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="referenceUsage" use="optional"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="xlink:XLINKATT4"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="externalPubRefIdent" type="externalPubRefIdentElemType"/>
+<xs:complexType name="externalPubRefIdentElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="externalPubCode"/>
+<xs:element minOccurs="0" ref="externalPubTitle"/>
+<xs:element minOccurs="0" ref="externalPubIssueInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="externalPubCode" type="externalPubCodeElemType"/>
+<xs:complexType mixed="true" name="externalPubCodeElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="indexFlag"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="acronym"/>
+<xs:element ref="acronymTerm"/>
+<xs:element ref="verbatimText"/>
+</xs:choice>
+<xs:attribute ref="pubCodingScheme"/>
+</xs:complexType>
+<xs:element name="indexFlag" type="indexFlagElemType"/>
+<xs:complexType name="indexFlagElemType">
+<xs:attribute ref="indexLevelOne"/>
+<xs:attribute ref="indexLevelTwo"/>
+<xs:attribute ref="indexLevelThree"/>
+<xs:attribute ref="indexLevelFour"/>
+</xs:complexType>
+<xs:attribute name="indexLevelOne" type="xs:string"/>
+<xs:attribute name="indexLevelTwo" type="xs:string"/>
+<xs:attribute name="indexLevelThree" type="xs:string"/>
+<xs:attribute name="indexLevelFour" type="xs:string"/>
+<xs:element name="subScript" type="xs:string"/>
+<xs:element name="superScript" type="xs:string"/>
+<xs:element name="acronym" type="acronymElemType"/>
+<xs:complexType name="acronymElemType">
+<xs:sequence>
+<xs:element ref="acronymTerm"/>
+<xs:element ref="acronymDefinition"/>
+</xs:sequence>
+<xs:attribute ref="acronymType"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="acronymTerm" type="acronymTermElemType"/>
+<xs:complexType mixed="true" name="acronymTermElemType">
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="subOrSuperScriptElemGroup"/>
+<xs:attribute ref="internalRefId"/>
+</xs:complexType>
+<xs:group name="subOrSuperScriptElemGroup">
+<xs:choice>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+</xs:choice>
+</xs:group>
+<xs:attribute name="internalRefId" type="xs:IDREF"/>
+<xs:element name="acronymDefinition" type="acronymDefinitionElemType"/>
+<xs:complexType mixed="true" name="acronymDefinitionElemType">
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="subOrSuperScriptElemGroup"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute default="at01" name="acronymType" type="acronymTypeAttType"/>
+<xs:simpleType name="acronymTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="verbatimText" type="verbatimTextElemType"/>
+<xs:complexType mixed="true" name="verbatimTextElemType">
+<xs:attribute ref="verbatimStyle"/>
+<xs:attribute fixed="preserve" ref="xml:space"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="verbatimStyle" type="verbatimStyleAttType"/>
+<xs:simpleType name="verbatimStyleAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="pubCodingScheme" type="xs:string"/>
+<xs:element name="externalPubTitle" type="externalPubTitleElemType"/>
+<xs:complexType mixed="true" name="externalPubTitleElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="indexFlag"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="acronym"/>
+<xs:element ref="acronymTerm"/>
+<xs:element ref="verbatimText"/>
+</xs:choice>
+</xs:complexType>
+<xs:element name="externalPubIssueInfo" type="externalPubIssueInfoElemType"/>
+<xs:complexType mixed="true" name="externalPubIssueInfoElemType">
+<xs:sequence>
+<xs:element ref="externalPubIssue"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="externalPubIssue" type="externalPubIssueElemType"/>
+<xs:complexType mixed="true" name="externalPubIssueElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="indexFlag"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="acronym"/>
+<xs:element ref="acronymTerm"/>
+<xs:element ref="verbatimText"/>
+</xs:choice>
+</xs:complexType>
+<xs:element name="externalPubRefAddressItems" type="externalPubRefAddressItemsElemType"/>
+<xs:complexType name="externalPubRefAddressItemsElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="externalPubIssueDate"/>
+<xs:element minOccurs="0" ref="security"/>
+<xs:element minOccurs="0" ref="responsiblePartnerCompany"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="pubMedia"/>
+<xs:element minOccurs="0" ref="shortExternalPubTitle"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="externalPubIssueDate" type="externalPubIssueDateElemType"/>
+<xs:complexType mixed="true" name="externalPubIssueDateElemType">
+<xs:attributeGroup ref="externalPubIssueDateAttGroup"/>
+</xs:complexType>
+<xs:attributeGroup name="externalPubIssueDateAttGroup">
+<xs:attribute ref="year"/>
+<xs:attribute ref="month"/>
+<xs:attribute ref="day"/>
+</xs:attributeGroup>
+<xs:element name="shortExternalPubTitle" type="shortExternalPubTitleElemType"/>
+<xs:complexType mixed="true" name="shortExternalPubTitleElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="indexFlag"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="acronym"/>
+<xs:element ref="acronymTerm"/>
+<xs:element ref="verbatimText"/>
+</xs:choice>
+</xs:complexType>
+<xs:attribute name="extEntityIdent" type="xs:ENTITY"/>
+<xs:attribute name="functionalItemNumber" type="xs:string"/>
+<xs:attribute name="functionalItemType" type="functionalItemTypeAttType"/>
+<xs:simpleType name="functionalItemTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="installationIdent" type="xs:string"/>
+<xs:attributeGroup name="vendorInfoAttGroup">
+<xs:attribute ref="contextIdent"/>
+<xs:attribute ref="manufacturerCodeValue"/>
+<xs:attribute ref="itemOriginator"/>
+</xs:attributeGroup>
+<xs:attribute name="contextIdent" type="xs:string"/>
+<xs:attribute name="manufacturerCodeValue" type="xs:string"/>
+<xs:attribute name="itemOriginator" type="itemOriginatorAttType"/>
+<xs:simpleType name="itemOriginatorAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="circuitBreakerRef" type="circuitBreakerRefElemType"/>
+<xs:complexType name="circuitBreakerRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="name"/>
+<xs:element minOccurs="0" ref="shortName"/>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attribute ref="circuitBreakerNumber" use="required"/>
+<xs:attribute ref="circuitBreakerType"/>
+<xs:attribute ref="circuitBreakerAction"/>
+<xs:attribute ref="checkSum"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="installationIdent"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="vendorInfoAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="circuitBreakerNumber" type="xs:string"/>
+<xs:attribute name="circuitBreakerType" type="circuitBreakerTypeAttType"/>
+<xs:simpleType name="circuitBreakerTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="circuitBreakerAction" type="circuitBreakerActionAttType"/>
+<xs:simpleType name="circuitBreakerActionAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="checkSum" type="xs:string"/>
+<xs:element name="controlIndicatorRef" type="controlIndicatorRefElemType"/>
+<xs:complexType name="controlIndicatorRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="name"/>
+<xs:element minOccurs="0" ref="shortName"/>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attribute ref="controlIndicatorNumber"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="controlIndicatorNumber" type="xs:string"/>
+<xs:element name="inlineSignificantData" type="inlineSignificantDataElemType"/>
+<xs:complexType mixed="true" name="inlineSignificantDataElemType">
+<xs:attribute ref="significantParaDataType" use="required"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="significantParaDataType" type="significantParaDataTypeAttType"/>
+<xs:simpleType name="significantParaDataTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="quantity" type="quantityElemType"/>
+<xs:complexType mixed="true" name="quantityElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="quantityGroup"/>
+</xs:sequence>
+<xs:attribute ref="quantityType"/>
+<xs:attribute ref="quantityTypeSpecifics"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="quantityGroup" type="quantityGroupElemType"/>
+<xs:complexType name="quantityGroupElemType">
+<xs:choice>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="quantityValue"/>
+<xs:element maxOccurs="2" minOccurs="0" ref="quantityTolerance"/>
+</xs:sequence>
+<xs:sequence>
+<xs:element maxOccurs="2" ref="quantityTolerance"/>
+</xs:sequence>
+</xs:choice>
+<xs:attribute ref="quantityGroupType"/>
+<xs:attribute ref="quantityUnitOfMeasure"/>
+</xs:complexType>
+<xs:element name="quantityValue" type="quantityValueElemType"/>
+<xs:complexType name="quantityValueElemType">
+<xs:simpleContent>
+<xs:extension base="xs:decimal">
+<xs:attribute ref="quantityUnitOfMeasure"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+<xs:attribute name="quantityUnitOfMeasure" type="quantityUnitOfMeasureAttType"/>
+<xs:simpleType name="quantityUnitOfMeasureAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="quantityTolerance" type="quantityToleranceElemType"/>
+<xs:complexType name="quantityToleranceElemType">
+<xs:simpleContent>
+<xs:extension base="xs:decimal">
+<xs:attribute ref="quantityToleranceType"/>
+<xs:attribute ref="quantityUnitOfMeasure"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+<xs:attribute default="plusorminus" name="quantityToleranceType" type="quantityToleranceTypeAttType"/>
+<xs:simpleType name="quantityToleranceTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute default="nominal" name="quantityGroupType" type="quantityGroupTypeAttType"/>
+<xs:simpleType name="quantityGroupTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="quantityType" type="quantityTypeAttType"/>
+<xs:simpleType name="quantityTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="quantityTypeSpecifics" type="xs:string"/>
+<xs:element name="zoneRef" type="zoneRefElemType"/>
+<xs:complexType name="zoneRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="name"/>
+<xs:element minOccurs="0" ref="shortName"/>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="zoneNumber"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="lsarData"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="zoneNumber" type="xs:string"/>
+<xs:attribute default="0" name="lsarData" type="yesOrNoAttType"/>
+<xs:element name="accessPointRef" type="accessPointRefElemType"/>
+<xs:complexType name="accessPointRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="name"/>
+<xs:element minOccurs="0" ref="shortName"/>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="accessPointNumber"/>
+<xs:attribute ref="accessPointTypeValue"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="lsarData"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="accessPointNumber" type="xs:string"/>
+<xs:attribute name="accessPointTypeValue" type="accessPointTypeValueAttType"/>
+<xs:simpleType name="accessPointTypeValueAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="identNumber" type="identNumberElemType"/>
+<xs:complexType name="identNumberElemType">
+<xs:sequence>
+<xs:element ref="manufacturerCode"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="partAndSerialNumber"/>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="manufacturerCode" type="manufacturerCodeElemType"/>
+<xs:complexType mixed="true" name="manufacturerCodeElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="partAndSerialNumber" type="partAndSerialNumberElemType"/>
+<xs:complexType name="partAndSerialNumberElemType">
+<xs:sequence>
+<xs:element ref="partNumber"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="serialNumber"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="partNumber" type="partNumberElemType"/>
+<xs:complexType mixed="true" name="partNumberElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="serialNumber" type="serialNumberElemType"/>
+<xs:complexType name="serialNumberElemType">
+<xs:attribute ref="serialNumberForm" use="required"/>
+<xs:attribute ref="serialNumberValue" use="required"/>
+</xs:complexType>
+<xs:attribute name="serialNumberForm" type="serialNumberFormAttType"/>
+<xs:simpleType name="serialNumberFormAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="serialNumberValue" type="xs:string"/>
+<xs:element name="internalRef" type="internalRefElemType"/>
+<xs:complexType mixed="true" name="internalRefElemType">
+<xs:sequence>
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="subOrSuperScriptElemGroup"/>
+</xs:sequence>
+<xs:attribute ref="internalRefId"/>
+<xs:attribute ref="internalRefTargetType"/>
+<xs:attribute ref="referredFragment"/>
+<xs:attribute ref="targetTitle"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="xlink:XLINKATT3"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="internalRefTargetType" type="internalRefTargetTypeAttType"/>
+<xs:simpleType name="internalRefTargetTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="targetTitle" type="xs:string"/>
+<xs:element name="changeInline" type="changeInlineElemType"/>
+<xs:complexType mixed="true" name="changeInlineElemType">
+<xs:sequence maxOccurs="unbounded">
+<xs:group minOccurs="0" ref="textElemGroup"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="emphasis" type="emphasisElemType"/>
+<xs:complexType mixed="true" name="emphasisElemType">
+<xs:sequence maxOccurs="unbounded">
+<xs:group minOccurs="0" ref="textElemGroup"/>
+</xs:sequence>
+<xs:attribute ref="emphasisType"/>
+</xs:complexType>
+<xs:attribute default="em01" name="emphasisType" type="emphasisTypeAttType"/>
+<xs:simpleType name="emphasisTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="symbol" type="symbolElemType"/>
+<xs:complexType name="symbolElemType">
+<xs:attribute ref="infoEntityIdent" use="required"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="reproductionWidth"/>
+<xs:attribute ref="reproductionHeight"/>
+<xs:attribute ref="reproductionScale"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attributeGroup ref="xlink:XLINKATT1"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="infoEntityIdent" type="xs:ENTITY"/>
+<xs:attribute name="reproductionWidth" type="reproductionSizeAttType"/>
+<xs:simpleType name="reproductionSizeAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="\d+(\.\d+)?\s*(cm|in|mm|pc|pt)"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="reproductionHeight" type="reproductionSizeAttType"/>
+<xs:attribute name="reproductionScale" type="xs:positiveInteger"/>
+<xs:element name="terminologyRef" type="terminologyRefElemType"/>
+<xs:complexType name="terminologyRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="dmRef"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attribute ref="terminologyIdentNumber" use="required"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="terminologyIdentNumber" type="xs:string"/>
+<xs:element name="footnote" type="footnoteElemType"/>
+<xs:complexType name="footnoteElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="para"/>
+</xs:sequence>
+<xs:attribute ref="footnoteMark"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute default="num" name="footnoteMark" type="footnoteMarkAttType"/>
+<xs:simpleType name="footnoteMarkAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="footnoteRef" type="footnoteRefElemType"/>
+<xs:complexType name="footnoteRefElemType">
+<xs:attribute ref="internalRefId"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="captionGroup" type="captionGroupElemType"/>
+<xs:complexType name="captionGroupElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="colspec"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="spanspec"/>
+<xs:element ref="captionBody"/>
+</xs:sequence>
+<xs:attribute ref="cols" use="required"/>
+<xs:attribute default="left" ref="alignCaption"/>
+<xs:attribute ref="tableOfContentType"/>
+<xs:attribute ref="colsep"/>
+<xs:attribute ref="rowsep"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="colspec" type="colspecElemType"/>
+<xs:complexType name="colspecElemType">
+<xs:attribute ref="colnum"/>
+<xs:attribute ref="colname"/>
+<xs:attribute ref="align"/>
+<xs:attribute ref="charoff"/>
+<xs:attribute ref="char"/>
+<xs:attribute ref="colwidth"/>
+<xs:attribute ref="colsep"/>
+<xs:attribute ref="rowsep"/>
+</xs:complexType>
+<xs:attribute name="colnum" type="xs:positiveInteger"/>
+<xs:attribute name="colname" type="xs:NMTOKEN"/>
+<xs:attribute name="align" type="alignAttType"/>
+<xs:simpleType name="alignAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="charoff" type="xs:string"/>
+<xs:attribute name="char" type="xs:string"/>
+<xs:attribute name="colwidth" type="colwidthAttType"/>
+<xs:simpleType name="colwidthAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="\d+(\.\d+)?\s*(\*|cm|in|mm|pc|pt)(\+\d+(\.\d+)?\s*(cm|in|mm|pc|pt))?"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="colsep" type="yesOrNoAttType"/>
+<xs:attribute name="rowsep" type="yesOrNoAttType"/>
+<xs:element name="spanspec" type="spanspecElemType"/>
+<xs:complexType name="spanspecElemType">
+<xs:attribute ref="namest" use="required"/>
+<xs:attribute ref="nameend" use="required"/>
+<xs:attribute ref="spanname" use="required"/>
+<xs:attribute default="center" ref="align"/>
+<xs:attribute ref="charoff"/>
+<xs:attribute ref="char"/>
+<xs:attribute ref="colsep"/>
+<xs:attribute ref="rowsep"/>
+</xs:complexType>
+<xs:attribute name="namest" type="xs:NMTOKEN"/>
+<xs:attribute name="nameend" type="xs:NMTOKEN"/>
+<xs:attribute name="spanname" type="xs:NMTOKEN"/>
+<xs:element name="captionBody" type="captionBodyElemType"/>
+<xs:complexType name="captionBodyElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="captionRow"/>
+</xs:sequence>
+<xs:attribute default="top" ref="valign"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="captionRow" type="captionRowElemType"/>
+<xs:complexType name="captionRowElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="captionEntry"/>
+</xs:sequence>
+<xs:attribute ref="rowsep"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="captionEntry" type="captionEntryElemType"/>
+<xs:complexType name="captionEntryElemType">
+<xs:choice minOccurs="0">
+<xs:element ref="caption"/>
+<xs:element ref="captionText"/>
+</xs:choice>
+<xs:attribute ref="colname"/>
+<xs:attribute ref="namest"/>
+<xs:attribute ref="nameend"/>
+<xs:attribute ref="spanname"/>
+<xs:attribute ref="morerows"/>
+<xs:attribute ref="colsep"/>
+<xs:attribute ref="rowsep"/>
+<xs:attribute ref="valign"/>
+<xs:attribute ref="alignCaptionEntry"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="caption" type="captionElemType"/>
+<xs:complexType name="captionElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="captionLine"/>
+</xs:sequence>
+<xs:attribute ref="color"/>
+<xs:attribute ref="captionWidth"/>
+<xs:attribute ref="captionHeight"/>
+<xs:attribute ref="systemIdentCode"/>
+<xs:attribute default="left" ref="alignCaption"/>
+<xs:attribute ref="tableOfContentType"/>
+<xs:attribute ref="captionType"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="captionLine" type="captionLineElemType"/>
+<xs:complexType mixed="true" name="captionLineElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="acronymTerm"/>
+</xs:sequence>
+</xs:complexType>
+<xs:attribute default="co09" name="color" type="colorAttType"/>
+<xs:simpleType name="colorAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="captionWidth" type="xs:string"/>
+<xs:attribute name="captionHeight" type="xs:string"/>
+<xs:attribute name="systemIdentCode" type="xs:string"/>
+<xs:attribute name="alignCaption" type="alignCaptionAttType"/>
+<xs:simpleType name="alignCaptionAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute default="none" name="tableOfContentType" type="tableOfContentTypeAttType"/>
+<xs:simpleType name="tableOfContentTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute default="primary" name="captionType" type="captionTypeAttType"/>
+<xs:simpleType name="captionTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="captionText" type="captionTextElemType"/>
+<xs:complexType mixed="true" name="captionTextElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="internalRef"/>
+<xs:element ref="indexFlag"/>
+<xs:element ref="changeInline"/>
+<xs:element ref="emphasis"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="dmRef"/>
+<xs:element ref="pmRef"/>
+<xs:element ref="externalPubRef"/>
+<xs:element ref="acronym"/>
+<xs:element ref="acronymTerm"/>
+</xs:choice>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute default="0" name="morerows" type="xs:nonNegativeInteger"/>
+<xs:attribute name="valign" type="valignAttType"/>
+<xs:simpleType name="valignAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="alignCaptionEntry" type="alignCaptionEntryAttType"/>
+<xs:simpleType name="alignCaptionEntryAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="cols" type="xs:positiveInteger"/>
+<xs:group name="listElemGroup">
+<xs:choice>
+<xs:element ref="sequentialList"/>
+<xs:element ref="randomList"/>
+<xs:element ref="definitionList"/>
+</xs:choice>
+</xs:group>
+<xs:element name="sequentialList" type="sequentialListElemType"/>
+<xs:complexType name="sequentialListElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="title"/>
+<xs:element maxOccurs="unbounded" ref="listItem"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="title" type="titleElemType"/>
+<xs:complexType mixed="true" name="titleElemType">
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="textElemGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="listItem" type="listItemElemType"/>
+<xs:complexType name="listItemElemType">
+<xs:choice maxOccurs="unbounded">
+<xs:element ref="note"/>
+<xs:element ref="para"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="note" type="noteElemType"/>
+<xs:complexType name="noteElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="symbol"/>
+<xs:choice maxOccurs="unbounded">
+<xs:element ref="notePara"/>
+<xs:element ref="attentionSequentialList"/>
+<xs:element ref="attentionRandomList"/>
+</xs:choice>
+</xs:sequence>
+<xs:attribute ref="noteType"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="internalRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="notePara" type="noteParaElemType"/>
+<xs:complexType mixed="true" name="noteParaElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:group ref="attentionText"/>
+<xs:element ref="attentionSequentialList"/>
+<xs:element ref="attentionRandomList"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:group name="attentionText">
+<xs:choice>
+<xs:element ref="functionalItemRef"/>
+<xs:element ref="circuitBreakerRef"/>
+<xs:element ref="controlIndicatorRef"/>
+<xs:element ref="supplyRef"/>
+<xs:element ref="inlineSignificantData"/>
+<xs:element ref="quantity"/>
+<xs:element ref="zoneRef"/>
+<xs:element ref="accessPointRef"/>
+<xs:element ref="identNumber"/>
+<xs:element ref="internalRef"/>
+<xs:element ref="changeInline"/>
+<xs:element ref="emphasis"/>
+<xs:element ref="symbol"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="dmRef"/>
+<xs:element ref="pmRef"/>
+<xs:element ref="externalPubRef"/>
+<xs:element ref="terminologyRef"/>
+<xs:element ref="acronym"/>
+<xs:element ref="acronymTerm"/>
+<xs:element ref="caption"/>
+<xs:element ref="verbatimText"/>
+</xs:choice>
+</xs:group>
+<xs:element name="supplyRef" type="supplyRefElemType"/>
+<xs:complexType name="supplyRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="name"/>
+<xs:element minOccurs="0" ref="shortName"/>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attribute ref="supplyNumber" use="required"/>
+<xs:attribute ref="supplyNumberType" use="required"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="supplyNumber" type="xs:string"/>
+<xs:attribute name="supplyNumberType" type="supplyNumberTypeAttType"/>
+<xs:simpleType name="supplyNumberTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="attentionSequentialList" type="attentionSequentialListElemType"/>
+<xs:complexType name="attentionSequentialListElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="title"/>
+<xs:element maxOccurs="unbounded" ref="attentionSequentialListItem"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="attentionSequentialListItem" type="attentionSequentialListItemElemType"/>
+<xs:complexType name="attentionSequentialListItemElemType">
+<xs:choice maxOccurs="unbounded">
+<xs:element minOccurs="0" ref="attentionListItemPara"/>
+<xs:element minOccurs="0" ref="attentionRandomList"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="attentionListItemPara" type="attentionListItemParaElemType"/>
+<xs:complexType mixed="true" name="attentionListItemParaElemType">
+<xs:sequence>
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="attentionText"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="attentionRandomList" type="attentionRandomListElemType"/>
+<xs:complexType name="attentionRandomListElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="attentionRandomListItem"/>
+</xs:sequence>
+<xs:attribute ref="listItemPrefix"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="attentionRandomListItem" type="attentionRandomListItemElemType"/>
+<xs:complexType name="attentionRandomListItemElemType">
+<xs:sequence maxOccurs="unbounded">
+<xs:element ref="attentionListItemPara"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute default="pf02" name="listItemPrefix" type="listItemPrefixAttType"/>
+<xs:simpleType name="listItemPrefixAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="noteType" type="xs:string"/>
+<xs:element name="randomList" type="randomListElemType"/>
+<xs:complexType name="randomListElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="title"/>
+<xs:element maxOccurs="unbounded" ref="listItem"/>
+</xs:sequence>
+<xs:attribute ref="listItemPrefix"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="definitionList" type="definitionListElemType"/>
+<xs:complexType name="definitionListElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="title"/>
+<xs:element minOccurs="0" ref="definitionListHeader"/>
+<xs:element maxOccurs="unbounded" ref="definitionListItem"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="definitionListHeader" type="definitionListHeaderElemType"/>
+<xs:complexType name="definitionListHeaderElemType">
+<xs:sequence>
+<xs:element ref="termTitle"/>
+<xs:element ref="definitionTitle"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="termTitle" type="titleElemType"/>
+<xs:element name="definitionTitle" type="titleElemType"/>
+<xs:element name="definitionListItem" type="definitionListItemElemType"/>
+<xs:complexType name="definitionListItemElemType">
+<xs:sequence>
+<xs:element ref="listItemTerm"/>
+<xs:element ref="listItemDefinition"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="listItemTerm" type="listItemTermElemType"/>
+<xs:complexType mixed="true" name="listItemTermElemType">
+<xs:sequence>
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="textElemGroup"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="listItemDefinition" type="listItemDefinitionElemType"/>
+<xs:complexType name="listItemDefinitionElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="para"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attributeGroup name="controlAuthorityAttGroup">
+<xs:attribute ref="controlAuthorityType" use="required"/>
+<xs:attribute ref="controlAuthoritySource"/>
+<xs:attribute ref="controlAuthorityValue"/>
+</xs:attributeGroup>
+<xs:attribute name="controlAuthorityType" type="controlAuthorityTypeAttType"/>
+<xs:simpleType name="controlAuthorityTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="controlAuthoritySource" type="xs:string"/>
+<xs:attribute name="controlAuthorityValue" type="xs:string"/>
+<xs:element name="dataRestrictions" type="dataRestrictionsElemType"/>
+<xs:complexType name="dataRestrictionsElemType">
+<xs:sequence>
+<xs:element ref="restrictionInstructions"/>
+<xs:element minOccurs="0" ref="restrictionInfo"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="restrictionInstructions" type="restrictionInstructionsElemType"/>
+<xs:complexType name="restrictionInstructionsElemType">
+<xs:sequence>
+<xs:element ref="dataDistribution"/>
+<xs:element minOccurs="0" ref="exportControl"/>
+<xs:element minOccurs="0" ref="dataHandling"/>
+<xs:element minOccurs="0" ref="dataDestruction"/>
+<xs:element minOccurs="0" ref="dataDisclosure"/>
+<xs:element minOccurs="0" ref="supersedure"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="dataDistribution" type="dataDistributionElemType"/>
+<xs:complexType mixed="true" name="dataDistributionElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="exportControl" type="exportControlElemType"/>
+<xs:complexType name="exportControlElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="exportRegistrationStmt"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="exportRegistrationCode"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="exportRegulationType"/>
+<xs:attribute ref="governmentAuthority"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="exportRegistrationStmt" type="exportRegistrationStmtElemType"/>
+<xs:complexType name="exportRegistrationStmtElemType">
+<xs:choice maxOccurs="unbounded">
+<xs:element ref="simplePara"/>
+<xs:element ref="dmRef"/>
+</xs:choice>
+<xs:attribute ref="exportRole"/>
+</xs:complexType>
+<xs:element name="simplePara" type="simpleParaElemType"/>
+<xs:complexType mixed="true" name="simpleParaElemType">
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="subOrSuperScriptElemGroup"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="exportRole" type="exportRoleAttType"/>
+<xs:simpleType name="exportRoleAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="exportRegistrationCode" type="exportRegistrationCodeElemType"/>
+<xs:complexType mixed="true" name="exportRegistrationCodeElemType">
+<xs:attribute ref="exportRegulationCodeType"/>
+</xs:complexType>
+<xs:attribute name="exportRegulationCodeType" type="xs:string"/>
+<xs:attribute name="exportRegulationType" type="xs:string"/>
+<xs:attribute name="governmentAuthority" type="xs:string"/>
+<xs:element name="dataHandling" type="dataHandlingElemType"/>
+<xs:complexType mixed="true" name="dataHandlingElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="dataDestruction" type="dataDestructionElemType"/>
+<xs:complexType mixed="true" name="dataDestructionElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="dataDisclosure" type="dataDisclosureElemType"/>
+<xs:complexType mixed="true" name="dataDisclosureElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="supersedure" type="supersedureElemType"/>
+<xs:complexType mixed="true" name="supersedureElemType">
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="subOrSuperScriptElemGroup"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="restrictionInfo" type="restrictionInfoElemType"/>
+<xs:complexType name="restrictionInfoElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="copyright"/>
+<xs:element minOccurs="0" ref="policyStatement"/>
+<xs:element minOccurs="0" ref="dataConds"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="copyright" type="copyrightElemType"/>
+<xs:complexType name="copyrightElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="copyrightPara"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="copyrightPara" type="copyrightParaElemType"/>
+<xs:complexType mixed="true" name="copyrightParaElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="emphasis"/>
+<xs:element ref="subScript"/>
+<xs:element ref="superScript"/>
+<xs:element ref="dmRef"/>
+<xs:element ref="randomList"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="policyStatement" type="policyStatementElemType"/>
+<xs:complexType mixed="true" name="policyStatementElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="dataConds" type="dataCondsElemType"/>
+<xs:complexType mixed="true" name="dataCondsElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="logo" type="logoElemType"/>
+<xs:complexType name="logoElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="symbol"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="originator" type="originatorElemType"/>
+<xs:complexType name="originatorElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="enterpriseName"/>
+</xs:sequence>
+<xs:attribute ref="enterpriseCode"/>
+<xs:attribute ref="id"/>
+</xs:complexType>
+<xs:element name="applicCrossRefTableRef" type="applicCrossRefTableRefElemType"/>
+<xs:complexType name="applicCrossRefTableRefElemType">
+<xs:sequence>
+<xs:element ref="dmRef"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="applic" type="applicElemType"/>
+<xs:complexType name="applicElemType">
+<xs:choice>
+<xs:sequence>
+<xs:element ref="displayText"/>
+<xs:choice minOccurs="0">
+<xs:element ref="assert"/>
+<xs:element ref="evaluate"/>
+</xs:choice>
+</xs:sequence>
+<xs:choice>
+<xs:element ref="assert"/>
+<xs:element ref="evaluate"/>
+</xs:choice>
+</xs:choice>
+<xs:attribute ref="applicConfiguration"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="displayText" type="displayTextElemType"/>
+<xs:complexType name="displayTextElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="simplePara"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="assert" type="assertElemType"/>
+<xs:complexType mixed="true" name="assertElemType">
+<xs:attribute ref="applicPropertyIdent"/>
+<xs:attribute ref="applicPropertyType"/>
+<xs:attribute ref="applicPropertyValues"/>
+<xs:attribute ref="applicDisplayClass"/>
+</xs:complexType>
+<xs:attribute name="applicPropertyIdent" type="xs:NCName"/>
+<xs:attribute name="applicPropertyType" type="applicPropertyTypeAttType"/>
+<xs:simpleType name="applicPropertyTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="applicPropertyValues" type="applicPropertyValuesGenericAttType"/>
+<xs:simpleType name="applicPropertyValuesGenericAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[^~|\t\n\r]+(~[^~|\t\n\r]+)?(\|[^~|\t\n\r]+(~[^~|\t\n\r]+)?)*"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="applicDisplayClass" type="xs:string"/>
+<xs:element name="evaluate" type="evaluateElemType"/>
+<xs:complexType name="evaluateElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="2">
+<xs:element ref="evaluate"/>
+<xs:element ref="assert"/>
+</xs:choice>
+<xs:attribute ref="andOr" use="required"/>
+<xs:attribute ref="applicDisplayClass"/>
+</xs:complexType>
+<xs:attribute name="andOr" type="andOrAttType"/>
+<xs:simpleType name="andOrAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="applicConfiguration" type="applicConfigurationAttType"/>
+<xs:simpleType name="applicConfigurationAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="applicRef" type="applicRefElemType"/>
+<xs:complexType name="applicRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="dmRef"/>
+</xs:sequence>
+<xs:attribute ref="applicIdentValue" use="required"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="applicIdentValue" type="xs:string"/>
+<xs:element name="techStandard" type="techStandardElemType"/>
+<xs:complexType name="techStandardElemType">
+<xs:sequence>
+<xs:choice>
+<xs:element ref="authorityInfoAndTp"/>
+<xs:element ref="authorityInfo"/>
+<xs:element ref="techPubBase"/>
+</xs:choice>
+<xs:element ref="authorityExceptions"/>
+<xs:element ref="authorityNotes"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="authorityInfoAndTp" type="authorityInfoAndTpElemType"/>
+<xs:complexType name="authorityInfoAndTpElemType">
+<xs:sequence>
+<xs:element ref="authorityInfo"/>
+<xs:element ref="techPubBase"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="authorityInfo" type="xs:string"/>
+<xs:element name="techPubBase" type="xs:string"/>
+<xs:element name="authorityExceptions" type="authorityExceptionsElemType"/>
+<xs:complexType name="authorityExceptionsElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="productConfiguration"/>
+<xs:element minOccurs="0" ref="retrofit"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="productConfiguration" type="productConfigurationElemType"/>
+<xs:complexType name="productConfigurationElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="excludedModification"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="additionalModification"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="excludedModification" type="xs:string"/>
+<xs:element name="additionalModification" type="xs:string"/>
+<xs:element name="retrofit" type="retrofitElemType"/>
+<xs:complexType name="retrofitElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="modification"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="modification" type="modificationElemType"/>
+<xs:complexType name="modificationElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="modificationTitle"/>
+</xs:sequence>
+<xs:attribute ref="authorizationIdent" use="required"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="modificationType" use="required"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="modificationTitle" type="xs:string"/>
+<xs:attribute name="authorizationIdent" type="xs:NMTOKEN"/>
+<xs:attribute name="modificationType" type="modificationTypeAttType"/>
+<xs:simpleType name="modificationTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="authorityNotes" type="xs:string"/>
+<xs:element name="brexDmRef" type="brexDmRefElemType"/>
+<xs:complexType name="brexDmRefElemType">
+<xs:sequence>
+<xs:element ref="dmRef"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="qualityAssurance" type="qualityAssuranceElemType"/>
+<xs:complexType name="qualityAssuranceElemType">
+<xs:choice>
+<xs:element ref="unverified"/>
+<xs:sequence>
+<xs:element ref="firstVerification"/>
+<xs:element minOccurs="0" ref="secondVerification"/>
+</xs:sequence>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="unverified" type="unverifiedElemType"/>
+<xs:complexType name="unverifiedElemType"/>
+<xs:element name="firstVerification" type="firstVerificationElemType"/>
+<xs:complexType name="firstVerificationElemType">
+<xs:attribute ref="verificationType" use="required"/>
+</xs:complexType>
+<xs:attribute name="verificationType" type="verificationTypeAttType"/>
+<xs:simpleType name="verificationTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="secondVerification" type="secondVerificationElemType"/>
+<xs:complexType name="secondVerificationElemType">
+<xs:attribute ref="verificationType" use="required"/>
+</xs:complexType>
+<xs:element name="systemBreakdownCode" type="systemBreakdownCodeElemType"/>
+<xs:complexType mixed="true" name="systemBreakdownCodeElemType">
+<xs:attribute ref="id"/>
+</xs:complexType>
+<xs:element name="functionalItemCode" type="xs:string"/>
+<xs:element name="skillLevel" type="skillLevelElemType"/>
+<xs:complexType name="skillLevelElemType">
+<xs:attribute ref="skillLevelCode" use="required"/>
+</xs:complexType>
+<xs:attribute name="skillLevelCode" type="skillLevelCodeAttType"/>
+<xs:simpleType name="skillLevelCodeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="reasonForUpdate" type="reasonForUpdateElemType"/>
+<xs:complexType name="reasonForUpdateElemType">
+<xs:choice>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="simplePara"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="simpleRefPara"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="updateReasonType"/>
+<xs:attribute ref="updateHighlight"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="simpleRefPara" type="simpleRefParaElemType"/>
+<xs:complexType mixed="true" name="simpleRefParaElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="subOrSuperScriptElemGroup"/>
+<xs:element ref="verbatimText"/>
+<xs:element ref="emphasis"/>
+<xs:element ref="inlineSignificantData"/>
+<xs:element ref="dmRef"/>
+<xs:element ref="pmRef"/>
+<xs:element ref="externalPubRef"/>
+</xs:choice>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="updateReasonType" type="updateReasonTypeAttType"/>
+<xs:simpleType name="updateReasonTypeAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="updateHighlight" type="yesOrNoAttType"/>
+<xs:element name="productSafety" type="productSafetyElemType"/>
+<xs:complexType mixed="true" name="productSafetyElemType">
+<xs:attribute ref="safetyLabel" use="required"/>
+</xs:complexType>
+<xs:attribute name="safetyLabel" type="xs:string"/>
+<xs:element name="remarks" type="remarksElemType"/>
+<xs:complexType name="remarksElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="simplePara"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute default="new" name="issueType" type="issueTypeAttType"/>
+<xs:simpleType name="issueTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="content" type="contentElemType"/>
+<xs:complexType name="contentElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="refs"/>
+<xs:choice minOccurs="0">
+<xs:element ref="referencedApplicGroup"/>
+<xs:element ref="referencedApplicGroupRef"/>
+</xs:choice>
+<xs:choice minOccurs="0">
+<xs:element ref="warningsAndCautions"/>
+<xs:element ref="warningsAndCautionsRef"/>
+</xs:choice>
+<xs:element ref="description"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="referencedApplicGroup" type="referencedApplicGroupElemType"/>
+<xs:complexType name="referencedApplicGroupElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="applic"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="referencedApplicGroupRef" type="referencedApplicGroupRefElemType"/>
+<xs:complexType name="referencedApplicGroupRefElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="applicRef"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="warningsAndCautions" type="warningsAndCautionsElemType"/>
+<xs:complexType name="warningsAndCautionsElemType">
+<xs:choice>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="warning"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="caution"/>
+</xs:sequence>
+<xs:element maxOccurs="unbounded" ref="caution"/>
+</xs:choice>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="warning" type="warningElemType"/>
+<xs:complexType name="warningElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="symbol"/>
+<xs:element maxOccurs="unbounded" ref="warningAndCautionPara"/>
+</xs:sequence>
+<xs:attribute ref="warningType"/>
+<xs:attribute ref="internalRefId"/>
+<xs:attribute ref="vitalWarningFlag"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="warningAndCautionPara" type="warningAndCautionParaElemType"/>
+<xs:complexType mixed="true" name="warningAndCautionParaElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:group ref="attentionText"/>
+<xs:element ref="attentionRandomList"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="warningType" type="xs:string"/>
+<xs:attribute name="vitalWarningFlag" type="yesOrNoAttType"/>
+<xs:element name="caution" type="cautionElemType"/>
+<xs:complexType name="cautionElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="symbol"/>
+<xs:element maxOccurs="unbounded" ref="warningAndCautionPara"/>
+</xs:sequence>
+<xs:attribute ref="cautionType"/>
+<xs:attribute ref="internalRefId"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="cautionType" type="xs:string"/>
+<xs:element name="warningsAndCautionsRef" type="warningsAndCautionsRefElemType"/>
+<xs:complexType name="warningsAndCautionsRefElemType">
+<xs:choice>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="warningRef"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="cautionRef"/>
+</xs:sequence>
+<xs:element maxOccurs="unbounded" ref="cautionRef"/>
+</xs:choice>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="warningRef" type="warningRefElemType"/>
+<xs:complexType name="warningRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="dmRef"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attribute ref="warningIdentNumber" use="required"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="warningIdentNumber" type="xs:string"/>
+<xs:element name="cautionRef" type="cautionRefElemType"/>
+<xs:complexType name="cautionRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="dmRef"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attribute ref="cautionIdentNumber" use="required"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="cautionIdentNumber" type="xs:string"/>
+<xs:element name="description" type="descriptionElemType"/>
+<xs:complexType name="descriptionElemType">
+<xs:choice maxOccurs="unbounded">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="para"/>
+<xs:group ref="attentionElemGroup"/>
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="levelledPara"/>
+<xs:element ref="levelledParaAlts"/>
+</xs:choice>
+</xs:sequence>
+<xs:choice>
+<xs:group ref="fmftElemGroup"/>
+<xs:element ref="caption"/>
+</xs:choice>
+</xs:choice>
+<xs:attribute ref="warningRefs"/>
+<xs:attribute ref="cautionRefs"/>
+</xs:complexType>
+<xs:group name="attentionElemGroup">
+<xs:sequence>
+<xs:group ref="warningAndCautionElemGroup"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="note"/>
+</xs:sequence>
+</xs:group>
+<xs:group name="warningAndCautionElemGroup">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="warning"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="caution"/>
+</xs:sequence>
+</xs:group>
+<xs:element name="levelledPara" type="levelledParaElemType"/>
+<xs:complexType name="levelledParaElemType">
+<xs:sequence>
+<xs:sequence minOccurs="0">
+<xs:group minOccurs="0" ref="headingElemGroup"/>
+<xs:group minOccurs="0" ref="normalParaElemGroup"/>
+</xs:sequence>
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="levelledPara"/>
+<xs:element ref="levelledParaAlts"/>
+</xs:choice>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="warningRefs"/>
+<xs:attribute ref="cautionRefs"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:group name="headingElemGroup">
+<xs:sequence>
+<xs:element minOccurs="0" ref="title"/>
+<xs:element minOccurs="0" ref="captionGroup"/>
+</xs:sequence>
+</xs:group>
+<xs:group name="normalParaElemGroup">
+<xs:sequence>
+<xs:group ref="warningAndCautionElemGroup"/>
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:group ref="ncpElemGroup"/>
+<xs:group ref="fmftElemGroup"/>
+<xs:element ref="caption"/>
+</xs:choice>
+</xs:sequence>
+</xs:group>
+<xs:group name="ncpElemGroup">
+<xs:choice>
+<xs:element ref="note"/>
+<xs:element ref="circuitBreakerDescrGroup"/>
+<xs:element ref="para"/>
+</xs:choice>
+</xs:group>
+<xs:element name="circuitBreakerDescrGroup" type="circuitBreakerDescrGroupElemType"/>
+<xs:complexType name="circuitBreakerDescrGroupElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="circuitBreakerDescrSubGroup"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="footnote"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="circuitBreakerAction"/>
+<xs:attribute ref="checkSum"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="circuitBreakerDescrSubGroup" type="circuitBreakerDescrSubGroupElemType"/>
+<xs:complexType name="circuitBreakerDescrSubGroupElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="functionalItemRef"/>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="circuitBreakerDescr"/>
+</xs:sequence>
+</xs:sequence>
+<xs:attribute ref="circuitBreakerAction"/>
+<xs:attribute ref="checkSum"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="circuitBreakerDescr" type="circuitBreakerDescrElemType"/>
+<xs:complexType name="circuitBreakerDescrElemType">
+<xs:sequence>
+<xs:element ref="circuitBreakerRef"/>
+<xs:element ref="name"/>
+<xs:choice minOccurs="0">
+<xs:element ref="internalRef"/>
+<xs:element ref="accessPointRef"/>
+</xs:choice>
+<xs:element minOccurs="0" ref="circuitBreakerLocation"/>
+<xs:element minOccurs="0" ref="footnoteRemarks"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="circuitBreakerLocation" type="circuitBreakerLocationElemType"/>
+<xs:complexType mixed="true" name="circuitBreakerLocationElemType">
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="footnoteRemarks" type="footnoteRemarksElemType"/>
+<xs:complexType name="footnoteRemarksElemType">
+<xs:choice maxOccurs="unbounded">
+<xs:element ref="simplePara"/>
+<xs:element ref="footnoteRef"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:group name="fmftElemGroup">
+<xs:choice>
+<xs:element ref="figure"/>
+<xs:element ref="figureAlts"/>
+<xs:element ref="multimedia"/>
+<xs:element ref="multimediaAlts"/>
+<xs:element ref="foldout"/>
+<xs:element ref="table"/>
+</xs:choice>
+</xs:group>
+<xs:element name="figure" type="figureElemType"/>
+<xs:complexType name="figureElemType">
+<xs:sequence>
+<xs:element ref="title"/>
+<xs:element maxOccurs="unbounded" ref="graphic"/>
+<xs:element minOccurs="0" ref="legend"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="graphic" type="graphicElemType"/>
+<xs:complexType name="graphicElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="hotspot"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="reasonForAmendment"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="infoEntityIdent" use="required"/>
+<xs:attribute ref="reproductionWidth"/>
+<xs:attribute ref="reproductionHeight"/>
+<xs:attribute ref="reproductionScale"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="xlink:XLINKATT0"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="hotspot" type="hotspotElemType"/>
+<xs:complexType name="hotspotElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="hotspot"/>
+<xs:element ref="internalRef"/>
+<xs:element ref="dmRef"/>
+<xs:element ref="catalogSeqNumberRef"/>
+</xs:choice>
+<xs:attribute ref="applicationStructureIdent"/>
+<xs:attribute ref="applicationStructureName"/>
+<xs:attribute ref="hotspotType"/>
+<xs:attribute ref="hotspotTitle"/>
+<xs:attribute ref="objectDescr"/>
+<xs:attribute ref="objectCoordinates"/>
+<xs:attribute ref="visibility"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="catalogSeqNumberRef" type="catalogSeqNumberRefElemType"/>
+<xs:complexType name="catalogSeqNumberRefElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="refs"/>
+</xs:sequence>
+<xs:attribute ref="modelIdentCode"/>
+<xs:attribute ref="systemDiffCode"/>
+<xs:attribute ref="systemCode"/>
+<xs:attribute ref="subSystemCode"/>
+<xs:attribute ref="subSubSystemCode"/>
+<xs:attribute ref="assyCode"/>
+<xs:attribute ref="figureNumber" use="required"/>
+<xs:attribute ref="figureNumberVariant"/>
+<xs:attribute ref="itemLocationCode"/>
+<xs:attribute ref="item" use="required"/>
+<xs:attribute ref="itemVariant"/>
+<xs:attribute ref="itemSeqNumberValue"/>
+<xs:attribute ref="initialProvisioningProjectNumber"/>
+<xs:attribute ref="responsiblePartnerCompanyCode"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="xlink:XLINKATT2"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute name="figureNumber" type="figureNumberAttType"/>
+<xs:simpleType name="figureNumberAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="[A-Z0-9]{1}[0-9]{1}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="figureNumberVariant" type="figureNumberVariantAttType"/>
+<xs:simpleType name="figureNumberVariantAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="([A-Z-[IO]]{1})"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="item" type="itemAttType"/>
+<xs:simpleType name="itemAttType">
+<xs:restriction base="xs:nonNegativeInteger">
+<xs:pattern value="\d{3}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="itemVariant" type="itemVariantAttType"/>
+<xs:simpleType name="itemVariantAttType">
+<xs:restriction base="xs:string">
+<xs:pattern value="([A-Z-[IO]]{1})"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="itemSeqNumberValue" type="xs:string"/>
+<xs:attribute name="initialProvisioningProjectNumber" type="xs:string"/>
+<xs:attribute name="responsiblePartnerCompanyCode" type="xs:string"/>
+<xs:attribute name="applicationStructureIdent" type="xs:string"/>
+<xs:attribute name="applicationStructureName" type="xs:string"/>
+<xs:attribute name="hotspotType" type="xs:string"/>
+<xs:attribute name="hotspotTitle" type="xs:string"/>
+<xs:attribute name="objectDescr" type="xs:string"/>
+<xs:attribute name="objectCoordinates" type="xs:string"/>
+<xs:attribute default="visible" name="visibility" type="visibilityAttType"/>
+<xs:simpleType name="visibilityAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="reasonForAmendment" type="reasonForAmendmentElemType"/>
+<xs:complexType mixed="true" name="reasonForAmendmentElemType">
+<xs:sequence>
+<xs:group maxOccurs="unbounded" minOccurs="0" ref="textElemGroup"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="legend" type="legendElemType"/>
+<xs:complexType name="legendElemType">
+<xs:sequence>
+<xs:element ref="definitionList"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="figureAlts" type="figureAltsElemType"/>
+<xs:complexType name="figureAltsElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="figure"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="multimedia" type="multimediaElemType"/>
+<xs:complexType name="multimediaElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="title"/>
+<xs:element maxOccurs="unbounded" ref="multimediaObject"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="multimediaObject" type="multimediaObjectElemType"/>
+<xs:complexType name="multimediaObjectElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="parameter"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="reasonForAmendment"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="autoPlay"/>
+<xs:attribute ref="fullScreen"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="infoEntityIdent" use="required"/>
+<xs:attribute ref="multimediaObjectHeight"/>
+<xs:attribute ref="multimediaObjectWidth"/>
+<xs:attribute ref="multimediaType" use="required"/>
+<xs:attribute ref="runTimeDuration"/>
+<xs:attribute ref="showPluginControls"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attributeGroup ref="xlink:XLINKATT0"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="parameter" type="parameterElemType"/>
+<xs:complexType name="parameterElemType">
+<xs:attribute ref="id" use="required"/>
+<xs:attribute ref="parameterIdent"/>
+<xs:attribute ref="parameterValue"/>
+<xs:attribute ref="parameterName"/>
+</xs:complexType>
+<xs:attribute name="parameterIdent" type="xs:string"/>
+<xs:attribute name="parameterValue" type="xs:string"/>
+<xs:attribute name="parameterName" type="xs:string"/>
+<xs:attribute name="autoPlay" type="yesOrNoAttType"/>
+<xs:attribute name="fullScreen" type="yesOrNoAttType"/>
+<xs:attribute name="multimediaObjectHeight" type="xs:string"/>
+<xs:attribute name="multimediaObjectWidth" type="xs:string"/>
+<xs:attribute name="multimediaType" type="multimediaTypeAttType"/>
+<xs:simpleType name="multimediaTypeAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="runTimeDuration" type="xs:integer"/>
+<xs:attribute name="showPluginControls" type="showPluginControlsAttType"/>
+<xs:simpleType name="showPluginControlsAttType">
+<xs:restriction base="xs:string">
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="multimediaAlts" type="multimediaAltsElemType"/>
+<xs:complexType name="multimediaAltsElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="multimedia"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="foldout" type="foldoutElemType"/>
+<xs:complexType name="foldoutElemType">
+<xs:choice>
+<xs:group ref="figureElemGroup"/>
+<xs:element ref="table"/>
+</xs:choice>
+</xs:complexType>
+<xs:group name="figureElemGroup">
+<xs:sequence>
+<xs:choice maxOccurs="unbounded">
+<xs:element ref="figure"/>
+<xs:element ref="figureAlts"/>
+</xs:choice>
+</xs:sequence>
+</xs:group>
+<xs:element name="table" type="tableElemType"/>
+<xs:complexType name="tableElemType">
+<xs:sequence>
+<xs:element minOccurs="0" ref="title"/>
+<xs:choice>
+<xs:element maxOccurs="unbounded" ref="tgroup"/>
+<xs:element maxOccurs="unbounded" ref="graphic"/>
+</xs:choice>
+</xs:sequence>
+<xs:attribute ref="tabstyle"/>
+<xs:attribute ref="tocentry"/>
+<xs:attribute ref="frame"/>
+<xs:attribute ref="colsep"/>
+<xs:attribute ref="rowsep"/>
+<xs:attribute ref="orient"/>
+<xs:attribute ref="pgwide"/>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="tgroup" type="tgroupElemType"/>
+<xs:complexType name="tgroupElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="colspec"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="spanspec"/>
+<xs:element minOccurs="0" ref="thead"/>
+<xs:element minOccurs="0" ref="tfoot"/>
+<xs:element ref="tbody"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="cols" use="required"/>
+<xs:attribute ref="tgstyle"/>
+<xs:attribute ref="colsep"/>
+<xs:attribute ref="rowsep"/>
+<xs:attribute default="left" ref="align"/>
+<xs:attribute ref="charoff"/>
+<xs:attribute ref="char"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="thead" type="theadElemType"/>
+<xs:complexType name="theadElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="colspec"/>
+<xs:element maxOccurs="unbounded" ref="row"/>
+</xs:sequence>
+<xs:attribute default="bottom" ref="valign"/>
+</xs:complexType>
+<xs:element name="row" type="rowElemType"/>
+<xs:complexType name="rowElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="entry"/>
+</xs:sequence>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="rowsep"/>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:element name="entry" type="entryElemType"/>
+<xs:complexType name="entryElemType">
+<xs:choice maxOccurs="unbounded" minOccurs="0">
+<xs:element ref="para"/>
+<xs:element ref="warning"/>
+<xs:element ref="caution"/>
+<xs:element ref="note"/>
+<xs:element ref="legend"/>
+</xs:choice>
+<xs:attribute ref="applicRefId"/>
+<xs:attribute ref="colname"/>
+<xs:attribute ref="namest"/>
+<xs:attribute ref="nameend"/>
+<xs:attribute ref="spanname"/>
+<xs:attribute ref="morerows"/>
+<xs:attribute ref="colsep"/>
+<xs:attribute ref="rowsep"/>
+<xs:attribute ref="rotate"/>
+<xs:attribute ref="valign"/>
+<xs:attribute ref="align"/>
+<xs:attribute ref="charoff"/>
+<xs:attribute ref="char"/>
+<xs:attribute ref="id"/>
+<xs:attribute ref="warningRefs"/>
+<xs:attribute ref="cautionRefs"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+<xs:attribute default="0" name="rotate" type="yesOrNoAttType"/>
+<xs:attribute name="warningRefs" type="xs:IDREFS"/>
+<xs:attribute name="cautionRefs" type="xs:IDREFS"/>
+<xs:element name="tfoot" type="tfootElemType"/>
+<xs:complexType name="tfootElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="colspec"/>
+<xs:element maxOccurs="unbounded" ref="row"/>
+</xs:sequence>
+<xs:attribute default="top" ref="valign"/>
+</xs:complexType>
+<xs:element name="tbody" type="tbodyElemType"/>
+<xs:complexType name="tbodyElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="row"/>
+</xs:sequence>
+<xs:attribute default="top" ref="valign"/>
+</xs:complexType>
+<xs:attribute name="tgstyle" type="xs:NMTOKEN"/>
+<xs:attribute name="tabstyle" type="xs:NMTOKEN"/>
+<xs:attribute default="1" name="tocentry" type="yesOrNoAttType"/>
+<xs:attribute name="frame" type="frameAttType"/>
+<xs:simpleType name="frameAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="orient" type="orientAttType"/>
+<xs:simpleType name="orientAttType">
+<xs:restriction base="xs:NMTOKEN">
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="pgwide" type="yesOrNoAttType"/>
+<xs:element name="levelledParaAlts" type="levelledParaAltsElemType"/>
+<xs:complexType name="levelledParaAltsElemType">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" ref="levelledPara"/>
+</xs:sequence>
+<xs:attribute ref="id"/>
+<xs:attributeGroup ref="changeAttGroup"/>
+<xs:attributeGroup ref="securityAttGroup"/>
+<xs:attribute ref="controlAuthorityRefs"/>
+</xs:complexType>
+</xs:schema>

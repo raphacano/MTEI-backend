@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Arbortext, Inc., 1988-2014, v.4002--><dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="A1" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
+				<language countryIsoCode="" languageIsoCode=""/>
+				<issueInfo issueNumber="1" inWork="0"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2022" month="7" day="15"/>
+				<dmTitle>
+					<techName>GRUPO MOTOPROPULSOR GENERAL</techName>
+					<infoName>Grupo motopropulsor</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="">
+			<security securityClassification="01" commercialClassification=""/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution/>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara/>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling/>
+					<dataDestruction/>
+					<dataDisclosure/>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright/>
+					<policyStatement/>
+					<dataConds/>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="0131B">
+				<enterpriseName>SBS</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="F4884">
+				<enterpriseName>SONOVISION</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>
+					Pizarro VCIC
+				</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo/>
+					<techPubBase/>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode/>
+			<skillLevel skillLevelCode=""/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<description>
+			<levelledPara>
+				<title>GRUPO MOTOPROPULSOR</title>
+				<figure id="fig-0001">
+					<title>Vista delantera izquierda</title>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01001-A-01-1" id="fig-0001-gra-0001">
+						<hotspot applicationStructureIdent="hot-0009" applicationStructureName="9" id="fig-0001-hot-0009" hotspotTitle="SOPORTE DELANTERO"/>
+					</graphic>
+					<legend>
+						<definitionList>
+							<definitionListItem>
+								<listItemTerm>9</listItemTerm>
+								<listItemDefinition>
+									<para>SOPORTE DELANTERO</para>
+								</listItemDefinition>
+							</definitionListItem>
+						</definitionList>
+					</legend>
+				</figure>
+				<figure id="fig-0002">
+					<title>Vista trasera izquierda</title>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01002-A-01-1" id="fig-0002-gra-0001">
+						<hotspot applicationStructureIdent="hot-0009" applicationStructureName="9" id="fig-0002-hot-0009" hotspotTitle="SOPORTES TRASEROS"/>
+					</graphic>
+					<legend>
+						<definitionList>
+							<definitionListItem>
+								<listItemTerm>9</listItemTerm>
+								<listItemDefinition>
+									<para>SOPORTES TRASEROS</para>
+								</listItemDefinition>
+							</definitionListItem>
+						</definitionList>
+					</legend>
+				</figure>
+				<figure id="fig-0003">
+					<title>Vista delantera derecha</title>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01003-A-01-1" id="fig-0003-gra-0001"/>
+					<legend>
+						<definitionList>
+							<definitionListItem>
+								<listItemTerm>1</listItemTerm>
+								<listItemDefinition>
+									<para>TAPÓN DE LA BOCA DE LLENADO DE LÍQUIDO DEL SISTEMA
+DE REFRIGERACIÓN</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>2</listItemTerm>
+								<listItemDefinition>
+									<para>TAPÓN DE LA BOCA DE LLENADO DE ACEITE DEL MOTOR</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>3</listItemTerm>
+								<listItemDefinition>
+									<para>VARILLA DE COMPROBACIÓN DEL NIVEL DE ACEITE DEL
+MOTOR</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>4</listItemTerm>
+								<listItemDefinition>
+									<para>ARGOLLA DERECHA DE ELEVACIÓN DEL GMP</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>5</listItemTerm>
+								<listItemDefinition>
+									<para>MOTOR</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>6</listItemTerm>
+								<listItemDefinition>
+									<para>RADIADOR DE REFRIGERACIÓN</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>7</listItemTerm>
+								<listItemDefinition>
+									<para>SALIDAS DE GASES DEL CÁRTER DEL MOTOR</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>8</listItemTerm>
+								<listItemDefinition>
+									<para>TUBO DE ESCAPE DEL TURBO IZQUIERDO</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>9</listItemTerm>
+								<listItemDefinition>
+									<para>SALIDA DE ESCAPE DEL TURBO DERECHO</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>10</listItemTerm>
+								<listItemDefinition>
+									<para>COLECTOR DERECHO DE ESCAPE</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>11</listItemTerm>
+								<listItemDefinition>
+									<para>INTERCAMBIADORES DE CALOR DEL ACEITE DE
+LA TRANSMISIÓN Y DEL ACEITE DEL CIRCUITO
+HIDRÁULICO DE LOS VENTILADORES</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>12</listItemTerm>
+								<listItemDefinition>
+									<para>TAPA DE BALANCINES</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>13</listItemTerm>
+								<listItemDefinition>
+									<para>MOTOR DE ARRANQUE</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>14</listItemTerm>
+								<listItemDefinition>
+									<para>DEPÓSITO DE ACEITE</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>15</listItemTerm>
+								<listItemDefinition>
+									<para>MANGUERA FLEXIBLE DE SALIDA DE GASES
+DEL CÁRTER</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>16</listItemTerm>
+								<listItemDefinition>
+									<para>MANGUERAS DE ALIMENTACIÓN Y RETORNO
+DE CARBURANTE DEL MOTOR</para>
+								</listItemDefinition>
+							</definitionListItem>
+						</definitionList>
+					</legend>
+				</figure>
+				<figure id="fig-0004">
+					<title>Vista trasera derecha</title>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01004-A-01-1" id="fig-0004-gra-0001">
+						<hotspot applicationStructureIdent="hot-0008" applicationStructureName="8" id="fig-0004-hot-0008" hotspotTitle="SOPORTES TRASEROS"/>
+					</graphic>
+					<legend>
+						<definitionList>
+							<definitionListItem>
+								<listItemTerm>8</listItemTerm>
+								<listItemDefinition>
+									<para>SOPORTES TRASEROS</para>
+								</listItemDefinition>
+							</definitionListItem>
+						</definitionList>
+					</legend>
+				</figure>
+				<para>El motor junto con todos sus accesorios y componentes como son el sistema de refrigeración,
+filtro de aire, refrigerador del aire de admisión, alternador, motor de arranque, caja de
+transferencia y la transmisión forman una unidad compacta que se denomina grupo motopropulsor
+(GMP).</para>
+				<para>El GMP dispone de un soporte delantero <internalRef internalRefId="fig-0001-hot-0009">9</internalRef> y <internalRef internalRefId="fig-0005-hot-0003">3</internalRef>, un soporte central <internalRef internalRefId="fig-0005-hot-0002">2</internalRef>, situado entre
+el motor y la caja de transferencia y dos soportes traseros <internalRef internalRefId="fig-0002-hot-0009">9</internalRef>, <internalRef internalRefId="fig-0004-hot-0008">8</internalRef> y <internalRef internalRefId="fig-0005-hot-0001">1</internalRef> situados sobre la
+carcasa de los frenos que lleva la transmisión. El soporte delantero del motor se apoya y sujeta
+mediante unas pestañas en los dos apoyos <internalRef internalRefId="fig-0005-hot-0003">3</internalRef> que lleva el casco: el soporte central en el apoyo
+<internalRef internalRefId="fig-0005-hot-0002">2</internalRef> y los dos soportes traseros en los dos apoyos <internalRef internalRefId="fig-0005-hot-0001">1</internalRef> fijándose mediante tornillos.</para>
+				<para>Los soportes son amortiguadores para evitar que las vibraciones del GMP se transmitan al
+casco y, a su vez, permiten un fácil desmontaje. El apoyo central tiene como finalidad la absorción
+de los esfuerzos flectores.</para>
+				<figure id="fig-0005">
+					<title>Soportes del GMP</title>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01005-A-01-1" id="fig-0005-gra-0001">
+						<hotspot applicationStructureIdent="hot-0001" applicationStructureName="1" id="fig-0005-hot-0001" hotspotTitle="SOPORTES TRASEROS"/>
+						<hotspot applicationStructureIdent="hot-0002" applicationStructureName="2" id="fig-0005-hot-0002" hotspotTitle="SOPORTE CENTRAL"/>
+						<hotspot applicationStructureIdent="hot-0003" applicationStructureName="3" id="fig-0005-hot-0003" hotspotTitle="SOPORTE DELANTERO"/>
+					</graphic>
+					<legend>
+						<definitionList>
+							<definitionListItem>
+								<listItemTerm>1</listItemTerm>
+								<listItemDefinition>
+									<para>SOPORTES TRASEROS</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>2</listItemTerm>
+								<listItemDefinition>
+									<para>SOPORTE CENTRAL</para>
+								</listItemDefinition>
+							</definitionListItem>
+							<definitionListItem>
+								<listItemTerm>3</listItemTerm>
+								<listItemDefinition>
+									<para>SOPORTE DELANTERO</para>
+								</listItemDefinition>
+							</definitionListItem>
+						</definitionList>
+					</legend>
+				</figure>
+				<levelledPara>
+					<para>Para el mantenimiento y la reparación, normalmente el GMP se desmonta de su cámara y, una
+vez fuera, se pueden desmontar sus periféricos.</para>
+					<para>Todas las uniones entre el GMP y el casco están equipadas con conexiones rápidas y uniones
+por enchufe fácilmente desmontables para lograr rapidez y sencillez de mantenimiento.</para>
+					<para>Los mazos de conexión del equipo eléctrico están conectados a las correspondientes tomas del
+casco por medio de conectores mono y multipolares de desconexión rápida; las de alimentación
+y retorno de carburante por medio de acoplamientos, igualmente de desconexión rápida, así como
+los mandos de cambio de emergencia, freno de marcha y freno de aparcamiento. El acelerador y
+la parada del motor por medio de rótulas de enchufe asegurado.</para>
+					<para>La unión entre la transmisión y el paso final se realiza por medio de un manguito de
+acoplamiento de desconexión rápida.</para>
+					<para>El motor está unido a la transmisión a través de una caja de transferencia y un mecanismo
+antivibración que lleva en el volante del motor.</para>
+					<para>Debido a la configuración del GMP, que lleva incorporados como una sola estructura todos sus
+componentes, se puede poner en funcionamiento fuera de su cámara, situándolo sobre un soporte
+expresamente construido para él y conectándole al casco mediante un equipo de fuera borda para
+proporcionarle la alimentación y retorno de carburante, la llegada y retorno del aceite del sistema
+de refrigeración y la conexión de todo el equipo eléctrico. Esto permite la puesta en marcha y
+parada del motor, así como el control de todos los relojes y testigos de funcionamiento desde el
+puesto de conducción del vehículo, igual que si el GMP estuviese montado.</para>
+					<para>El accionamiento de los mandos del acelerador, cambio de marcha y frenos se accionan
+directamente a mano en el GMP.</para>
+					<para>La prueba de funcionamiento del GMP fuera borda se realiza con el objeto de efectuar una
+revisión general de todos sus componentes en cuanto a su estado y estanqueidad, y para
+comprobar determinadas funciones, bien como investigación de averías o como comprobación
+después de haber efectuado tareas de mantenimiento o reparación.</para>
+				</levelledPara>
+			</levelledPara>
+		</description>
+	</content>
+</dmodule>

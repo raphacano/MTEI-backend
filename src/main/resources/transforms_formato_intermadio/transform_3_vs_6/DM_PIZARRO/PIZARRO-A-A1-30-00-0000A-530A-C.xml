@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<!DOCTYPE dmodule [
+<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01501-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01501-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01502-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01502-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01503-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01503-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01504-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01504-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01505-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01505-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01506-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01506-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01507-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01507-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01508-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01508-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01509-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01509-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01510-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01510-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01511-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01511-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01512-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01512-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01513-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01513-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01514-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01514-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01515-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01515-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01516-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01516-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01517-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01517-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01518-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01518-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01519-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01519-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01520-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01520-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01521-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01521-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01522-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01522-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01523-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01523-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01524-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01524-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01525-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01525-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01526-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01526-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01527-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01527-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01528-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01528-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01529-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01529-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01530-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01530-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01531-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01531-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01532-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01532-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01533-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01533-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01534-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01534-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01535-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01535-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01536-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01536-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01537-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01537-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01538-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01538-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01539-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01539-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01540-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01540-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A20000-A-F4884-01541-A-01-1 SYSTEM "ICN-PIZARRO-A-A20000-A-F4884-01541-A-01-1.svg" NDATA svg>
+<!NOTATION png SYSTEM "png">
+<!NOTATION svg SYSTEM "svg">
+<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+%ISOEntities;
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_master/dm/procedSchema.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+	<rdf:Description>
+		<dc:title>INTERCONEXIONES DEL GRUPO MOTOPROPULSOR - Procedimientos de desmontaje</dc:title>
+		<dc:creator>F4884</dc:creator>
+		<dc:subject>INTERCONEXIONES DEL GRUPO MOTOPROPULSOR - Procedimientos de desmontaje</dc:subject>
+		<dc:publisher>0131B</dc:publisher>
+		<dc:contributor>F4884</dc:contributor>
+		<dc:date>2022-07-20</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>PIZARRO-A-A1-30-00-0000A-530A-C</dc:identifier>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>PIZARRO</modelic>
+					<sdc>A</sdc>
+					<chapnum>A1</chapnum>
+					<section>3</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00A</discodev>
+					<incode>530</incode>
+					<incodev>A</incodev>
+					<itemloc>C</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>INTERCONEXIONES DEL GRUPO MOTOPROPULSOR</techname>
+				<infoname>Separación del motor de la transmisión</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="20" month="07" year="2022"/>
+			<language country="ES" language="es"/></dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="SBS">0131B</rpc>
+			<orig origname="SONOVISION">F4884</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>Pizarro VCIC</p>
+				</displaytext>
+			</applic>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Business rules</infoname>
+					</dmtitle>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/></qa>
+		</status>
+	</idstatus>
+	<content>
+		<proced>
+			<prelreqs>
+				<pmd>
+					<avehcfg>
+						<jacked power="notapplic" status="na"/>
+						<safedev power="notapplic" status="na"/>
+						<elecpwr power="notapplic" status="na"/>
+						<hydpwr power="notapplic" status="na"/>
+						<airpwr power="notapplic" status="na"/>
+						<fuel power="notapplic" status="na"/>
+						<water power="notapplic" status="na"/>
+						<fcposn power="notapplic" status="no"/></avehcfg>
+					<opndurn closeup="0,00" prelreqs="0,00" proced="2,22"/></pmd>
+				<reqconds>
+					<reqcondm>
+						<reqcond>Desmontar el GMP</reqcond>
+						<refdm>
+							<avee>
+								<modelic>PIZARRO</modelic>
+								<sdc>A</sdc>
+								<chapnum>A2</chapnum>
+								<section>0</section>
+								<subsect>0</subsect>
+								<subject>00</subject>
+								<discode>01</discode>
+								<discodev>00A</discodev>
+								<incode>920</incode>
+								<incodev>A</incodev>
+								<itemloc>A</itemloc>
+							</avee>
+							<dmtitle>
+								<techname>GRUPO MOTOR GENERAL</techname>
+								<infoname>Desmontaje y montaje del GMP</infoname>
+							</dmtitle>
+						</refdm>
+					</reqcondm>
+				</reqconds>
+				<reqpers>
+					<person man="1"/>
+					<perscat category="TPAMV"/>
+					<perskill skill="sk02"/>
+					<trade>MPT ETEC MANTO. VEHICULOS</trade>
+					<esttime>2,22</esttime>
+				</reqpers>
+				<supequip>
+					<supeqli>
+						<supequi id="seq-0001">
+							<nomen>Eslinga GMP</nomen>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>3465010326</pnr>
+							</identno>
+							<nsn nsn="4010331086253"/>
+							<qty uom="EA">1</qty>
+						</supequi>
+						<supequi id="seq-0002">
+							<nomen>Soporte del GMP (banco de integración del GMP)</nomen>
+							<identno>
+								<mfc>0125B</mfc>
+								<pnr>3465010252</pnr>
+							</identno>
+							<nsn nsn="4910332009017"/>
+							<qty uom="EA">1</qty>
+						</supequi>
+						<supequi id="seq-0003">
+							<nomen>Eslinga para elevación del motor o de la transmisión</nomen>
+							<identno>
+								<mfc>0125B</mfc>
+								<pnr>3465010362</pnr>
+							</identno>
+							<nsn nsn="3940332009018"/>
+							<qty uom="EA">1</qty>
+						</supequi>
+						<supequi id="seq-0004">
+							<nomen>Eslinga (4 brazos)</nomen>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>3940000084</pnr>
+							</identno>
+							<nsn nsn="4910331078066"/>
+							<qty uom="EA">1</qty>
+						</supequi>
+					</supeqli>
+				</supequip>
+				<supplies>
+					<supplyli>
+						<supply id="sup-0001">
+							<nomen>Grasa MOLIKOTE LONGTERM 2 - Plus (G-353)</nomen>
+							<nsn nsn="TBD"/>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>TBD</pnr>
+							</identno>
+							<qty uom="EA">AR</qty>
+						</supply>
+						<supply id="sup-0002">
+							<nomen>Vaselina</nomen>
+							<nsn nsn="TBD"/>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>TBD</pnr>
+							</identno>
+							<qty uom="EA">AR</qty>
+						</supply>
+						<supply id="sup-0003">
+							<nomen>Grasa OTAN G-395</nomen>
+							<nsn nsn="TBD"/>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>TBD</pnr>
+							</identno>
+							<con connbr="G-395"></con>
+							<qty uom="EA">AR</qty>
+						</supply>
+					</supplyli>
+				</supplies>
+				<spares>
+					<sparesli>
+						<spare id="spa-0001">
+							<nomen>CARTER</nomen>
+							<nsn nsn="2815123538925"/>
+							<identno>
+								<mfc>D8266</mfc>
+								<pnr>442 010 03 08</pnr>
+							</identno>
+							<qty uom="EA">1</qty>
+						</spare>
+						<spare id="spa-0002">
+							<nomen>FILTRO DE AIRE, ADMISION</nomen>
+							<nsn nsn="2940123531791"/>
+							<identno>
+								<mfc>D8086</mfc>
+								<pnr>45 920 70 100</pnr>
+							</identno>
+							<qty uom="EA">1</qty>
+						</spare>
+						<spare id="spa-0003">
+							<nomen>TRANSMISION, MECANICA, DE VEHICULOS</nomen>
+							<nsn nsn="2520123521653"/>
+							<identno>
+								<mfc>D9434</mfc>
+								<pnr>5206600</pnr>
+							</identno>
+							<qty uom="EA">1</qty>
+						</spare>
+						<spare id="spa-0004">
+							<nomen>JUNTA TORICA</nomen>
+							<nsn nsn="5331123520160"/>
+							<identno>
+								<mfc>D9434</mfc>
+								<pnr>6568340432</pnr>
+							</identno>
+							<qty uom="EA">2</qty>
+						</spare>
+						<spare id="spa-0005">
+							<nomen>JUNTA TORICA</nomen>
+							<nsn nsn="5331121786286"/>
+							<identno>
+								<mfc>0141B</mfc>
+								<pnr>MMN429-55X5</pnr>
+							</identno>
+							<qty uom="EA">1</qty>
+						</spare>
+					</sparesli>
+				</spares>
+				<safety>
+					<safecond>
+						<warning>
+							<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"></symbol>
+							<para>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea <refdm>
+									<avee>
+										<modelic>PIZARRO</modelic>
+										<sdc>A</sdc>
+										<chapnum>00</chapnum>
+										<section>0</section>
+										<subsect>0</subsect>
+										<subject>00</subject>
+										<discode>00</discode>
+										<discodev>00A</discodev>
+										<incode>012</incode>
+										<incodev>A</incodev>
+										<itemloc>D</itemloc>
+									</avee>
+									<dmtitle>
+										<techname>SISTEMA GENERAL</techname>
+										<infoname>Normas generales de seguridad</infoname>
+									</dmtitle>
+								</refdm>).</para>
+						</warning>
+						<warning>
+							<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"></symbol>
+							<para>Utilizar casco, gafas y zapatos de seguridad.</para>
+						</warning>
+					</safecond>
+				</safety>
+			</prelreqs>
+			<mainfunc>
+				<step1>
+					<para>Separación del motor de la transmisión</para>
+					<step2>
+						<para>Desmontaje</para>
+						<step3>
+							<para>Con el GMP desmontado del vehículo y
+antes de apoyarlo en su soporte:<seqlist>
+									<item>Desmontar el apoyo central <xref xidtype="figure" xrefid="fig-0001"></xref>
+(Tarea <refdm>
+											<avee>
+												<modelic>PIZARRO</modelic>
+												<sdc>A</sdc>
+												<chapnum>A2</chapnum>
+												<section>7</section>
+												<subsect>0</subsect>
+												<subject>10</subject>
+												<discode>00</discode>
+												<discodev>00A</discodev>
+												<incode>921</incode>
+												<incodev>A</incodev>
+												<itemloc>A</itemloc>
+											</avee>
+											<dmtitle>
+												<techname>SOPORTES DE MOTOR</techname>
+												<infoname>Cambio de los soportes del GMP</infoname>
+											</dmtitle>
+										</refdm><refdm>
+											<avee>
+												<modelic>PIZARRO</modelic>
+												<sdc>A</sdc>
+												<chapnum>A2</chapnum>
+												<section>7</section>
+												<subsect>0</subsect>
+												<subject>10</subject>
+												<discode>00</discode>
+												<discodev>00A</discodev>
+												<incode>921</incode>
+												<incodev>A</incodev>
+												<itemloc>A</itemloc>
+											</avee>
+											<dmtitle>
+												<techname>SOPORTES DE MOTOR</techname>
+												<infoname>Cambio de los soportes del GMP</infoname>
+											</dmtitle>
+										</refdm> ).</item>
+									<item>Aflojar el tornillo de sujeción del cable
+de masa del alternador y dejarlo flojo
+para que el cable se adapte a la forma
+necesaria ya que tropieza en el apoyo
+delantero izquierdo del motor <xref xidtype="figure" xrefid="fig-0002"></xref>.</item>
+									<item>Aflojar el tornillo de sujeción de la
+abrazadera <xref xidtype="hotspot" xrefid="fig-0003-hot-0002">2</xref> que sujeta el conector
+<xref xidtype="hotspot" xrefid="fig-0003-hot-0001">1</xref> del cable del contador de revoluciones
+y girarlo hasta colocarlo en
+posición vertical para que no tropiece
+con el apoyo trasero del motor, apretar
+el tornillo de la abrazadera.</item>
+								</seqlist></para>
+						</step3>
+						<step3>
+							<para>Situar el GMP <xref xidtype="hotspot" xrefid="fig-0004-hot-0005">5</xref> sobre su soporte <xref xidtype="hotspot" xrefid="fig-0004-hot-0003">3</xref>
+apoyando primero los patines del soporte
+delantero del motor en los apoyos <xref xidtype="hotspot" xrefid="fig-0004-hot-0002">2</xref> del
+soporte móvil <xref xidtype="hotspot" xrefid="fig-0004-hot-0004">4</xref>, asegurandose que
+entren hasta el fondo. A continuación ir
+bajando la grúa y desplazandola hacia los
+apoyos de la transmisión para que ésta se
+sitúe en sus apoyos <xref xidtype="hotspot" xrefid="fig-0004-hot-0001">1</xref> del soporte</para>
+						</step3>
+						<step3>
+							<caution>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1"></symbol>
+								<para>Al tiempo que se desplaza la grúa empujar el soporte móvil del
+motor <xref xidtype="hotspot" xrefid="fig-0004-hot-0004">4</xref> hacia el mismo lado que se mueve la grúa para evitar
+que se salgan los patines del soporte delantero del motor de sus
+apoyos <xref xidtype="hotspot" xrefid="fig-0004-hot-0002">2</xref>, lo que podría dañar la tubería del agua y los cables
+<xref xidtype="hotspot" xrefid="fig-0003-hot-0003">3</xref> que quedan próximos al soporte trasero del motor <xref xidtype="hotspot" xrefid="fig-0003-hot-0004">4</xref>.</para>
+							</caution>
+							<para>Al situar la transmisión <xref xidtype="hotspot" xrefid="fig-0005-hot-0003">3</xref> en su soporte
+<xref xidtype="hotspot" xrefid="fig-0005-hot-0004">4</xref> del lado derecho, tener cuidado para
+que la tubería <xref xidtype="hotspot" xrefid="fig-0005-hot-0001">1</xref> del cilindro de freno
+derecho no roce con el soporte <xref xidtype="hotspot" xrefid="fig-0005-hot-0002">2</xref>, puede
+romperse.</para>
+						</step3>
+						<step3>
+							<para>Aflojar las tuercas <xref xidtype="hotspot" xrefid="fig-0003-hot-0005">5</xref> y girar los tornillos <xref xidtype="hotspot" xrefid="fig-0003-hot-0008">8</xref> para elevar el soporte trasero del motor
+hasta que haga tope en el motor.</para>
+							<para>Aflojar las tuercas <xref xidtype="hotspot" xrefid="fig-0003-hot-0006">6</xref> y girar los tornillos <xref xidtype="hotspot" xrefid="fig-0003-hot-0007">7</xref> para elevar el soporte de la transmisión
+hasta que haga tope en la caja de transferencia.</para>
+						</step3>
+						<step3>
+							<para>Vaciar el agua del sistema de refrigeración (Tarea <refdm>
+									<avee>
+										<modelic>PIZARRO</modelic>
+										<sdc>A</sdc>
+										<chapnum>A2</chapnum>
+										<section>2</section>
+										<subsect>1</subsect>
+										<subject>00</subject>
+										<discode>00</discode>
+										<discodev>00A</discodev>
+										<incode>290</incode>
+										<incodev>A</incodev>
+										<itemloc>A</itemloc>
+									</avee>
+									<dmtitle>
+										<techname>REFRIGERACIÓN LÍQUIDA</techname>
+										<infoname>Cambio del líquido refrigerante</infoname>
+									</dmtitle>
+								</refdm> ).</para>
+						</step3>
+						<step3>
+							<para>Desatornillar el tornillo <xref xidtype="hotspot" xrefid="fig-0006-hot-0001">1</xref> de sujeción
+del tubo de escape superior <xref xidtype="hotspot" xrefid="fig-0006-hot-0002">2</xref>.</para>
+						</step3>
+						<step3>
+							<para>Aflojar la abrazadera y levantar su palanca
+de fijación <xref xidtype="hotspot" xrefid="fig-0007-hot-0002">2</xref>. Extraer el tubo de escape
+superior <xref xidtype="hotspot" xrefid="fig-0007-hot-0001">1</xref>.</para>
+						</step3>
+						<step3>
+							<para>Desatornillar los tres tornillos de sujeción
+de los tres soportes de la caja de los filtros
+de aire, uno a cada lado <xref xidtype="figure" xrefid="fig-0008"></xref> y el tercero
+en posición central <xref xidtype="figure" xrefid="fig-0009"></xref>. Lleva una
+arandela plana por cada lado de cada uno
+de los soportes.</para>
+						</step3>
+						<step3>
+							<para>Desatornillar el tornillo de la abrazadera
+<xref xidtype="hotspot" xrefid="fig-0010-hot-0001">1</xref> de sujeción del manguito <xref xidtype="hotspot" xrefid="fig-0010-hot-0002">2</xref> de
+conexión entre la caja de los filtros y el
+turbocompresor, colocar la abrazadera
+sobre la caja de los filtros y desconectar el
+manguito. Realizar la misma operación en
+el manguito del otro turbocompresor.</para>
+						</step3>
+						<step3>
+							<para>Desconectar el cable del terminal de conexión
+<xref xidtype="hotspot" xrefid="fig-0011-hot-0002">2</xref> del detector de suciedad <xref xidtype="hotspot" xrefid="fig-0011-hot-0001">1</xref>
+en la caja de los filtros.</para>
+						</step3>
+						<step3>
+							<para>Con una eslinga y una grúa sujetar la caja
+de los filtros por las dos asas que tiene en
+las tapas y tirar hacia arriba, basculando la
+caja hacia delante y atrás al mismo tiempo
+que se eleva, para extraer la caja de los
+filtros <xref xidtype="figure" xrefid="fig-0012"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Quitar las abrazaderas de plástico <xref xidtype="hotspot" xrefid="fig-0013-hot-0001">1</xref>
+que sujetan los mazos de cables.</para>
+						</step3>
+						<step3>
+							<para>Aflojar la tuerca <xref xidtype="hotspot" xrefid="fig-0013-hot-0002">2</xref> de la abrazadera
+superior que sujeta la tubería <xref xidtype="hotspot" xrefid="fig-0013-hot-0003">3</xref> de
+fugas de los motores de los ventiladores,
+situada sobre el intercambiador de calor, y
+empujar la tubería para conseguir el paso
+del conector grande del mazo de cables y
+poder retirar estos.</para>
+						</step3>
+						<step3>
+							<para>Desconectar desenroscando el conector de
+la sonda de nivel de aceite del depósito del
+circuito hidráulico de los ventiladores (Fig.
+14).</para>
+						</step3>
+						<step3>
+							<para>Desatornillar los 22 tornillos que fijan el
+conjunto transmisión caja de transferencia
+al aro de enlace que va atornillado sobre la
+carcasa del volante del motor <xref xidtype="figure" xrefid="fig-0015"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Empujar el motor <xref xidtype="hotspot" xrefid="fig-0016-hot-0004">4</xref> con su soporte
+móvil <xref xidtype="hotspot" xrefid="fig-0016-hot-0006">6</xref> para separarlo lentamente del
+conjunto transmisión caja de transferencia
+<xref xidtype="hotspot" xrefid="fig-0016-hot-0001">1</xref> hasta que haga tope la tubería de
+agua superior <xref xidtype="hotspot" xrefid="fig-0016-hot-0002">2</xref> en el envolvente de la
+caja de transferencia <xref xidtype="hotspot" xrefid="fig-0016-hot-0001">1</xref>. Comprobar
+que las dos guías <xref xidtype="hotspot" xrefid="fig-0016-hot-0005">5</xref> han salido de la
+caja de transferencia.</para>
+						</step3>
+						<step3>
+							<para>A continuación levantar el motor con una
+grúa y una eslinga <xref xidtype="hotspot" xrefid="fig-0016-hot-0003">3</xref> por su argolla
+trasera, para salvar el paso de la tubería de
+agua superior <xref xidtype="hotspot" xrefid="fig-0016-hot-0002">2</xref> sobre la carcasa de la
+caja de transferencia, seguir empujando
+hacia atrás el motor con su soporte móvil
+hasta separarlo completamente de la
+transmisión.</para>
+						</step3>
+						<step3>
+							<caution>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1"></symbol>
+								<para>Durante la separación del motor de la transmisión observar que
+no hay ningún cable, conducción o varillaje que pueda sufrir
+daños.</para>
+							</caution>
+							<para>Extraer los dos manguitos de conexión
+entre la tubería de agua y el intercambiador
+de calor <xref xidtype="figure" xrefid="fig-0017"></xref>.</para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Si se cambia el motor</para>
+						<step3>
+							<para>Desmontar del motor a sustituir los componentes que se indican a continuación y
+montarlos en el nuevo motor:<seqlist>
+									<item>Comprobar el estado de las juntas tóricas de los manguitos de conexión ente la
+tubería de agua del motor y el intercambiador de calor, si es necesario, cambiarlos.
+Untar las juntas tóricas con vaselina y colocar los manguitos sobre las tuberías del
+motor <xref xidtype="figure" xrefid="fig-0017"></xref>.</item>
+									<item>Desmontar la varilla de mando del
+optogas <xref xidtype="figure" xrefid="fig-0018"></xref>.</item>
+									<item>Desatornillar los tornillos <xref xidtype="hotspot" xrefid="fig-0019-hot-0001">1</xref> de
+sujeción de la caja del optogas <xref xidtype="hotspot" xrefid="fig-0019-hot-0002">2</xref>.
+Extraer la caja con su cable de color
+gris.</item>
+									<item>Desmontar el conjunto del radiador de refrigeración completo, sus acoplamientos y
+su termostato (Tareas <refdm>
+											<avee>
+												<modelic>PIZARRO</modelic>
+												<sdc>A</sdc>
+												<chapnum>A2</chapnum>
+												<section>2</section>
+												<subsect>1</subsect>
+												<subject>20</subject>
+												<discode>01</discode>
+												<discodev>00A</discodev>
+												<incode>921</incode>
+												<incodev>A</incodev>
+												<itemloc>A</itemloc>
+											</avee>
+											<dmtitle>
+												<techname>RADIADOR MOTOR</techname>
+												<infoname>Cambio del radiador de refrigeración</infoname>
+											</dmtitle>
+										</refdm> y <refdm>
+											<avee>
+												<modelic>PIZARRO</modelic>
+												<sdc>A</sdc>
+												<chapnum>A2</chapnum>
+												<section>2</section>
+												<subsect>1</subsect>
+												<subject>50</subject>
+												<discode>01</discode>
+												<discodev>00A</discodev>
+												<incode>921</incode>
+												<incodev>B</incodev>
+												<itemloc>A</itemloc>
+											</avee>
+											<dmtitle>
+												<techname>TERMOSTATO</techname>
+												<infoname>Cambio del termostato del circuito secundario</infoname>
+											</dmtitle>
+										</refdm>
+ ).</item>
+									<item>Desmontar los latiguillos <xref xidtype="hotspot" xrefid="fig-0020-hot-0002">2</xref>, <xref xidtype="hotspot" xrefid="fig-0020-hot-0003">3</xref>
+y los racores de conexión <xref xidtype="hotspot" xrefid="fig-0020-hot-0001">1</xref> y
+<xref xidtype="hotspot" xrefid="fig-0020-hot-0004">4</xref> del circuito de refrigeración.</item>
+									<item>Desmontar los latiguillos de alimentación
+y retorno de carburante <xref xidtype="hotspot" xrefid="fig-0021-hot-0003">3</xref>,
+<xref xidtype="hotspot" xrefid="fig-0021-hot-0004">4</xref> y los racores de conexión <xref xidtype="hotspot" xrefid="fig-0021-hot-0001">1</xref>
+y <xref xidtype="hotspot" xrefid="fig-0021-hot-0002">2</xref>.</item>
+									<item>Desatornillar los tornillos <xref xidtype="hotspot" xrefid="fig-0022-hot-0001">1</xref> de
+sujeción del soporte <xref xidtype="hotspot" xrefid="fig-0022-hot-0002">2</xref> de los mandos
+del acelerador y paro manual.</item>
+									<item>Desatornillar los tornillos <xref xidtype="hotspot" xrefid="fig-0023-hot-0001">1</xref> de
+sujeción del codo de salida de escape
+<xref xidtype="hotspot" xrefid="fig-0023-hot-0002">2</xref> del turbocompresor derecho y
+extraer el codo.</item>
+									<item>Desatornillar los tornillos <xref xidtype="hotspot" xrefid="fig-0024-hot-0002">2</xref> de
+sujeción del tubo de salida de escape
+<xref xidtype="hotspot" xrefid="fig-0024-hot-0001">1</xref> del turbocompresor izquierdo y
+extraer el tubo.</item>
+									<item>Desatornillar los 11 tornillos <xref xidtype="hotspot" xrefid="fig-0025-hot-0002">2</xref> de
+sujeción del aro de acoplamiento <xref xidtype="hotspot" xrefid="fig-0025-hot-0004">4</xref>
+que lo fijan sobre la carcasa del volante,
+levantar ligeramente el motor con
+una grúa y una eslinga por la argolla
+trasera y extraer el aro, sobre él va
+roscada la guía <xref xidtype="hotspot" xrefid="fig-0025-hot-0001">1</xref>.</item>
+									<item>Desatornillar y extraer la guía <xref xidtype="hotspot" xrefid="fig-0025-hot-0003">3</xref>.</item>
+									<item><note>
+											<para>En el montaje del aro en el nuevo motor limpiar la superficie de
+apoyo del aro en la carcasa. Levantar ligeramente el motor para
+que el asentamiento del aro sea correcto, roscar los tornillos de
+sujeción y apretarlos con un par de 40 N.m.</para>
+										</note></item>
+									<item>Colocar la eslinga sobre el motor (Fig.
+26) y retirar éste del soporte. Colocar
+el nuevo motor sobre el soporte.</item>
+								</seqlist></para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Si se cambia la transmisión</para>
+						<step3>
+							<para>Vaciar el aceite de la transmisión (Tarea <refdm>
+									<avee>
+										<modelic>PIZARRO</modelic>
+										<sdc>A</sdc>
+										<chapnum>A7</chapnum>
+										<section>0</section>
+										<subsect>0</subsect>
+										<subject>00</subject>
+										<discode>01</discode>
+										<discodev>00A</discodev>
+										<incode>292</incode>
+										<incodev>A</incodev>
+										<itemloc>A</itemloc>
+									</avee>
+									<dmtitle>
+										<techname>TRANSMISIÓN GENERAL</techname>
+										<infoname>Cambio de aceite</infoname>
+									</dmtitle>
+								</refdm> ).</para>
+						</step3>
+						<step3>
+							<para>Vaciar el aceite del depósito del circuito hidráulico de los ventiladores (Tarea <refdm>
+									<avee>
+										<modelic>PIZARRO</modelic>
+										<sdc>A</sdc>
+										<chapnum>A2</chapnum>
+										<section>2</section>
+										<subsect>2</subsect>
+										<subject>00</subject>
+										<discode>00</discode>
+										<discodev>00A</discodev>
+										<incode>292</incode>
+										<incodev>A</incodev>
+										<itemloc>A</itemloc>
+									</avee>
+									<dmtitle>
+										<techname>REFRIGERACIÓN POR AIRE</techname>
+										<infoname>Cambio de aceite del sistema de ventilación</infoname>
+									</dmtitle>
+								</refdm> )</para>
+						</step3>
+						<step3>
+							<para>Desmontar de la transmisión a sustituir los componentes que se indican a continuación
+y montarlos en la nueva transmisión:<seqlist>
+									<item>Depósito de aceite del circuito hidráulico de los ventiladores (Tarea <refdm>
+											<avee>
+												<modelic>PIZARRO</modelic>
+												<sdc>A</sdc>
+												<chapnum>A2</chapnum>
+												<section>8</section>
+												<subsect>0</subsect>
+												<subject>20</subject>
+												<discode>01</discode>
+												<discodev>00A</discodev>
+												<incode>921</incode>
+												<incodev>A</incodev>
+												<itemloc>C</itemloc>
+											</avee>
+											<dmtitle>
+												<techname>DEPÓSITO LÍQUIDO HIDRÁULICO</techname>
+												<infoname>Cambio del depósito de aceite del circuito hidráulico de los ventiladores</infoname>
+											</dmtitle>
+										</refdm>).</item>
+									<item>Bomba del circuito hidráulico de los ventiladores (Tarea <refdm>
+											<avee>
+												<modelic>PIZARRO</modelic>
+												<sdc>A</sdc>
+												<chapnum>A2</chapnum>
+												<section>8</section>
+												<subsect>0</subsect>
+												<subject>10</subject>
+												<discode>01</discode>
+												<discodev>00A</discodev>
+												<incode>921</incode>
+												<incodev>B</incodev>
+												<itemloc>C</itemloc>
+											</avee>
+											<dmtitle>
+												<techname>BOMBA HIDRÁULICA</techname>
+												<infoname>Cambio de la bomba del circuito hidráulico de los ventiladores</infoname>
+											</dmtitle>
+										</refdm>).</item>
+									<item>Intercambiador de calor con el soporte de las tuberías y la parte de las abrazaderas
+que van unidas a él (Tarea <refdm>
+											<avee>
+												<modelic>PIZARRO</modelic>
+												<sdc>A</sdc>
+												<chapnum>A2</chapnum>
+												<section>8</section>
+												<subsect>0</subsect>
+												<subject>70</subject>
+												<discode>01</discode>
+												<discodev>00A</discodev>
+												<incode>921</incode>
+												<incodev>A</incodev>
+												<itemloc>C</itemloc>
+											</avee>
+											<dmtitle>
+												<techname>ENFRIADOR DE ACEITE HIDRÁULICO</techname>
+												<infoname>Cambio del intercambiador de calor</infoname>
+											</dmtitle>
+										</refdm>).</item>
+									<item>Tubería de retorno de aceite entre
+intercambiador de calor <xref xidtype="figure" xrefid="fig-0027"></xref> y
+parte superior del depósito de aceite
+<xref xidtype="figure" xrefid="fig-0028"></xref>. Sus dos extremos ya están
+desconectados al haberse desmontado
+el intercambiador y el depósito de
+aceite. Soltar la abrazadera de sujeción
+de la tubería y extraerla.</item>
+									<item>Tubería <xref xidtype="hotspot" xrefid="fig-0029-hot-0002">2</xref> del circuito de retorno
+de fugas de aceite entre conexión rápida
+que va sujeta en el intercambiador,
+que ya está desconectada, y las conexiones
+de la bomba y del depósito de
+aceite que también están desconectados.
+Soltar las dos abrazaderas de
+sujeción <xref xidtype="hotspot" xrefid="fig-0029-hot-0001">1</xref> y <xref xidtype="hotspot" xrefid="fig-0029-hot-0003">3</xref> y extraer la
+tubería.</item>
+									<item>Tubería <xref xidtype="hotspot" xrefid="fig-0030-hot-0001">1</xref> de salida de aceite de la
+bomba hacia los motores, del extremo
+de la bomba y de la conexión hacia los
+ventiladores ya está desconectada al
+haber desmontado la bomba. Desatornillar
+los dos tornillos <xref xidtype="hotspot" xrefid="fig-0030-hot-0002">2</xref> de la
+abrazadera de sujeción, quitar la
+abrazadera y extraer la tubería.</item>
+									<item>Captador de temperatura de aceite de
+la transmisión con su junta de sellado
+<xref xidtype="figure" xrefid="fig-0031"></xref>. Desconectar el cable de
+alimentación y desenroscarla.</item>
+									<item>Junta tórica de sellado de la corona de
+acoplamiento rápido entre transmisión
+y paso final <xref xidtype="figure" xrefid="fig-0032"></xref>. Una a cada
+lado de la transmisión, comprobar su
+estado, si es necesario, cambiarla.
+Untarla con <xref xidtype="supply" xrefid="sup-0003">grasa lubricante OTAN G-395</xref>.</item>
+									<item><para>Varilla de mando de la dirección (Fig.
+33), el extremo que se une a la palanca
+del volante de la dirección ya está
+suelto al estar desmontado el GMP.</para><para>El extremo que se une a la palanca de
+transmisión se desmonta como se
+explica en el punto siguiente.</para></item>
+									<item>Desenroscar los dos tornillos <xref xidtype="hotspot" xrefid="fig-0034-hot-0001">1</xref> y
+extraerlos, quitar la chapa fijadora
+<xref xidtype="hotspot" xrefid="fig-0034-hot-0003">3</xref> y el perno <xref xidtype="hotspot" xrefid="fig-0034-hot-0002">2</xref>. Extraer la
+varilla de la dirección.</item>
+									<item>Varilla del cambio de emergencia.
+Desenroscar el tornillo <xref xidtype="hotspot" xrefid="fig-0035-hot-0002">2</xref>, extraer
+la chapa con perno <xref xidtype="hotspot" xrefid="fig-0035-hot-0003">3</xref> y desmontar
+la varilla de mando de cambio de
+emergencia.</item>
+									<item>Colocar la eslinga sobre el conjunto
+transmisión-caja de transferencia
+<xref xidtype="figure" xrefid="fig-0036"></xref> y retirarla del soporte. Colocar
+el nuevo conjunto transmisión-caja
+de transferencia sobre el soporte y
+proceder al acoplamiento entre motor
+y transmisión.</item>
+								</seqlist></para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Acoplamiento del motor a la transmisión</para>
+						<step3>
+							<para>Untar con<xref xidtype="supply" xrefid="sup-0001"> grasa Molykote Longterm-2 Plus</xref>la corona dentada del volante motor y el
+piñón de la caja de transferencia (Figs. 37
+y 38).</para>
+						</step3>
+						<step3>
+							<para>Desplazar el soporte móvil con el motor
+hacia la transmisión hasta que la tubería
+de agua superior <xref xidtype="hotspot" xrefid="fig-0039-hot-0002">2</xref> haga tope en la
+carcasa de la caja de transferencia <xref xidtype="hotspot" xrefid="fig-0039-hot-0001">1</xref>.</para>
+						</step3>
+						<step3>
+							<para>Levantar el motor con una grúa y una
+eslinga de su soporte trasero hasta que la
+tubería de agua pueda pasar sobre la carcasa,
+e inmediatamente que haya pasado
+bajar el motor hasta que se apoye en su
+soporte.</para>
+						</step3>
+						<step3>
+							<para>Untar con <xref xidtype="supply" xrefid="sup-0002">vaselina</xref> neutra las juntas tóricas
+de los dos manguitos de conexión <xref xidtype="hotspot" xrefid="fig-0040-hot-0002">2</xref>
+entre las tuberías de agua <xref xidtype="hotspot" xrefid="fig-0040-hot-0001">1</xref> de refrigeración
+del motor y la tubería <xref xidtype="hotspot" xrefid="fig-0040-hot-0003">3</xref> de
+entrada al intercambiador. Colocar los
+manguitos sobre las salidas del motor,
+orientándolos cuando se inicie el acoplamiento
+con las tomas del intercambiador de
+calor.</para>
+						</step3>
+						<step3>
+							<para>Seguir aproximando el motor a la transmisión hasta que las dos guías inicien su paso por
+los orificios en la carcasa de la caja de transferencia, si los engranajes de las Figs. 37 y 38
+que tienen que acoplarse no coinciden, poner el útil de giro del motor sobre el dámper y
+girar el motor mientras se sigue aproximando hasta que se acoplen los dos engranajes
+totalmente.</para>
+						</step3>
+						<step3>
+							<para>Enroscar los 22 tornillos de sujeción de la
+caja al motor e ir apretándolos de ambos
+lados a la vez, para que el acoplamiento
+entre motor y transmisión se realice correctamente
+<xref xidtype="figure" xrefid="fig-0041"></xref>.</para>
+							<figure id="fig-0001">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01501-A-01-1" id="fig-0001-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0002">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01502-A-01-1" id="fig-0002-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0003">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01503-A-01-1" id="fig-0003-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0003-hot-0001" title="CONECTOR"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0003-hot-0002" title="TORNILLO DE SUJECIÓN DE LA ABRAZADERA"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0003-hot-0003" title="CABLES"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0003-hot-0004" title="SOPORTE TRASERO DEL MOTOR"></hotspot>
+									<hotspot apsid="hot-0005" apsname="5" id="fig-0003-hot-0005" title="TUERCAS"></hotspot>
+									<hotspot apsid="hot-0006" apsname="6" id="fig-0003-hot-0006" title="TUERCAS"></hotspot>
+									<hotspot apsid="hot-0007" apsname="7" id="fig-0003-hot-0007" title="TORNILLOS"></hotspot>
+									<hotspot apsid="hot-0008" apsname="8" id="fig-0003-hot-0008" title="TORNILLOS"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>CONECTOR</def>
+										<term>2</term>
+										<def>TORNILLO DE SUJECIÓN DE LA ABRAZADERA</def>
+										<term>3</term>
+										<def>CABLES</def>
+										<term>4</term>
+										<def>SOPORTE TRASERO DEL MOTOR</def>
+										<term>5</term>
+										<def>TUERCAS</def>
+										<term>6</term>
+										<def>TUERCAS</def>
+										<term>7</term>
+										<def>TORNILLOS</def>
+										<term>8</term>
+										<def>TORNILLOS</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0004">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01504-A-01-1" id="fig-0004-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0004-hot-0001" title="APOYOS"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0004-hot-0002" title="APOYOS"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0004-hot-0003" title="SOPORTE"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0004-hot-0004" title="SOPORTE MÓVIL"></hotspot>
+									<hotspot apsid="hot-0005" apsname="5" id="fig-0004-hot-0005" title="GMP"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>APOYOS</def>
+										<term>2</term>
+										<def>APOYOS</def>
+										<term>3</term>
+										<def>SOPORTE</def>
+										<term>4</term>
+										<def>SOPORTE MÓVIL</def>
+										<term>5</term>
+										<def>GMP</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0005">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01505-A-01-1" id="fig-0005-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0005-hot-0001" title="TUBERÍA"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0005-hot-0002" title="SOPORTE"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0005-hot-0003" title="TRANSMISIÓN"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0005-hot-0004" title="SOPORTE"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TUBERÍA</def>
+										<term>2</term>
+										<def>SOPORTE</def>
+										<term>3</term>
+										<def>TRANSMISIÓN</def>
+										<term>4</term>
+										<def>SOPORTE</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0006">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01506-A-01-1" id="fig-0006-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0006-hot-0001" title="TORNILLO DE SUJECIÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0006-hot-0002" title="TUBO DE ESCPAE SUPERIOR"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TORNILLO DE SUJECIÓN</def>
+										<term>2</term>
+										<def>TUBO DE ESCPAE SUPERIOR</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0007">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01508-A-01-1" id="fig-0007-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0007-hot-0001" title="TUBO DE ESCAPE SUPERIOR"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0007-hot-0002" title="PALANCA DE FIJACIÓN"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TUBO DE ESCAPE SUPERIOR</def>
+										<term>2</term>
+										<def>PALANCA DE FIJACIÓN</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0008">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01507-A-01-1" id="fig-0008-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0009">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01509-A-01-1" id="fig-0009-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0010">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01511-A-01-1" id="fig-0010-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0010-hot-0001" title="ABRAZADERA"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0010-hot-0002" title="MANGUITO"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>ABRAZADERA</def>
+										<term>2</term>
+										<def>MANGUITO</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0011">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01510-A-01-1" id="fig-0011-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0011-hot-0001" title="DETECTOR DE SUCIEDAD"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0011-hot-0002" title="TERMINAL DE CONEXIÓN"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>DETECTOR DE SUCIEDAD</def>
+										<term>2</term>
+										<def>TERMINAL DE CONEXIÓN</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0012">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01512-A-01-1" id="fig-0012-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0013">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01513-A-01-1" id="fig-0013-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0013-hot-0001" title="ABRAZADERAS DE PLÁSTICO"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0013-hot-0002" title="TUERCA"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0013-hot-0003" title="TUBERÍA"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>ABRAZADERAS DE PLÁSTICO</def>
+										<term>2</term>
+										<def>TUERCA</def>
+										<term>3</term>
+										<def>TUBERÍA</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0014">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01514-A-01-1" id="fig-0014-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0015">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01515-A-01-1" id="fig-0015-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0016">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01516-A-01-1" id="fig-0016-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0016-hot-0001" title="CONJUNTO TRANSMISIÓN CAJA DE TRANSFERENCIA"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0016-hot-0002" title="TUBERÍA DE AGUA SUPERIOR"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0016-hot-0003" title="ESLINGA"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0016-hot-0004" title="MOTOR"></hotspot>
+									<hotspot apsid="hot-0005" apsname="5" id="fig-0016-hot-0005" title="GUÍAS"></hotspot>
+									<hotspot apsid="hot-0006" apsname="6" id="fig-0016-hot-0006" title="SOPORTE MÓVIL"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>CONJUNTO TRANSMISIÓN CAJA DE TRANSFERENCIA</def>
+										<term>2</term>
+										<def>TUBERÍA DE AGUA SUPERIOR</def>
+										<term>3</term>
+										<def>ESLINGA</def>
+										<term>4</term>
+										<def>MOTOR</def>
+										<term>5</term>
+										<def>GUÍAS</def>
+										<term>6</term>
+										<def>SOPORTE MÓVIL</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0017">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01517-A-01-1" id="fig-0017-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0018">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01518-A-01-1" id="fig-0018-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0019">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01519-A-01-1" id="fig-0019-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0019-hot-0001" title="TORNILLOS DE SUJECIÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0019-hot-0002" title="CAJA DEL OPTOGAS"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TORNILLOS DE SUJECIÓN</def>
+										<term>2</term>
+										<def>CAJA DEL OPTOGAS</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0020">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01520-A-01-1" id="fig-0020-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0020-hot-0001" title="RACOR DE CONEXIÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0020-hot-0002" title="LATIGUILLOS"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0020-hot-0003" title="LATIGUILLOS"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0020-hot-0004" title="RACOR DE CONEXIÓN"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>RACOR DE CONEXIÓN</def>
+										<term>2</term>
+										<def>LATIGUILLOS</def>
+										<term>3</term>
+										<def>LATIGUILLOS</def>
+										<term>4</term>
+										<def>RACOR DE CONEXIÓN</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0021">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01521-A-01-1" id="fig-0021-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0021-hot-0001" title="RACOR DE CONEXIÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0021-hot-0002" title="RACOR DE CONEXIÓN"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0021-hot-0003" title="LATIGUILLOS DE ALIMENTACIÓN Y RETORNO DE CARBURANTE">
+									</hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0021-hot-0004" title="LATIGUILLO"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>RACOR DE CONEXIÓN</def>
+										<term>2</term>
+										<def>RACOR DE CONEXIÓN</def>
+										<term>3</term>
+										<def>LATIGUILLOS DE ALIMENTACIÓN Y RETORNO DE CARBURANTE</def>
+										<term>4</term>
+										<def>LATIGUILLO</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0022">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01522-A-01-1" id="fig-0022-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0022-hot-0001" title="TORNILLOS DE SUJECIÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0022-hot-0002" title="SOPORTE DE MANDOS"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TORNILLOS DE SUJECIÓN</def>
+										<term>2</term>
+										<def>SOPORTE DE MANDOS</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0023">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01524-A-01-1" id="fig-0023-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0023-hot-0001" title="TORNILLOS DE SUJECIÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0023-hot-0002" title="CODO DE SALIDA DE ESCAPE"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TORNILLOS DE SUJECIÓN</def>
+										<term>2</term>
+										<def>CODO DE SALIDA DE ESCAPE</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0024">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01523-A-01-1" id="fig-0024-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0024-hot-0001" title="TUBO DE SALIDA DE ESCAPE"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0024-hot-0002" title="TORNILLOS DE SUJECIÓN"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TUBO DE SALIDA DE ESCAPE</def>
+										<term>2</term>
+										<def>TORNILLOS DE SUJECIÓN</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0025">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01525-A-01-1" id="fig-0025-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0025-hot-0001" title="GUÍAS"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0025-hot-0002" title="TORNILLOS DE SUJECIÓN"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0025-hot-0003" title="GUÍAS"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0025-hot-0004" title="ARO DE ACOPLAMIENTO"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>GUÍAS</def>
+										<term>2</term>
+										<def>TORNILLOS DE SUJECIÓN</def>
+										<term>3</term>
+										<def>GUÍAS</def>
+										<term>4</term>
+										<def>ARO DE ACOPLAMIENTO</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0026">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01526-A-01-1" id="fig-0026-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0027">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01527-A-01-1" id="fig-0027-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0028">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01528-A-01-1" id="fig-0028-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0029">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01529-A-01-1" id="fig-0029-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0029-hot-0001" title="ABRAZADERAS DE SUJECIÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0029-hot-0002" title="TUBERÍA DEL CIRCUITO DE RETORNO"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0029-hot-0003" title="ABRAZADERAS DE SUJECIÓN"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>ABRAZADERAS DE SUJECIÓN</def>
+										<term>2</term>
+										<def>TUBERÍA DEL CIRCUITO DE RETORNO</def>
+										<term>3</term>
+										<def>ABRAZADERAS DE SUJECIÓN</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0030">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01530-A-01-1" id="fig-0030-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0030-hot-0001" title="TUBERÍA DE SALIDA DE ACEITE"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0030-hot-0002" title="TORNILLOS"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TUBERÍA DE SALIDA DE ACEITE</def>
+										<term>2</term>
+										<def>TORNILLOS</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0031">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01531-A-01-1" id="fig-0031-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0032">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01532-A-01-1" id="fig-0032-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0033">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01533-A-01-1" id="fig-0033-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0034">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01534-A-01-1" id="fig-0034-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0034-hot-0001" title="TORNILLOS"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0034-hot-0002" title="PERNO"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0034-hot-0003" title="CHAPA FIJADORA"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TORNILLOS</def>
+										<term>2</term>
+										<def>PERNO</def>
+										<term>3</term>
+										<def>CHAPA FIJADORA</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0035">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01535-A-01-1" id="fig-0035-gra-0001">
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0035-hot-0002" title="TORNILLO"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0035-hot-0003" title="PERNO"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>2</term>
+										<def>TORNILLO</def>
+										<term>3</term>
+										<def>PERNO</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0036">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01536-A-01-1" id="fig-0036-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0037">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01537-A-01-1" id="fig-0037-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0038">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01538-A-01-1" id="fig-0038-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0039">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01539-A-01-1" id="fig-0039-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0039-hot-0001" title="CAJA DE TRANSFERENCIA"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0039-hot-0002" title="TUBERÍA"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>CAJA DE TRANSFERENCIA</def>
+										<term>2</term>
+										<def>TUBERÍA</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0040">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01540-A-01-1" id="fig-0040-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0040-hot-0001" title="TUBERÍA"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0040-hot-0002" title="MANGUITOS DE CONEXIÓN"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0040-hot-0003" title="TUBERÍA"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>TUBERÍA</def>
+										<term>2</term>
+										<def>MANGUITOS DE CONEXIÓN</def>
+										<term>3</term>
+										<def>TUBERÍA</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0041">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A20000-A-F4884-01541-A-01-1" id="fig-0041-gra-0001"></graphic>
+							</figure>
+						</step3>
+					</step2>
+				</step1>
+			</mainfunc>
+			<closereqs>
+				<reqconds>
+					<reqcond>Asegurarse de que la zona de trabajo ha quedado libre de herramientas y otros objetos</reqcond>
+					<reqcond>Informar de que el procedimiento se ha realizado e informar del resultado del mismo</reqcond>
+				</reqconds>
+			</closereqs>
+		</proced>
+	</content>
+</dmodule>

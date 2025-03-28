@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="330" infoCodeVariant="A" itemLocationCode="A"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2006" month="05" day="30"/>
+				<dmTitle>
+					<techName>Bicycle</techName>
+					<infoName>Place on test stand</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01" commercialClassification="cc51"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>To be made available to all S1000D users.</dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling>There are no specific handling instructions for this data module.</dataHandling>
+					<dataDestruction>Users may destroy this data module in accordance with thier own
+local procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data module.</dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>TPSMG UK, 2003-2010</copyrightPara>
+						<copyrightPara>Government License - TPSMG 001</copyrightPara>
+					</copyright>
+					<policyStatement>TPSMG TOR 001</policyStatement>
+					<dataConds>There are no known conditions that would change the data restrictions
+for, or security classification of, this data module.</dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</originator>
+			<applic>
+				<displayText>
+					<simplePara>Mountain bicycle</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo>20010131</authorityInfo>
+					<techPubBase>Bike book</techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="A" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode>BY112</systemBreakdownCode>
+			<skillLevel skillLevelCode="sk01"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<procedure>
+			<preliminaryRqmts>
+				<productionMaintData>
+					<taskDuration unitOfMeasure="HOUR" startupDuration="" procedureDuration="" closeupDuration=""/>
+				</productionMaintData>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+				<reqPersons>
+					<person man="A">
+						<personCategory personCategoryCode="Basic user"/>
+						<trade>Operator</trade>
+						<estimatedTime unitOfMeasure="h">0.25</estimatedTime>
+					</person>
+				</reqPersons>
+				<reqSupportEquips>
+					<supportEquipDescrGroup>
+						<supportEquipDescr id="SUPE-001">
+							<name>Test stand</name>
+							<identNumber>
+								<manufacturerCode>KZ666</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>BSK-TLST-999-01</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="Ea">1</reqQuantity>
+						</supportEquipDescr>
+					</supportEquipDescrGroup>
+				</reqSupportEquips>
+				<reqSupplies>
+					<noSupplies/>
+				</reqSupplies>
+				<reqSpares>
+					<noSpares/>
+				</reqSpares>
+				<reqSafety>
+					<noSafety/>
+				</reqSafety>
+			</preliminaryRqmts>
+			<mainProcedure>
+				<proceduralStep>
+					<para>Ensure <internalRef internalRefId="SUPE-001" internalRefTargetType="irtt05"/> is level.</para>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Place bicycle on the test stand.</para>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Tight clamps until bicycle is securely attach to the test stand.</para>
+				</proceduralStep>
+			</mainProcedure>
+			<closeRqmts>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+			</closeRqmts>
+		</procedure>
+	</content>
+</dmodule>

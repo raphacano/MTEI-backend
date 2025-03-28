@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Arbortext, Inc., 1988-2014, v.4002--><dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="A2" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
+				<language countryIsoCode="" languageIsoCode=""/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2022" month="07" day="20"/>
+				<dmTitle>
+					<techName>GRUPO MOTOR GENERAL</techName>
+					<infoName>Grupo motopropulsor (GMP)</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="">
+			<security securityClassification="01" commercialClassification=""/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution/>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara/>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling/>
+					<dataDestruction/>
+					<dataDisclosure/>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright/>
+					<policyStatement/>
+					<dataConds/>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="0131B">
+				<enterpriseName>SBS</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="F4884">
+				<enterpriseName>SONOVISION</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>
+					Pizarro VCIC
+				</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo/>
+					<techPubBase/>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode/>
+			<skillLevel skillLevelCode=""/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<description>
+			<levelledPara>
+				<title>GRUPO MOTOPROPULSOR (GMP)</title>
+				<para>El grupo motopropulsor está constituido por dos conjuntos principales (motor y transmisión) y dos elementos secundarios que actúan de interfase entre ambos (caja de transferencia y anillo de acoplamiento) <internalRef internalRefId="fig-0001"/>.</para>
+				<figure id="fig-0001">
+					<title>Conjunto GMP</title>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A20000-A-F4884-01001-A-01-1" id="fig-0001-gra-0001">
+						<hotspot applicationStructureIdent="hot-0002" applicationStructureName="2" id="fig-0001-hot-0002" hotspotTitle="CAJA"/>
+					</graphic>
+					<legend>
+						<definitionList>
+							<definitionListItem>
+								<listItemTerm>2</listItemTerm>
+								<listItemDefinition>
+									<para>CAJA</para>
+								</listItemDefinition>
+							</definitionListItem>
+						</definitionList>
+					</legend>
+				</figure>
+				<levelledPara>
+					<title>MOTOR</title>
+					<para>
+						<emphasis xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">FUNCIÓN</emphasis>
+					</para>
+					<para>El motor es el encargado de proporcionar:<randlist xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<item>La movilidad al vehículo.</item>
+							<item>La alimentación eléctrica de todos los sistemas y la recarga de las baterías</item>
+						</randlist></para>
+					<para>
+						<emphasis xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">DESCRIPCIÓN Y ELEMENTOS PRINCIPALES</emphasis>
+					</para>
+					<para>Se trata de un motor diesel rápido MTU 8V 183 TE22 de 8 cilindros en V de 4 tiempos, de inyección directa y turboalimentado, refrigerado por líquido con una cilindrada total de 14.620 cc y una potencia de 441 kW (600 CV). Ver Ficha Técnica en Anexo A</para>
+					<figure id="fig-0002">
+						<title>Motor lado volante (izquierdo del vehículo)</title>
+						<graphic infoEntityIdent="ICN-PIZARRO-A-A20000-A-F4884-01002-A-01-1" id="fig-0002-gra-0001"/>
+						<legend>
+							<definitionList>
+								<definitionListItem>
+									<listItemTerm>1</listItemTerm>
+									<listItemDefinition>
+										<para>RADIADOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>2</listItemTerm>
+									<listItemDefinition>
+										<para>ARGOLLA ELEVACIÓN.</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>3</listItemTerm>
+									<listItemDefinition>
+										<para>CILINDROS BANCADA LADO IZQUIERDO DEL VEHÍCULO</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>4</listItemTerm>
+									<listItemDefinition>
+										<para>DEPÓSITO DE COMPENSACIÓN DEL LÍQUIDO REFRIGERANTE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>5</listItemTerm>
+									<listItemDefinition>
+										<para>ESCAPES BANCADA LADO IZQUIERDO</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>6</listItemTerm>
+									<listItemDefinition>
+										<para>INTERCAMBIADOR DE CALOR (REFRIGERADOR) DE ACEITE DEL MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>7</listItemTerm>
+									<listItemDefinition>
+										<para>TURBOCOMPRESORES</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>8</listItemTerm>
+									<listItemDefinition>
+										<para>VOLANTE MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>9</listItemTerm>
+									<listItemDefinition>
+										<para>DEPÓSITO DE COMPENSACIÓN DE ACEITE DEL MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>10</listItemTerm>
+									<listItemDefinition>
+										<para>CÁRTER DE ACEITE DEL MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+							</definitionList>
+						</legend>
+					</figure>
+					<figure id="fig-0003">
+						<title>Motor lado distribución (derecho del vehículo)</title>
+						<graphic infoEntityIdent="ICN-PIZARRO-A-A20000-A-F4884-01003-A-01-1" id="fig-0003-gra-0001"/>
+						<legend>
+							<definitionList>
+								<definitionListItem>
+									<listItemTerm>1</listItemTerm>
+									<listItemDefinition>
+										<para>ARGOLLA ELEVACIÓN</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>2</listItemTerm>
+									<listItemDefinition>
+										<para>TERMOSTATO CIRCUITO DE TEMPERATURA ALTA</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>3</listItemTerm>
+									<listItemDefinition>
+										<para>TERMOSTATO DE TEMPERATURA BAJA</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>4</listItemTerm>
+									<listItemDefinition>
+										<para>TUBO DE LLENADO DE LÍQUIDO REFRIGERANTE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>5</listItemTerm>
+									<listItemDefinition>
+										<para>VARILLA DE MEDICIÓN DE ACEITE DE MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>6</listItemTerm>
+									<listItemDefinition>
+										<para>TUBO DE LLENADO DE ACEITE MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>7</listItemTerm>
+									<listItemDefinition>
+										<para>RADIADOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>8</listItemTerm>
+									<listItemDefinition>
+										<para>TURBOCOMPRESOR BANCADA DERECHA</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>9</listItemTerm>
+									<listItemDefinition>
+										<para>MOTOR DE ARRANQUE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>10</listItemTerm>
+									<listItemDefinition>
+										<para>ALTERNADOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>11</listItemTerm>
+									<listItemDefinition>
+										<para>FILTRO DE COMBUSTIBLE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>12</listItemTerm>
+									<listItemDefinition>
+										<para>FILTRO ACEITE MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>13</listItemTerm>
+									<listItemDefinition>
+										<para>SOPORTE MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>14</listItemTerm>
+									<listItemDefinition>
+										<para>POLEA</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>15</listItemTerm>
+									<listItemDefinition>
+										<para>BOMBA LÍQUIDO REFRIGERANTE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>16</listItemTerm>
+									<listItemDefinition>
+										<para>SISTEMA DE GESTIÓN DEL MOTOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+							</definitionList>
+						</legend>
+					</figure>
+					<para>
+						<emphasis xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">FUNCIONAMIENTO GENERAL</emphasis>
+					</para>
+					<para>Ver "OPERACIONES EN EL CASCO (2). Conducción del vehículo"</para>
+				</levelledPara>
+				<levelledPara>
+					<title>CAJA DE TRANSFERENCIA</title>
+					<para>Se trata de una caja <internalRef internalRefId="fig-0001-hot-0002">2</internalRef> de engranajes con una relación de transmisión de 1:1 a través de la cual se transmite el movimiento desde el eje del motor al eje de entrada de la transmisión debido a que ambos no están alineados.</para>
+				</levelledPara>
+				<levelledPara>
+					<title>TRANSMISIÓN</title>
+					<para>
+						<emphasis xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">FUNCIÓN</emphasis>
+					</para>
+					<para>La transmisión es la encargada de realizar las siguientes funciones:<randlist xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<item>Transmitir el movimiento del motor al tren de rodaje</item>
+							<item>Caja de cambios</item>
+							<item>Dirección</item>
+							<item>Freno de servicio</item>
+							<item>Freno de aparcamiento</item>
+						</randlist></para>
+					<para>
+						<emphasis xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">DESCRIPCIÓN Y ELEMENTOS PRINCIPALES</emphasis>
+					</para>
+					<para>La transmisión RENK TIPO HSWL 106 está constituida por una caja de cambios con inversión de marcha, dirección hidrostática sobreimpuesta y sistema de frenos, apta para una gama de potencia comprendida entre 441 y 500 kW. Ver ficha técnica en Anexo A.</para>
+					<para>La unión con el motor se efectúa a través de un embrague amortiguador de vibraciones; las salidas de fuerza hacia los pasos finales se realiza a través de coronas de acoplamiento de apertura rápida. La entrada de fuerza a la transmisión está dispuesta formando ángulo recto con respecto a las salidas.</para>
+					<para>La transmisión está constituida por:<seqlist xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<item>Un sistema de propulsión de marcha que sirve para adaptar la velocidad de marcha y la fuerza de tracción a las respectivas condiciones del terreno y que consta de:<randlist>
+									<item>Un convertidor de par hidráulico.</item>
+									<item>Un inversor de marcha 1:1.</item>
+									<item>Un cambio de marchas con 6 gamas de marchas (6 adelante y 4 atrás).</item>
+								</randlist></item>
+							<item>Un accionamiento de dirección, que sirve para dirigir el vehículo.</item>
+							<item>Un sistema de frenos completamente integrado en la caja de cambios y que consta de:<randlist>
+									<item>Los mandos del freno de servicio y de aparcamiento.</item>
+									<item>Dos frenos de fricción de dos discos montados en las salidas de fuerza del cambio.</item>
+									<item>Un freno hidrodinámico (retardador primario) que sirve, ante todo, de freno permanente cuando se circula por pendientes descendentes prolongadas. Es activado por el pedal del freno a través de una unión mecánica de la palanca del freno de servicio. El efecto de frenado depende de la gama de marchas acoplada en cada caso. De una gama de marchas baja resulta un mayor efecto de frenado.</item>
+									<item>Un dispositivo hidráulico de generación, acumulación y regulación de presión.</item>
+									<item>Los cilindros de freno para accionamiento de los frenos de fricción de dos discos.</item>
+								</randlist></item>
+						</seqlist></para>
+					<para>Los acumuladores de fuerza de resorte con dispositivo de suelta de emergencia para frenado total del vehículo en caso de una caída de presión en el acumulador de presión del freno de aparcamiento.</para>
+					<figure id="fig-0004">
+						<title>Elementos exteriores de la transmisión</title>
+						<graphic infoEntityIdent="ICN-PIZARRO-A-A20000-A-F4884-01004-A-01-1" id="fig-0004-gra-0001"/>
+						<legend>
+							<definitionList>
+								<definitionListItem>
+									<listItemTerm>1</listItemTerm>
+									<listItemDefinition>
+										<para>RESPIRADERO</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>2</listItemTerm>
+									<listItemDefinition>
+										<para>CUENTA HORAS</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>3</listItemTerm>
+									<listItemDefinition>
+										<para>DESBLOQUEO DE EMERGENCIA DEL FRENO</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>4</listItemTerm>
+									<listItemDefinition>
+										<para>FILTRO PREVIO</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>5</listItemTerm>
+									<listItemDefinition>
+										<para>TOMA DE FUERZA VENTILADOR</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>6</listItemTerm>
+									<listItemDefinition>
+										<para>ACUMULADOR DE FUERZA DE MUELLE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>7</listItemTerm>
+									<listItemDefinition>
+										<para>ACCIONAMIENTO DEL FRENO DE ESTACIONAMIENTO</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>8</listItemTerm>
+									<listItemDefinition>
+										<para>PALANCA DE ACCIONAMIENTO DEL FRENO DE SERVICIO</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>9</listItemTerm>
+									<listItemDefinition>
+										<para>ACOPLAMIENTO RÁPIDO AL PASO FINAL</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>10</listItemTerm>
+									<listItemDefinition>
+										<para>SOPORTE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>11</listItemTerm>
+									<listItemDefinition>
+										<para>CONJUNTO FRENOS DE FRICCIÓN</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>12</listItemTerm>
+									<listItemDefinition>
+										<para>BOCA DE LLENADO DE ACEITE</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>13</listItemTerm>
+									<listItemDefinition>
+										<para>PALANCA DE ACCIONAMIENTO DEL CAMBIO DE EMERGENCIA</para>
+									</listItemDefinition>
+								</definitionListItem>
+								<definitionListItem>
+									<listItemTerm>14</listItemTerm>
+									<listItemDefinition>
+										<para>VARILLA NIVEL DE ACEITE</para>
+									</listItemDefinition>
+								</definitionListItem>
+							</definitionList>
+						</legend>
+					</figure>
+					<para>
+						<emphasis xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">FUNCIONAMIENTO GENERAL</emphasis>
+					</para>
+					<para>Ver "OPERACIONES EN EL CASCO (2). Conducción del vehículo"</para>
+					<levelledPara>
+						<title>Pasos finales</title>
+						<para>Los pasos finales son los elementos que conectan la transmisión con el tren de rodaje y sirven de soporte a las ruedas propulsoras.</para>
+						<para>Tipo...............................................................................Reducción por engranajes de dientes rectos.</para>
+						<para>Reducción .....................................................................3,385:1</para>
+						<figure id="fig-0005">
+							<title>Pasos finales. Vista frontal</title>
+							<graphic infoEntityIdent="ICN-PIZARRO-A-A20000-A-F4884-01005-A-01-1" id="fig-0005-gra-0001"/>
+							<legend>
+								<definitionList>
+									<definitionListItem>
+										<listItemTerm>1</listItemTerm>
+										<listItemDefinition>
+											<para>RUEDA PROPULSORA</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>2</listItemTerm>
+										<listItemDefinition>
+											<para>PASO FINAL</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>3</listItemTerm>
+										<listItemDefinition>
+											<para>ACOPLAMIENTO RÁPIDO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>4</listItemTerm>
+										<listItemDefinition>
+											<para>TRANSMISIÓN</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>5</listItemTerm>
+										<listItemDefinition>
+											<para>RESPIRADERO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>6</listItemTerm>
+										<listItemDefinition>
+											<para>VARILLA DE NIVEL</para>
+										</listItemDefinition>
+									</definitionListItem>
+								</definitionList>
+							</legend>
+						</figure>
+					</levelledPara>
+				</levelledPara>
+			</levelledPara>
+		</description>
+	</content>
+</dmodule>

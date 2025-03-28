@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/crew.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="043" infoCodeVariant="A" itemLocationCode="A"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2006" month="05" day="30"/>
+				<dmTitle>
+					<techName>Bicycle</techName>
+					<infoName>Description attributed to crew</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01" commercialClassification="cc51"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>To be made available to all S1000D users.</dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling>There are no specific handling instructions for this data module.</dataHandling>
+					<dataDestruction>Users may destroy this data module in accordance with their own local procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data module.</dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>TPSMG UK, 2003-2010</copyrightPara>
+						<copyrightPara>Government License - TPSMG 001</copyrightPara>
+					</copyright>
+					<policyStatement>TPSMG TOR 001</policyStatement>
+					<dataConds>There are no known conditions that would change the data restrictions for, or security classification of, this data module.</dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</originator>
+			<applic>
+				<displayText>
+					<simplePara>Mountain bicycle</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo>20010131</authorityInfo>
+					<techPubBase>Bike book</techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="A" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode>BY</systemBreakdownCode>
+			<skillLevel skillLevelCode="sk01"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<refs>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA5" subSystemCode="3" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="041" infoCodeVariant="A" itemLocationCode="A"/>
+				</dmRefIdent>
+			</dmRef>
+		</refs>
+		<crew>
+			<descrCrew>
+				<levelledPara>
+					<title>Introduction</title>
+					<para>Data about the bicycle and its control system is given in this document. This data will help you operate the bicycle.</para>
+				</levelledPara>
+				<levelledPara>
+					<title></title>
+					<levelledPara>
+						<title>Controls</title>
+						<para>Data about the controls that follow is given in this document:
+<randomList listItemPrefix="pf02">
+								<listItem>
+									<para>Steering</para>
+								</listItem>
+								<listItem>
+									<para>Shifters</para>
+								</listItem>
+								<listItem>
+									<para>Brakes</para>
+								</listItem>
+								<listItem>
+									<para>Pedals.</para>
+								</listItem>
+							</randomList></para>
+					</levelledPara>
+					<levelledPara>
+						<title>Steering</title>
+						<para>The handlebars are used to steer the bike. They are at the front of the bicycle. You hold one of the handlebar grips with each hand and move the handle bar to change the direction of the bike.</para>
+					</levelledPara>
+					<levelledPara>
+						<title>Shifters</title>
+						<para>The gears control the ratio of pedal rotation to wheel rotation. You can change this with the shifters 
+<dmRef>
+								<dmRefIdent>
+									<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA5" subSystemCode="3" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="041" infoCodeVariant="A" itemLocationCode="A"/>
+								</dmRefIdent>
+							</dmRef>
+. The shifters are on the handlebar.</para>
+						<para>A description of the two <internalRef internalRefId="T001">shifters</internalRef>
+follows.</para>
+						<table id="T001">
+							<title></title>
+							<tgroup cols="2">
+								<colspec colnum="1" colname="COL1" colwidth="1*"/>
+								<colspec colnum="2" colname="COL02" colwidth="1.50*"/>
+								<thead valign="bottom">
+									<row>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Shifter Location</para>
+										</entry>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Affected Gears</para>
+										</entry>
+									</row>
+								</thead>
+								<tbody valign="top">
+									<row>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Left</para>
+										</entry>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>The buttons on the left shifter changes the gears on the front derailleur.</para>
+										</entry>
+									</row>
+									<row>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Right</para>
+										</entry>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>The buttons on the right shifter changes the gears on the rear derailleur.</para>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</levelledPara>
+					<levelledPara>
+						<title>Brakes</title>
+						<warning>
+							<warningAndCautionPara>If you operate the front brake without the rear brake you can cause a crash.</warningAndCautionPara>
+						</warning>
+						<para>You can decrease the speed of the bike with the brakes. You operate the brakes with the brake levers on the handlebar.</para>
+						<para>A description of the brake levers
+<internalRef internalRefId="T002">follows</internalRef>
+.</para>
+						<table id="T002">
+							<title></title>
+							<tgroup cols="2">
+								<colspec colnum="1" colname="COL1" colwidth="1*"/>
+								<colspec colnum="2" colname="COL02" colwidth="1.50*"/>
+								<thead valign="bottom">
+									<row>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Brake Lever Location</para>
+										</entry>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Affected Gears</para>
+										</entry>
+									</row>
+								</thead>
+								<tbody valign="top">
+									<row>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Left</para>
+										</entry>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>This lever operates the front brake.</para>
+										</entry>
+									</row>
+									<row>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>Right</para>
+										</entry>
+										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<para>This lever operates the rear brake.</para>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</levelledPara>
+					<levelledPara>
+						<title>Pedals</title>
+						<para>The pedals are at the bottom of the seat tube. You operate the pedals to move the bicycle forward.</para>
+					</levelledPara>
+				</levelledPara>
+			</descrCrew>
+		</crew>
+	</content>
+</dmodule>

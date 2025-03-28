@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="041" infoCodeVariant="A" itemLocationCode="A"/>
+				<language countryIsoCode="US" languageIsoCode="en"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2006" month="05" day="30"/>
+				<dmTitle>
+					<techName>Bicycle</techName>
+					<infoName>Description of how it is made</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01" commercialClassification="cc51"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>To be made available to all S1000D users.</dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling>There are no specific
+handling instructions for this data module.</dataHandling>
+					<dataDestruction>Users may
+destroy this data module in accordance with their own local procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data module.</dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>TPSMG UK, 2003-2010</copyrightPara>
+						<copyrightPara>Government License - TPSMG 001</copyrightPara>
+					</copyright>
+					<policyStatement>TPSMG TOR 001</policyStatement>
+					<dataConds>There are no known conditions that would change the data restrictions
+for, or security classification of, this data module.</dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</originator>
+			<applic>
+				<displayText>
+					<simplePara>Mountain bicycle</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo>20010131</authorityInfo>
+					<techPubBase>Bike book</techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="A" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode>BY</systemBreakdownCode>
+			<skillLevel skillLevelCode="sk01"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<description>
+			<levelledPara>
+				<title>Physical description of a bicycle</title>
+				<para>A bicycle (refer to <internalRef internalRefId="F001"></internalRef>)
+is a frame and a number of movable components with mechanical parts that are
+completely open. There are no covers or sheet metal panels that prevent access
+to the mechanical parts. Thus, you can disassemble the different components
+of a bicycle (refer to <internalRef internalRefId="FIG-0001-GRA-0001-HOT-0000"></internalRef>) to do: <randomList listItemPrefix="pf02">
+						<listItem>
+							<para xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">An inspection</para>
+						</listItem>
+						<listItem>
+							<para xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">A maintenance task</para>
+						</listItem>
+						<listItem>
+							<para xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">A repair task.</para>
+						</listItem>
+					</randomList>The parts that you can immediately identify on a bicycle are given in Table 1.</para>
+				<foldout>
+					<figure xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" id="F001">
+						<title>Complete bicycle</title>
+						<graphic infoEntityIdent="ICN-S1000DBIKE-AAA-D000000-0-U8025-00536-A-03-1">
+							<hotspot id="FIG-0001-GRA-0001-HOT-0000" applicationStructureIdent="hot000" applicationStructureName="0" hotspotType="CALLOUT" hotspotTitle="BICYCLE" objectDescr="BICYCLE"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0001" applicationStructureIdent="hot001" applicationStructureName="1" hotspotType="CALLOUT" hotspotTitle="BRAKE SUB-SYSTEM" objectDescr="BRAKE SUB-SYSTEM"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0002" applicationStructureIdent="hot002" applicationStructureName="2" hotspotType="CALLOUT" hotspotTitle="GEAR SUB-SYSTEM" objectDescr="GEAR SUB-SYSTEM"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0003" applicationStructureIdent="hot003" applicationStructureName="3" hotspotType="CALLOUT" hotspotTitle="WHEEL, ASSEMBLY FRONT" objectDescr="WHEEL, ASSEMBLY FRONT"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0004" applicationStructureIdent="hot004" applicationStructureName="4" hotspotType="CALLOUT" hotspotTitle="PEDALS" objectDescr="PEDALS"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0005" applicationStructureIdent="hot005" applicationStructureName="5" hotspotType="CALLOUT" hotspotTitle="CRANKS" objectDescr="CRANKS"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0006" applicationStructureIdent="hot006" applicationStructureName="6" hotspotType="CALLOUT" hotspotTitle="CHAIN" objectDescr="CHAIN"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0007" applicationStructureIdent="hot007" applicationStructureName="7" hotspotType="CALLOUT" hotspotTitle="WHEEL, ASSEMBLY REAR" objectDescr="WHEEL, ASSEMBLY REAR"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0008" applicationStructureIdent="hot008" applicationStructureName="8" hotspotType="CALLOUT" hotspotTitle="SEAT, ASSEMBLY" objectDescr="SEAT, ASSEMBLY"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0009" applicationStructureIdent="hot009" applicationStructureName="9" hotspotType="CALLOUT" hotspotTitle="FRAME ASSEMBLY" objectDescr="FRAME ASSEMBLY"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0010" applicationStructureIdent="hot010" applicationStructureName="10" hotspotType="CALLOUT" hotspotTitle="HANDLE BAR STEM" objectDescr="HANDLE BAR STEM"/>
+							<hotspot id="FIG-0001-GRA-0001-HOT-0011" applicationStructureIdent="hot011" applicationStructureName="11" hotspotType="CALLOUT" hotspotTitle="HANDLE BAR" objectDescr="HANDLE BAR"/>
+						</graphic>
+					</figure>
+				</foldout>
+				<para>The parts that you can immediately identify on a bicycle are given in Table 1.</para>
+				<table id="tab-0001">
+					<title>Bicycle parts</title>
+					<tgroup cols="3">
+						<colspec colname="1"/>
+						<colspec colname="2"/>
+						<colspec colname="3"/>
+						<thead>
+							<row>
+								<entry>
+									<para>Item</para>
+								</entry>
+								<entry>
+									<para>Refer to</para>
+								</entry>
+								<entry>
+									<para>Definition</para>
+								</entry>
+							</row>
+						</thead>
+						<tbody>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Frame</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0009"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>A bicycle frame is made of metal tubes that are welded together.</para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Wheels</para>
+								</entry>
+								<entry>
+									<para/>
+								</entry>
+								<entry>
+									<para>The wheels include these parts: 
+<randomList listItemPrefix="pf02">
+											<listItem>
+												<para>Hub</para>
+											</listItem>
+											<listItem>
+												<para>Spokes</para>
+											</listItem>
+											<listItem>
+												<para>Metal rim</para>
+											</listItem>
+											<listItem>
+												<para>Rubber tire.</para>
+											</listItem>
+										</randomList></para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>
+										<randomList listItemPrefix="pf02">
+											<listItem>
+												<para>Rear wheel</para>
+											</listItem>
+										</randomList>
+									</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0007"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para/>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>
+										<randomList listItemPrefix="pf02">
+											<listItem>
+												<para>Front wheel</para>
+											</listItem>
+										</randomList>
+									</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0003"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para/>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Seat and seat post</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0008"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>These install into the seat tube with a mechanism you can use to change
+the height.</para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Handle bars</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0011"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>A horizontal bar that attaches to the stem with grips at the ends
+that attach to the brake levers and the shifters.</para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Handle bar stem</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0010"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>This attaches the handle bar to the steering tube (head set).</para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Cranks</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0005"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>A lever that extends from the bottom of the bracket to the pedal.</para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Pedals</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0004"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>The two platforms for the feet that attach to the crank.</para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Chain</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0006"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>A circular set of links that connect the chain ring to the cogs on the freewheel.</para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Gears</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0002"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>The gears include: <randomList listItemPrefix="pf02">
+											<listItem>
+												<para>Front chain ring</para>
+											</listItem>
+											<listItem>
+												<para>Rear freewheel</para>
+											</listItem>
+											<listItem>
+												<para>Front and the rear derailleur</para>
+											</listItem>
+											<listItem>
+												<para>Shift lever on the handle bars</para>
+											</listItem>
+											<listItem>
+												<para>Cables.</para>
+											</listItem>
+										</randomList></para>
+								</entry>
+							</row>
+							<row xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<entry>
+									<para>Brakes</para>
+								</entry>
+								<entry>
+									<para>
+										<internalRef internalRefId="FIG-0001-GRA-0001-HOT-0001"></internalRef>
+									</para>
+								</entry>
+								<entry>
+									<para>The brakes include: <randomList listItemPrefix="pf02">
+											<listItem>
+												<para>Actuators on the handlebars</para>
+											</listItem>
+											<listItem>
+												<para>Brake cable</para>
+											</listItem>
+											<listItem>
+												<para>Brake callipers</para>
+											</listItem>
+											<listItem>
+												<para>Brake pads.</para>
+											</listItem>
+										</randomList></para>
+								</entry>
+							</row>
+						</tbody>
+					</tgroup>
+				</table>
+			</levelledPara>
+		</description>
+	</content>
+</dmodule>

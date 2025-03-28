@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<!DOCTYPE dmodule [
+	<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1.svg" NDATA svg> 
+	<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1.svg" NDATA svg> 
+	<!ENTITY ICN-PIZARRO-A-A10000-A-F4884-01001-A-01-1 SYSTEM "ICN-PIZARRO-A-A10000-A-F4884-01001-A-01-1.svg" NDATA svg> 
+	<!ENTITY ICN-PIZARRO-A-A10000-A-F4884-01002-A-01-1 SYSTEM "ICN-PIZARRO-A-A10000-A-F4884-01002-A-01-1.svg" NDATA svg> 
+	<!ENTITY ICN-PIZARRO-A-A10000-A-F4884-01003-A-01-1 SYSTEM "ICN-PIZARRO-A-A10000-A-F4884-01003-A-01-1.svg" NDATA svg> 
+	<!ENTITY ICN-PIZARRO-A-A10000-A-F4884-01004-A-01-1 SYSTEM "ICN-PIZARRO-A-A10000-A-F4884-01004-A-01-1.svg" NDATA svg> 
+	<!ENTITY ICN-PIZARRO-A-A10000-A-F4884-01005-A-01-1 SYSTEM "ICN-PIZARRO-A-A10000-A-F4884-01005-A-01-1.svg" NDATA svg> 
+	<!NOTATION svg SYSTEM "svg"> 
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_flat/descript.xsd">
+	<rdf:Description>
+		<dc:title>GRUPO MOTOPROPULSOR GENERAL - Descripción física y funcional</dc:title>
+		<dc:creator>F4884</dc:creator>
+		<dc:subject>GRUPO MOTOPROPULSOR GENERAL - Descripción física y funcional</dc:subject>
+		<dc:publisher>0131B</dc:publisher>
+		<dc:contributor>F4884</dc:contributor>
+		<dc:date>2022-07-15</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>PIZARRO-A-A1-00-00-0100A-040A-D</dc:identifier>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>PIZARRO</modelic>
+					<sdc>A</sdc>
+					<chapnum>A1</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>01</discode>
+					<discodev>00A</discodev>
+					<incode>040</incode>
+					<incodev>A</incodev>
+					<itemloc>D</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>GRUPO MOTOPROPULSOR GENERAL</techname>
+				<infoname>Grupo motopropulsor</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="15" month="07" year="2022"/>
+			<language country="ES" language="es"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="SBS">0131B</rpc>
+			<orig origname="SONOVISION">F4884</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>Pizarro VCIC</p>
+				</displaytext>
+			</applic>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="ttandoo"/>
+			</qa>
+		</status>
+	</idstatus>
+	<content>
+		<descript>
+			<para0>
+				<subpara1>
+					<subpara2>
+						<subpara3>
+							<subpara4>
+								<subpara5>
+									<subpara6>
+										<subpara7>
+											<para>Vista delantera izquierda</para>
+										</subpara7>
+										<subpara7>
+											<para>Vista trasera izquierda</para>
+										</subpara7>
+										<subpara7>
+											<para>Vista delantera derecha</para>
+										</subpara7>
+									</subpara6>
+								</subpara5>
+							</subpara4>
+						</subpara3>
+					</subpara2>
+				</subpara1>
+			</para0>
+			<para0>
+				<subpara1>
+					<subpara2>
+						<subpara3>
+							<subpara4>
+								<subpara5>
+									<subpara6>
+										<subpara7>
+											<para>TAPÓN DE LA BOCA DE LLENADO</para>
+										</subpara7>
+										<subpara7>
+											<para>TAPÓN DE LA BOCA DE ACEITE</para>
+										</subpara7>
+									</subpara6>
+								</subpara5>
+							</subpara4>
+						</subpara3>
+					</subpara2>
+				</subpara1>
+			</para0>
+			<para0>
+				<subpara1>
+					<title>Configuración Avanzada</title>
+					<subpara2>
+						<warning>
+							<para>No proceder sin protección ocular.</para>
+						</warning>
+						<subpara3>
+							<note>
+								<para>Consulte la Sección 6.3 para las especificaciones del material.</para>
+							</note>
+							<subpara4>
+								<subpara5>
+									<para>Verificar la alineación de los componentes.</para>
+									<para>Comprobar la continuidad eléctrica del circuito.</para>
+								</subpara5>
+								<subpara5>
+									<subpara6>
+										<subpara7>
+											<para>La calibración final debe cumplir con los estándares ISO-14001.</para>
+										</subpara7>
+									</subpara6>
+								</subpara5>
+							</subpara4>
+						</subpara3>
+					</subpara2>
+				</subpara1>
+			</para0>
+			<para0>
+				<subpara1>
+					<subpara2>
+						<subpara3>
+							<subpara4>
+								<subpara5>
+									<subpara6>
+										<subpara7>
+											<para>Soporte Delantero</para>
+										</subpara7>
+										<subpara7>
+											<para>Soporte Central</para>
+										</subpara7>
+									</subpara6>
+								</subpara5>
+							</subpara4>
+							<subpara4>
+								<subpara5>
+									<subpara6>
+										<subpara7>
+											<para>Soportes Traseros</para>
+										</subpara7>
+									</subpara6>
+								</subpara5>
+							</subpara4>
+						</subpara3>
+					</subpara2>
+				</subpara1>
+			</para0>
+		</descript>
+	</content>
+</dmodule>

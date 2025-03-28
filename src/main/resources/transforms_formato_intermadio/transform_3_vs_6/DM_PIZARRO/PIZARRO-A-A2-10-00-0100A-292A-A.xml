@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<!DOCTYPE dmodule [
+<!ENTITY ICN-PIZARRO-A-A25110-A-F4884-05906-A-01-1 SYSTEM "ICN-PIZARRO-A-A25110-A-F4884-05906-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A25110-A-F4884-05905-A-01-1 SYSTEM "ICN-PIZARRO-A-A25110-A-F4884-05905-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A25110-A-F4884-05904-A-01-1 SYSTEM "ICN-PIZARRO-A-A25110-A-F4884-05904-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A25110-A-F4884-05903-A-01-1 SYSTEM "ICN-PIZARRO-A-A25110-A-F4884-05903-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A25110-A-F4884-05902-A-01-1 SYSTEM "ICN-PIZARRO-A-A25110-A-F4884-05902-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-A25110-A-F4884-05901-A-01-1 SYSTEM "ICN-PIZARRO-A-A25110-A-F4884-05901-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1.svg" NDATA svg>
+<!NOTATION png SYSTEM "png">
+<!NOTATION svg SYSTEM "svg">
+<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+%ISOEntities;
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_master/dm/procedSchema.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+	<rdf:Description>
+		<dc:title>MOTOR - Cambiar el aceite</dc:title>
+		<dc:creator>F4884</dc:creator>
+		<dc:subject>MOTOR - Cambiar el aceite</dc:subject>
+		<dc:publisher>0131B</dc:publisher>
+		<dc:contributor>F4884</dc:contributor>
+		<dc:date>2022-07-20</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>PIZARRO-A-A2-10-00-0100A-292A-A</dc:identifier>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>PIZARRO</modelic>
+					<sdc>A</sdc>
+					<chapnum>A2</chapnum>
+					<section>1</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>01</discode>
+					<discodev>00A</discodev>
+					<incode>292</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>MOTOR</techname>
+				<infoname>Cambio de aceite del motor</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="20" month="07" year="2022"/>
+			<language country="ES" language="es"/></dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="SBS">0131B</rpc>
+			<orig origname="SONOVISION">F4884</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>Pizarro VCIC</p>
+				</displaytext>
+			</applic>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Business rules</infoname>
+					</dmtitle>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/></qa>
+		</status>
+	</idstatus>
+	<content>
+		<proced>
+			<prelreqs>
+				<pmd>
+					<avehcfg>
+						<jacked power="notapplic" status="na"/>
+						<safedev power="notapplic" status="na"/>
+						<elecpwr power="notapplic" status="na"/>
+						<hydpwr power="notapplic" status="na"/>
+						<airpwr power="notapplic" status="na"/>
+						<fuel power="notapplic" status="na"/>
+						<water power="notapplic" status="na"/>
+						<fcposn power="notapplic" status="no"/></avehcfg>
+					<opndurn closeup="0,00" prelreqs="0,00" proced="3,53"/></pmd>
+				<reqconds>
+					<reqcondm>
+						<reqcond>Desmontar el GMP </reqcond>
+						<refdm>
+							<avee>
+								<modelic>PIZARRO</modelic>
+								<sdc>A</sdc>
+								<chapnum>A2</chapnum>
+								<section>0</section>
+								<subsect>0</subsect>
+								<subject>00</subject>
+								<discode>01</discode>
+								<discodev>00A</discodev>
+								<incode>920</incode>
+								<incodev>A</incodev>
+								<itemloc>A</itemloc>
+							</avee>
+							<dmtitle>
+								<techname>GRUPO MOTOR GENERAL</techname>
+								<infoname>Desmontaje y montaje del GMP</infoname>
+							</dmtitle>
+						</refdm>
+					</reqcondm>
+				</reqconds>
+				<reqpers><person man="1"/><perscat category="TPAMV"/><perskill skill="sk02"/><trade>MPT ETEC MANTO. VEHICULOS</trade><esttime>3,53</esttime></reqpers>
+				<supequip>
+					<supeqli>
+						<supequi id="seq-0001">
+							<nomen>Equipo de aspiración y llenado de aceite del motor y de la transmisión</nomen>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>TBD</pnr>
+							</identno>
+							<nsn nsn="TBD"/>
+							<qty uom="EA">1</qty>
+						</supequi>
+						<supequi id="seq-0002">
+							<nomen>Equipo fuera borda.</nomen>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>TBD</pnr>
+							</identno>
+							<nsn nsn="TBD"/>
+							<qty uom="EA">1</qty>
+						</supequi>
+					</supeqli>
+				</supequip>
+				<supplies>
+					<supplyli>
+						<supply id="sup-0001">
+							<nomen>Aceite del motor SAE 15W40, MIL-PRF-2104G.</nomen>
+							<nsn nsn="TBD"/>
+							<identno>
+								<mfc>TBD</mfc>
+								<pnr>TBD</pnr>
+							</identno>
+							<qty uom="EA">AR</qty>
+						</supply>
+					</supplyli>
+				</supplies>
+				<spares><nospares/></spares>
+				<safety>
+					<safecond>
+						<warning>
+							<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"></symbol>
+							<para>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea <refdm>
+									<avee>
+										<modelic>PIZARRO</modelic>
+										<sdc>A</sdc>
+										<chapnum>00</chapnum>
+										<section>0</section>
+										<subsect>0</subsect>
+										<subject>00</subject>
+										<discode>00</discode>
+										<discodev>00A</discodev>
+										<incode>012</incode>
+										<incodev>A</incodev>
+										<itemloc>D</itemloc>
+									</avee>
+									<dmtitle>
+										<techname>SISTEMA GENERAL</techname>
+										<infoname>Normas generales de seguridad</infoname>
+									</dmtitle>
+								</refdm>).</para>
+						</warning>
+						<warning>
+							<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"></symbol>
+							<para>Utilizar casco, gafas y zapatos de seguridad.</para>
+						</warning>
+					</safecond>
+				</safety>
+			</prelreqs>
+			<mainfunc>
+				<step1>
+					<para>Cambio de aceite del motor</para>
+					<step2>
+						<para>Aspiración del aceite del motor</para>
+						<step3>
+							<para>Conectar el <xref xidtype="supequip" xrefid="seq-0002">equipo fuera borda</xref> (Tarea <refdm>
+									<avee>
+										<modelic>PIZARRO</modelic>
+										<sdc>A</sdc>
+										<chapnum>A2</chapnum>
+										<section>0</section>
+										<subsect>0</subsect>
+										<subject>00</subject>
+										<discode>01</discode>
+										<discodev>00A</discodev>
+										<incode>340</incode>
+										<incodev>A</incodev>
+										<itemloc>A</itemloc>
+									</avee>
+									<dmtitle>
+										<techname>GRUPO MOTOR GENERAL</techname>
+										<infoname>Prueba de funcionamiento del GMP fuera borda</infoname>
+									</dmtitle>
+								</refdm> )y poner en funcionamiento el motor hasta
+que alcance la temperatura de funcionamiento 90 ± 2ºC. Parar el motor.</para>
+						</step3>
+						<step3>
+							<para>Desmontar la tapa de la boca de llenado de
+aceite <xref xidtype="figure" xrefid="fig-0001"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Desmontar el tapón de vaciado de aceite
+<xref xidtype="figure" xrefid="fig-0002"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Montar el acoplamiento roscado en el orificio
+de vaciado de aceite <xref xidtype="figure" xrefid="fig-0003"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Conectar la manguera flexible de aspiración
+<xref xidtype="hotspot" xrefid="fig-0004-hot-0005">5</xref> a la conexión rápido del acoplamiento
+conectado al motor <xref xidtype="figure" xrefid="fig-0003"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Introducir la manguera <xref xidtype="hotspot" xrefid="fig-0004-hot-0002">2</xref> en el bidón
+<xref xidtype="hotspot" xrefid="fig-0004-hot-0001">1</xref> del equipo para recogida del aceite
+usado.</para>
+						</step3>
+						<step3>
+							<para>Aflojar el tapón de cierre aproximadamente
+10 o 12 vueltas <xref xidtype="figure" xrefid="fig-0005"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Poner el compresor de aire del equipo en
+funcionamiento.</para>
+						</step3>
+						<step3>
+							<para>Abrir la llave de paso general <xref xidtype="hotspot" xrefid="fig-0006-hot-0002">2</xref> y la
+llave de paso <xref xidtype="hotspot" xrefid="fig-0004-hot-0004">4</xref> la bomba neumática
+<xref xidtype="hotspot" xrefid="fig-0004-hot-0003">3</xref> se pondrá en funcionamiento aspirando
+el aceite del motor por la manguera
+<xref xidtype="hotspot" xrefid="fig-0004-hot-0005">5</xref> y enviandolo al bidón por la manguera
+<xref xidtype="hotspot" xrefid="fig-0004-hot-0002">2</xref>. Esperar a que se vacíe el aceite
+completamente, a continuación parar el
+compresor y cerrar la llave de paso <xref xidtype="hotspot" xrefid="fig-0004-hot-0004">4</xref>.</para>
+						</step3>
+						<step3>
+							<para>Desconectar las mangueras de recogida del
+aceite usado que corresponden a la bomba
+neumática <xref xidtype="hotspot" xrefid="fig-0004-hot-0003">3</xref>.</para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Llenado de aceite</para>
+						<step3>
+							<para>Conectar la manguera flexible de llenado
+<xref xidtype="hotspot" xrefid="fig-0006-hot-0008">8</xref> a la conexión rápida del acoplamiento
+conectado al motor <xref xidtype="figure" xrefid="fig-0003"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Introducir el tubo rígido de aspiración
+<xref xidtype="hotspot" xrefid="fig-0006-hot-0006">6</xref> en el bidón de aceite nuevo, dicho
+tubo va unido a la manguera flexible <xref xidtype="hotspot" xrefid="fig-0006-hot-0001">1</xref>
+que se une a la boca de aspiración de la
+bomba neumática <xref xidtype="hotspot" xrefid="fig-0006-hot-0004">4</xref> que es la que se
+usa para el llenado de aceite limpio.</para>
+						</step3>
+						<step3>
+							<para>Poner el compresor de aire en funcionamiento.</para>
+						</step3>
+						<step3>
+							<para>Abrir la llave de paso de aire <xref xidtype="hotspot" xrefid="fig-0006-hot-0003">3</xref>, la bomba <xref xidtype="figure" xrefid="fig-0006">4</xref> de llenado de aceite nuevo se pondrá
+en funcionamiento, aspirando el aceite del bidón por la manguera <xref xidtype="hotspot" xrefid="fig-0006-hot-0001">1</xref> y enviandolo al
+motor por la manguera <xref xidtype="hotspot" xrefid="fig-0006-hot-0008">8</xref>, a la salida de la bomba lleva un contador de caudal <xref xidtype="figure" xrefid="fig-0006">5</xref>,
+para controlar los litros que se introducen en el motor. Esperar hasta que se produzca el
+llenado. A continuación parar el compresor y cerrar las llaves de paso del aire general
+<xref xidtype="hotspot" xrefid="fig-0006-hot-0002">2</xref> y particular <xref xidtype="hotspot" xrefid="fig-0006-hot-0003">3</xref>.</para>
+						</step3>
+						<step3>
+							<para>Apretar el tapón de cierre <xref xidtype="figure" xrefid="fig-0005"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Desconectar la manguera de llenado de aceite <xref xidtype="hotspot" xrefid="fig-0006-hot-0008">8</xref> del acoplamiento del motor.</para>
+						</step3>
+						<step3>
+							<para>Desmontar el acoplamiento del orificio de vaciado de aceite del motor <xref xidtype="figure" xrefid="fig-0003"></xref>.</para>
+						</step3>
+						<step3>
+							<para>Montar el tapón de vaciado del aceite <xref xidtype="figure" xrefid="fig-0002"></xref> y apretarlo con un par de 80 N.m.</para>
+						</step3>
+						<step3>
+							<para>Comprobar el nivel de aceite según se indica en el Manual de la Tripulación y rellenar por
+la boca de llenado <xref xidtype="figure" xrefid="fig-0001"></xref>, si es necesario poner el tapón de la boca de llenado.</para>
+						</step3>
+						<step3>
+							<para>Pulsar el interruptor de parada del motor o tirar de la palanca de parada manual del
+motor a la posición de “parada”.</para>
+						</step3>
+						<step3>
+							<para>Intentar arrancar con el motor de arranque hasta conseguir, en el reloj, una lectura de
+presión de aceite.</para>
+						</step3>
+						<step3>
+							<caution>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1"></symbol>
+								<para>Esta prueba no debe durar más de 20 segundos y esperar un
+minuto antes de arrancar el motor.</para>
+							</caution>
+							<para>Arrancar el motor y comprobar si hay fugas.</para>
+						</step3>
+						<step3>
+							<para>Parar el motor y comprobar su nivel, según se indica en el Manual de la Tripulación.</para>
+							<figure id="fig-0001">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A25110-A-F4884-05901-A-01-1" id="fig-0001-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0002">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A25110-A-F4884-05903-A-01-1" id="fig-0003-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0003">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A25110-A-F4884-05902-A-01-1" id="fig-0002-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0004">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A25110-A-F4884-05904-A-01-1" id="fig-0004-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0004-hot-0001" title="BIDÓN"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0004-hot-0002" title="MANGUERA"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0004-hot-0003" title="BOMBA NEUMÁTICA"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0004-hot-0004" title="LLAVE DE PASO"></hotspot>
+									<hotspot apsid="hot-0005" apsname="5" id="fig-0004-hot-0005" title="MANGUERA FLEXIBLE DE ASPIRACIÓN"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>BIDÓN</def>
+										<term>2</term>
+										<def>MANGUERA</def>
+										<term>3</term>
+										<def>BOMBA NEUMÁTICA</def>
+										<term>4</term>
+										<def>LLAVE DE PASO</def>
+										<term>5</term>
+										<def>MANGUERA FLEXIBLE DE ASPIRACIÓN</def>
+									</deflist>
+								</legend>
+							</figure>
+							<figure id="fig-0005">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A25110-A-F4884-05905-A-01-1" id="fig-0005-gra-0001"></graphic>
+							</figure>
+							<figure id="fig-0006">
+								<title>
+								</title>
+								<graphic boardno="ICN-PIZARRO-A-A25110-A-F4884-05906-A-01-1" id="fig-0006-gra-0001">
+									<hotspot apsid="hot-0001" apsname="1" id="fig-0006-hot-0001" title="MANGUERA FLEXIBLE"></hotspot>
+									<hotspot apsid="hot-0002" apsname="2" id="fig-0006-hot-0002" title="LLAVE DE PASO GENERAL"></hotspot>
+									<hotspot apsid="hot-0003" apsname="3" id="fig-0006-hot-0003" title="LLAVE DE PASO DE AIRE"></hotspot>
+									<hotspot apsid="hot-0004" apsname="4" id="fig-0006-hot-0004" title="BOMBA NEUMÁTICA"></hotspot>
+									<hotspot apsid="hot-0006" apsname="6" id="fig-0006-hot-0006" title="TUBO RÍGIDO DE ASPIRACIÓN"></hotspot>
+									<hotspot apsid="hot-0008" apsname="8" id="fig-0006-hot-0008" title="MANGUERA FLEXIBLE DE LLENADO"></hotspot>
+								</graphic>
+								<legend>
+									<deflist>
+										<term>1</term>
+										<def>MANGUERA FLEXIBLE</def>
+										<term>2</term>
+										<def>LLAVE DE PASO GENERAL</def>
+										<term>3</term>
+										<def>LLAVE DE PASO DE AIRE</def>
+										<term>4</term>
+										<def>BOMBA NEUMÁTICA</def>
+										<term>6</term>
+										<def>TUBO RÍGIDO DE ASPIRACIÓN</def>
+										<term>8</term>
+										<def>MANGUERA FLEXIBLE DE LLENADO</def>
+									</deflist>
+								</legend>
+							</figure>
+						</step3>
+					</step2>
+				</step1>
+			</mainfunc>
+			<closereqs>
+				<reqconds>
+					<reqcond>Asegurarse de que la zona de trabajo ha quedado libre de herramientas y otros objetos</reqcond>
+					<reqcond>Informar de que el procedimiento se ha realizado e informar del resultado del mismo</reqcond>
+				</reqconds>
+			</closereqs>
+		</proced>
+	</content>
+</dmodule>

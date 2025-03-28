@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE dmodule [
+	<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20050501//EN//XML" "../S1000D_2-2/xml_schema/ent/ISOEntities">
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-2/xml_schema/dm/crewSchema.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm">
+	<rdf:Description>
+		<dc:Title>Bicycle - Normal operation procedures (crew)</dc:Title>
+		<dc:Creator>U8025</dc:Creator>
+		<dc:Subject>Bicycle - Normal operation procedures (crew)</dc:Subject>
+		<dc:Publisher>U8025</dc:Publisher>
+		<dc:Contributor>U8025</dc:Contributor>
+		<dc:Date>2006-05-30</dc:Date>
+		<dc:Type>text</dc:Type>
+		<dc:Format>text/xml</dc:Format>
+		<dc:Identifier>S1000DBIKE-AAA-D00-00-00-0000-131A-A_002-00</dc:Identifier>
+		<dc:Language>sx-US</dc:Language>
+		<dc:Rights>01_cc51</dc:Rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00</discodev>
+					<incode>131</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Bicycle</techname>
+				<infoname>Normal operation procedures (crew)</infoname>
+			</dmtitle>
+			<issno issno="002" inwork="00" type="changed"/>
+			<issdate year="2006" month="05" day="30"/>
+		</dmaddres>
+		<status>
+			<security class="01" commcls="cc51"/>
+			<datarest>
+				<instruct>
+					<distrib>To be made available to all S1000D users.</distrib>
+					<expcont>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</expcont>
+					<handling>There are no specific handling instructions for this data module.</handling>
+					<destruct>Users may destroy this data module in accordance with their own local procedures.</destruct>
+					<disclose>There are no dissemination limitations that apply to this data module.</disclose>
+				</instruct>
+				<inform>
+					<copyright>
+						<para>TPSMG UK, 2003-2010</para>
+						<para>Government License - TPSMG 001</para>
+					</copyright>
+					<polref>TPSMG TOR 001</polref>
+					<datacond>There are no known conditions that would change the data restrictions for, or security classification of, this data module.</datacond>
+				</inform>
+			</datarest>
+			<rpc rpcname="UK MoD">U8025</rpc>
+			<orig origname="UK MoD">U8025</orig>
+			<applic>
+				<type>Mountain bicycle</type>
+				<model model="Mountain storm">
+					<version version="Mk1"/>
+				</model>
+				<model model="Brook trekker">
+					<version version="Mk9"/>
+				</model>
+			</applic>
+			<techstd>
+				<autandtp>
+					<authblk>20010131</authblk>
+					<tpbase>Bike book</tpbase>
+				</autandtp>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-A-04-10-0301-00A-022A-D_002">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>A</sdc>
+						<chapnum>04</chapnum>
+						<section>1</section>
+						<subsect>0</subsect>
+						<subject>0301</subject>
+						<discode>00</discode>
+						<discodev>A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="002"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<sbc>BY</sbc>
+			<skill skill="sk01"/>
+			<remarks>Caption color "blue" is not in the list of S1000D interpreted values. Has been set to "co51".</remarks>
+		</status>
+	</idstatus>
+	<content>
+		<acrw>
+			<frc>
+				<title>Pre-ride Inspection</title>
+				<drill>
+					<title>Brakes</title>
+					<subdrill>
+						<title>Pads</title>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Pads</para>
+								</challeng>
+								<response>
+									<para>Free of unwanted material</para>
+								</response>
+							</challrsp>
+						</step>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Pads</para>
+								</challeng>
+								<response>
+									<para>Acceptable pad width</para>
+								</response>
+							</challrsp>
+						</step>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Pads</para>
+								</challeng>
+								<response>
+									<para>Acceptable pad clearance</para>
+								</response>
+							</challrsp>
+						</step>
+					</subdrill>
+					<subdrill>
+						<title>Callipers</title>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Link Wire</para>
+								</challeng>
+								<response>
+									<para>Firmly attached</para>
+								</response>
+							</challrsp>
+						</step>
+					</subdrill>
+					<subdrill>
+						<title>Levers</title>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Levers</para>
+								</challeng>
+								<response>
+									<para>Approximately 1 inch of travel before engagement</para>
+								</response>
+							</challrsp>
+						</step>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Levers</para>
+								</challeng>
+								<response>
+									<para>Space between lever and handlebar when fully pulled</para>
+								</response>
+							</challrsp>
+						</step>
+					</subdrill>
+					<subdrill>
+						<title>Cables</title>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Cables</para>
+								</challeng>
+								<response>
+									<para>No cuts or fraying</para>
+								</response>
+							</challrsp>
+						</step>
+					</subdrill>
+				</drill>
+				<drill>
+					<title>Tires</title>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Pressure</para>
+							</challeng>
+							<response>
+								<table>
+									<tgroup cols="3">
+										<colspec colnum="1" colname="COL1" colwidth="*"/>
+										<colspec colnum="2" colname="COL2" colwidth="*"/>
+										<colspec colnum="3" colname="COL3" colwidth="*"/>
+										<thead>
+											<row>
+												<entry colname="COL1">Tire Pressures</entry>
+												<entry colname="COL2">Min</entry>
+												<entry colname="COL3">Max</entry>
+											</row>
+										</thead>
+										<tbody>
+											<row>
+												<entry colname="COL1">Off Road</entry>
+												<entry colname="COL2">35lbs</entry>
+												<entry colname="COL3">40lbs</entry>
+											</row>
+											<row>
+												<entry colname="COL1">On Road</entry>
+												<entry colname="COL2">55lbs</entry>
+												<entry colname="COL3">60lbs</entry>
+											</row>
+										</tbody>
+									</tgroup>
+								</table>
+							</response>
+						</challrsp>
+					</step>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Tires</para>
+							</challeng>
+							<response>
+								<para>No cracks or splits</para>
+							</response>
+						</challrsp>
+					</step>
+				</drill>
+				<drill>
+					<title>Wheels</title>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Wheels</para>
+							</challeng>
+							<response>
+								<para>No loose bearings</para>
+							</response>
+						</challrsp>
+					</step>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Wheels</para>
+							</challeng>
+							<response>
+								<para>True</para>
+							</response>
+						</challrsp>
+					</step>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Spokes</para>
+							</challeng>
+							<response>
+								<para>Not broken</para>
+							</response>
+						</challrsp>
+					</step>
+					<if>
+						<condit>Spokes not broken</condit>
+						<step>
+							<challrsp>
+								<challeng>
+									<para>Spokes</para>
+								</challeng>
+								<response>
+									<para>Tight</para>
+								</response>
+							</challrsp>
+						</step>
+					</if>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Axel Nuts</para>
+							</challeng>
+							<response>
+								<para>Tight</para>
+							</response>
+						</challrsp>
+					</step>
+				</drill>
+				<drill>
+					<title>Headset</title>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Headset bearings</para>
+							</challeng>
+							<response>
+								<para>Tight</para>
+							</response>
+						</challrsp>
+					</step>
+				</drill>
+				<drill>
+					<title>Chain</title>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Links</para>
+							</challeng>
+							<response>
+								<para>Easy movement of links</para>
+							</response>
+						</challrsp>
+					</step>
+				</drill>
+				<drill>
+					<title>Handlebar</title>
+					<warning>
+						<para>Do not ride with a cracked stem</para>
+					</warning>
+					<if>
+						<condit>Stem cracked</condit>
+						<step>
+							<procd>
+								<para>Replace stem</para>
+							</procd>
+						</step>
+					</if>
+					<elseif>
+						<condit>Stem is loose</condit>
+						<step>
+							<procd>
+								<para>Tighten stem</para>
+							</procd>
+						</step>
+					</elseif>
+					<if>
+						<condit>Handlebars twist in stem</condit>
+						<step>
+							<procd>
+								<para>Tighten clamp bolt</para>
+							</procd>
+						</step>
+					</if>
+				</drill>
+				<drill>
+					<title>Computer</title>
+					<step>
+						<challrsp>
+							<challeng>
+								<para>Computer Display</para>
+							</challeng>
+							<response>
+								<para>
+									<capgrp cols="2">
+										<capbody>
+											<caprow>
+												<capentry>
+													<caption colour="co04" level="00001" mark="1" change="add">
+														<capline>SPEED</capline>
+													</caption>
+												</capentry>
+												<capentry>
+													<caption colour="co51" level="00001" mark="1" change="add">
+														<capline>0 mph</capline>
+													</caption>
+												</capentry>
+											</caprow>
+											<caprow>
+												<capentry>
+													<caption colour="co04" level="00001" mark="1" change="add">
+														<capline>DISTANCE</capline>
+													</caption>
+												</capentry>
+												<capentry>
+													<caption colour="co51" level="00001" mark="1" change="add">
+														<capline>0 miles</capline>
+													</caption>
+												</capentry>
+											</caprow>
+										</capbody>
+									</capgrp>
+								</para>
+							</response>
+						</challrsp>
+					</step>
+				</drill>
+			</frc>
+		</acrw>
+	</content>
+</dmodule>

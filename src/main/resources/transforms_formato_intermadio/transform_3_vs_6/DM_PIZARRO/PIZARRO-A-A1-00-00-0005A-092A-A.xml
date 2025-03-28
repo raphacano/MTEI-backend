@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<!DOCTYPE dmodule [
+<!NOTATION svg SYSTEM "svg">
+<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1 SYSTEM "ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1.svg" NDATA svg>
+<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+%ISOEntities;
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_master/dm/schedulSchema.xsd">
+	<rdf:Description>
+		<dc:title>GRUPO MOTOPROPULSOR GENERAL - Listado de tareas mantenimiento correctivo</dc:title>
+		<dc:creator>F4884</dc:creator>
+		<dc:subject>GRUPO MOTOPROPULSOR GENERAL - Listado de tareas mantenimiento correctivo</dc:subject>
+		<dc:publisher>0131B</dc:publisher>
+		<dc:contributor>F4884</dc:contributor>
+		<dc:date>2023-01-24</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>PIZARRO-A-A1-00-00-0005A-092A-A</dc:identifier>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>PIZARRO</modelic>
+					<sdc>A</sdc>
+					<chapnum>A1</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>05A</discodev>
+					<incode>092</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>GRUPO MOTOPROPULSOR GENERAL</techname>
+				<infoname>GRUPO MOTOPROPULSOR GENERAL - Listado de tareas mantenimiento correctivo</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="24" month="01" year="2023"/>
+			<language country="ES" language="es"/></dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="SBS">0131B</rpc>
+			<orig origname="SONOVISION">F4884</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>PIZARRO VCIC</p>
+				</displaytext>
+			</applic>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Business rules</infoname>
+					</dmtitle>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/></qa>
+		</status>
+	</idstatus>
+	<content>
+		<schedule>
+			<deftask airworthlim="mandatory" taskcode="taskcd61" taskid="A1000011S1">
+				<task>DESACOPLAR MOTOR Y TRANSMISIÓN</task>
+				<reqsource reqsource="TBD" sourcenbr="A3502347">
+					<issno issno="002"/>
+					<issdate day="01" month="04" year="2016"/></reqsource>
+				<prelreqs>
+					<pmd>
+						<avehcfg>
+							<jacked power="notapplic" status="na"/>
+							<safedev power="notapplic" status="na"/>
+							<elecpwr power="notapplic" status="na"/>
+							<hydpwr power="notapplic" status="na"/>
+							<airpwr power="notapplic" status="na"/>
+							<fuel power="notapplic" status="na"/>
+							<water power="notapplic" status="na"/>
+							<fcposn power="notapplic" status="no"/></avehcfg>
+						<opndurn closeup="0,00" prelreqs="0,00" proced="2,22"/></pmd>
+					<reqconds>
+						<reqcondm>
+							<reqcond>Desmontar el GMP</reqcond>
+							<refdm>
+								<avee>
+									<modelic>PIZARRO</modelic>
+									<sdc>A</sdc>
+									<chapnum>A2</chapnum>
+									<section>0</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>01</discode>
+									<discodev>00A</discodev>
+									<incode>920</incode>
+									<incodev>A</incodev>
+									<itemloc>A</itemloc>
+								</avee>
+								<dmtitle>
+									<techname>GRUPO MOTOR GENERAL</techname>
+									<infoname>Desmontaje y montaje del GMP</infoname>
+								</dmtitle>
+							</refdm>
+						</reqcondm>
+					</reqconds>
+					<reqpers>
+						<person man="1"/>
+						<perscat category="TPAMV"/>
+						<perskill skill="sk02"/>
+						<trade>MPT ETEC MANTO. VEHICULOS</trade>
+						<esttime>2,22</esttime>
+					</reqpers>
+					<supequip>
+						<supeqli>
+							<supequi>
+								<nomen>Eslinga GMP</nomen>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>3465010326</pnr>
+								</identno>
+								<nsn nsn="4010331086253"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Soporte del GMP (banco de integración del GMP)</nomen>
+								<identno>
+									<mfc>0125B</mfc>
+									<pnr>3465010252</pnr>
+								</identno>
+								<nsn nsn="4910332009017"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Eslinga para elevación del motor o de la transmisión</nomen>
+								<identno>
+									<mfc>0125B</mfc>
+									<pnr>3465010362</pnr>
+								</identno>
+								<nsn nsn="3940332009018"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Eslinga (4 brazos)</nomen>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>3940000084</pnr>
+								</identno>
+								<nsn nsn="4910331078066"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+						</supeqli>
+					</supequip>
+					<supplies>
+						<supplyli>
+							<supply>
+								<nomen>Grasa MOLIKOTE LONGTERM 2 - Plus (G-353)</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<qty uom="EA">AR</qty>
+							</supply>
+							<supply>
+								<nomen>Vaselina</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<qty uom="EA">AR</qty>
+							</supply>
+							<supply>
+								<nomen>Grasa OTAN G-395</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<con connbr="G-395"/>
+								<qty uom="EA">AR</qty>
+							</supply>
+						</supplyli>
+					</supplies>
+					<spares>
+						<sparesli>
+							<spare>
+								<nomen>CARTER</nomen>
+								<nsn nsn="2815123538925"/>
+								<identno>
+									<mfc>D8266</mfc>
+									<pnr>442 010 03 08</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>FILTRO DE AIRE, ADMISION</nomen>
+								<nsn nsn="2940123531791"/>
+								<identno>
+									<mfc>D8086</mfc>
+									<pnr>45 920 70 100</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>TRANSMISION, MECANICA, DE VEHICULOS</nomen>
+								<nsn nsn="2520123521653"/>
+								<identno>
+									<mfc>D9434</mfc>
+									<pnr>5206600</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>JUNTA TORICA</nomen>
+								<nsn nsn="5331123520160"/>
+								<identno>
+									<mfc>D9434</mfc>
+									<pnr>6568340432</pnr>
+								</identno>
+								<qty uom="EA">2</qty>
+							</spare>
+							<spare>
+								<nomen>JUNTA TORICA</nomen>
+								<nsn nsn="5331121786286"/>
+								<identno>
+									<mfc>0141B</mfc>
+									<pnr>MMN429-55X5</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+						</sparesli>
+					</spares>
+					<safety>
+						<safecond>
+							<warning>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+								<para>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea <refdm>
+										<avee>
+											<modelic>PIZARRO</modelic>
+											<sdc>A</sdc>
+											<chapnum>00</chapnum>
+											<section>0</section>
+											<subsect>0</subsect>
+											<subject>00</subject>
+											<discode>00</discode>
+											<discodev>00A</discodev>
+											<incode>012</incode>
+											<incodev>A</incodev>
+											<itemloc>D</itemloc>
+										</avee>
+										<dmtitle>
+											<techname>SISTEMA GENERAL</techname>
+											<infoname>Normas generales de seguridad</infoname>
+										</dmtitle>
+									</refdm>).</para>
+							</warning>
+							<warning>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+								<para>Utilizar casco, gafas y zapatos de seguridad.</para>
+							</warning>
+						</safecond>
+					</safety>
+				</prelreqs>
+				<refs>
+					<refdm>
+						<avee>
+							<modelic>PIZARRO</modelic>
+							<sdc>A</sdc>
+							<chapnum>A1</chapnum>
+							<section>3</section>
+							<subsect>0</subsect>
+							<subject>00</subject>
+							<discode>00</discode>
+							<discodev>00A</discodev>
+							<incode>530</incode>
+							<incodev>A</incodev>
+							<itemloc>C</itemloc>
+						</avee>
+						<dmtitle>
+							<techname>INTERCONEXIONES DEL GRUPO MOTOPROPULSOR</techname>
+							<infoname>Separación del motor de la transmisión</infoname>
+						</dmtitle>
+					</refdm>
+				</refs>
+				<equip>
+					<nomen>VCI/C PIZARRO FASE I</nomen>
+					<nsn nsn="2350331085285"/>
+					<csnref refcsn=""/>
+					<identno>
+						<mfc>0125B</mfc>
+						<pnr>96442311000</pnr>
+					</identno>
+				</equip>
+				<supervis sup.lev="sl52"/></deftask>
+			<deftask airworthlim="mandatory" taskcode="taskcd51" taskid="A1300012A0">
+				<task>CAMBIO CAJA DE LOS FILTROS DE AIRE</task>
+				<reqsource reqsource="TBD" sourcenbr="A3502347">
+					<issno issno="002"/>
+					<issdate day="01" month="04" year="2016"/></reqsource>
+				<prelreqs>
+					<pmd>
+						<avehcfg>
+							<jacked power="notapplic" status="na"/>
+							<safedev power="notapplic" status="na"/>
+							<elecpwr power="notapplic" status="na"/>
+							<hydpwr power="notapplic" status="na"/>
+							<airpwr power="notapplic" status="na"/>
+							<fuel power="notapplic" status="na"/>
+							<water power="notapplic" status="na"/>
+							<fcposn power="notapplic" status="no"/></avehcfg>
+						<opndurn closeup="0,00" prelreqs="0,00" proced="2,22"/></pmd>
+					<reqconds>
+						<reqcondm>
+							<reqcond>Desmontar el GMP</reqcond>
+							<refdm>
+								<avee>
+									<modelic>PIZARRO</modelic>
+									<sdc>A</sdc>
+									<chapnum>A2</chapnum>
+									<section>0</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>01</discode>
+									<discodev>00A</discodev>
+									<incode>920</incode>
+									<incodev>A</incodev>
+									<itemloc>A</itemloc>
+								</avee>
+								<dmtitle>
+									<techname>GRUPO MOTOR GENERAL</techname>
+									<infoname>Desmontaje y montaje del GMP</infoname>
+								</dmtitle>
+							</refdm>
+						</reqcondm>
+					</reqconds>
+					<reqpers>
+						<person man="1"/>
+						<perscat category="TPAMV"/>
+						<perskill skill="sk02"/>
+						<trade>MPT ETEC MANTO. VEHICULOS</trade>
+						<esttime>2,22</esttime>
+					</reqpers>
+					<supequip>
+						<supeqli>
+							<supequi>
+								<nomen>Eslinga GMP</nomen>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>3465010326</pnr>
+								</identno>
+								<nsn nsn="4010331086253"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Soporte del GMP (banco de integración del GMP)</nomen>
+								<identno>
+									<mfc>0125B</mfc>
+									<pnr>3465010252</pnr>
+								</identno>
+								<nsn nsn="4910332009017"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Eslinga para elevación del motor o de la transmisión</nomen>
+								<identno>
+									<mfc>0125B</mfc>
+									<pnr>3465010362</pnr>
+								</identno>
+								<nsn nsn="3940332009018"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Eslinga (4 brazos)</nomen>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>3940000084</pnr>
+								</identno>
+								<nsn nsn="4910331078066"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+						</supeqli>
+					</supequip>
+					<supplies>
+						<supplyli>
+							<supply>
+								<nomen>Grasa MOLIKOTE LONGTERM 2 - Plus (G-353)</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<qty uom="EA">AR</qty>
+							</supply>
+							<supply>
+								<nomen>Vaselina</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<qty uom="EA">AR</qty>
+							</supply>
+							<supply>
+								<nomen>Grasa OTAN G-395</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<con connbr="G-395"/>
+								<qty uom="EA">AR</qty>
+							</supply>
+						</supplyli>
+					</supplies>
+					<spares>
+						<sparesli>
+							<spare>
+								<nomen>CARTER</nomen>
+								<nsn nsn="2815123538925"/>
+								<identno>
+									<mfc>D8266</mfc>
+									<pnr>442 010 03 08</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>FILTRO DE AIRE, ADMISION</nomen>
+								<nsn nsn="2940123531791"/>
+								<identno>
+									<mfc>D8086</mfc>
+									<pnr>45 920 70 100</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>TRANSMISION, MECANICA, DE VEHICULOS</nomen>
+								<nsn nsn="2520123521653"/>
+								<identno>
+									<mfc>D9434</mfc>
+									<pnr>5206600</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>JUNTA TORICA</nomen>
+								<nsn nsn="5331123520160"/>
+								<identno>
+									<mfc>D9434</mfc>
+									<pnr>6568340432</pnr>
+								</identno>
+								<qty uom="EA">2</qty>
+							</spare>
+							<spare>
+								<nomen>JUNTA TORICA</nomen>
+								<nsn nsn="5331121786286"/>
+								<identno>
+									<mfc>0141B</mfc>
+									<pnr>MMN429-55X5</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+						</sparesli>
+					</spares>
+					<safety>
+						<safecond>
+							<warning>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+								<para>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea <refdm>
+										<avee>
+											<modelic>PIZARRO</modelic>
+											<sdc>A</sdc>
+											<chapnum>00</chapnum>
+											<section>0</section>
+											<subsect>0</subsect>
+											<subject>00</subject>
+											<discode>00</discode>
+											<discodev>00A</discodev>
+											<incode>012</incode>
+											<incodev>A</incodev>
+											<itemloc>D</itemloc>
+										</avee>
+										<dmtitle>
+											<techname>SISTEMA GENERAL</techname>
+											<infoname>Normas generales de seguridad</infoname>
+										</dmtitle>
+									</refdm>).</para>
+							</warning>
+							<warning>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+								<para>Utilizar casco, gafas y zapatos de seguridad.</para>
+							</warning>
+						</safecond>
+					</safety>
+				</prelreqs>
+				<refs>
+					<refdm>
+						<avee>
+							<modelic>PIZARRO</modelic>
+							<sdc>A</sdc>
+							<chapnum>A1</chapnum>
+							<section>3</section>
+							<subsect>0</subsect>
+							<subject>00</subject>
+							<discode>00</discode>
+							<discodev>00A</discodev>
+							<incode>530</incode>
+							<incodev>A</incodev>
+							<itemloc>C</itemloc>
+						</avee>
+						<dmtitle>
+							<techname>INTERCONEXIONES DEL GRUPO MOTOPROPULSOR</techname>
+							<infoname>Separación del motor de la transmisión</infoname>
+						</dmtitle>
+					</refdm>
+				</refs>
+				<equip>
+					<nomen>VCI/C PIZARRO FASE I</nomen>
+					<nsn nsn="2350331085285"/>
+					<csnref refcsn=""/>
+					<identno>
+						<mfc>0125B</mfc>
+						<pnr>96442311000</pnr>
+					</identno>
+				</equip>
+				<supervis sup.lev="sl53"/></deftask>
+			<deftask airworthlim="mandatory" taskcode="taskcd61" taskid="A1300032S0">
+				<task>SEPARACIÓN MOTOR DE TRANSMISIÓN</task>
+				<reqsource reqsource="TBD" sourcenbr="A3502347">
+					<issno issno="002"/>
+					<issdate day="01" month="04" year="2016"/></reqsource>
+				<prelreqs>
+					<pmd>
+						<avehcfg>
+							<jacked power="notapplic" status="na"/>
+							<safedev power="notapplic" status="na"/>
+							<elecpwr power="notapplic" status="na"/>
+							<hydpwr power="notapplic" status="na"/>
+							<airpwr power="notapplic" status="na"/>
+							<fuel power="notapplic" status="na"/>
+							<water power="notapplic" status="na"/>
+							<fcposn power="notapplic" status="no"/></avehcfg>
+						<opndurn closeup="0,00" prelreqs="0,00" proced="2,22"/></pmd>
+					<reqconds>
+						<reqcondm>
+							<reqcond>Desmontar el GMP</reqcond>
+							<refdm>
+								<avee>
+									<modelic>PIZARRO</modelic>
+									<sdc>A</sdc>
+									<chapnum>A2</chapnum>
+									<section>0</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>01</discode>
+									<discodev>00A</discodev>
+									<incode>920</incode>
+									<incodev>A</incodev>
+									<itemloc>A</itemloc>
+								</avee>
+								<dmtitle>
+									<techname>GRUPO MOTOR GENERAL</techname>
+									<infoname>Desmontaje y montaje del GMP</infoname>
+								</dmtitle>
+							</refdm>
+						</reqcondm>
+					</reqconds>
+					<reqpers>
+						<person man="1"/>
+						<perscat category="TPAMV"/>
+						<perskill skill="sk02"/>
+						<trade>MPT ETEC MANTO. VEHICULOS</trade>
+						<esttime>2,22</esttime>
+					</reqpers>
+					<supequip>
+						<supeqli>
+							<supequi>
+								<nomen>Eslinga GMP</nomen>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>3465010326</pnr>
+								</identno>
+								<nsn nsn="4010331086253"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Soporte del GMP (banco de integración del GMP)</nomen>
+								<identno>
+									<mfc>0125B</mfc>
+									<pnr>3465010252</pnr>
+								</identno>
+								<nsn nsn="4910332009017"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Eslinga para elevación del motor o de la transmisión</nomen>
+								<identno>
+									<mfc>0125B</mfc>
+									<pnr>3465010362</pnr>
+								</identno>
+								<nsn nsn="3940332009018"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+							<supequi>
+								<nomen>Eslinga (4 brazos)</nomen>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>3940000084</pnr>
+								</identno>
+								<nsn nsn="4910331078066"/>
+								<qty uom="EA">1</qty>
+							</supequi>
+						</supeqli>
+					</supequip>
+					<supplies>
+						<supplyli>
+							<supply>
+								<nomen>Grasa MOLIKOTE LONGTERM 2 - Plus (G-353)</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<qty uom="EA">AR</qty>
+							</supply>
+							<supply>
+								<nomen>Vaselina</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<qty uom="EA">AR</qty>
+							</supply>
+							<supply>
+								<nomen>Grasa OTAN G-395</nomen>
+								<nsn nsn="TBD"/>
+								<identno>
+									<mfc>TBD</mfc>
+									<pnr>TBD</pnr>
+								</identno>
+								<con connbr="G-395"/>
+								<qty uom="EA">AR</qty>
+							</supply>
+						</supplyli>
+					</supplies>
+					<spares>
+						<sparesli>
+							<spare>
+								<nomen>CARTER</nomen>
+								<nsn nsn="2815123538925"/>
+								<identno>
+									<mfc>D8266</mfc>
+									<pnr>442 010 03 08</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>FILTRO DE AIRE, ADMISION</nomen>
+								<nsn nsn="2940123531791"/>
+								<identno>
+									<mfc>D8086</mfc>
+									<pnr>45 920 70 100</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>TRANSMISION, MECANICA, DE VEHICULOS</nomen>
+								<nsn nsn="2520123521653"/>
+								<identno>
+									<mfc>D9434</mfc>
+									<pnr>5206600</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+							<spare>
+								<nomen>JUNTA TORICA</nomen>
+								<nsn nsn="5331123520160"/>
+								<identno>
+									<mfc>D9434</mfc>
+									<pnr>6568340432</pnr>
+								</identno>
+								<qty uom="EA">2</qty>
+							</spare>
+							<spare>
+								<nomen>JUNTA TORICA</nomen>
+								<nsn nsn="5331121786286"/>
+								<identno>
+									<mfc>0141B</mfc>
+									<pnr>MMN429-55X5</pnr>
+								</identno>
+								<qty uom="EA">1</qty>
+							</spare>
+						</sparesli>
+					</spares>
+					<safety>
+						<safecond>
+							<warning>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+								<para>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea <refdm>
+										<avee>
+											<modelic>PIZARRO</modelic>
+											<sdc>A</sdc>
+											<chapnum>00</chapnum>
+											<section>0</section>
+											<subsect>0</subsect>
+											<subject>00</subject>
+											<discode>00</discode>
+											<discodev>00A</discodev>
+											<incode>012</incode>
+											<incodev>A</incodev>
+											<itemloc>D</itemloc>
+										</avee>
+										<dmtitle>
+											<techname>SISTEMA GENERAL</techname>
+											<infoname>Normas generales de seguridad</infoname>
+										</dmtitle>
+									</refdm>).</para>
+							</warning>
+							<warning>
+								<symbol boardno="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+								<para>Utilizar casco, gafas y zapatos de seguridad.</para>
+							</warning>
+						</safecond>
+					</safety>
+				</prelreqs>
+				<refs>
+					<refdm>
+						<avee>
+							<modelic>PIZARRO</modelic>
+							<sdc>A</sdc>
+							<chapnum>A1</chapnum>
+							<section>3</section>
+							<subsect>0</subsect>
+							<subject>00</subject>
+							<discode>00</discode>
+							<discodev>00A</discodev>
+							<incode>530</incode>
+							<incodev>A</incodev>
+							<itemloc>C</itemloc>
+						</avee>
+						<dmtitle>
+							<techname>INTERCONEXIONES DEL GRUPO MOTOPROPULSOR</techname>
+							<infoname>Separación del motor de la transmisión</infoname>
+						</dmtitle>
+					</refdm>
+				</refs>
+				<equip>
+					<nomen>VCI/C PIZARRO FASE I</nomen>
+					<nsn nsn="2350331085285"/>
+					<csnref refcsn=""/>
+					<identno>
+						<mfc>0125B</mfc>
+						<pnr>96442311000</pnr>
+					</identno>
+				</equip>
+				<supervis sup.lev="sl53"/></deftask>
+		</schedule>
+	</content>
+</dmodule>

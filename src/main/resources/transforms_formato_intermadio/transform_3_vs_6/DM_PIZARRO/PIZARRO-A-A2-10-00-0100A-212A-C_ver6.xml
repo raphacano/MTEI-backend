@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="A2" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="212" infoCodeVariant="A" itemLocationCode="C"/>
+				<language countryIsoCode="US" languageIsoCode="en"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2022" month="07" day="20"/>
+				<dmTitle>
+					<techName>MOTOR</techName>
+					<infoName>Llenado del circuito de aceite del motor</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="changed">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="0131B">
+				<enterpriseName>SBS</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="F4884">
+				<enterpriseName>SONOVISION</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>Pizarro VCIC</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<skillLevel skillLevelCode="sk02"/>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<procedure>
+			<preliminaryRqmts>
+				<productionMaintData>
+					<taskDuration unitOfMeasure="HOUR" startupDuration="0,00" procedureDuration="2,00" closeupDuration="0,00"/>
+				</productionMaintData>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+				<reqPersons>
+					<person man="1">
+						<personCategory personCategoryCode="TPAMV"/>
+						<personSkill skillLevelCode="sk02"/>
+						<trade>MPT ETEC MANTO. VEHICULOS</trade>
+						<estimatedTime unitOfMeasure="h">2.00</estimatedTime>
+					</person>
+				</reqPersons>
+				<reqSupportEquips>
+					<supportEquipDescrGroup>
+						<supportEquipDescr id="seq-0001">
+							<name>Depósito de llenado de aceite</name>
+							<identNumber>
+								<manufacturerCode>D8046</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>352 589 11 63 00</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">1</reqQuantity>
+						</supportEquipDescr>
+						<supportEquipDescr id="seq-0002">
+							<name>Racor de adaptación para llenado de aceite</name>
+							<identNumber>
+								<manufacturerCode>D8266</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>442 589 12 63 00</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">1</reqQuantity>
+						</supportEquipDescr>
+					</supportEquipDescrGroup>
+				</reqSupportEquips>
+				<reqSupplies>
+					<supplyDescrGroup>
+						<supplyDescr id="sup-0001">
+							<name>Aceite del motor SAE 15W40, MIL-PRF-2104G</name>
+							<identNumber>
+								<manufacturerCode>TBD</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>TBD</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">AR</reqQuantity>
+						</supplyDescr>
+					</supplyDescrGroup>
+				</reqSupplies>
+				<reqSpares>
+					<spareDescrGroup>
+						<spareDescr>
+							<catalogSeqNumberRef figureNumber="15" item="442"/>
+							<reqQuantity>1</reqQuantity>
+						</spareDescr>
+					</spareDescrGroup>
+				</reqSpares>
+				<reqSafety>
+					<safetyRqmts>
+						<warning>
+							<symbol infoEntityIdent="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+							<warningAndCautionPara>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea PIZARROA0000000000A012ADSISTEMA GENERALNormas generales de seguridad).</warningAndCautionPara>
+						</warning>
+						<warning>
+							<symbol infoEntityIdent="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
+							<warningAndCautionPara>Utilizar casco, gafas y zapatos de seguridad.</warningAndCautionPara>
+						</warning>
+					</safetyRqmts>
+				</reqSafety>
+			</preliminaryRqmts>
+			<mainProcedure>
+				<proceduralStep>
+					<para>Llenado del circuito de aceite del motor</para>
+					<proceduralStep>
+						<para>Operaciones</para>
+						<proceduralStep>
+							<para>Desmontar las tapas de balancines de los cilindros primero y último (Tarea <dmRef>
+									<dmRefIdent>
+										<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="A2" subSystemCode="1" subSubSystemCode="2" assyCode="10" disassyCode="01" disassyCodeVariant="00A" infoCode="921" infoCodeVariant="A" itemLocationCode="A"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>TAPA DE CULATA / TAPA DE BALANCINES</techName>
+											<infoName>Cambio de la junta de la tapa de balancines</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef> ).</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Desenroscar el tornillo de hexágono interior
+de la tapa del enfriador de aceite (donde
+va montada la válvula de desvío de
+aceite del filtro) <internalRef internalRefId="fig-0001" internalRefTargetType="irtt06"/>.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Enroscar el <internalRef internalRefId="seq-0002" internalRefTargetType="irtt05"/><internalRef internalRefId="fig-0001-hot-0002" internalRefTargetType="irtt07"/> (Herramienta
+nº 15). Unir al racor adaptador el
+tubo flexible del depósito de llenado de
+aceite (Herramienta nº 14) <internalRef internalRefId="fig-0001" internalRefTargetType="irtt06"/>.</para>
+							<note>
+								<notePara>No desmontar la válvula de desvío de aceite.</notePara>
+							</note>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Llenar con aceite de motor el <internalRef internalRefId="seq-0001" internalRefTargetType="irtt05"/> (Herramienta nº 14) y cerrarlo.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Con la bomba manual que lleva, establecer unos 3 bar de presión, con la válvula de cierre
+cerrada.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Abrir la válvula de cierre, hasta haber bombeado unos 4 litros de aceite del depósito de
+llenado a los circuitos del motor y el aceite salga exento de burbujas por los balancines de
+los cilindros primero y último. La sobrepresión en el depósito de llenado no deberá
+descender a menos de 1,5 bar; en caso dado, seguir bombeando.</para>
+							<note>
+								<notePara>En caso de vaciarse por completo del depósito de llenado, se
+bombea aire.</notePara>
+							</note>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Desenroscar el tubo flexible del depósito y el racor de adaptación, y enroscar el tornillo de
+hexágono interior con una junta nueva, apretar el tornillo con un par de 60 N.m.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Montar las tapas de balancines <internalRef internalRefId="fig-0002-hot-0001" internalRefTargetType="irtt07"/> de
+los cilindros primero y último con juntas
+<internalRef internalRefId="fig-0002-hot-0003" internalRefTargetType="irtt07"/> nuevas.</para>
+							<para>Enroscar los tornillos <internalRef internalRefId="fig-0002-hot-0002" internalRefTargetType="irtt07"/> y apretarlos
+con un par de 25 N.m.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Echar el aceite de motor restante por la
+tubería de llenado, hasta la marca de “Máximo”
+en la varilla indicadora de nivel.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<caution>
+								<symbol infoEntityIdent="ICN-PIZARRO-A-000000-A-F4884-90030-A-01-1"/>
+								<warningAndCautionPara>No acelerar el motor mientras no se indique presión de aceite.</warningAndCautionPara>
+							</caution>
+							<para>Arrancar el motor y fijarse en el indicador
+de presión de aceite estando el motor al
+ralentí. Tras unos 10 segundos, el manómetro
+deberá indicar presión de aceite.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Parar el motor, tras unos 10 minutos de funcionamiento.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Después de 5 minutos, controlar el nivel de aceite del motor y, si es necesario, corregirlo.</para>
+							<figure id="fig-0001">
+								<title>
+								</title>
+								<graphic infoEntityIdent="ICN-PIZARRO-A-A25110-A-F4884-01201-A-01-1" id="fig-0001-gra-0001">
+									<hotspot applicationStructureIdent="hot-0002" applicationStructureName="2" id="fig-0001-hot-0002" hotspotTitle="RACOR ADAPTADOR"/>
+								</graphic>
+								<legend>
+									<definitionList>
+										<definitionListItem>
+											<listItemTerm>2</listItemTerm>
+											<listItemDefinition>
+												<para>RACOR ADAPTADOR</para>
+											</listItemDefinition>
+										</definitionListItem>
+									</definitionList>
+								</legend>
+							</figure>
+							<figure id="fig-0002">
+								<title>
+								</title>
+								<graphic infoEntityIdent="ICN-PIZARRO-A-A25110-A-F4884-01202-A-01-1" id="fig-0002-gra-0001">
+									<hotspot applicationStructureIdent="hot-0001" applicationStructureName="1" id="fig-0002-hot-0001" hotspotTitle="TAPAS DE BALANCINES"/>
+									<hotspot applicationStructureIdent="hot-0002" applicationStructureName="2" id="fig-0002-hot-0002" hotspotTitle="TORNILLOS"/>
+									<hotspot applicationStructureIdent="hot-0003" applicationStructureName="3" id="fig-0002-hot-0003" hotspotTitle="JUNTAS"/>
+								</graphic>
+								<legend>
+									<definitionList>
+										<definitionListItem>
+											<listItemTerm>1</listItemTerm>
+											<listItemDefinition>
+												<para>TAPAS DE BALANCINES</para>
+											</listItemDefinition>
+										</definitionListItem>
+									</definitionList>
+								</legend>
+							</figure>
+						</proceduralStep>
+					</proceduralStep>
+				</proceduralStep>
+			</mainProcedure>
+			<closeRqmts>
+				<reqCondGroup>
+					<reqCondNoRef>
+						<reqCond>Asegurarse de que la zona de trabajo ha quedado libre de herramientas y otros objetos</reqCond>
+					</reqCondNoRef>
+					<reqCondNoRef>
+						<reqCond>Informar de que el procedimiento se ha realizado e informar del resultado del mismo</reqCond>
+					</reqCondNoRef>
+				</reqCondGroup>
+			</closeRqmts>
+		</procedure>
+	</content>
+</dmodule>

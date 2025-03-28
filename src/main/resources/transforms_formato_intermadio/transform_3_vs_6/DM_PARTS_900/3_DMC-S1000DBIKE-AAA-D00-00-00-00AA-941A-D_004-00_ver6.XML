@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/ipd.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="941" infoCodeVariant="A" itemLocationCode="D"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="004" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2007" month="07" day="31"/>
+				<dmTitle>
+					<techName>Bicycle</techName>
+					<infoName>Illustrated Parts Data - IPD</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="changed">
+			<security securityClassification="01" commercialClassification="cc51" caveat="cv51"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>To be made available to all S1000D users.</dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling>There are no specific handling instructions for this data module.</dataHandling>
+					<dataDestruction>Users may destroy this data module in accordance with their own local procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data module.</dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>
+							<emphasis>TPSMG UK, 2003-2010</emphasis>
+						</copyrightPara>
+						<copyrightPara>
+							<emphasis>Government License - TPSMG 001</emphasis>
+						</copyrightPara>
+					</copyright>
+					<policyStatement>TPSMG TOR 001</policyStatement>
+					<dataConds>There are no known conditions that would change the data restrictions for, or security classification of, this data module.</dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>Mountain bicycle and (Mountain storm Mk1 or Brook trekker Mk9)</simplePara>
+				</displayText>
+				<evaluate andOr="and">
+					<assert applicPropertyIdent="type" applicPropertyType="prodattr" applicPropertyValues="Mountain bicycle"/>
+					<evaluate andOr="or">
+						<evaluate andOr="and">
+							<assert applicPropertyIdent="model" applicPropertyType="prodattr" applicPropertyValues="Mountain storm"/>
+							<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="Mk1"/>
+						</evaluate>
+						<evaluate andOr="and">
+							<assert applicPropertyIdent="model" applicPropertyType="prodattr" applicPropertyValues="Brook trekker"/>
+							<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="Mk9"/>
+						</evaluate>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo>20010131</authorityInfo>
+					<techPubBase>Bike book</techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode>BY</systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03">
+				<simplePara>CPF 2006-47AA: Applicability structure change and addition of actref element</simplePara>
+				<simplePara>CPF 2006-48AA: Export control structure change, addition of container elements</simplePara>
+			</reasonForUpdate>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<illustratedPartsCatalog>
+			<figure id="fig-0001">
+				<title>Bicycle</title>
+				<graphic infoEntityIdent="ICN-S1000DBIKE-AAA-D000000-0-U8025-00536-B-04-1"/>
+			</figure>
+			<initialProvisioningProject initialProvisioningProjectNumber="KZ9990001" initialProvisioningProjectNumberSubject="BICYCLE" fileIdent="s"/>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="000">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="0"/>
+					<quantityPerNextHigherAssy>REF</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ999" partNumberValue="BICYCLE-001"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Bicycle</descrForPart>
+						</itemIdentData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>XB</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+					<genericPartDataGroup>
+						<genericPartData genericPartDataName="qre">
+							<genericPartDataValue>2</genericPartDataValue>
+						</genericPartData>
+						<genericPartData genericPartDataName="xnt">
+							<genericPartDataValue>SP</genericPartDataValue>
+						</genericPartData>
+						<genericPartData genericPartDataName="key">
+							<genericPartDataValue>Bicycle</genericPartDataValue>
+						</genericPartData>
+						<genericPartData genericPartDataName="emb">
+							<genericPartDataValue>KZ999:LNS10276051</genericPartDataValue>
+						</genericPartData>
+						<genericPartData genericPartDataName="nse">
+							<genericPartDataValue>8145144345</genericPartDataValue>
+						</genericPartData>
+						<genericPartData genericPartDataName="dhy">
+							<genericPartDataValue>F2408:1-4UD:02</genericPartDataValue>
+						</genericPartData>
+					</genericPartDataGroup>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="2" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="001">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ999" partNumberValue="BICYCLE-001/1"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Frame assembly</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAODD</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="002">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ999" partNumberValue="BICYCLE-001/2A"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Seat, assembly</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PGOOF</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+				<itemSeqNumber itemSeqNumberValue="05A">
+					<reasonForSelection reasonForSelectionValue="7"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ999" partNumberValue="BICYCLE-001/2B"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Cruiser Seat, assembly</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKX</service>
+							<sourceMaintRecoverability>PGOOF</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="003">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ999" partNumberValue="BICYCLE-001/3"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Steering system</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAFFD</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="004">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ999" partNumberValue="BICYCLE-001/4"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Drive train system</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAFFD</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="005">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ999" partNumberValue="BICYCLE-001/5"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Brake sub-system</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAFFD</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="006">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ777" partNumberValue="LRU1001"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Light system</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>J</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>1</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAFFD</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="007">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ888" partNumberValue="WH-001"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Wheel, assembly rear</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAFFD</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="008">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ888" partNumberValue="WH-002"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Wheel, assembly front</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAODD</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="3" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="009">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="KZ888" partNumberValue="CP-001"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>Computer</descrForPart>
+						</itemIdentData>
+						<techData>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service>UKA</service>
+							<sourceMaintRecoverability>PAOZZ</sourceMaintRecoverability>
+							<modelVersion modelVersionValue="MB"/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+		</illustratedPartsCatalog>
+	</content>
+</dmodule>

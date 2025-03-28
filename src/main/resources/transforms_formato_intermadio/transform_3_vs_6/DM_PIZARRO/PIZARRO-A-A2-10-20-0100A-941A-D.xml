@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dmodule [
+<!ENTITY ICN-PIZARRO-A-A21020-A-F4884-20101-A-02-1 SYSTEM "ICN-PIZARRO-A-A21020-A-F4884-20101-A-02-1.svg" NDATA svg>
+<!NOTATION svg SYSTEM "svg">
+<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+%ISOEntities;
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_master/dm/ipdSchema.xsd">
+	<rdf:Description>
+		<dc:title>BIELAS - Datos de artículos del catálogo ilustrado</dc:title>
+		<dc:creator>F4884</dc:creator>
+		<dc:subject>BIELAS - Datos de artículos del catálogo ilustrado</dc:subject>
+		<dc:publisher>0131B</dc:publisher>
+		<dc:contributor>F4884</dc:contributor>
+		<dc:date>2022-06-03</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>PIZARRO-A-A2-10-20-0100A-941A-D</dc:identifier>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>PIZARRO</modelic>
+					<sdc>A</sdc>
+					<chapnum>A2</chapnum>
+					<section>1</section>
+					<subsect>0</subsect>
+					<subject>20</subject>
+					<discode>01</discode>
+					<discodev>00A</discodev>
+					<incode>941</incode>
+					<incodev>A</incodev>
+					<itemloc>D</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>BIELAS</techname>
+				<infoname>BIELAS - Cilindro, pistón y biela</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="002" type="revised"/>
+			<issdate day="03" month="06" year="2022"/>
+			<language country="ES" language="es"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="SBS">0131B</rpc>
+			<orig origname="SONOVISION">F4884</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>PIZARRO FASE I</p>
+				</displaytext>
+			</applic>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa><rfu><p>Cambio en Hotspot</p></rfu>
+		</status>
+	</idstatus>
+	<content>
+		<ipc>
+			<figure id="fig-0001">
+				<title>BIELAS - CILINDRO, PISTÓN Y BIELA</title>
+				<graphic id="fig-0001-gra-0001" boardno="ICN-PIZARRO-A-A21020-A-F4884-20101-A-02-1">
+					<hotspot apsid="hot-0001" apsname="1" id="fig-0001-hot-0001" title="BIELA"/>
+					<hotspot apsid="hot-0002" apsname="2" id="fig-0001-hot-0002" title="CASQUILLO BIELA"/>
+					<hotspot apsid="hot-0003" apsname="3" id="fig-0001-hot-0003" title="TORNILLO BIELA"/>
+					<hotspot apsid="hot-0004" apsname="4" id="fig-0001-hot-0004" title="PISTÓN C/ CILINDRO"/>
+					<hotspot apsid="hot-0005" apsname="5" id="fig-0001-hot-0005" title="CAMISA CILINDRO"/>
+					<hotspot apsid="hot-0006" apsname="6" id="fig-0001-hot-0006" title="PISTÓN"/>
+					<hotspot apsid="hot-0007" apsname="7" id="fig-0001-hot-0007" title="SEGMENTO DEL PISTÓN"/>
+					<hotspot apsid="hot-0008" apsname="8" id="fig-0001-hot-0008" title="SEGMENTO DEL PISTÓN"/>
+					<hotspot apsid="hot-0009" apsname="9" id="fig-0001-hot-0009" title="SEGMENTO DEL PISTÓN"/>
+					<hotspot apsid="hot-0010" apsname="10" id="fig-0001-hot-0010" title="BULÓN PISTÓN"/>
+					<hotspot apsid="hot-0011" apsname="11" id="fig-0001-hot-0011" title="ANILLO RETENCIÓN"/>
+					<hotspot apsid="hot-0012" apsname="12" id="fig-0001-hot-0012" title="JUEGO SEGMENTOS PISTÓN"/>
+				</graphic>
+			</figure>
+			<csn csn="A2102001A001 " ind="1" item="001 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>442 030 02 20</pnr>
+					<pas>
+						<dfp>BIELA</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815121860510"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A002 " ind="2" item="002 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8046</mfc>
+					<pnr>4420380150</pnr>
+					<pas>
+						<dfp>CASQUILLO BIELA</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="3120123532892"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A003 " ind="2" item="003 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>16</qna>
+					<mfc>D8266</mfc>
+					<pnr>4420380071</pnr>
+					<pas>
+						<dfp>TORNILLO BIELA</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="5306123537456"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A004 " ind="1" item="004 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>4440300537</pnr>
+					<pas>
+						<dfp>PISTÓN C/ CILINDRO</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123532428"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A005 " ind="2" item="005 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>4440110210</pnr>
+					<pas>
+						<dfp>CAMISA CILINDRO</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123532251"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A006 " ind="2" item="006 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>4440300117</pnr>
+					<pas>
+						<dfp>PISTÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123532252"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A007 " ind="3" item="007 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>442 037 02 16</pnr>
+					<pas>
+						<dfp>SEGMENTO DEL PISTÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123537734"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A008 " ind="3" item="008 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>4220370017</pnr>
+					<pas>
+						<dfp>SEGMENTO DEL PISTÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123532239"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A009 " ind="3" item="009 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>4220370018</pnr>
+					<pas>
+						<dfp>SEGMENTO DEL PISTÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123532240"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A010 " ind="3" item="010 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>4440370020</pnr>
+					<pas>
+						<dfp>BULÓN PISTÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123532253"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A011 " ind="3" item="011 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>16</qna>
+					<mfc>D8046</mfc>
+					<pnr>9944640</pnr>
+					<pas>
+						<dfp>ANILLO RETENCIÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="5325123535645"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2102001A012 " ind="1" item="012 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>8</qna>
+					<mfc>D8266</mfc>
+					<pnr>422 030 01 24</pnr>
+					<pas>
+						<dfp>JUEGO SEGMENTOS PISTÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123397797"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+		</ipc>
+	</content>
+</dmodule>

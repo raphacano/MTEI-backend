@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="151" infoCodeVariant="A" itemLocationCode="A"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2006" month="05" day="30"/>
+				<dmTitle>
+					<techName>Bicycle</techName>
+					<infoName>Post-operation procedures (crew)</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01" commercialClassification="cc51"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>To be made available to all S1000D users.</dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling>There are no specific handling instructions for this data
+module.</dataHandling>
+					<dataDestruction>Users may destroy this data module in accordance with their own local
+procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data
+module.</dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>TPSMG UK, 2003-2010</copyrightPara>
+						<copyrightPara>Government License - TPSMG 001</copyrightPara>
+					</copyright>
+					<policyStatement>TPSMG TOR 001</policyStatement>
+					<dataConds>There are no known conditions that would change the data restrictions
+for, or security classification of, this data module.</dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</originator>
+			<applic>
+				<displayText>
+					<simplePara>Mountain bicycle</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo>20010131</authorityInfo>
+					<techPubBase>Bike book</techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="A" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode>BY</systemBreakdownCode>
+			<skillLevel skillLevelCode="sk01"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<procedure>
+			<preliminaryRqmts>
+				<productionMaintData>
+					<taskDuration unitOfMeasure="HOUR" startupDuration="" procedureDuration="" closeupDuration=""/>
+				</productionMaintData>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+				<reqSupportEquips>
+					<supportEquipDescrGroup>
+						<supportEquipDescr id="SEQ001">
+							<name>Specialist toolset</name>
+							<identNumber>
+								<manufacturerCode>KZ666</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>BSK-TLST-001</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity>1</reqQuantity>
+						</supportEquipDescr>
+					</supportEquipDescrGroup>
+				</reqSupportEquips>
+				<reqSupplies>
+					<supplyDescrGroup>
+						<supplyDescr id="SUP001">
+							<name>General lubricant</name>
+							<identNumber>
+								<manufacturerCode>KZ222</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>LL-001</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">A/R</reqQuantity>
+						</supplyDescr>
+					</supplyDescrGroup>
+				</reqSupplies>
+				<reqSpares>
+					<noSpares/>
+				</reqSpares>
+				<reqSafety>
+					<noSafety/>
+				</reqSafety>
+			</preliminaryRqmts>
+			<mainProcedure>
+				<proceduralStep>
+					<para>Clean the bicycle.</para>
+					<proceduralStep>
+						<para>Clean the bicycle with water.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Use the brush from the
+<internalRef internalRefId="SEQ001" internalRefTargetType="irtt05"/> to clean the brakes, the shift levers, the sprockets and the tires.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Let the bicycle dry.</para>
+					</proceduralStep>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Lubricate the bicycle</para>
+					<proceduralStep>
+						<para>Spray the 
+<internalRef internalRefId="SUP001" internalRefTargetType="irtt04"/>, to these moving parts:
+<randomList listItemPrefix="pf01">
+								<listItem>
+									<para>The brake pivots</para>
+								</listItem>
+								<listItem>
+									<para>The derailleur pivots</para>
+								</listItem>
+								<listItem>
+									<para>The derailleur tension guides</para>
+								</listItem>
+								<listItem>
+									<para>The brake lever pivots</para>
+								</listItem>
+								<listItem>
+									<para>The control cables</para>
+								</listItem>
+								<listItem>
+									<para>The gear sprockets</para>
+								</listItem>
+								<listItem>
+									<para>The chain.</para>
+								</listItem>
+							</randomList></para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Remove the lubricant which is more than the necessary.</para>
+					</proceduralStep>
+				</proceduralStep>
+			</mainProcedure>
+			<closeRqmts>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+			</closeRqmts>
+		</procedure>
+	</content>
+</dmodule>

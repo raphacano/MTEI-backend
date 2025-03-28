@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE dmodule [
+	<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20050501//EN//XML" "../S1000D_2-2/xml_schema/ent/ISOEntities">
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-2/xml_schema/dm/crewSchema.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm">
+	<rdf:Description>
+		<dc:Title>Bicycle - Description attributed to crew</dc:Title>
+		<dc:Creator>U8025</dc:Creator>
+		<dc:Subject>Bicycle - Description attributed to crew</dc:Subject>
+		<dc:Publisher>U8025</dc:Publisher>
+		<dc:Contributor>U8025</dc:Contributor>
+		<dc:Date>2006-05-30</dc:Date>
+		<dc:Type>text</dc:Type>
+		<dc:Format>text/xml</dc:Format>
+		<dc:Identifier>S1000DBIKE-AAA-D00-00-00-0000-043A-A_001-00</dc:Identifier>
+		<dc:Language>sx-US</dc:Language>
+		<dc:Rights>01_cc51</dc:Rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00</discodev>
+					<incode>043</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Bicycle</techname>
+				<infoname>Description attributed to crew</infoname>
+			</dmtitle>
+			<issno issno="001" inwork="00" type="new"/>
+			<issdate year="2006" month="05" day="30"/>
+		</dmaddres>
+		<status>
+			<security class="01" commcls="cc51"/>
+			<datarest>
+				<instruct>
+					<distrib>To be made available to all S1000D users.</distrib>
+					<expcont>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</expcont>
+					<handling>There are no specific handling instructions for this data module.</handling>
+					<destruct>Users may destroy this data module in accordance with their own local procedures.</destruct>
+					<disclose>There are no dissemination limitations that apply to this data module.</disclose>
+				</instruct>
+				<inform>
+					<copyright>
+						<para>TPSMG UK, 2003-2010</para>
+						<para>Government License - TPSMG 001</para>
+					</copyright>
+					<polref>TPSMG TOR 001</polref>
+					<datacond>There are no known conditions that would change the data restrictions for, or security classification of, this data module.</datacond>
+				</inform>
+			</datarest>
+			<rpc rpcname="UK MoD">U8025</rpc>
+			<orig origname="UK MoD">U8025</orig>
+			<applic>
+				<type>Mountain bicycle</type>
+				<model model="Mountain storm">
+					<version version="Mk1"/>
+				</model>
+				<model model="Brook trekker">
+					<version version="Mk9"/>
+				</model>
+			</applic>
+			<techstd>
+				<autandtp>
+					<authblk>20010131</authblk>
+					<tpbase>Bike book</tpbase>
+				</autandtp>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-A-04-10-0301-00A-022A-D_002">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>A</sdc>
+						<chapnum>04</chapnum>
+						<section>1</section>
+						<subsect>0</subsect>
+						<subject>0301</subject>
+						<discode>00</discode>
+						<discodev>A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="002"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<sbc>BY</sbc>
+			<skill skill="sk01"/>
+		</status>
+	</idstatus>
+	<content>
+		<refs>
+			<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-DA5-30-00-0000-041A-A">
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>DA5</chapnum>
+					<section>3</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00</discodev>
+					<incode>041</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</refdm>
+		</refs>
+		<acrw>
+			<descacrw>
+				<para0>
+					<title>Introduction</title>
+					<para>Data about the bicycle and its control system is given in this document. This data will help you operate the bicycle.</para>
+				</para0>
+				<para0>
+					<subpara1>
+						<title>Controls</title>
+						<para>Data about the controls that follow is given in this document:
+<randlist prefix="pf02">
+								<item>
+									<xref xrefid="P001" xidtype="para" xlink:actuate="onRequest" xlink:show="replace" xlink:href="P001">Steering</xref>
+								</item>
+								<item>
+									<xref xrefid="P002" xidtype="para" xlink:actuate="onRequest" xlink:show="replace" xlink:href="P002">Shifters</xref>
+								</item>
+								<item>
+									<xref xrefid="P003" xidtype="para" xlink:actuate="onRequest" xlink:show="replace" xlink:href="P003">Brakes</xref>
+								</item>
+								<item>
+									<xref xrefid="P004" xidtype="para" xlink:actuate="onRequest" xlink:show="replace" xlink:href="P004">Pedals</xref>.</item>
+							</randlist>
+						</para>
+					</subpara1>
+					<subpara1 id="P001">
+						<title>Steering</title>
+						<para>The handlebars are used to steer the bike. They are at the front of the bicycle. You hold one of the handlebar grips with each hand and move the handle bar to change the direction of the bike.</para>
+					</subpara1>
+					<subpara1 id="P002">
+						<title>Shifters</title>
+						<para>The gears control the ratio of pedal rotation to wheel rotation. You can change this with the shifters 
+<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-DA5-30-00-0000-041A-A">
+								<avee>
+									<modelic>S1000DBIKE</modelic>
+									<sdc>AAA</sdc>
+									<chapnum>DA5</chapnum>
+									<section>3</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>00</discode>
+									<discodev>00</discodev>
+									<incode>041</incode>
+									<incodev>A</incodev>
+									<itemloc>A</itemloc>
+								</avee>
+							</refdm>
+. The shifters are on the handlebar.</para>
+						<para>A description of the two <xref xrefid="T001" xidtype="table" xlink:actuate="onRequest" xlink:show="replace" xlink:href="T001">shifters</xref>
+follows.</para>
+						<table id="T001">
+							<tgroup cols="2">
+								<colspec colnum="1" colname="COL1" colwidth="*"/>
+								<colspec colnum="2" colname="COL02" colwidth="1.50*"/>
+								<thead>
+									<row>
+										<entry colname="COL1">Shifter Location</entry>
+										<entry colname="COL02">Affected Gears</entry>
+									</row>
+								</thead>
+								<tbody>
+									<row>
+										<entry colname="COL1">Left</entry>
+										<entry colname="COL02">The buttons on the left shifter changes the gears on the front derailleur.</entry>
+									</row>
+									<row>
+										<entry colname="COL1">Right</entry>
+										<entry colname="COL02">The buttons on the right shifter changes the gears on the rear derailleur.</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</subpara1>
+					<subpara1 id="P003">
+						<title>Brakes</title>
+						<warning>
+							<para>If you operate the front brake without the rear brake you can cause a crash.</para>
+						</warning>
+						<para>You can decrease the speed of the bike with the brakes. You operate the brakes with the brake levers on the handlebar.</para>
+						<para>A description of the brake levers
+<xref xrefid="T002" xidtype="table" xlink:actuate="onRequest" xlink:show="replace" xlink:href="T002">follows</xref>
+.</para>
+						<table id="T002">
+							<tgroup cols="2">
+								<colspec colnum="1" colname="COL1" colwidth="*"/>
+								<colspec colnum="2" colname="COL02" colwidth="1.50*"/>
+								<thead>
+									<row>
+										<entry colname="COL1">Brake Lever Location</entry>
+										<entry colname="COL02">Affected Gears</entry>
+									</row>
+								</thead>
+								<tbody>
+									<row>
+										<entry colname="COL1">Left</entry>
+										<entry colname="COL02">This lever operates the front brake.</entry>
+									</row>
+									<row>
+										<entry colname="COL1">Right</entry>
+										<entry colname="COL02">This lever operates the rear brake.</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+					</subpara1>
+					<subpara1 id="P004">
+						<title>Pedals</title>
+						<para>The pedals are at the bottom of the seat tube. You operate the pedals to move the bicycle forward.</para>
+					</subpara1>
+				</para0>
+			</descacrw>
+		</acrw>
+	</content>
+</dmodule>

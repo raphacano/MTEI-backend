@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="121" infoCodeVariant="A" itemLocationCode="A"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2006" month="05" day="30"/>
+				<dmTitle>
+					<techName>Bicycle</techName>
+					<infoName>Pre-operation procedures (crew)</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01" commercialClassification="cc51"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>To be made available to all S1000D users.</dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling>There are no specific handling instructions for this data
+module.</dataHandling>
+					<dataDestruction>Users may destroy this data module in accordance with their own local
+procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data
+module.</dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>TPSMG UK, 2003-2010</copyrightPara>
+						<copyrightPara>Government License - TPSMG 001</copyrightPara>
+					</copyright>
+					<policyStatement>TPSMG TOR 001</policyStatement>
+					<dataConds>There are no known conditions that would change the data restrictions
+for, or security classification of, this data module.</dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</originator>
+			<applic>
+				<displayText>
+					<simplePara>Mountain bicycle</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo>20010131</authorityInfo>
+					<techPubBase>Bike book</techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="A" systemCode="04" subSystemCode="1" subSubSystemCode="0" assyCode="0301" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode>BY</systemBreakdownCode>
+			<skillLevel skillLevelCode="sk01"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<refs>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA4" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="251" infoCodeVariant="B" itemLocationCode="A"/>
+				</dmRefIdent>
+				<dmRefAddressItems>
+					<dmTitle>
+						<techName></techName>
+						<infoName></infoName>
+					</dmTitle>
+				</dmRefAddressItems>
+			</dmRef>
+		</refs>
+		<procedure>
+			<preliminaryRqmts>
+				<productionMaintData>
+					<taskDuration unitOfMeasure="HOUR" startupDuration="" procedureDuration="" closeupDuration=""/>
+				</productionMaintData>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+				<reqPersons>
+					<person man="A">
+						<personCategory personCategoryCode="Basic user"/>
+						<trade>Operator</trade>
+						<estimatedTime unitOfMeasure="h">0.25</estimatedTime>
+					</person>
+				</reqPersons>
+				<reqSupportEquips>
+					<supportEquipDescrGroup>
+						<supportEquipDescr id="SEQ001">
+							<name>Tire pressure gauge</name>
+							<identNumber>
+								<manufacturerCode>KZ666</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>BSK-TLST-001-01</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity>1</reqQuantity>
+						</supportEquipDescr>
+						<supportEquipDescr id="SEQ002">
+							<name>Specialist toolset</name>
+							<identNumber>
+								<manufacturerCode>KZ666</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>BSK-TLST-001</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity>1</reqQuantity>
+						</supportEquipDescr>
+					</supportEquipDescrGroup>
+				</reqSupportEquips>
+				<reqSupplies>
+					<supplyDescrGroup>
+						<supplyDescr id="SUP001">
+							<name>General lubricant</name>
+							<identNumber>
+								<manufacturerCode>KZ222</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>LL-001</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">A/R</reqQuantity>
+						</supplyDescr>
+					</supplyDescrGroup>
+				</reqSupplies>
+				<reqSpares>
+					<noSpares/>
+				</reqSpares>
+				<reqSafety>
+					<noSafety/>
+				</reqSafety>
+			</preliminaryRqmts>
+			<mainProcedure>
+				<proceduralStep>
+					<para>Examine the condition of the brakes.</para>
+					<proceduralStep>
+						<para>Open the brake quick release.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Examine the condition and the thickness of the brake pads.</para>
+						<proceduralStep>
+							<para>Make sure that there is a large quantity of rubber left.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Make sure that the pad is not too hard.</para>
+						</proceduralStep>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Clean all the unwanted material.</para>
+					</proceduralStep>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Do an inspection of the installation of the brakes.</para>
+					<proceduralStep>
+						<para>Make sure that there is sufficient clearance between the pad and the
+inner diameter of the brake surface.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<caution>
+							<warningAndCautionPara>If the position of the pads is too low on the rim, as shown in
+
+, the pads can move. This could
+cause the separation of the spokes from their mountings., they could slip off
+causing the spokes to be torn out of their mountings.</warningAndCautionPara>
+						</caution>
+						<figure id="F001">
+							<title>Brake pad seating</title>
+							<graphic infoEntityIdent="ICN-S1000DBIKE-AAA-DA10000-0-U8025-00515-A-03-1"/>
+						</figure>
+						<para>Make sure that the pads are correctly installed in the center of the
+inner diameter of the brake surface.</para>
+					</proceduralStep>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Do a check of the tire pressure.</para>
+					<proceduralStep>
+						<para>Do a check of the tire pressure with the
+<internalRef internalRefId="SEQ001" internalRefTargetType="irtt05"/>
+.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Compare the value you read with the recommended pressure that is shown
+into the sidewall of the tire.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Add the necessary air.</para>
+					</proceduralStep>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Examine the condition of the wheels.</para>
+					<proceduralStep>
+						<para>Examine the rims for bulges and dents.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Examine for splits at the seam where an extruded rim is bonded.</para>
+					</proceduralStep>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Do a check of the headset bearings.</para>
+					<proceduralStep>
+						<para>Straddle the bicycle.</para>
+						<para>Apply the front brakes and push the handle bars forward.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Make sure that the headset bearings are tight.</para>
+					</proceduralStep>
+				</proceduralStep>
+				<proceduralStep>
+					<para>Do the checks on the chain.</para>
+					<proceduralStep>
+						<para>Visually examine the chain.</para>
+						<para>If the chain is too dirty, clean it as specified in the clean chain task
+(refer to 
+<dmRef>
+								<dmRefIdent>
+									<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA4" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00" infoCode="251" infoCodeVariant="B" itemLocationCode="A"/>
+								</dmRefIdent>
+								<dmRefAddressItems>
+									<dmTitle>
+										<techName></techName>
+										<infoName></infoName>
+									</dmTitle>
+								</dmRefAddressItems>
+							</dmRef>
+).</para>
+						<proceduralStep>
+							<para>Visually examine the chain for links that are frozen or that do not move
+easily.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Apply the necessary
+<internalRef internalRefId="SUP001" internalRefTargetType="irtt04"/>
+.</para>
+						</proceduralStep>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Do a check of the chain to make sure that it is tight.</para>
+						<proceduralStep>
+							<para>Make sure that the play of the chain is not too much.</para>
+							<proceduralStep>
+								<para>Move the chain on the largest chain ring.</para>
+							</proceduralStep>
+							<proceduralStep>
+								<para>Try to pull the chain away from the front of the chain ring.</para>
+								<para>Make sure that the chain is not loose. Tighten the chain if, when you
+pull it away from the chain ring, you can see a full tooth.</para>
+							</proceduralStep>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Tighten the chain with the allen wrench from the
+<internalRef internalRefId="SEQ002" internalRefTargetType="irtt05"/>
+.</para>
+						</proceduralStep>
+					</proceduralStep>
+				</proceduralStep>
+			</mainProcedure>
+			<closeRqmts>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+			</closeRqmts>
+		</procedure>
+	</content>
+</dmodule>

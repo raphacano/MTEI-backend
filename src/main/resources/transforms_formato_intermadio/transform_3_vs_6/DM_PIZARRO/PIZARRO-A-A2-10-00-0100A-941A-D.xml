@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dmodule [
+<!ENTITY ICN-PIZARRO-A-A21000-A-F4884-20101-A-02-1 SYSTEM "ICN-PIZARRO-A-A21000-A-F4884-20101-A-02-1.svg" NDATA svg>
+<!NOTATION svg SYSTEM "svg">
+<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+%ISOEntities;
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_master/dm/ipdSchema.xsd">
+	<rdf:Description>
+		<dc:title>MOTOR - Datos de artículos del catálogo ilustrado</dc:title>
+		<dc:creator>F4884</dc:creator>
+		<dc:subject>MOTOR - Datos de artículos del catálogo ilustrado</dc:subject>
+		<dc:publisher>0131B</dc:publisher>
+		<dc:contributor>F4884</dc:contributor>
+		<dc:date>2022-06-03</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>PIZARRO-A-A2-10-00-0100A-941A-D</dc:identifier>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>PIZARRO</modelic>
+					<sdc>A</sdc>
+					<chapnum>A2</chapnum>
+					<section>1</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>01</discode>
+					<discodev>00A</discodev>
+					<incode>941</incode>
+					<incodev>A</incodev>
+					<itemloc>D</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>MOTOR</techname>
+				<infoname>MOTOR - Motor y piezas periféricas</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="002" type="revised"/>
+			<issdate day="03" month="06" year="2022"/>
+			<language country="ES" language="es"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="SBS">0131B</rpc>
+			<orig origname="SONOVISION">F4884</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>PIZARRO FASE I</p>
+				</displaytext>
+			</applic>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>PIZARRO</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa><rfu><p>Cambio en Hotspot</p></rfu>
+		</status>
+	</idstatus>
+	<content>
+		<ipc>
+			<figure id="fig-0001">
+				<title>MOTOR Y PIEZAS PERIFÉRICAS</title>
+				<graphic id="fig-0001-gra-0001" boardno="ICN-PIZARRO-A-A21000-A-F4884-20101-A-02-1">
+					<hotspot apsid="hot-0001" apsname="1" id="fig-0001-hot-0001" title="CONJUNTO MOTOR"/>
+					<hotspot apsid="hot-0002" apsname="2" id="fig-0001-hot-0002" title="MOTOR"/>
+					<hotspot apsid="hot-0003" apsname="3" id="fig-0001-hot-0003" title="JUNTA"/>
+					<hotspot apsid="hot-0004" apsname="4" id="fig-0001-hot-0004" title="TUBO CONEXIÓN"/>
+					<hotspot apsid="hot-0005" apsname="5" id="fig-0001-hot-0005" title="TUBO CONEXIÓN"/>
+					<hotspot apsid="hot-0006" apsname="6" id="fig-0001-hot-0006" title="JUNTA TÓRICA 55X5 MMN 429"/>
+					<hotspot apsid="hot-0007" apsname="7" id="fig-0001-hot-0007" title="JUNTA TÓRICA 65X5 MMN 429"/>
+				</graphic>
+			</figure>
+			<csn csn="A2100001A001 " ind="1" item="001 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>1</qna>
+					<mfc>D8266</mfc>
+					<pnr>5065591001</pnr>
+					<pas>
+						<dfp>CONJUNTO MOTOR</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123545160"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2100001A002 " ind="2" item="002 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>1</qna>
+					<mfc>D8266</mfc>
+					<pnr>5060101599</pnr>
+					<pas>
+						<dfp>MOTOR</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="2815123538199"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2100001A003 " ind="2" item="003 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>1</qna>
+					<mfc>D8286</mfc>
+					<pnr>DIN 71511/26X48X1,5/MTL5042 A</pnr>
+					<pas>
+						<dfp>JUNTA</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="5330123532093"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2100001A004 " ind="2" item="004 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>3</qna>
+					<mfc>D8266</mfc>
+					<pnr>735078000000</pnr>
+					<pas>
+						<dfp>TUBO CONEXIÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="4710123534642"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2100001A005 " ind="2" item="005 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>1</qna>
+					<mfc>D8266</mfc>
+					<pnr>735078000000</pnr>
+					<pas>
+						<dfp>TUBO CONEXIÓN</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="4710123534642"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2100001A006 " ind="2" item="006 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>12</qna>
+					<mfc>D8266</mfc>
+					<pnr>55X5MMN429</pnr>
+					<pas>
+						<dfp>JUNTA TÓRICA 55X5 MMN 429</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="5331121786286"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+			<csn csn="A2100001A007 " ind="2" item="007 ">
+				<isn isn="00A">
+					<rfs value="1"/>
+					<qna>4</qna>
+					<mfc>D8266</mfc>
+					<pnr>65X5MMN429</pnr>
+					<pas>
+						<dfp>JUNTA TÓRICA 65X5 MMN 429</dfp>
+						<uoi>EA</uoi>
+						<pcs uom="EA">
+							<qui>1</qui>
+						</pcs>
+						<str>0</str>
+						<psc>U</psc>
+					</pas>
+					<nsn nsn="5331121786293"/>
+					<cbs>
+						<dfl>-</dfl>
+					</cbs>
+				</isn>
+			</csn>
+		</ipc>
+	</content>
+</dmodule>

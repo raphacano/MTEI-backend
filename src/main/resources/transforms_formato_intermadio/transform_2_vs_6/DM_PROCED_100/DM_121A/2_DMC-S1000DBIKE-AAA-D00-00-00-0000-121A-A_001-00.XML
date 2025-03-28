@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE dmodule [
+	<!ENTITY ICN-S1000DBIKE-AAA-DA10000-0-U8025-00515-A-03-1 SYSTEM "ICN-S1000DBIKE-AAA-DA10000-0-U8025-00515-A-03-1.CGM" NDATA cgm>
+	<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20050501//EN//XML" "../S1000D_2-2/xml_schema/ent/ISOEntities">
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-2/xml_schema/dm/procedSchema.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm">
+	<rdf:Description>
+		<dc:Title>Bicycle - Pre-operation procedures (crew)</dc:Title>
+		<dc:Creator>U8025</dc:Creator>
+		<dc:Subject>Bicycle - Pre-operation procedures (crew)</dc:Subject>
+		<dc:Publisher>U8025</dc:Publisher>
+		<dc:Contributor>U8025</dc:Contributor>
+		<dc:Date>2006-05-30</dc:Date>
+		<dc:Type>text</dc:Type>
+		<dc:Format>text/xml</dc:Format>
+		<dc:Identifier>S1000DBIKE-AAA-D00-00-00-0000-121A-A_001-00</dc:Identifier>
+		<dc:Language>sx-US</dc:Language>
+		<dc:Rights>01_cc51</dc:Rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00</discodev>
+					<incode>121</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Bicycle</techname>
+				<infoname>Pre-operation procedures (crew)</infoname>
+			</dmtitle>
+			<issno issno="001" inwork="00" type="new"/>
+			<issdate year="2006" month="05" day="30"/>
+		</dmaddres>
+		<status>
+			<security class="01" commcls="cc51"/>
+			<datarest>
+				<instruct>
+					<distrib>To be made available to all S1000D users.</distrib>
+					<expcont>Export of this data module to all countries that are the residence of
+organizations that are users of S1000D is permitted. Storage of this data
+module is to be at the discretion of the organization.</expcont>
+					<handling>There are no specific handling instructions for this data
+module.</handling>
+					<destruct>Users may destroy this data module in accordance with their own local
+procedures.</destruct>
+					<disclose>There are no dissemination limitations that apply to this data
+module.</disclose>
+				</instruct>
+				<inform>
+					<copyright>
+						<para>TPSMG UK, 2003-2010</para>
+						<para>Government License - TPSMG 001</para>
+					</copyright>
+					<polref>TPSMG TOR 001</polref>
+					<datacond>There are no known conditions that would change the data restrictions
+for, or security classification of, this data module.</datacond>
+				</inform>
+			</datarest>
+			<rpc rpcname="UK MoD">U8025</rpc>
+			<orig origname="UK MoD">U8025</orig>
+			<applic>
+				<type>Mountain bicycle</type>
+				<model model="Mountain storm">
+					<version version="Mk1"/>
+				</model>
+				<model model="Brook trekker">
+					<version version="Mk9"/>
+				</model>
+			</applic>
+			<techstd>
+				<autandtp>
+					<authblk>20010131</authblk>
+					<tpbase>Bike book</tpbase>
+				</autandtp>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-A-04-10-0301-00A-022A-D_002">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>A</sdc>
+						<chapnum>04</chapnum>
+						<section>1</section>
+						<subsect>0</subsect>
+						<subject>0301</subject>
+						<discode>00</discode>
+						<discodev>A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="002"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<sbc>BY</sbc>
+			<skill skill="sk01"/>
+		</status>
+	</idstatus>
+	<content>
+		<refs>
+			<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-DA4-10-00-0000-251B-A">
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>DA4</chapnum>
+					<section>1</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00</discodev>
+					<incode>251</incode>
+					<incodev>B</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+				<!-- FLG251 -->
+			</refdm>
+		</refs>
+		<proced>
+			<prelreqs>
+				<reqconds>
+					<noconds/>
+				</reqconds>
+				<reqpers>
+					<person man="A"/>
+					<perscat category="Basic user"/>
+					<trade>Operator</trade>
+					<esttime>0.25</esttime>
+				</reqpers>
+				<supequip>
+					<supeqli>
+						<supequi id="SEQ001">
+							<nomen>Tire pressure gauge</nomen>
+							<identno>
+								<mfc>KZ666</mfc>
+								<pnr>BSK-TLST-001-01</pnr>
+							</identno>
+							<qty>1</qty>
+						</supequi>
+						<supequi id="SEQ002">
+							<nomen>Specialist toolset</nomen>
+							<identno>
+								<mfc>KZ666</mfc>
+								<pnr>BSK-TLST-001</pnr>
+							</identno>
+							<qty>1</qty>
+						</supequi>
+					</supeqli>
+				</supequip>
+				<supplies>
+					<supplyli>
+						<supply id="SUP001">
+							<nomen>General lubricant</nomen>
+							<identno>
+								<mfc>KZ222</mfc>
+								<pnr>LL-001</pnr>
+							</identno>
+							<qty uom="EA">A/R</qty>
+						</supply>
+					</supplyli>
+				</supplies>
+				<spares>
+					<nospares/>
+				</spares>
+				<safety>
+					<nosafety/>
+				</safety>
+			</prelreqs>
+			<mainfunc>
+				<step1>
+					<para>Examine the condition of the brakes.</para>
+					<step2>
+						<para>Open the brake quick release.</para>
+					</step2>
+					<step2>
+						<para>Examine the condition and the thickness of the brake pads.</para>
+						<step3>
+							<para>Make sure that there is a large quantity of rubber left.</para>
+						</step3>
+						<step3>
+							<para>Make sure that the pad is not too hard.</para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Clean all the unwanted material.</para>
+					</step2>
+				</step1>
+				<step1>
+					<para>Do an inspection of the installation of the brakes.</para>
+					<step2>
+						<para>Make sure that there is sufficient clearance between the pad and the
+inner diameter of the brake surface.</para>
+					</step2>
+					<step2>
+						<caution>
+							<para>If the position of the pads is too low on the rim, as shown in
+<xref xrefid="F001" xidtype="figure" xlink:actuate="onRequest" xlink:show="replace" xlink:href="F001"/>
+, the pads can move. This could
+cause the separation of the spokes from their mountings., they could slip off
+causing the spokes to be torn out of their mountings.</para>
+						</caution>
+						<figure id="F001">
+							<title>Brake pad seating</title>
+							<graphic xlink:type="simple" xlink:href="URN:S1000D:ICN-S1000DBIKE-AAA-DA10000-0-U8025-00515-A-03-1" xlink:title="Brake pad seating" boardno="ICN-S1000DBIKE-AAA-DA10000-0-U8025-00515-A-03-1"/>
+						</figure>
+						<para>Make sure that the pads are correctly installed in the center of the
+inner diameter of the brake surface.</para>
+					</step2>
+				</step1>
+				<step1>
+					<para>Do a check of the tire pressure.</para>
+					<step2>
+						<para>Do a check of the tire pressure with the
+<xref xrefid="SEQ001" xidtype="supequip" xlink:actuate="onRequest" xlink:show="replace" xlink:href="SEQ001"/>
+.</para>
+					</step2>
+					<step2>
+						<para>Compare the value you read with the recommended pressure that is shown
+into the sidewall of the tire.</para>
+					</step2>
+					<step2>
+						<para>Add the necessary air.</para>
+					</step2>
+				</step1>
+				<step1>
+					<para>Examine the condition of the wheels.</para>
+					<step2>
+						<para>Examine the rims for bulges and dents.</para>
+					</step2>
+					<step2>
+						<para>Examine for splits at the seam where an extruded rim is bonded.</para>
+					</step2>
+				</step1>
+				<step1>
+					<para>Do a check of the headset bearings.</para>
+					<step2>
+						<para>Straddle the bicycle.</para>
+						<para>Apply the front brakes and push the handle bars forward.</para>
+					</step2>
+					<step2>
+						<para>Make sure that the headset bearings are tight.</para>
+					</step2>
+				</step1>
+				<step1>
+					<para>Do the checks on the chain.</para>
+					<step2>
+						<para>Visually examine the chain.</para>
+						<para>If the chain is too dirty, clean it as specified in the clean chain task
+(refer to 
+<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-DA4-10-00-0000-251B-A">
+								<avee>
+									<modelic>S1000DBIKE</modelic>
+									<sdc>AAA</sdc>
+									<chapnum>DA4</chapnum>
+									<section>1</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>00</discode>
+									<discodev>00</discodev>
+									<incode>251</incode>
+									<incodev>B</incodev>
+									<itemloc>A</itemloc>
+								</avee>
+								<!-- FLG251 -->
+							</refdm>
+).</para>
+						<step3>
+							<para>Visually examine the chain for links that are frozen or that do not move
+easily.</para>
+						</step3>
+						<step3>
+							<para>Apply the necessary
+<xref xrefid="SUP001" xidtype="supply" xlink:actuate="onRequest" xlink:show="replace" xlink:href="SUP001"/>
+.</para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Do a check of the chain to make sure that it is tight.</para>
+						<step3>
+							<para>Make sure that the play of the chain is not too much.</para>
+							<step4>
+								<para>Move the chain on the largest chain ring.</para>
+							</step4>
+							<step4>
+								<para>Try to pull the chain away from the front of the chain ring.</para>
+								<para>Make sure that the chain is not loose. Tighten the chain if, when you
+pull it away from the chain ring, you can see a full tooth.</para>
+							</step4>
+						</step3>
+						<step3>
+							<para>Tighten the chain with the allen wrench from the
+<xref xrefid="SEQ002" xidtype="supequip" xlink:actuate="onRequest" xlink:show="replace" xlink:href="SEQ002"/>
+.</para>
+						</step3>
+					</step2>
+				</step1>
+			</mainfunc>
+			<closereqs>
+				<reqconds>
+					<noconds/>
+				</reqconds>
+			</closereqs>
+		</proced>
+	</content>
+</dmodule>
