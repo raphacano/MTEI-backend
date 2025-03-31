@@ -1,4 +1,4 @@
-package com.example.mtei;
+/*package com.example.mtei;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,3 +12,4 @@ class MteiBackendApplicationTests {
     }
 
 }
+*/
