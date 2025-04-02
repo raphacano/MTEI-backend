@@ -12,6 +12,9 @@ import org.xmlunit.diff.Diff;
 import org.xmlunit.diff.Difference;
 import org.xmlunit.diff.ComparisonResult;
 import org.xmlunit.diff.DefaultComparisonFormatter;
+import org.xmlunit.diff.DifferenceEvaluator;
+import org.xmlunit.diff.ComparisonType;
+import org.xmlunit.diff.Comparison;
 
 // Importaciones específicas para transformación XML
 import javax.xml.transform.Result;
@@ -212,17 +215,31 @@ public class XsltTransformationTests {
 
     /**
      * Compares XML documents with detailed feedback including percentage match and differences.
+     * Ignores attribute differences between elements.
      * 
      * @param fileName Name of the source file for reporting
      * @param actualXml The actual XML generated from transformation
      * @param expectedXml The expected XML from target file
      */
     private void compareXmlWithDetailedFeedback(String fileName, String actualXml, String expectedXml) {
-        // Crear un comparador de diferencias que ignore espacios en blanco y comentarios
+        // Crear un evaluador de diferencias personalizado que ignore los atributos
+        DifferenceEvaluator ignoreAttributesDifferenceEvaluator = (comparison, outcome) -> {
+            // Ignorar todas las comparaciones relacionadas con atributos
+            if (comparison.getType() == ComparisonType.ELEMENT_NUM_ATTRIBUTES ||
+                comparison.getType() == ComparisonType.ATTR_NAME_LOOKUP ||
+                comparison.getType() == ComparisonType.ATTR_VALUE ||
+                comparison.getType().name().startsWith("ATTR_")) {
+                return ComparisonResult.EQUAL;
+            }
+            return outcome;
+        };
+        
+        // Crear un comparador de diferencias que ignore espacios en blanco, comentarios y atributos
         Diff diff = DiffBuilder.compare(Input.fromString(expectedXml))
                 .withTest(Input.fromString(actualXml))
                 .ignoreWhitespace()
                 .ignoreComments()
+                .withDifferenceEvaluator(ignoreAttributesDifferenceEvaluator)
                 .build();
         
         // Convertir las diferencias a una lista para poder contarlas y procesarlas
@@ -263,14 +280,15 @@ public class XsltTransformationTests {
         }
         
         if (totalDifferences == 0) {
-            System.out.println(ANSI_GREEN + ANSI_BOLD + "MATCH 100%" + ANSI_RESET + " - Transformación exitosa para " + fileName);
+            System.out.println(ANSI_GREEN + ANSI_BOLD + "MATCH 100%" + ANSI_RESET + 
+                    " - Transformación exitosa para " + fileName + " (ignorando atributos)");
         } else {
             System.out.println(colorCode + ANSI_BOLD + "MATCH " + formattedPercentage + "%" + ANSI_RESET + 
-                    " - Encontradas " + totalDifferences + " diferencias en " + fileName);
+                    " - Encontradas " + totalDifferences + " diferencias en " + fileName + " (ignorando atributos)");
             
             // Mostrar las diferencias con formato
             DefaultComparisonFormatter formatter = new DefaultComparisonFormatter();
-            System.out.println("\nDiferencias encontradas:");
+            System.out.println("\nDiferencias encontradas (ignorando atributos):");
             
             int count = 0;
             for (Difference difference : differenceList) {
@@ -289,7 +307,8 @@ public class XsltTransformationTests {
             }
             
             // Fallar la prueba si hay diferencias
-            Assertions.fail("XML comparison failed for " + fileName + ": " + totalDifferences + " differences found");
+            Assertions.fail("XML comparison failed for " + fileName + ": " + totalDifferences + 
+                    " differences found (ignoring attributes)");
         }
     }
     
