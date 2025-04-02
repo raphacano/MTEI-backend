@@ -76,7 +76,7 @@
      <xsl:template match="para0">
         <levelledPara>
             <title><xsl:value-of select="title"/></title>
-            <xsl:apply-templates select="* except title"/>
+            <xsl:apply-templates select="*"/>
         </levelledPara>
     </xsl:template>
     

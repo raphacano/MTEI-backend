@@ -76,4 +76,13 @@
         </xsl:attribute>
     </xsl:template>
     
+  <xsl:template match="timeLimitCategory[not(node())]">
+    <timeLimitCategory timeLimitCategoryValue="1"/>
+  </xsl:template>
+
+  <!-- Transform tolerance elements with low/high attributes -->
+  <xsl:template match="tolerance[@toleranceLow and @toleranceHigh]">
+    <tolerance toleranceType="plusorminus" toleranceValue="{@toleranceLow}"/>
+  </xsl:template>
+    
 </xsl:stylesheet>
