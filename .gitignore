@@ -57,3 +57,6 @@ nbdist/
 
 # VS Code #
 .vscode/
+
+# PROJECT #
+temp_*

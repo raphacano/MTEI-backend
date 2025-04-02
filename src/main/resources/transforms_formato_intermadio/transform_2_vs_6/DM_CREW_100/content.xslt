@@ -1,7 +1,8 @@
 <xsl:stylesheet 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-    version="2.0"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    exclude-result-prefixes="#all"
+    version="2.0">
     
     
   <xsl:template match="content">
@@ -73,15 +74,15 @@
 	
 
     
-     <xsl:template match="para0">
+<!--     <xsl:template match="para0">
         <levelledPara>
             <title><xsl:value-of select="title"/></title>
             <xsl:apply-templates select="*"/>
         </levelledPara>
-    </xsl:template>
+    </xsl:template>-->
     
     
-    <xsl:template match="subpara1|subpara2|subpara3|subpara4|subpara5|subpara6|subpara7">
+    <xsl:template match="para0|subpara1|subpara2|subpara3|subpara4|subpara5|subpara6|subpara7">
 		<levelledPara>
 		  <xsl:if test="title">
 			<title><xsl:value-of select="title"/></title>
@@ -361,7 +362,7 @@
     </xsl:template>
 
 	<xsl:template match="entry">
-		<xsl:copy>
+		<xsl:copy copy-namespaces="no">
 		  <para>
 			<xsl:apply-templates select="node()"/>
 		  </para>
@@ -369,7 +370,7 @@
 	</xsl:template>
 
     <xsl:template match="@*|node()">
-        <xsl:copy>
+       <xsl:copy copy-namespaces="no">
             <xsl:apply-templates select="@*|node()"/>
         </xsl:copy>
     </xsl:template>

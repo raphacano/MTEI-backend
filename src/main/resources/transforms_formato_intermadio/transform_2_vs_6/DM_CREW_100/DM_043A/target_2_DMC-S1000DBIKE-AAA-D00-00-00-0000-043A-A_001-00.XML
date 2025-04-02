@@ -86,7 +86,6 @@
 					<para>Data about the bicycle and its control system is given in this document. This data will help you operate the bicycle.</para>
 				</levelledPara>
 				<levelledPara>
-					<title></title>
 					<levelledPara>
 						<title>Controls</title>
 						<para>Data about the controls that follow is given in this document:
@@ -127,28 +126,28 @@ follows.</para>
 								<colspec colnum="2" colname="COL02" colwidth="1.50*"/>
 								<thead valign="bottom">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Shifter Location</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Affected Gears</para>
 										</entry>
 									</row>
 								</thead>
 								<tbody valign="top">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Left</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>The buttons on the left shifter changes the gears on the front derailleur.</para>
 										</entry>
 									</row>
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Right</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>The buttons on the right shifter changes the gears on the rear derailleur.</para>
 										</entry>
 									</row>
@@ -172,28 +171,28 @@ follows.</para>
 								<colspec colnum="2" colname="COL02" colwidth="1.50*"/>
 								<thead valign="bottom">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Brake Lever Location</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Affected Gears</para>
 										</entry>
 									</row>
 								</thead>
 								<tbody valign="top">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Left</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>This lever operates the front brake.</para>
 										</entry>
 									</row>
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Right</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:dm="http://www.s1000d.org/dm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>This lever operates the rear brake.</para>
 										</entry>
 									</row>

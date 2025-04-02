@@ -4,14 +4,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;
 import org.junit.jupiter.api.Assertions;
-
-
-
+import org.springframework.boot.test.context.SpringBootTest; // Optional, but ensures Spring context if needed later
+import org.xmlunit.matchers.CompareMatcher;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
 import org.xmlunit.diff.Diff;
 import org.xmlunit.diff.Difference;
-
+import org.xmlunit.diff.ComparisonResult;
 import org.xmlunit.diff.DefaultComparisonFormatter;
 
 // Importaciones específicas para transformación XML
@@ -29,14 +28,16 @@ import javax.xml.XMLConstants;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.io.FileWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.ArrayList;
-
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
 //@SpringBootTest // Keep if you need Spring context features, otherwise optional for this specific test
@@ -46,6 +47,7 @@ public class XsltTransformationTests {
     private static final Path TRANSFORMS_BASE_DIR = Paths.get("src", "main", "resources", "transforms_formato_intermadio");
     private static final String SOURCE_PREFIX = "source_";
     private static final String TARGET_PREFIX = "target_";
+    private static final String TEMP_PREFIX = "temp_";
     private static final String XSLT_FILENAME = "main.xslt";
     private static final String TRANSFORM_PREFIX = "transform_";
     private static final String DM_PREFIX = "DM_";
@@ -165,11 +167,21 @@ public class XsltTransformationTests {
 
             // 1. Perform Transformation
             String actualXml = transformXml(testCase.sourceXmlPath(), testCase.xsltPath());
+            
+            // 2. Guardar el XML generado como archivo temporal con prefijo "temp_"
+            Path parentDir = testCase.sourceXmlPath().getParent();
+            String sourceFileName = testCase.sourceXmlPath().getFileName().toString();
+            String tempFileName = sourceFileName.replaceFirst("^" + SOURCE_PREFIX, TEMP_PREFIX);
+            Path tempFilePath = parentDir.resolve(tempFileName);
+            
+            // Guardar el XML generado en el archivo temporal
+            saveXmlToFile(actualXml, tempFilePath);
+            System.out.println("XML generado guardado en: " + tempFilePath);
 
-            // 2. Read Expected Target XML
+            // 3. Read Expected Target XML
             String expectedXml = Files.readString(testCase.targetXmlPath(), StandardCharsets.UTF_8);
 
-            // 3. Compare using XMLUnit with detailed feedback
+            // 4. Compare using XMLUnit with detailed feedback
             compareXmlWithDetailedFeedback(
                     testCase.sourceXmlPath().getFileName().toString(),
                     actualXml,
@@ -182,6 +194,19 @@ public class XsltTransformationTests {
             Assertions.fail("TransformerException during transformation for " + testCase.sourceXmlPath().getFileName() + ": " + e.getMessage(), e);
         } catch (Exception e) {
             Assertions.fail("Unexpected exception during test for " + testCase.sourceXmlPath().getFileName() + ": " + e.getMessage(), e);
+        }
+    }
+    
+    /**
+     * Guarda el contenido XML en un archivo.
+     * 
+     * @param xml El contenido XML a guardar
+     * @param filePath La ruta del archivo donde guardar el XML
+     * @throws IOException Si ocurre un error al escribir el archivo
+     */
+    private void saveXmlToFile(String xml, Path filePath) throws IOException {
+        try (FileWriter writer = new FileWriter(filePath.toFile())) {
+            writer.write(xml);
         }
     }
 
