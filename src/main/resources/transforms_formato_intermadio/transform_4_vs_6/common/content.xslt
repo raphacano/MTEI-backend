@@ -84,5 +84,14 @@
   <xsl:template match="tolerance[@toleranceLow and @toleranceHigh]">
     <tolerance toleranceType="plusorminus" toleranceValue="{@toleranceLow}"/>
   </xsl:template>
+ 
+	<xsl:template match="entry[not(para)]">
+		<xsl:copy copy-namespaces="no">
+			<xsl:apply-templates select="@*"/>
+			<para>
+				<xsl:apply-templates select="node()"/>
+			</para>
+		</xsl:copy>
+	</xsl:template>
     
 </xsl:stylesheet>

@@ -4,7 +4,7 @@
 		<dmAddress>
 			<dmIdent>
 				<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="A2" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="212" infoCodeVariant="A" itemLocationCode="C"/>
-				<language countryIsoCode="US" languageIsoCode="en"/>
+				<language languageIsoCode="es" countryIsoCode="ES"/>
 				<issueInfo issueNumber="001" inWork="00"/>
 			</dmIdent>
 			<dmAddressItems>
@@ -15,7 +15,7 @@
 				</dmTitle>
 			</dmAddressItems>
 		</dmAddress>
-		<dmStatus issueType="changed">
+		<dmStatus issueType="new">
 			<security securityClassification="01"/>
 			<dataRestrictions>
 				<restrictionInstructions>
@@ -142,7 +142,17 @@
 					<safetyRqmts>
 						<warning>
 							<symbol infoEntityIdent="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>
-							<warningAndCautionPara>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea PIZARROA0000000000A012ADSISTEMA GENERALNormas generales de seguridad).</warningAndCautionPara>
+							<warningAndCautionPara>Seguir los procedimientos de seguridad y aseguramiento (Ver tarea <dmRef>
+									<dmRefIdent>
+										<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="012" infoCodeVariant="A" itemLocationCode="D"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>SISTEMA GENERAL</techName>
+											<infoName>Normas generales de seguridad</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef>).</warningAndCautionPara>
 						</warning>
 						<warning>
 							<symbol infoEntityIdent="ICN-PIZARRO-A-000000-A-F4884-90001-A-01-1"/>

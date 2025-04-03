@@ -1,37 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><!--Arbortext, Inc., 1988-2014, v.4002--><dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
 				<dmCode modelIdentCode="PIZARRO" systemDiffCode="A" systemCode="A1" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
-				<language countryIsoCode="" languageIsoCode=""/>
-				<issueInfo issueNumber="1" inWork="0"/>
+				<language languageIsoCode="es" countryIsoCode="ES"/>
+				<issueInfo issueNumber="001" inWork="00"/>
 			</dmIdent>
 			<dmAddressItems>
-				<issueDate year="2022" month="7" day="15"/>
+				<issueDate year="2022" month="07" day="15"/>
 				<dmTitle>
 					<techName>GRUPO MOTOPROPULSOR GENERAL</techName>
 					<infoName>Grupo motopropulsor</infoName>
 				</dmTitle>
 			</dmAddressItems>
 		</dmAddress>
-		<dmStatus issueType="">
-			<security securityClassification="01" commercialClassification=""/>
+		<dmStatus issueType="new">
+			<security securityClassification="01"/>
 			<dataRestrictions>
 				<restrictionInstructions>
-					<dataDistribution/>
+					<dataDistribution></dataDistribution>
 					<exportControl>
 						<exportRegistrationStmt>
-							<simplePara/>
+							<simplePara></simplePara>
 						</exportRegistrationStmt>
 					</exportControl>
-					<dataHandling/>
-					<dataDestruction/>
-					<dataDisclosure/>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
 				</restrictionInstructions>
 				<restrictionInfo>
-					<copyright/>
-					<policyStatement/>
-					<dataConds/>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
 				</restrictionInfo>
 			</dataRestrictions>
 			<responsiblePartnerCompany enterpriseCode="0131B">
@@ -49,15 +50,13 @@
 			</applicCrossRefTableRef>
 			<applic>
 				<displayText>
-					<simplePara>
-					Pizarro VCIC
-				</simplePara>
+					<simplePara>Pizarro VCIC</simplePara>
 				</displayText>
 			</applic>
 			<techStandard>
 				<authorityInfoAndTp>
-					<authorityInfo/>
-					<techPubBase/>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
 				</authorityInfoAndTp>
 				<authorityExceptions/>
 				<authorityNotes/>
@@ -70,10 +69,10 @@
 				</dmRef>
 			</brexDmRef>
 			<qualityAssurance>
-				<firstVerification verificationType="tabtop"/>
+				<firstVerification verificationType="ttandoo"/>
 			</qualityAssurance>
-			<systemBreakdownCode/>
-			<skillLevel skillLevelCode=""/>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
 		</dmStatus>
 	</identAndStatusSection>
 	<content>
@@ -82,8 +81,8 @@
 				<title>GRUPO MOTOPROPULSOR</title>
 				<figure id="fig-0001">
 					<title>Vista delantera izquierda</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01001-A-01-1" id="fig-0001-gra-0001">
-						<hotspot applicationStructureIdent="hot-0009" applicationStructureName="9" id="fig-0001-hot-0009" hotspotTitle="SOPORTE DELANTERO"/>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01001-A-01-1">
+						<hotspot id="fig-0001-hot-0009" applicationStructureIdent="hot-0009" applicationStructureName="9" hotspotType="" hotspotTitle="SOPORTE DELANTERO" objectDescr=""/>
 					</graphic>
 					<legend>
 						<definitionList>
@@ -98,8 +97,8 @@
 				</figure>
 				<figure id="fig-0002">
 					<title>Vista trasera izquierda</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01002-A-01-1" id="fig-0002-gra-0001">
-						<hotspot applicationStructureIdent="hot-0009" applicationStructureName="9" id="fig-0002-hot-0009" hotspotTitle="SOPORTES TRASEROS"/>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01002-A-01-1">
+						<hotspot id="fig-0002-hot-0009" applicationStructureIdent="hot-0009" applicationStructureName="9" hotspotType="" hotspotTitle="SOPORTES TRASEROS" objectDescr=""/>
 					</graphic>
 					<legend>
 						<definitionList>
@@ -114,7 +113,7 @@
 				</figure>
 				<figure id="fig-0003">
 					<title>Vista delantera derecha</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01003-A-01-1" id="fig-0003-gra-0001"/>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01003-A-01-1"/>
 					<legend>
 						<definitionList>
 							<definitionListItem>
@@ -224,8 +223,8 @@ DE CARBURANTE DEL MOTOR</para>
 				</figure>
 				<figure id="fig-0004">
 					<title>Vista trasera derecha</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01004-A-01-1" id="fig-0004-gra-0001">
-						<hotspot applicationStructureIdent="hot-0008" applicationStructureName="8" id="fig-0004-hot-0008" hotspotTitle="SOPORTES TRASEROS"/>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01004-A-01-1">
+						<hotspot id="fig-0004-hot-0008" applicationStructureIdent="hot-0008" applicationStructureName="8" hotspotType="" hotspotTitle="SOPORTES TRASEROS" objectDescr=""/>
 					</graphic>
 					<legend>
 						<definitionList>
@@ -242,20 +241,20 @@ DE CARBURANTE DEL MOTOR</para>
 filtro de aire, refrigerador del aire de admisión, alternador, motor de arranque, caja de
 transferencia y la transmisión forman una unidad compacta que se denomina grupo motopropulsor
 (GMP).</para>
-				<para>El GMP dispone de un soporte delantero <internalRef internalRefId="fig-0001-hot-0009">9</internalRef> y <internalRef internalRefId="fig-0005-hot-0003">3</internalRef>, un soporte central <internalRef internalRefId="fig-0005-hot-0002">2</internalRef>, situado entre
-el motor y la caja de transferencia y dos soportes traseros <internalRef internalRefId="fig-0002-hot-0009">9</internalRef>, <internalRef internalRefId="fig-0004-hot-0008">8</internalRef> y <internalRef internalRefId="fig-0005-hot-0001">1</internalRef> situados sobre la
+				<para>El GMP dispone de un soporte delantero <internalRef internalRefId="fig-0001-hot-0009" internalRefTargetType="irtt07"/> y <internalRef internalRefId="fig-0005-hot-0003" internalRefTargetType="irtt07"/>, un soporte central <internalRef internalRefId="fig-0005-hot-0002" internalRefTargetType="irtt07"/>, situado entre
+el motor y la caja de transferencia y dos soportes traseros <internalRef internalRefId="fig-0002-hot-0009" internalRefTargetType="irtt07"/>, <internalRef internalRefId="fig-0004-hot-0008" internalRefTargetType="irtt07"/> y <internalRef internalRefId="fig-0005-hot-0001" internalRefTargetType="irtt07"/> situados sobre la
 carcasa de los frenos que lleva la transmisión. El soporte delantero del motor se apoya y sujeta
-mediante unas pestañas en los dos apoyos <internalRef internalRefId="fig-0005-hot-0003">3</internalRef> que lleva el casco: el soporte central en el apoyo
-<internalRef internalRefId="fig-0005-hot-0002">2</internalRef> y los dos soportes traseros en los dos apoyos <internalRef internalRefId="fig-0005-hot-0001">1</internalRef> fijándose mediante tornillos.</para>
+mediante unas pestañas en los dos apoyos <internalRef internalRefId="fig-0005-hot-0003" internalRefTargetType="irtt07"/> que lleva el casco: el soporte central en el apoyo
+<internalRef internalRefId="fig-0005-hot-0002" internalRefTargetType="irtt07"/> y los dos soportes traseros en los dos apoyos <internalRef internalRefId="fig-0005-hot-0001" internalRefTargetType="irtt07"/> fijándose mediante tornillos.</para>
 				<para>Los soportes son amortiguadores para evitar que las vibraciones del GMP se transmitan al
 casco y, a su vez, permiten un fácil desmontaje. El apoyo central tiene como finalidad la absorción
 de los esfuerzos flectores.</para>
 				<figure id="fig-0005">
 					<title>Soportes del GMP</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01005-A-01-1" id="fig-0005-gra-0001">
-						<hotspot applicationStructureIdent="hot-0001" applicationStructureName="1" id="fig-0005-hot-0001" hotspotTitle="SOPORTES TRASEROS"/>
-						<hotspot applicationStructureIdent="hot-0002" applicationStructureName="2" id="fig-0005-hot-0002" hotspotTitle="SOPORTE CENTRAL"/>
-						<hotspot applicationStructureIdent="hot-0003" applicationStructureName="3" id="fig-0005-hot-0003" hotspotTitle="SOPORTE DELANTERO"/>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01005-A-01-1">
+						<hotspot id="fig-0005-hot-0001" applicationStructureIdent="hot-0001" applicationStructureName="1" hotspotType="" hotspotTitle="SOPORTES TRASEROS" objectDescr=""/>
+						<hotspot id="fig-0005-hot-0002" applicationStructureIdent="hot-0002" applicationStructureName="2" hotspotType="" hotspotTitle="SOPORTE CENTRAL" objectDescr=""/>
+						<hotspot id="fig-0005-hot-0003" applicationStructureIdent="hot-0003" applicationStructureName="3" hotspotType="" hotspotTitle="SOPORTE DELANTERO" objectDescr=""/>
 					</graphic>
 					<legend>
 						<definitionList>

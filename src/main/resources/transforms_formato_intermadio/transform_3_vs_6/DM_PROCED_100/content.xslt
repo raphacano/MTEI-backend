@@ -237,7 +237,8 @@
 		<warning>
 		  <xsl:apply-templates select="symbol"/>
 		  <warningAndCautionPara>
-			<xsl:value-of select="para"/>
+			 <xsl:apply-templates select="para/node()"/>
+				<!--<xsl:apply-templates select="refdm"/>-->
 		  </warningAndCautionPara>
 		</warning>
 	  </xsl:template>

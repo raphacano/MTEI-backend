@@ -3,15 +3,15 @@
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
-				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA0" subSystemCode="2" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="412" infoCodeVariant="A" itemLocationCode="A"/>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA3" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="411" infoCodeVariant="A" itemLocationCode="A"/>
 				<language languageIsoCode="sx" countryIsoCode="US"/>
 				<issueInfo issueNumber="004" inWork="00"/>
 			</dmIdent>
 			<dmAddressItems>
-				<issueDate year="2007" month="07" day="31"/>
+				<issueDate year="2007" month="02" day="28"/>
 				<dmTitle>
-					<techName>Rear wheel</techName>
-					<infoName>Detected fault</infoName>
+					<techName>Horn</techName>
+					<infoName>Isolated fault</infoName>
 				</dmTitle>
 			</dmAddressItems>
 		</dmAddress>
@@ -91,7 +91,7 @@
 			<qualityAssurance>
 				<firstVerification verificationType="tabtop"/>
 			</qualityAssurance>
-			<systemBreakdownCode>BY12</systemBreakdownCode>
+			<systemBreakdownCode>BY151</systemBreakdownCode>
 			<skillLevel skillLevelCode="sk01"/>
 			<reasonForUpdate id="rfu_general" updateReasonType="urt03">
 				<simplePara>CPF 2006-47AA: Applicability structure change and addition of actref element</simplePara>
@@ -101,40 +101,33 @@
 	</identAndStatusSection>
 	<content>
 		<faultReporting>
-			<detectedFault id="flt-0002" faultCode="NYCJD00">
+			<isolatedFault id="flt-0003" faultCode="NYCJD03">
 				<faultDescr>
-					<descr>The rear wheel does not operate correctly</descr>
+					<descr>Horn failed</descr>
 				</faultDescr>
-				<detectionInfo detectionType="Major">
-					<detectedLruItem>
+				<locateAndRepair>
+					<locateAndRepairLruItem>
 						<lru>
-							<name>Tire</name>
+							<name>Horn</name>
 							<identNumber>
-								<manufacturerCode>KT666</manufacturerCode>
+								<manufacturerCode>KZ444</manufacturerCode>
 								<partAndSerialNumber>
-									<partNumber>TIRES-010101</partNumber>
+									<partNumber>Horn-001</partNumber>
 								</partAndSerialNumber>
 							</identNumber>
 						</lru>
-					</detectedLruItem>
-				</detectionInfo>
-				<isolateDetectedFault>
-					<lruItem>
-						<lru>
-							<name>Rear wheel</name>
-							<identNumber>
-								<manufacturerCode>KZ333</manufacturerCode>
-								<partAndSerialNumber>
-									<partNumber>WH-001</partNumber>
-								</partAndSerialNumber>
-							</identNumber>
-						</lru>
-					</lruItem>
-				</isolateDetectedFault>
-				<remarks>
-					<simplePara>Prepare the rear wheel for the removal of the tire</simplePara>
-				</remarks>
-			</detectedFault>
+						<repair>
+							<refs>
+								<dmRef>
+									<dmRefIdent>
+										<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA3" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="921" infoCodeVariant="A" itemLocationCode="A"/>
+									</dmRefIdent>
+								</dmRef>
+							</refs>
+						</repair>
+					</locateAndRepairLruItem>
+				</locateAndRepair>
+			</isolatedFault>
 		</faultReporting>
 	</content>
 </dmodule>

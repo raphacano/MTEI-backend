@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
 	<identAndStatusSection>
-		<dmAddress xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<dmAddress>
 			<dmIdent>
 				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="041" infoCodeVariant="A" itemLocationCode="A"/>
 				<language countryIsoCode="US" languageIsoCode="en"/>
@@ -15,7 +15,7 @@
 				</dmTitle>
 			</dmAddressItems>
 		</dmAddress>
-		<dmStatus xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" issueType="revised">
+		<dmStatus issueType="revised">
 			<security securityClassification="01" commercialClassification="cc51"/>
 			<dataRestrictions>
 				<restrictionInstructions>
@@ -118,7 +118,7 @@
 			</reasonForUpdate>
 		</dmStatus>
 	</identAndStatusSection>
-	<content xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<content>
 		<description>
 			<levelledPara>
 				<title>Physical description of a bicycle</title>
@@ -135,7 +135,7 @@
 					</randomList></para>
 				<figure id="fig-0001">
 					<title>Complete bicycle</title>
-					<graphic xlink:type="simple" xlink:href="URN:S1000D:ICN-S1000DBIKE-AAA-D000000-0-U8025-00536-A-04-1" xlink:title="Complete bicycle" infoEntityIdent="ICN-S1000DBIKE-AAA-D000000-0-U8025-00536-A-04-1">
+					<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="URN:S1000D:ICN-S1000DBIKE-AAA-D000000-0-U8025-00536-A-04-1" xlink:title="Complete bicycle" infoEntityIdent="ICN-S1000DBIKE-AAA-D000000-0-U8025-00536-A-04-1">
 						<hotspot id="fig-0001-gra-0001-hot-0000" applicationStructureIdent="hot000" applicationStructureName="0" hotspotType="CALLOUT" hotspotTitle="BICYCLE" objectDescr="BICYCLE" visibility="visible"/>
 						<hotspot id="fig-0001-gra-0001-hot-0001" applicationStructureIdent="hot001" applicationStructureName="1" hotspotType="CALLOUT" hotspotTitle="BRAKE SUB-SYSTEM" objectDescr="BRAKE SUB-SYSTEM" visibility="visible"/>
 						<hotspot id="fig-0001-gra-0001-hot-0002" applicationStructureIdent="hot002" applicationStructureName="2" hotspotType="CALLOUT" hotspotTitle="GEAR SUB-SYSTEM" objectDescr="GEAR SUB-SYSTEM" visibility="visible"/>
@@ -151,14 +151,14 @@
 					</graphic>
 				</figure>
 				<para>The parts that you can immediately identify on a bicycle are given in Table 1.</para>
-				<table>
+				<table tocentry="1">
 					<title>Bicycle parts</title>
 					<tgroup cols="3" align="left">
 						<colspec colname="1" colwidth="40mm"/>
 						<colspec colname="2" colwidth="35mm"/>
 						<colspec colname="3" colwidth="75mm"/>
 						<thead valign="bottom">
-							<row rowsep="1">
+							<row>
 								<entry rotate="0" morerows="0" valign="top">
 									<para>Item</para>
 								</entry>
