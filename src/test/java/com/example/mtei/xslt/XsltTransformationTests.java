@@ -1,21 +1,21 @@
 package com.example.mtei.xslt;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.TestFactory;
-import org.junit.jupiter.api.Assertions;
-import org.springframework.boot.test.context.SpringBootTest; // Optional, but ensures Spring context if needed later
-import org.xmlunit.matchers.CompareMatcher;
-import org.xmlunit.builder.DiffBuilder;
-import org.xmlunit.builder.Input;
-import org.xmlunit.diff.Diff;
-import org.xmlunit.diff.Difference;
-import org.xmlunit.diff.ComparisonResult;
-import org.xmlunit.diff.DefaultComparisonFormatter;
-import org.xmlunit.diff.DifferenceEvaluator;
-import org.xmlunit.diff.ComparisonType;
-import org.xmlunit.diff.Comparison;
+import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
+
+import javax.xml.XMLConstants;
 // Importaciones específicas para transformación XML
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
@@ -26,24 +26,23 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import javax.xml.XMLConstants;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.StringWriter;
-import java.io.FileWriter;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.DynamicTest;
+import org.junit.jupiter.api.TestFactory;
+import org.junit.jupiter.api.TestInstance;
+import org.xmlunit.builder.DiffBuilder;
+import org.xmlunit.builder.Input;
+import org.xmlunit.diff.ComparisonResult;
+import org.xmlunit.diff.ComparisonType;
+import org.xmlunit.diff.DefaultComparisonFormatter;
+import org.xmlunit.diff.Diff;
+import org.xmlunit.diff.Difference;
+import org.xmlunit.diff.DifferenceEvaluator;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.DynamicTest.dynamicTest;
-
-//@SpringBootTest // Keep if you need Spring context features, otherwise optional for this specific test
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class XsltTransformationTests {
 
     // Base directory for transforms relative to project root
@@ -64,6 +63,10 @@ public class XsltTransformationTests {
     private static final String ANSI_YELLOW = "\u001B[33m";
     private static final String ANSI_RED = "\u001B[31m";
     private static final String ANSI_BOLD = "\u001B[1m";
+
+    // Add these new fields to track test results
+    private final List<String> successfulTests = new ArrayList<>();
+    private final List<String> failedTests = new ArrayList<>();
 
     // Helper class or record to hold test case data
     private record TransformTestCase(Path sourceXmlPath, Path xsltPath, Path targetXmlPath) {}
@@ -165,8 +168,10 @@ public class XsltTransformationTests {
      * Executes the XSLT transformation and compares the result with the target XML.
      */
     private void executeAndCompareTransform(TransformTestCase testCase) {
+        String testName = testCase.sourceXmlPath().getFileName().toString();
+        
         try {
-            System.out.println("\n" + ANSI_BOLD + "Executing test for: " + testCase.sourceXmlPath().getFileName() + ANSI_RESET);
+            System.out.println("\n" + ANSI_BOLD + "Executing test for: " + testName + ANSI_RESET);
 
             // 1. Perform Transformation
             String actualXml = transformXml(testCase.sourceXmlPath(), testCase.xsltPath());
@@ -185,18 +190,26 @@ public class XsltTransformationTests {
             String expectedXml = Files.readString(testCase.targetXmlPath(), StandardCharsets.UTF_8);
 
             // 4. Compare using XMLUnit with detailed feedback
-            compareXmlWithDetailedFeedback(
-                    testCase.sourceXmlPath().getFileName().toString(),
-                    actualXml,
-                    expectedXml
-            );
+            try {
+                compareXmlWithDetailedFeedback(testName, actualXml, expectedXml);
+                // If we reach here, the test passed
+                successfulTests.add(testName);
+            } catch (AssertionError e) {
+                // The test failed, but we'll record it and continue with other tests
+                failedTests.add(testName);
+                // Re-throw to maintain original JUnit behavior
+                throw e;
+            }
 
         } catch (IOException e) {
-            Assertions.fail("IOException during test execution for " + testCase.sourceXmlPath().getFileName() + ": " + e.getMessage(), e);
+            failedTests.add(testName);
+            Assertions.fail("IOException during test execution for " + testName + ": " + e.getMessage(), e);
         } catch (TransformerException e) {
-            Assertions.fail("TransformerException during transformation for " + testCase.sourceXmlPath().getFileName() + ": " + e.getMessage(), e);
+            failedTests.add(testName);
+            Assertions.fail("TransformerException during transformation for " + testName + ": " + e.getMessage(), e);
         } catch (Exception e) {
-            Assertions.fail("Unexpected exception during test for " + testCase.sourceXmlPath().getFileName() + ": " + e.getMessage(), e);
+            failedTests.add(testName);
+            Assertions.fail("Unexpected exception during test for " + testName + ": " + e.getMessage(), e);
         }
     }
     
@@ -405,5 +418,22 @@ public class XsltTransformationTests {
 
             return writer.toString();
         }
+    }
+
+    @AfterAll
+    public void displayTestSummary() {
+        System.out.println("\n" + ANSI_BOLD + "===== TEST SUMMARY =====" + ANSI_RESET);
+        System.out.println(ANSI_GREEN + "✓ Successful tests: " + successfulTests.size() + ANSI_RESET);
+        System.out.println(ANSI_RED + "✗ Failed tests: " + failedTests.size() + ANSI_RESET);
+        
+        if (!failedTests.isEmpty()) {
+            System.out.println("\n" + ANSI_RED + ANSI_BOLD + "Failed tests (Source XML files):" + ANSI_RESET); // Updated header
+            for (String failedTest : failedTests) {
+                // More explicit message indicating the failed source XML
+                System.out.println(ANSI_RED + " - " + failedTest + ANSI_RESET); 
+            }
+        }
+        
+        System.out.println(ANSI_BOLD + "======================" + ANSI_RESET);
     }
 }

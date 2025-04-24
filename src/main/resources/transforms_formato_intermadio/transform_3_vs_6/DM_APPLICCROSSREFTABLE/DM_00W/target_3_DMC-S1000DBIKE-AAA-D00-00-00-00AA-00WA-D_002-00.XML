@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/appliccrossreftable.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="002" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2007" month="08" day="21"/>
+				<dmTitle>
+					<techName>Mountain bicycle</techName>
+					<infoName>Applicability cross-reference table</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="changed">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="SF815">
+				<enterpriseName>SIOM</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="SF815">
+				<enterpriseName>SIOM</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>All</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03">
+				<simplePara>CPF 2006-47AA: New ACT data module type</simplePara>
+				<simplePara>Reference to BREX file changed from default to specific for the Bike Samples</simplePara>
+			</reasonForUpdate>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<applicCrossRefTable>
+			<productAttributeList>
+				<productAttribute id="SerialNo" productIdentifier="primary">
+					<name>Serial number</name>
+					<displayName>SN</displayName>
+					<descr>Serial number etched on the frame</descr>
+				</productAttribute>
+				<productAttribute id="model" valuePattern=".">
+					<name>Model</name>
+					<displayName></displayName>
+					<descr>Model of the bike</descr>
+					<enumeration applicPropertyValues="Brook trekker|Mountain storm"/>
+				</productAttribute>
+				<productAttribute id="version" valuePattern="Mk(1|9)">
+					<name>Version</name>
+					<displayName></displayName>
+					<descr>Version of the bike</descr>
+					<enumeration applicPropertyValues="Mk1|Mk9"/>
+				</productAttribute>
+				<productAttribute id="versrank" valuePattern="\d" valueDataType="integer">
+					<name>Version rank</name>
+					<displayName>series</displayName>
+					<descr>Version rank</descr>
+					<enumeration applicPropertyValues="1~3"/>
+				</productAttribute>
+			</productAttributeList>
+			<condCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00Q" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</condCrossRefTableRef>
+			<productCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00P" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</productCrossRefTableRef>
+		</applicCrossRefTable>
+	</content>
+</dmodule>

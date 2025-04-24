@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO QUE CONTIENE 
+
+wire
+harness
+elecequip
+connector
+vpart
+accessory
+solder-sleeve
+shrink-sleeve
+ident-sleeve
+conduit
+wire-mat
+
+-->
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0/xml_schema_flat/wrngdata.xsd">
+	<rdf:Description>
+		<dc:title>Bicycle - Description of how it is made</dc:title>
+		<dc:creator>U8025</dc:creator>
+		<dc:subject>Bicycle - Description of how it is made</dc:subject>
+		<dc:publisher>U8025</dc:publisher>
+		<dc:contributor>U8025</dc:contributor>
+		<dc:date>2007-07-31</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>S1000DBIKE-AAA-D00-00-00-00AA-041A-A_005-00</dc:identifier>
+		<dc:language>sx-US</dc:language>
+		<dc:rights>01_cc51</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>AA</discodev>
+					<incode>041</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Bicycle</techname>
+				<infoname>Description of how it is made</infoname>
+			</dmtitle>
+			<issno issno="005" inwork="00" type="changed"/>
+			<issdate year="2007" month="07" day="31"/>
+		</dmaddres>
+		<status>
+			<security class="01" commcls="cc51"/>
+			<datarest>
+				<instruct>
+					<distrib>To be made available to all S1000D users.</distrib>
+					<expcont mark="1" change="modify" rfc="CPF 2006-48AA">
+						<expstatement>
+							<p>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</p>
+						</expstatement>
+					</expcont>
+					<handling>There are no specific handling instructions for this data module.</handling>
+					<destruct>Users may destroy this data module in accordance with their own local procedures.</destruct>
+					<disclose>There are no dissemination limitations that apply to this data module.</disclose>
+				</instruct>
+				<inform>
+					<copyright>
+						<para>TPSMG UK, 2003-2010</para>
+						<para>Government License - TPSMG 001</para>
+					</copyright>
+					<polref>TPSMG TOR 001</polref>
+					<datacond>There are no known conditions that would change the data restrictions for, or security classification of, this data module.</datacond>
+				</inform>
+			</datarest>
+			<rpc rpcname="UK MoD">U8025</rpc>
+			<orig origname="UK MoD">U8025</orig>
+			<actref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-0000-00AA-00WA-D">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</actref>
+			<applic mark="1" change="modify" rfc="CPF 2006-47AA">
+				<displaytext>Mountain bicycle and (Mountain storm Mk1 or Brook trekker Mk9)</displaytext>
+				<evaluate operator="and">
+					<assert actidref="type" actreftype="prodattr" actvalues="Mountain bicycle"/>
+					<evaluate operator="or">
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Mountain storm"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk1"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Brook trekker"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk9"/>
+						</evaluate>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techstd>
+				<autandtp>
+					<authblk>20010131</authblk>
+					<tpbase>Bike book</tpbase>
+				</autandtp>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-00-00AA-022A-D_005">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="005"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<sbc>BY</sbc>
+			<skill skill="sk01"/>
+			<rfu>
+				<p>CPF 2006-47AA: Applicability structure change and addition of actref element</p>
+				<p>CPF 2006-48AA: Export control structure change, addition of container elements</p>
+			</rfu>
+		</status>
+	</idstatus>
+
+
+<content id="content-01">
+        <wrngdata>
+         
+            <wires>
+                <wire wirestate="active" chginfo="add" >
+                    <wireid mfc="MFC001" originator="orig01">
+                        <circode>PWR001</circode>
+                        <wireno>W12345</wireno>
+                        <secid>A</secid>
+                    </wireid>
+                    <wireconnection>
+                        <fromequip>
+                            <rfd instid="EQ001-INST1">EQUIP-001</rfd>
+                            <contactinfo>
+                                <contact ident="P1-A" function="POWER" ctype="PIN" cconnect="1" termpnr="TERM-PNR-1" wexdir="OUT"/>
+                            </contactinfo>
+                        </fromequip>
+                        <toequip>
+                             <rfd instid="EQ002-INST1">EQUIP-002</rfd>
+                             <contactinfo>
+                                <contact ident="J2-3" function="POWER" ctype="SOCKET" cconnect="1" termpnr="TERM-PNR-2" wexdir="IN"/>
+                             </contactinfo>
+                        </toequip>
+                    </wireconnection>
+                    <wireinformation>
+                        <wirecode>
+                            <wiretype>TYPE-A</wiretype>
+                            <wiregauge gaugetype="awg">22</wiregauge>
+                        </wirecode>
+                        <pnr>WIRE-PNR-XYZ</pnr>
+                        <harnid>HARNESS-MAIN</harnid>
+                        <length uom="mm" wirelngtyp="final">1500</length>
+                        <colour>co01</colour> 
+                    </wireinformation>
+                 
+                </wire>
+            </wires>
+
+        
+            <harnesses>
+                <harness chginfo="add" >
+                    <harnid mfc="MFC002">HARNESS-MAIN</harnid>
+                    <harninfo>
+                        <pnr>HARN-PNR-MAIN</pnr>
+                        <nomenc>Mazo Principal</nomenc>
+                    </harninfo>
+                    <routing>
+                        <clipid>CLIP-1</clipid>
+                        <feedthru holeid="H1">
+                            <rfd>BULKHEAD-A</rfd>
+                        </feedthru>
+                    </routing>
+                </harness>
+            </harnesses>
+
+          
+            <elecequips>
+                <elecequip equipstate="active" chginfo="add">
+                    <rfd instid="EQ001-INST1">EQUIP-001</rfd> 
+                    <pnr>EQUIP-PNR-001</pnr>
+                    <nomenc>Unidad de Control Principal</nomenc>
+                    <qty uom="unit">1</qty>
+                    <instinfo instid="EQ001-INST1">
+                         <instloc uom="mm" instloctyp="instloctyp01">X=100,Y=200,Z=50</instloc>
+                    </instinfo>
+                </elecequip>
+                 <elecequip equipstate="active" chginfo="add" >
+                    <rfd instid="EQ002-INST1">EQUIP-002</rfd>
+                    <pnr>EQUIP-PNR-002</pnr>
+                    <nomenc>Sensor A</nomenc>
+                     <qty uom="unit">1</qty>
+                     <instinfo instid="EQ002-INST1">
+                         <instloc uom="mm" instloctyp="instloctyp02">X=500,Y=200,Z=50</instloc>
+                    </instinfo>
+                </elecequip>
+            </elecequips>
+
+  
+            <stdparts>
+                <connectors>
+                    <connector >
+                        <pnr>CONN-PNR-01</pnr>
+                         <altids>
+                             <altid>
+                                 <pnr>ALT-CONN-PNR-01A</pnr>
+                                 <mfc>MFC-ALT</mfc>
+                             </altid>
+                         </altids>
+                         <mass uom="g">25</mass>
+                         <orientation>Recta</orientation>
+                         <ccount>10</ccount>
+                         <cdescs>
+                             <cdesc>
+                                 <contact ident="A" ctype="PIN"/>
+                             </cdesc>
+                             <cdesc>
+                                 <contact ident="B" ctype="PIN"/>
+                             </cdesc>
+                          
+                         </cdescs>
+                         <acclist>
+                            <pnr>ACC-PNR-BACKSHELL</pnr> 
+                         </acclist>
+                    </connector>
+                </connectors>
+
+                <vparts>
+                    <vpart >
+                        <pnr>VPART-PNR-CLAMP</pnr>
+                        <mat>Nylon</mat>
+                        <colour>co09</colour> 
+                    </vpart>
+                </vparts>
+
+                <accessories>
+                    <accessory >
+                        <pnr>ACC-PNR-BACKSHELL</pnr>
+                        <orientation>Recta</orientation>
+                    </accessory>
+                </accessories>
+
+                <solder-sleeves>
+                    <solder-sleeve >
+                        <pnr>SLDRSLV-PNR-01</pnr>
+                        <length uom="mm">10</length>
+                        <sdia>
+                             <mind uom="mm">1.5</mind>
+                             <maxd uom="mm">2.5</maxd>
+                         </sdia>
+                    </solder-sleeve>
+                </solder-sleeves>
+
+                <shrink-sleeves>
+                    <shrink-sleeve >
+                        <pnr>SHRNKSLV-PNR-01</pnr>
+                        <size uom="mm">3</size> 
+                        <colour>co09</colour>
+                         <harnsize>
+                             <minh uom="mm">1.5</minh>
+                             <maxh uom="mm">2.8</maxh>
+                         </harnsize>
+                    </shrink-sleeve>
+                </shrink-sleeves>
+
+                <ident-sleeves>
+                    <ident-sleeve >
+                        <pnr>IDSLV-PNR-01</pnr>
+                        <length uom="mm">25</length>
+                        <mat>Vinilo</mat>
+                    </ident-sleeve>
+                </ident-sleeves>
+
+                <conduits>
+                    <conduit >
+                        <pnr>COND-PNR-01</pnr>
+                        <size uom="mm">10</size>
+                        <colour>co09</colour> 
+                         <wallthk uom="mm">0.5</wallthk>
+                    </conduit>
+                </conduits>
+
+                <wire-mats>
+                    <wire-mat >
+                        <pnr>WIREMAT-PNR-SPEC1</pnr>
+ 
+                        <altids>
+                            <altid>
+                                <pnr>ALT-WIREMAT-PNR-SPEC1A</pnr>
+                            </altid>
+                        </altids>
+                        <wirecode>
+                             <wiretype>TYPE-A</wiretype>
+                             <wiregauge gaugetype="awg">22</wiregauge>
+                        </wirecode>
+                        <core>Cobre Estañado</core>
+                         <colour>co01</colour> <!-- Rojo -->
+                         <outdia uom="mm">1.2</outdia>
+                         <voltage uom="V">600</voltage>
+                         <temp>
+                             <mint uom="degC">-40</mint>
+                             <maxt uom="degC">105</maxt>
+                         </temp>
+                    </wire-mat>
+                 </wire-mats>
+            </stdparts>
+        </wrngdata>
+    </content>
+    
+</dmodule>

@@ -21,53 +21,76 @@
     </properties>
 
     <dependencies>
-        <!-- Core Spring Boot Starter -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- Spring Boot Starter for basic web capabilities (optional, but common) -->
-        <!-- If you don't need web features *at all*, you can remove this -->
+
         <dependency>
              <groupId>org.springframework.boot</groupId>
              <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Boot Starter for testing -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         
-        <!-- For XML Comparison in Tests -->
-        <dependency>
-            <groupId>org.xmlunit</groupId>
-            <artifactId>xmlunit-core</artifactId>
-            <version>2.9.1</version> <!-- Use the latest stable version -->
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.xmlunit</groupId>
-            <artifactId>xmlunit-matchers</artifactId>
-            <version>2.9.1</version> <!-- Use the same version as xmlunit-core -->
-            <scope>test</scope>
-        </dependency>
-        
-        <!-- Saxon-HE para soporte de XSLT 2.0 -->
-        <dependency>
-            <groupId>net.sf.saxon</groupId>
-            <artifactId>Saxon-HE</artifactId>
-            <version>11.4</version>
-        </dependency>
-        
+
 		<dependency>
-		    <groupId>javax.xml</groupId>
-		    <artifactId>jaxp-api</artifactId>
-		    <version>1.4.2</version>
-		</dependency>        
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-engine</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		<dependency> <!-- Necesario para @MethodSource en tests parametrizados -->
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-params</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		<dependency> <!-- Para comparación robusta de XML -->
+		    <groupId>org.xmlunit</groupId>
+		    <artifactId>xmlunit-core</artifactId>
+		    <version>2.9.1</version> <!-- Usa la última versión estable -->
+		    <scope>test</scope>
+		</dependency>
+		<dependency> <!-- Para aserciones con XMLUnit -->
+		    <groupId>org.xmlunit</groupId>
+		    <artifactId>xmlunit-matchers</artifactId>
+		    <version>2.9.1</version> <!-- Usa la misma versión que xmlunit-core -->
+		    <scope>test</scope>
+		</dependency>
+		<!-- Si usas AssertJ (muy común con Spring Boot) puedes usar xmlunit-assertj -->
+		<dependency>
+		    <groupId>org.xmlunit</groupId>
+		    <artifactId>xmlunit-assertj</artifactId>
+		    <version>2.9.1</version> <!-- Usa la misma versión que xmlunit-core -->
+		    <scope>test</scope>
+		</dependency>   
         
+        
+        <!-- Añadir a pom.xml si necesitas XSLT 2.0/3.0 -->
+		<dependency>
+		    <groupId>net.sf.saxon</groupId>
+		    <artifactId>Saxon-HE</artifactId>
+		    <version>11.4</version> <!-- O la versión más reciente -->
+		    <scope>test</scope>
+		</dependency>
+		
     </dependencies>
 
     <build>

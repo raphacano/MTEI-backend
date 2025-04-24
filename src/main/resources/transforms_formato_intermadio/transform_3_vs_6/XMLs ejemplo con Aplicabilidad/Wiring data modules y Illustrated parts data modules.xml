@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO QUE CONTIENE 
+
+ftnote
+note
+refdm
+reftp
+xref
+randlist
+seqlist
+deflist
+term
+def
+item
+symbol
+
+figure
+symbol
+hotspot
+rfa
+
+-->
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0/xml_schema_flat/descript.xsd">
+	<rdf:Description>
+		<dc:title>Bicycle - Description of how it is made</dc:title>
+		<dc:creator>U8025</dc:creator>
+		<dc:subject>Bicycle - Description of how it is made</dc:subject>
+		<dc:publisher>U8025</dc:publisher>
+		<dc:contributor>U8025</dc:contributor>
+		<dc:date>2007-07-31</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>S1000DBIKE-AAA-D00-00-00-00AA-041A-A_005-00</dc:identifier>
+		<dc:language>sx-US</dc:language>
+		<dc:rights>01_cc51</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>AA</discodev>
+					<incode>041</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Bicycle</techname>
+				<infoname>Description of how it is made</infoname>
+			</dmtitle>
+			<issno issno="005" inwork="00" type="changed"/>
+			<issdate year="2007" month="07" day="31"/>
+		</dmaddres>
+		<status>
+			<security class="01" commcls="cc51"/>
+			<datarest>
+				<instruct>
+					<distrib>To be made available to all S1000D users.</distrib>
+					<expcont mark="1" change="modify" rfc="CPF 2006-48AA">
+						<expstatement>
+							<p>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</p>
+						</expstatement>
+					</expcont>
+					<handling>There are no specific handling instructions for this data module.</handling>
+					<destruct>Users may destroy this data module in accordance with their own local procedures.</destruct>
+					<disclose>There are no dissemination limitations that apply to this data module.</disclose>
+				</instruct>
+				<inform>
+					<copyright>
+						<para>TPSMG UK, 2003-2010</para>
+						<para>Government License - TPSMG 001</para>
+					</copyright>
+					<polref>TPSMG TOR 001</polref>
+					<datacond>There are no known conditions that would change the data restrictions for, or security classification of, this data module.</datacond>
+				</inform>
+			</datarest>
+			<rpc rpcname="UK MoD">U8025</rpc>
+			<orig origname="UK MoD">U8025</orig>
+			<actref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-0000-00AA-00WA-D">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</actref>
+			<applic mark="1" change="modify" rfc="CPF 2006-47AA">
+				<displaytext>Mountain bicycle and (Mountain storm Mk1 or Brook trekker Mk9)</displaytext>
+				<evaluate operator="and">
+					<assert actidref="type" actreftype="prodattr" actvalues="Mountain bicycle"/>
+					<evaluate operator="or">
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Mountain storm"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk1"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Brook trekker"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk9"/>
+						</evaluate>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techstd>
+				<autandtp>
+					<authblk>20010131</authblk>
+					<tpbase>Bike book</tpbase>
+				</autandtp>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-00-00AA-022A-D_005">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="005"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<sbc>BY</sbc>
+			<skill skill="sk01"/>
+			<rfu>
+				<p>CPF 2006-47AA: Applicability structure change and addition of actref element</p>
+				<p>CPF 2006-48AA: Export control structure change, addition of container elements</p>
+			</rfu>
+		</status>
+	</idstatus>
+
+
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         id="content-example-10">
+
+    <refs>
+        <refdm id="refdm-wiring-schematic">
+            <avee>
+                <modelic>WIRMODEL</modelic> <sdc>W01</sdc> <chapnum>20</chapnum> <section>1</section> <subsect>0</subsect> <subject>00</subject> <discode>11</discode> <discodev>A</discodev> <incode>520</incode> <incodev>A</incodev> <itemloc>A</itemloc>
+            </avee>
+            <dmtitle><techname>Esquemático de Cableado Principal</techname></dmtitle>
+        </refdm>
+        <reftp xlink:type="simple" xlink:href="http://example.com/parts_catalog.pdf" id="reftp-parts-catalog">Catálogo de Piezas Externo (Rev. 2)</reftp>
+        <reftp id="reftp-installation-std">
+            <pubcode pubcodsy="STD">INST-STD-001</pubcode> <pubtitle>Estándar de Instalación de Cableado</pubtitle>
+        </reftp>
+    </refs>
+
+
+    <descript>
+        <para id="para-wiring-intro">
+            Este procedimiento describe la instalación del mazo de cables principal. Consulte el
+            <xref xrefid="fig-harness-routing" xidtype="figure">diagrama de enrutamiento (Figura 1)</xref> y el
+            <refdm xlink:type="simple" xlink:href="#refdm-wiring-schematic"/> esquemático de cableado
+            para detalles completos. A continuación se detallan los pasos y materiales.
+        </para>
+
+        <warning id="warn-static">
+             <para>PRECAUCIÓN: Utilice protección antiestática al manipular componentes electrónicos sensibles mencionados en el <reftp xlink:type="simple" xlink:href="#reftp-parts-catalog"/> catálogo de piezas.</para>
+        </warning>
+
+
+        <para id="para-steps-container">
+            <seqlist id="list-install-steps">
+                 <title>Pasos de Instalación del Mazo</title>
+                 <item id="step1-route">
+                    <para>
+                        Enrute el mazo principal (<emphasis>harness</emphasis> P/N 123-456) a través del fuselaje siguiendo la ruta indicada en la <xref xrefid="fig-harness-routing" xidtype="figure">Figura 1</xref>.
+                    </para>
+                    <note id="note-clearance">
+                        <para>Asegure una separación mínima de 5 cm (<symbol boardno="SYM-DISTANCE"/>) de las líneas hidráulicas.</para>
+                    </note>
+                 </item>
+                 <item id="step2-connect">
+                     <para>
+                        Conecte el <emphasis>conector</emphasis> J1 al <emphasis>equipo electrónico</emphasis> (<emphasis>elecequip</emphasis>) A1 (ver <xref xrefid="hs-j1" xidtype="hotspot">zona interactiva en Figura 1</xref>). Asegúrese de que el clic de bloqueo sea audible.
+                        Consulte el <refdm xlink:type="simple" xlink:href="#refdm-wiring-schematic"/> esquemático para el pinout del conector.
+                        La fijación del cable (<emphasis>wire</emphasis>) debe seguir el estándar <reftp xlink:type="simple" xlink:href="#reftp-installation-std"/> INST-STD-001.
+                    </para>
+                 </item>
+                 <item id="step3-secure">
+                    <para>
+                        Asegure el mazo utilizando abrazaderas cada 30 cm. Utilice un manguito termorretráctil (<emphasis>shrink-sleeve</emphasis>) en los puntos de bifurcación<ftnref xrefid="fn-clamp-type"/>.
+                        Aplique un manguito de identificación (<emphasis>ident-sleeve</emphasis>) con la etiqueta W1-A001 cerca del conector J1.
+                    </para>
+                    <ftnote id="fn-clamp-type">
+                        <para>Utilice abrazaderas tipo MS21919 o equivalentes aprobadas. Verifique el torque indicado en la <xref  xidtype="other">anotación de torque</xref> en la Figura 1.</para>
+                    </ftnote>
+                 </item>
+            </seqlist>
+        </para>
+
+
+        <para id="para-materials-container">
+             <randlist id="list-materials" prefix="pf01">
+                 <title>Materiales Requeridos</title>
+                 <item id="mat1"> <para>Mazo de cables P/N 123-456.</para> </item>
+                 <item id="mat2"> <para>Abrazaderas MS21919 (Cantidad según sea necesario).</para> </item>
+                 <item id="mat3"> <para>Manguito termorretráctil (<emphasis>shrink-sleeve</emphasis>) P/N 789-012.</para> </item>
+                 <item id="mat4"> <para>Manguitos de identificación (<emphasis>ident-sleeve</emphasis>) P/N 345-678.</para> </item>
+                 <item id="mat5">
+                    <para>Conducto flexible (<emphasis>conduit</emphasis>) P/N CND-002 (si aplica).</para>
+                    <note id="note-conduit"> <para>El conducto solo es necesario en áreas de alta vibración.</para> </note>
+                 </item>
+                 <item id="mat-comment"> <para>Otros materiales pueden incluir: Manguitos de soldadura (<emphasis>solder-sleeve</emphasis>), Accesorios (<emphasis>accessory</emphasis>) de montaje, Piezas virtuales (<emphasis>vpart</emphasis> para kits), Material de cable (<emphasis>wire-mat</emphasis>) para reparaciones.</para> </item>
+             </randlist>
+        </para>
+
+
+        <para id="para-definitions-container">
+             <deflist id="def-component-types">
+                 <title>Tipos de Componentes Comunes</title>
+                 <term id="term-elecequip">Equipo Electrónico (<emphasis>elecequip</emphasis>)</term> <def id="def-elecequip"> <para>Unidad reemplazable en línea (LRU) o componente electrónico principal.</para> </def>
+                 <term id="term-connector">Conector (<emphasis>connector</emphasis>)</term> <def id="def-connector"> <para>Dispositivo para unir eléctricamente cables (<emphasis>wire</emphasis>) o mazos (<emphasis>harness</emphasis>). Referenciado por designador (ej: J1, P1).</para> </def>
+                 <term id="term-accessory">Accesorio (<emphasis>accessory</emphasis>)</term> <def id="def-accessory"> <para>Componente auxiliar utilizado en la instalación, como capuchones, sellos o hardware de montaje asociado a conectores o mazos.</para> </def>
+                 <term id="term-vpart">Pieza Virtual (<emphasis>vpart</emphasis>)</term> <def id="def-vpart"> <para>Número de pieza que representa un kit o ensamblaje que no es una pieza física única inventariable, común en catálogos de piezas.</para> </def>
+             </deflist>
+        </para>
+
+
+        <figure id="fig-harness-routing">
+            <title>Figura 1: Enrutamiento del Mazo Principal</title>
+            <graphic boardno="IMG-HARN-ROUTE-001">
+ 
+                <hotspot id="hs-j1" apsid="HS_J1_AREA" coords="100,150,150,200" type="rect" title="Conector J1">
+                    <xref xrefid="term-connector" xidtype="other">Ver definición de Conector</xref>
+                </hotspot>
+
+
+                <hotspot id="hs-eleceq-a1" apsid="HS_A1_POINT" coords="250,300" type="circle"  title="Equipo A1 (Ver detalles conexión)">
+   
+                     <refdm xlink:type="simple" xlink:href="#refdm-wiring-schematic" target="PINOUT_A1" id="refdm-pinout-a1"/>
+
+                </hotspot>
+
+
+                <rfa >
+                    <emphasis>Torque:</emphasis> 5 ± 0.5 Nm <symbol boardno="SYM-TORQUE"/>
+                </rfa>
+                <rfa >Mantener alejado de fuentes de calor</rfa>
+            </graphic>
+ 
+            <legend>
+                <deflist>
+                    <term><symbol boardno="SYM-ARROW"/></term> <def><para>Dirección de enrutamiento</para></def>
+                    <term><symbol boardno="SYM-CLAMP"/></term> <def><para>Punto de fijación (abrazadera)</para></def>
+                    <term><symbol boardno="SYM-DISTANCE"/></term> <def><para>Indicación de distancia mínima</para></def>
+                    <term><symbol boardno="SYM-TORQUE"/></term> <def><para>Valor de torque aplicable</para></def>
+                </deflist>
+            </legend>
+        </figure>
+
+        <note id="note-final-check">
+            <para>Realice una verificación de continuidad después de completar la instalación según el <refdm xlink:type="simple" xlink:href="#refdm-wiring-schematic"/> esquemático.</para>
+        </note>
+
+    </descript>
+</content>
+
+</dmodule>

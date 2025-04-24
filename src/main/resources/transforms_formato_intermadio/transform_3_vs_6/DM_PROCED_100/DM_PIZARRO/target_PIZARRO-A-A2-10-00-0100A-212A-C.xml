@@ -71,7 +71,6 @@
 				<firstVerification verificationType="tabtop"/>
 			</qualityAssurance>
 			<systemBreakdownCode></systemBreakdownCode>
-			<skillLevel skillLevelCode="sk02"/>
 			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
 		</dmStatus>
 	</identAndStatusSection>

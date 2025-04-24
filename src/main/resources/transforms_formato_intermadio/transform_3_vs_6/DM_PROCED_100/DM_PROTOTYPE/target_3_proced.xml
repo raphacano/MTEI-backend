@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="121" infoCodeVariant="A" itemLocationCode="A"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="005" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2007" month="07" day="31"/>
+				<dmTitle>
+					<techName>Bicycle</techName>
+					<infoName>Pre-operation procedures (crew)</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="changed">
+			<security securityClassification="01" commercialClassification="cc51"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>To be made available to all S1000D users.</dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling>There are no specific handling instructions for this data
+module.</dataHandling>
+					<dataDestruction>Users may destroy this data module in accordance with their own local
+procedures.</dataDestruction>
+					<dataDisclosure>There are no dissemination limitations that apply to this data
+module.</dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>
+							<emphasis>TPSMG UK, 2003-2010</emphasis>
+						</copyrightPara>
+						<copyrightPara>
+							<emphasis>Government License - TPSMG 001</emphasis>
+						</copyrightPara>
+					</copyright>
+					<policyStatement>TPSMG TOR 001</policyStatement>
+					<dataConds>There are no known conditions that would change the data restrictions
+for, or security classification of, this data module.</dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="U8025">
+				<enterpriseName>UK MoD</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>Mountain bicycle and (Mountain storm Mk1 or Brook trekker Mk9)</simplePara>
+				</displayText>
+				<evaluate andOr="and">
+					<assert applicPropertyIdent="type" applicPropertyType="prodattr" applicPropertyValues="Mountain bicycle"/>
+					<evaluate andOr="or">
+						<evaluate andOr="and">
+							<assert applicPropertyIdent="model" applicPropertyType="prodattr" applicPropertyValues="Mountain storm"/>
+							<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="Mk1"/>
+						</evaluate>
+						<evaluate andOr="and">
+							<assert applicPropertyIdent="model" applicPropertyType="prodattr" applicPropertyValues="Brook trekker"/>
+							<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="Mk9"/>
+						</evaluate>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo>20010131</authorityInfo>
+					<techPubBase>Bike book</techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode>BY</systemBreakdownCode>
+			<skillLevel skillLevelCode="sk01"/>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03">
+				<simplePara>CPF 2006-47AA: Applicability structure change and addition of actref element</simplePara>
+				<simplePara>CPF 2006-48AA: Export control structure change, addition of container elements</simplePara>
+			</reasonForUpdate>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<refs>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="DA4" subSystemCode="1" subSubSystemCode="0" assyCode="SBJ1" disassyCode="01" disassyCodeVariant="AV" infoCode="251" infoCodeVariant="B" itemLocationCode="A"/>
+				</dmRefIdent>
+				<dmRefAddressItems>
+					<dmTitle>
+						<techName>Chain</techName>
+						<infoName>Clean with chain cleaning fluid</infoName>
+					</dmTitle>
+				</dmRefAddressItems>
+			</dmRef>
+		</refs>
+		<procedure>
+			<preliminaryRqmts>
+				<productionMaintData>
+					<thresholdInterval thresholdUnitOfMeasure="th01">TextoTolerancia</thresholdInterval>
+					<workAreaLocationGroup>
+						<zoneRef>
+							<name>NombreZona</name>
+							<shortName>text</shortName>
+							<refs>
+								<dmRef>
+									<dmRefIdent>
+										<identExtension extensionProducer="ProductorZonaRefdm" extensionCode="CodigoZonaRefdm"/>
+										<dmCode modelIdentCode="MZC" systemDiffCode="1" systemCode="ZC" subSystemCode="0" subSubSystemCode="0" assyCode="02" disassyCode="02" disassyCodeVariant="ZV" infoCode="ZN1" infoCodeVariant="Z" itemLocationCode="B"/>
+										<issueInfo issueNumber="002" inWork="00"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>TecnicoZonaRefdm</techName>
+											<infoName>InfoZonaRefdm</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef>
+							</refs>
+						</zoneRef>
+						<accessPointRef>
+							<name>NombrePanelAcceso</name>
+							<shortName>text</shortName>
+							<refs>
+								<dmRef>
+									<dmRefIdent>
+										<identExtension extensionProducer="ProductorPanelAccesoRefdm" extensionCode="CodigoPanelAccesoRefdm"/>
+										<dmCode modelIdentCode="MPC" systemDiffCode="2" systemCode="PC" subSystemCode="0" subSubSystemCode="0" assyCode="03" disassyCode="03" disassyCodeVariant="PV" infoCode="PN1" infoCodeVariant="P" itemLocationCode="T"/>
+										<issueInfo issueNumber="003" inWork="00"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>TecnicoPanelAccesoRefdm</techName>
+											<infoName>InfoPanelAccesoRefdm</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef>
+							</refs>
+						</accessPointRef>
+						<workLocation>
+							<workArea>text</workArea>
+							<internalRef>
+								<subScript>String</subScript>
+							</internalRef>
+						</workLocation>
+					</workAreaLocationGroup>
+					<taskDuration startupDuration="DuracionPreliminar" procedureDuration="DuracionProcedimiento" closeupDuration="DuracionCierre" unitOfMeasure="String"/>
+				</productionMaintData>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+				<reqPersons>
+					<personnel>
+						<personCategory personCategoryCode="Tecnico"/>
+						<personSkill skillLevelCode="sk01"/>
+						<trade>OficioPersonal</trade>
+						<estimatedTime unitOfMeasure="String">TiempoEstimadoPersonal</estimatedTime>
+					</personnel>
+				</reqPersons>
+				<reqSupportEquips>
+					<noSupportEquips/>
+				</reqSupportEquips>
+				<reqSupplies>
+					<noSupplies/>
+				</reqSupplies>
+				<reqSpares>
+					<noSpares/>
+				</reqSpares>
+				<reqSafety>
+					<noSafety/>
+				</reqSafety>
+			</preliminaryRqmts>
+			<mainProcedure>
+				<proceduralStep>
+					<title>
+						<functionalItemRef functionalItemNumber="EINPaso1">
+							<name>NombreEINPaso1</name>
+							<shortName>text</shortName>
+							<refs>
+								<dmRef>
+									<dmRefIdent>
+										<identExtension extensionProducer="ProductorPaso1EINRefdm" extensionCode="CodigoPaso1EINRefdm"/>
+										<dmCode modelIdentCode="S1M" systemDiffCode="3" systemCode="S1" subSystemCode="1" subSubSystemCode="1" assyCode="04" disassyCode="04" disassyCodeVariant="V1" infoCode="IN4" infoCodeVariant="A" itemLocationCode="A"/>
+										<issueInfo issueNumber="004" inWork="00"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>TecnicoPaso1EINRefdm</techName>
+											<infoName>InfoPaso1EINRefdm</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef>
+							</refs>
+						</functionalItemRef>
+					</title>
+					<warning>
+						<symbol infoEntityIdent="SIMBOLOADVERTENCIA1"/>
+						<warningAndCautionPara>
+							<functionalItemRef functionalItemNumber="N/A">
+								<name>SubscriptPaso1Advertencia</name>
+								<shortName>text</shortName>
+							</functionalItemRef>
+						</warningAndCautionPara>
+					</warning>
+					<caution>
+						<symbol infoEntityIdent="SIMBOLOPRECAUCION1"/>
+						<warningAndCautionPara>
+							<functionalItemRef functionalItemNumber="N/A">
+								<name>SubscriptPaso1Precaucion</name>
+								<shortName>text</shortName>
+							</functionalItemRef>
+						</warningAndCautionPara>
+					</caution>
+					<note>
+						<symbol infoEntityIdent="SIMBOLONOTA1"/>
+						<notePara>
+							<functionalItemRef functionalItemNumber="N/A">
+								<name>SubscriptPaso1Nota</name>
+								<shortName>text</shortName>
+							</functionalItemRef>
+						</notePara>
+					</note>
+					<proceduralStep>
+						<title>
+							<functionalItemRef functionalItemNumber="EINPaso2">
+								<name>NombreEINPaso2</name>
+								<shortName>text</shortName>
+								<refs>
+									<dmRef>
+										<dmRefIdent>
+											<identExtension extensionProducer="ProductorPaso2EINRefdm" extensionCode="CodigoPaso2EINRefdm"/>
+											<dmCode modelIdentCode="S2M" systemDiffCode="4" systemCode="S2" subSystemCode="2" subSubSystemCode="2" assyCode="05" disassyCode="05" disassyCodeVariant="V2" infoCode="IN5" infoCodeVariant="C" itemLocationCode="A"/>
+											<issueInfo issueNumber="005" inWork="00"/>
+										</dmRefIdent>
+										<dmRefAddressItems>
+											<dmTitle>
+												<techName>TecnicoPaso2EINRefdm</techName>
+												<infoName>InfoPaso2EINRefdm</infoName>
+											</dmTitle>
+										</dmRefAddressItems>
+									</dmRef>
+								</refs>
+							</functionalItemRef>
+						</title>
+						<warning>
+							<symbol infoEntityIdent="SIMBOLOADVERTENCIA2"/>
+							<warningAndCautionPara>
+								<functionalItemRef functionalItemNumber="N/A">
+									<name>SubscriptPaso2Advertencia</name>
+									<shortName>text</shortName>
+								</functionalItemRef>
+							</warningAndCautionPara>
+						</warning>
+						<caution>
+							<symbol infoEntityIdent="SIMBOLOPRECAUCION2"/>
+							<warningAndCautionPara>
+								<functionalItemRef functionalItemNumber="N/A">
+									<name>SubscriptPaso2Precaucion</name>
+									<shortName>text</shortName>
+								</functionalItemRef>
+							</warningAndCautionPara>
+						</caution>
+						<note>
+							<symbol infoEntityIdent="SIMBOLONOTA2"/>
+							<notePara>
+								<functionalItemRef functionalItemNumber="N/A">
+									<name>SubscriptPaso2Nota</name>
+									<shortName>text</shortName>
+								</functionalItemRef>
+							</notePara>
+						</note>
+						<proceduralStep>
+							<title>
+								<functionalItemRef functionalItemNumber="EINPaso3">
+									<name>NombreEINPaso3</name>
+									<shortName>text</shortName>
+									<refs>
+										<dmRef>
+											<dmRefIdent>
+												<identExtension extensionProducer="ProductorPaso3EINRefdm" extensionCode="CodigoPaso3EINRefdm"/>
+												<dmCode modelIdentCode="S3M" systemDiffCode="5" systemCode="S3" subSystemCode="3" subSubSystemCode="3" assyCode="06" disassyCode="06" disassyCodeVariant="V3" infoCode="IN6" infoCodeVariant="E" itemLocationCode="A"/>
+												<issueInfo issueNumber="006" inWork="00"/>
+											</dmRefIdent>
+											<dmRefAddressItems>
+												<dmTitle>
+													<techName>TecnicoPaso3EINRefdm</techName>
+													<infoName>InfoPaso3EINRefdm</infoName>
+												</dmTitle>
+											</dmRefAddressItems>
+										</dmRef>
+									</refs>
+								</functionalItemRef>
+							</title>
+							<warning>
+								<symbol infoEntityIdent="SIMBOLOADVERTENCIA3"/>
+								<warningAndCautionPara>
+									<functionalItemRef functionalItemNumber="N/A">
+										<name>SubscriptPaso3Advertencia</name>
+										<shortName>text</shortName>
+									</functionalItemRef>
+								</warningAndCautionPara>
+							</warning>
+							<caution>
+								<symbol infoEntityIdent="SIMBOLOPRECAUCION3"/>
+								<warningAndCautionPara>
+									<functionalItemRef functionalItemNumber="N/A">
+										<name>SubscriptPaso3Precaucion</name>
+										<shortName>text</shortName>
+									</functionalItemRef>
+								</warningAndCautionPara>
+							</caution>
+							<note>
+								<symbol infoEntityIdent="SIMBOLONOTA3"/>
+								<notePara>
+									<functionalItemRef functionalItemNumber="N/A">
+										<name>SubscriptPaso3Nota</name>
+										<shortName>text</shortName>
+									</functionalItemRef>
+								</notePara>
+							</note>
+							<proceduralStep>
+								<title>
+									<functionalItemRef functionalItemNumber="EINPaso4">
+										<name>NombreEINPaso4</name>
+										<shortName>text</shortName>
+										<refs>
+											<dmRef>
+												<dmRefIdent>
+													<identExtension extensionProducer="ProductorPaso4EINRefdm" extensionCode="CodigoPaso4EINRefdm"/>
+													<dmCode modelIdentCode="S4M" systemDiffCode="6" systemCode="S4" subSystemCode="4" subSubSystemCode="4" assyCode="07" disassyCode="07" disassyCodeVariant="V4" infoCode="IN7" infoCodeVariant="G" itemLocationCode="A"/>
+													<issueInfo issueNumber="007" inWork="00"/>
+												</dmRefIdent>
+												<dmRefAddressItems>
+													<dmTitle>
+														<techName>TecnicoPaso4EINRefdm</techName>
+														<infoName>InfoPaso4EINRefdm</infoName>
+													</dmTitle>
+												</dmRefAddressItems>
+											</dmRef>
+										</refs>
+									</functionalItemRef>
+								</title>
+								<warning>
+									<symbol infoEntityIdent="SIMBOLOADVERTENCIA4"/>
+									<warningAndCautionPara>
+										<functionalItemRef functionalItemNumber="N/A">
+											<name>SubscriptPaso4Advertencia</name>
+											<shortName>text</shortName>
+										</functionalItemRef>
+									</warningAndCautionPara>
+								</warning>
+								<caution>
+									<symbol infoEntityIdent="SIMBOLOPRECAUCION4"/>
+									<warningAndCautionPara>
+										<functionalItemRef functionalItemNumber="N/A">
+											<name>SubscriptPaso4Precaucion</name>
+											<shortName>text</shortName>
+										</functionalItemRef>
+									</warningAndCautionPara>
+								</caution>
+								<note>
+									<symbol infoEntityIdent="SIMBOLONOTA4"/>
+									<notePara>
+										<functionalItemRef functionalItemNumber="N/A">
+											<name>SubscriptPaso4Nota</name>
+											<shortName>text</shortName>
+										</functionalItemRef>
+									</notePara>
+								</note>
+								<proceduralStep>
+									<title>
+										<functionalItemRef functionalItemNumber="EINPaso5">
+											<name>NombreEINPaso5</name>
+											<shortName>text</shortName>
+											<refs>
+												<dmRef>
+													<dmRefIdent>
+														<identExtension extensionProducer="ProductorPaso5EINRefdm" extensionCode="CodigoPaso5EINRefdm"/>
+														<dmCode modelIdentCode="S5M" systemDiffCode="7" systemCode="S5" subSystemCode="5" subSubSystemCode="5" assyCode="08" disassyCode="08" disassyCodeVariant="V5" infoCode="IN8" infoCodeVariant="I" itemLocationCode="C"/>
+														<issueInfo issueNumber="008" inWork="00"/>
+													</dmRefIdent>
+													<dmRefAddressItems>
+														<dmTitle>
+															<techName>TecnicoPaso5EINRefdm</techName>
+															<infoName>InfoPaso5EINRefdm</infoName>
+														</dmTitle>
+													</dmRefAddressItems>
+												</dmRef>
+											</refs>
+										</functionalItemRef>
+									</title>
+									<warning>
+										<symbol infoEntityIdent="SIMBOLOADVERTENCIA5"/>
+										<warningAndCautionPara>
+											<functionalItemRef functionalItemNumber="N/A">
+												<name>SubscriptPaso5Advertencia</name>
+												<shortName>text</shortName>
+											</functionalItemRef>
+										</warningAndCautionPara>
+									</warning>
+									<caution>
+										<symbol infoEntityIdent="SIMBOLOPRECAUCION5"/>
+										<warningAndCautionPara>
+											<functionalItemRef functionalItemNumber="N/A">
+												<name>SubscriptPaso5Precaucion</name>
+												<shortName>text</shortName>
+											</functionalItemRef>
+										</warningAndCautionPara>
+									</caution>
+									<note>
+										<symbol infoEntityIdent="SIMBOLONOTA5"/>
+										<notePara>
+											<functionalItemRef functionalItemNumber="N/A">
+												<name>SubscriptPaso5Nota</name>
+												<shortName>text</shortName>
+											</functionalItemRef>
+										</notePara>
+									</note>
+									<proceduralStep>
+										<title>
+											<functionalItemRef functionalItemNumber="EINPaso6">
+												<name>NombreEINPaso6</name>
+												<shortName>text</shortName>
+												<refs>
+													<dmRef>
+														<dmRefIdent>
+															<identExtension extensionProducer="ProductorPaso6EINRefdm" extensionCode="CodigoPaso6EINRefdm"/>
+															<dmCode modelIdentCode="S6M" systemDiffCode="8" systemCode="S6" subSystemCode="6" subSubSystemCode="6" assyCode="09" disassyCode="09" disassyCodeVariant="V6" infoCode="IN9" infoCodeVariant="K" itemLocationCode="A"/>
+															<issueInfo issueNumber="009" inWork="00"/>
+														</dmRefIdent>
+														<dmRefAddressItems>
+															<dmTitle>
+																<techName>TecnicoPaso6EINRefdm</techName>
+																<infoName>InfoPaso6EINRefdm</infoName>
+															</dmTitle>
+														</dmRefAddressItems>
+													</dmRef>
+												</refs>
+											</functionalItemRef>
+										</title>
+										<warning>
+											<symbol infoEntityIdent="SIMBOLOADVERTENCIA6"/>
+											<warningAndCautionPara>
+												<functionalItemRef functionalItemNumber="N/A">
+													<name>SubscriptPaso6Advertencia</name>
+													<shortName>text</shortName>
+												</functionalItemRef>
+											</warningAndCautionPara>
+										</warning>
+										<caution>
+											<symbol infoEntityIdent="SIMBOLOPRECAUCION6"/>
+											<warningAndCautionPara>
+												<functionalItemRef functionalItemNumber="N/A">
+													<name>SubscriptPaso6Precaucion</name>
+													<shortName>text</shortName>
+												</functionalItemRef>
+											</warningAndCautionPara>
+										</caution>
+										<note>
+											<symbol infoEntityIdent="SIMBOLONOTA6"/>
+											<notePara>
+												<functionalItemRef functionalItemNumber="N/A">
+													<name>SubscriptPaso6Nota</name>
+													<shortName>text</shortName>
+												</functionalItemRef>
+											</notePara>
+										</note>
+										<proceduralStep>
+											<title>
+												<functionalItemRef functionalItemNumber="EINPaso7">
+													<name>NombreEINPaso7</name>
+													<shortName>text</shortName>
+													<refs>
+														<dmRef>
+															<dmRefIdent>
+																<identExtension extensionProducer="ProductorPaso7EINRefdm" extensionCode="CodigoPaso7EINRefdm"/>
+																<dmCode modelIdentCode="S7M" systemDiffCode="9" systemCode="S7" subSystemCode="7" subSubSystemCode="7" assyCode="10" disassyCode="10" disassyCodeVariant="V7" infoCode="N10" infoCodeVariant="M" itemLocationCode="A"/>
+																<issueInfo issueNumber="010" inWork="00"/>
+															</dmRefIdent>
+															<dmRefAddressItems>
+																<dmTitle>
+																	<techName>TecnicoPaso7EINRefdm</techName>
+																	<infoName>InfoPaso7EINRefdm</infoName>
+																</dmTitle>
+															</dmRefAddressItems>
+														</dmRef>
+													</refs>
+												</functionalItemRef>
+											</title>
+											<warning>
+												<symbol infoEntityIdent="SIMBOLOADVERTENCIA7"/>
+												<warningAndCautionPara>
+													<functionalItemRef functionalItemNumber="N/A">
+														<name>SubscriptPaso7Advertencia</name>
+														<shortName>text</shortName>
+													</functionalItemRef>
+												</warningAndCautionPara>
+											</warning>
+											<caution>
+												<symbol infoEntityIdent="SIMBOLOPRECAUCION7"/>
+												<warningAndCautionPara>
+													<functionalItemRef functionalItemNumber="N/A">
+														<name>SubscriptPaso7Precaucion</name>
+														<shortName>text</shortName>
+													</functionalItemRef>
+												</warningAndCautionPara>
+											</caution>
+											<note>
+												<symbol infoEntityIdent="SIMBOLONOTA7"/>
+												<notePara>
+													<functionalItemRef functionalItemNumber="N/A">
+														<name>SubscriptPaso7Nota</name>
+														<shortName>text</shortName>
+													</functionalItemRef>
+												</notePara>
+											</note>
+											<proceduralStep>
+												<title>
+													<functionalItemRef functionalItemNumber="EINPaso8">
+														<name>NombreEINPaso8</name>
+														<shortName>text</shortName>
+														<refs>
+															<dmRef>
+																<dmRefIdent>
+																	<identExtension extensionProducer="ProductorPaso8EINRefdm" extensionCode="CodigoPaso8EINRefdm"/>
+																	<dmCode modelIdentCode="S8M" systemDiffCode="10" systemCode="S8" subSystemCode="8" subSubSystemCode="8" assyCode="11" disassyCode="11" disassyCodeVariant="V8" infoCode="N11" infoCodeVariant="O" itemLocationCode="A"/>
+																	<issueInfo issueNumber="011" inWork="00"/>
+																</dmRefIdent>
+																<dmRefAddressItems>
+																	<dmTitle>
+																		<techName>TecnicoPaso8EINRefdm</techName>
+																		<infoName>InfoPaso8EINRefdm</infoName>
+																	</dmTitle>
+																</dmRefAddressItems>
+															</dmRef>
+														</refs>
+													</functionalItemRef>
+												</title>
+												<warning>
+													<symbol infoEntityIdent="SIMBOLOADVERTENCIA8"/>
+													<warningAndCautionPara>
+														<functionalItemRef functionalItemNumber="N/A">
+															<name>SubscriptPaso8Advertencia</name>
+															<shortName>text</shortName>
+														</functionalItemRef>
+													</warningAndCautionPara>
+												</warning>
+												<caution>
+													<symbol infoEntityIdent="SIMBOLOPRECAUCION8"/>
+													<warningAndCautionPara>
+														<functionalItemRef functionalItemNumber="N/A">
+															<name>SubscriptPaso8Precaucion</name>
+															<shortName>text</shortName>
+														</functionalItemRef>
+													</warningAndCautionPara>
+												</caution>
+												<note>
+													<symbol infoEntityIdent="SIMBOLONOTA8"/>
+													<notePara>
+														<functionalItemRef functionalItemNumber="N/A">
+															<name>SubscriptPaso8Nota</name>
+															<shortName>text</shortName>
+														</functionalItemRef>
+													</notePara>
+												</note>
+											</proceduralStep>
+										</proceduralStep>
+									</proceduralStep>
+								</proceduralStep>
+							</proceduralStep>
+						</proceduralStep>
+					</proceduralStep>
+				</proceduralStep>
+			</mainProcedure>
+			<closeRqmts>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+			</closeRqmts>
+		</procedure>
+	</content>
+</dmodule>

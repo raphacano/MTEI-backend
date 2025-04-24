@@ -138,7 +138,7 @@
 					<limitType limitUnitType="lt07">
 						<threshold thresholdUnitOfMeasure="th06">
 							<thresholdValue>1</thresholdValue>
-							<tolerance toleranceType="plusorminus" toleranceValue="1"/>
+							<tolerance toleranceValue="0.0"/>
 						</threshold>
 					</limitType>
 				</timeLimit>
@@ -146,6 +146,7 @@
 					<limitType limitUnitType="lt05">
 						<threshold thresholdUnitOfMeasure="th06">
 							<thresholdValue>1</thresholdValue>
+							<tolerance toleranceValue="0.0"/>
 						</threshold>
 					</limitType>
 				</timeLimit>
@@ -168,6 +169,7 @@
 					<limitType limitUnitType="lt05">
 						<threshold thresholdUnitOfMeasure="th03">
 							<thresholdValue>1</thresholdValue>
+							<tolerance toleranceValue="0.0"/>
 						</threshold>
 					</limitType>
 				</timeLimit>
@@ -188,6 +190,7 @@
 					<limitType limitUnitType="lt05">
 						<threshold thresholdUnitOfMeasure="th03">
 							<thresholdValue>1</thresholdValue>
+							<tolerance toleranceValue="0.0"/>
 						</threshold>
 					</limitType>
 				</timeLimit>
@@ -210,7 +213,7 @@
 					<limitType limitUnitType="lt06">
 						<threshold thresholdUnitOfMeasure="th03">
 							<thresholdValue>6</thresholdValue>
-							<tolerance toleranceType="plusorminus" toleranceValue="1"/>
+							<tolerance toleranceValue="0.0"/>
 						</threshold>
 					</limitType>
 				</timeLimit>

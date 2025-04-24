@@ -100,8 +100,8 @@
 				<xsl:value-of select="sbc"/>
 			</systemBreakdownCode>
 
-			<xsl:if test="//@skill">			
-				<skillLevel skillLevelCode="{//@skill}"/>
+			<xsl:if test="//skill/@skill">			
+				<skillLevel skillLevelCode="{//skill/@skill}"/>
 			</xsl:if>
 			
 			<reasonForUpdate id="rfu_general" updateReasonType="urt03">
