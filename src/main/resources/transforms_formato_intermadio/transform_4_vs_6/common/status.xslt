@@ -3,7 +3,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:template match="dmStatus">
-        <xsl:copy>
+        <xsl:copy copy-namespaces="no">
             <!-- Copy all child elements except referencedApplicGroup -->
             <xsl:apply-templates select="node()[not(self::referencedApplicGroup)]"/>
         </xsl:copy>

@@ -96,7 +96,7 @@
 	</xsl:template>
 
 	<xsl:template match="entry[not(para)]">
-		<xsl:copy>
+		<xsl:copy copy-namespaces="no">
 			<xsl:apply-templates select="@*"/>
 			<para>
 				<xsl:apply-templates select="node()"/>

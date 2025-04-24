@@ -307,7 +307,7 @@
     </xsl:template>
 
 	<xsl:template match="entry">
-		<xsl:copy>
+		<xsl:copy copy-namespaces="no">
 		  <para>
 			<xsl:apply-templates select="node()"/>
 		  </para>

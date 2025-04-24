@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE dmodule [
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0/xml_schema_flat/prdcrossreftable.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+	<rdf:Description>
+		<dc:title>Mountain bicycle - Products cross-reference table</dc:title>
+		<dc:creator>SF815</dc:creator>
+		<dc:subject>Mountain bicycle - Products cross-reference table</dc:subject>
+		<dc:publisher>SF815</dc:publisher>
+		<dc:contributor>SF815</dc:contributor>
+		<dc:date>2007-08-21</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>S1000DBIKE-AAA-D00-00-00-00AA-00PA-D_002-00</dc:identifier>
+		<dc:language>sx-US</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DBIKE</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>AA</discodev>
+					<incode>00P</incode>
+					<incodev>A</incodev>
+					<itemloc>D</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Mountain bicycle</techname>
+				<infoname>Products cross-reference table</infoname>
+			</dmtitle>
+			<issno issno="002" inwork="00" type="changed"/>
+			<issdate year="2007" month="08" day="21"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="SIOM">SF815</rpc>
+			<orig origname="SIOM">SF815</orig>
+			<actref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-0000-00AA-00WA-D">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>All</displaytext>
+			</applic>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-00-00AA-022A-D_005">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="005"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<rfu>
+				<p>CPF 2006-47AA: New PCT data module type</p>
+				<p>Reference to BREX file changed from default to specific for the Bike Samples</p>
+			</rfu>
+		</status>
+	</idstatus>
+	<content>
+		<pct>
+			<product>
+				<assign actidref="serialno" actreftype="prodattr" actvalue="1B070643"/>
+				<assign actidref="model" actreftype="prodattr" actvalue="Brook trekker"/>
+				<assign actidref="version" actreftype="prodattr" actvalue="Mk9"/>
+				<assign actidref="versrank" actreftype="prodattr" actvalue="2"/>
+				<assign actidref="SB-S001" actreftype="condition" actvalue="Pre"/>
+			</product>
+			<product>
+				<assign actidref="serialno" actreftype="prodattr" actvalue="1B070644"/>
+				<assign actidref="model" actreftype="prodattr" actvalue="Brook trekker"/>
+				<assign actidref="version" actreftype="prodattr" actvalue="Mk9"/>
+				<assign actidref="versrank" actreftype="prodattr" actvalue="1"/>
+				<assign actidref="SB-S001" actreftype="condition" actvalue="Post"/>
+			</product>
+			<product>
+				<assign actidref="serialno" actreftype="prodattr" actvalue="1B070701"/>
+				<assign actidref="model" actreftype="prodattr" actvalue="Mountain storm"/>
+				<assign actidref="version" actreftype="prodattr" actvalue="Mk1"/>
+				<assign actidref="versrank" actreftype="prodattr" actvalue="1"/>
+				<assign actidref="SB-S001" actreftype="condition" actvalue="Pre"/>
+			</product>
+		</pct>
+	</content>
+</dmodule>
