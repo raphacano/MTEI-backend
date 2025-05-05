@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Arbortext, Inc., 1988-2014, v.4002-->
 <!DOCTYPE dmodule [
-<!ENTITY ICN-VCR8X8DRAGON-A-C17000-A-010CB-21903-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-C17000-A-010CB-21903-A-01-1.svg" NDATA svg>
-<!ENTITY ICN-VCR8X8DRAGON-A-C17000-A-010CB-21902-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-C17000-A-010CB-21902-A-01-1.svg" NDATA svg>
-<!ENTITY ICN-VCR8X8DRAGON-A-C17000-A-010CB-21901-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-C17000-A-010CB-21901-A-01-1.svg" NDATA svg>
-
-<!NOTATION svg SYSTEM "svg">
-<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+	<!ENTITY ICN-VCR8X8DRAGON-A-C17000-A-010CB-21903-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-C17000-A-010CB-21903-A-01-1.svg" NDATA svg>
+	<!ENTITY ICN-VCR8X8DRAGON-A-C17000-A-010CB-21902-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-C17000-A-010CB-21902-A-01-1.svg" NDATA svg>
+	<!ENTITY ICN-VCR8X8DRAGON-A-C17000-A-010CB-21901-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-C17000-A-010CB-21901-A-01-1.svg" NDATA svg>
+	<!NOTATION svg SYSTEM "svg">
+	<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
 ]>
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_master/dm/ipdSchema.xsd">
 	<rdf:Description>
@@ -45,7 +44,8 @@
 			</dmtitle>
 			<issno inwork="00" issno="001" type="new"/>
 			<issdate day="19" month="11" year="2024"/>
-			<language country="ES" language="es"/></dmaddres>
+			<language country="ES" language="es"/>
+		</dmaddres>
 		<status>
 			<security class="01"/>
 			<rpc rpcname="TESS-DEFENCE SA">9AEWB</rpc>
@@ -127,43 +127,57 @@
 				</refdm>
 			</brexref>
 			<qa>
-				<firstver type="tabtop"/></qa>
+				<firstver type="tabtop"/>
+			</qa>
 		</status>
 	</idstatus>
 	<content>
 		<ipc>
 			<figure id="fig-0001">
 				<title>GIRÓSCOPOS - UNIDAD DEL SENSOR DE MOVIMIENTO (MSU)</title>
-				<graphic boardno="ICN-VCR8X8DRAGON-A-C17000-A-010CB-21901-A-01-1" id="fig-0001-gra-0001"></graphic>
+				<graphic boardno="ICN-VCR8X8DRAGON-A-C17000-A-010CB-21901-A-01-1" id="fig-0001-gra-0001"/>
 				<graphic boardno="ICN-VCR8X8DRAGON-A-C17000-A-010CB-21902-A-01-1" id="fig-0001-gra-0002">
 					<hotspot apsid="hot-0001" apsname="1" id="fig-0001-hot-0001" title="PROTECTOR MSU">
-						<csnref refcsn="C1700001A001 "/></hotspot>
+						<csnref refcsn="C1700001A001 "/>
+					</hotspot>
 					<hotspot apsid="hot-0002" apsname="2" id="fig-0001-hot-0002" title="TORNILLO DIN 912 M5x12">
-						<csnref refcsn="C1700001A002 "/></hotspot>
+						<csnref refcsn="C1700001A002 "/>
+					</hotspot>
 					<hotspot apsid="hot-0003" apsname="3" id="fig-0001-hot-0003" title="ARANDELA CURVA DIN 127 B M5">
-						<csnref refcsn="C1700001A003 "/></hotspot>
+						<csnref refcsn="C1700001A003 "/>
+					</hotspot>
 					<hotspot apsid="hot-0004" apsname="4" id="fig-0001-hot-0004" title="ARANDELA PLANA DIN 125 M5">
-						<csnref refcsn="C1700001A004 "/></hotspot>
+						<csnref refcsn="C1700001A004 "/>
+					</hotspot>
 				</graphic>
 				<graphic boardno="ICN-VCR8X8DRAGON-A-C17000-A-010CB-21903-A-01-1" id="fig-0001-gra-0003">
 					<hotspot apsid="hot-0005" apsname="5" id="fig-0001-hot-0005" title="MSU">
-						<csnref refcsn="C1700001A005 "/></hotspot>
+						<csnref refcsn="C1700001A005 "/>
+					</hotspot>
 					<hotspot apsid="hot-0006" apsname="6" id="fig-0001-hot-0006" title="TORNILLO DIN 912 M6x22">
-						<csnref refcsn="C1700001A006 "/></hotspot>
+						<csnref refcsn="C1700001A006 "/>
+					</hotspot>
 					<hotspot apsid="hot-0007" apsname="7" id="fig-0001-hot-0007" title="ARANDELA CURVA DIN 127 B M6">
-						<csnref refcsn="C1700001A007 "/></hotspot>
+						<csnref refcsn="C1700001A007 "/>
+					</hotspot>
 					<hotspot apsid="hot-0008" apsname="8" id="fig-0001-hot-0008" title="ARANDELA PLANA DIN 433 M6">
-						<csnref refcsn="C1700001A008 "/></hotspot>
+						<csnref refcsn="C1700001A008 "/>
+					</hotspot>
 					<hotspot apsid="hot-0009" apsname="9" id="fig-0001-hot-0009" title="J2-W30-21G">
-						<csnref refcsn="C1700001A009 "/></hotspot>
+						<csnref refcsn="C1700001A009 "/>
+					</hotspot>
 					<hotspot apsid="hot-0010" apsname="10" id="fig-0001-hot-0010" title="J3-W30-22F">
-						<csnref refcsn="C1700001A010 "/></hotspot>
+						<csnref refcsn="C1700001A010 "/>
+					</hotspot>
 					<hotspot apsid="hot-0011" apsname="11" id="fig-0001-hot-0011" title="TORNILLO DIN 933 M6x10">
-						<csnref refcsn="C1700001A011 "/></hotspot>
+						<csnref refcsn="C1700001A011 "/>
+					</hotspot>
 					<hotspot apsid="hot-0012" apsname="12" id="fig-0001-hot-0012" title="ARANDELA PLANA DIN 9021 M6">
-						<csnref refcsn="C1700001A012 "/></hotspot>
+						<csnref refcsn="C1700001A012 "/>
+					</hotspot>
 					<hotspot apsid="hot-0013" apsname="13" id="fig-0001-hot-0013" title="TOMA DE TIERRA MSU">
-						<csnref refcsn="C1700001A013 "/></hotspot>
+						<csnref refcsn="C1700001A013 "/>
+					</hotspot>
 				</graphic>
 			</figure>
 			<csn csn="C1700001A001 " ind="1" item="001">
@@ -185,7 +199,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A002 " ind="1" item="002">
@@ -207,7 +221,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A003 " ind="1" item="003">
@@ -229,7 +243,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A004 " ind="1" item="004">
@@ -251,7 +265,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A005 " ind="1" item="005">
@@ -273,7 +287,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A006 " ind="1" item="006">
@@ -295,7 +309,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A007 " ind="1" item="007">
@@ -317,7 +331,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A008 " ind="1" item="008">
@@ -339,7 +353,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A009 " ind="1" item="009">
@@ -361,7 +375,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A010 " ind="1" item="010">
@@ -383,7 +397,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A011 " ind="1" item="011">
@@ -405,7 +419,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A012 " ind="1" item="012">
@@ -427,7 +441,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 			<csn csn="C1700001A013 " ind="1" item="013">
@@ -449,7 +463,7 @@
 					<cbs>
 						<dfl>-</dfl>
 					</cbs>
-					<ccs></ccs>
+					<ccs/>
 				</isn>
 			</csn>
 		</ipc>

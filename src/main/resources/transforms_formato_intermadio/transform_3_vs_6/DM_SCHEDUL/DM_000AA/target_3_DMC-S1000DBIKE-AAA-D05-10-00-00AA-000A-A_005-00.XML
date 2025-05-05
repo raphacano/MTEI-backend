@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/schedul.xsd">
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\schedul_custom.xsd">
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>

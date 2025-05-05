@@ -187,7 +187,7 @@
 					<supportEquipDescrGroup>
 						<supportEquipDescr id="seq-0001">
 							<name>EQUIPO BASICO DE HERRAMIENTAS (METRICO) DE MECANICO/AUTOMOCION (2 ESC.)</name>
-							<identNumber>
+							<identNumber nsn="5180331032620">
 								<manufacturerCode>7857B</manufacturerCode>
 								<partAndSerialNumber>
 									<partNumber>E.B.H.M.A. (METRICO)</partNumber>
@@ -197,7 +197,7 @@
 						</supportEquipDescr>
 						<supportEquipDescr id="seq-0002">
 							<name>KIT TEST DE PRESION</name>
-							<identNumber>
+							<identNumber nsn="TBD">
 								<manufacturerCode>0131B</manufacturerCode>
 								<partAndSerialNumber>
 									<partNumber>0908004700</partNumber>

@@ -6,7 +6,7 @@
 	<xs:annotation id="version">
 		<xs:documentation>Issue number: 6</xs:documentation>
 		<xs:documentation>Issue date: 2024-06-19</xs:documentation>
-		<xs:documentation>URL: http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd</xs:documentation>
+		<xs:documentation>URL: http://www.s1000d.org/S1000D_6/xml_schema_flat/fault.xsd</xs:documentation>
 		<xs:documentation>Root element: dmodule</xs:documentation>
 		<xs:documentation>Remarks: none</xs:documentation>
 	</xs:annotation>
@@ -922,6 +922,7 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 			<xs:element ref="inlineSignificantData"/>
 			<xs:element ref="quantity"/>
 			<xs:element ref="internalRef"/>
+			<xs:element ref="indexFlag"/>
 			<xs:element ref="changeInline"/>
 			<xs:element ref="emphasis"/>
 			<xs:element ref="symbol"/>
@@ -931,10 +932,9 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 			<xs:element ref="pmRef"/>
 			<xs:element ref="externalPubRef"/>
 			<xs:element ref="terminologyRef"/>
-			<xs:element ref="footnote"/>
-			<xs:element ref="footnoteRef"/>
 			<xs:element ref="acronym"/>
 			<xs:element ref="acronymTerm"/>
+			<xs:element ref="captionGroup"/>
 			<xs:element ref="verbatimText"/>
 		</xs:choice>
 	</xs:group>
@@ -3598,7 +3598,6 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		<xs:attribute ref="referredFragment"/>
 		<xs:attribute ref="targetTitle"/>
 		<xs:attribute ref="applicRefId"/>
-		<xs:attribute name="titulo" type="xs:string"/>
 		<xs:attributeGroup ref="changeAttGroup"/>
 		<xs:attributeGroup ref="xlink:XLINKATT3"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
@@ -3708,7 +3707,6 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:attribute name="targetTitle" type="xs:string"/>
-	<xs:attribute name="titulo" type="xs:string"/>
 	<xs:element name="changeInline" type="changeInlineElemType"/>
 	<xs:complexType name="changeInlineElemType" mixed="true">
 		<xs:sequence maxOccurs="unbounded">
@@ -3862,32 +3860,305 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
 	<xs:attribute name="terminologyIdentNumber" type="xs:string"/>
-	<xs:element name="footnote" type="footnoteElemType"/>
-	<xs:complexType name="footnoteElemType">
+	<xs:element name="captionGroup" type="captionGroupElemType"/>
+	<xs:complexType name="captionGroupElemType">
 		<xs:sequence>
-			<xs:element ref="para" maxOccurs="unbounded"/>
+			<xs:element ref="colspec" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="spanspec" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="captionBody"/>
 		</xs:sequence>
-		<xs:attribute ref="footnoteMark"/>
+		<xs:attribute ref="cols" use="required"/>
+		<xs:attribute ref="alignCaption" default="left"/>
+		<xs:attribute ref="tableOfContentType"/>
+		<xs:attribute ref="colsep"/>
+		<xs:attribute ref="rowsep"/>
 		<xs:attribute ref="applicRefId"/>
 		<xs:attribute ref="id"/>
 		<xs:attributeGroup ref="changeAttGroup"/>
 		<xs:attributeGroup ref="securityAttGroup"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
-	<xs:attribute name="footnoteMark" type="footnoteMarkAttType" default="num"/>
-	<xs:simpleType name="footnoteMarkAttType">
+	<xs:element name="colspec" type="colspecElemType"/>
+	<xs:complexType name="colspecElemType">
+		<xs:attribute ref="colnum"/>
+		<xs:attribute ref="colname"/>
+		<xs:attribute ref="align"/>
+		<xs:attribute ref="charoff"/>
+		<xs:attribute ref="char"/>
+		<xs:attribute ref="colwidth"/>
+		<xs:attribute ref="colsep"/>
+		<xs:attribute ref="rowsep"/>
+	</xs:complexType>
+	<xs:attribute name="colnum" type="xs:positiveInteger"/>
+	<xs:attribute name="colname" type="xs:NMTOKEN"/>
+	<xs:attribute name="align" type="alignAttType"/>
+	<xs:simpleType name="alignAttType">
 		<xs:restriction base="xs:NMTOKEN">
-			<xs:enumeration value="num"/>
-			<xs:enumeration value="sym"/>
-			<xs:enumeration value="alpha"/>
+			<xs:enumeration value="left"/>
+			<xs:enumeration value="right"/>
+			<xs:enumeration value="center"/>
+			<xs:enumeration value="justify"/>
+			<xs:enumeration value="char"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:element name="footnoteRef" type="footnoteRefElemType"/>
-	<xs:complexType name="footnoteRefElemType">
-		<xs:attribute ref="internalRefId"/>
+	<xs:attribute name="charoff" type="xs:string"/>
+	<xs:attribute name="char" type="xs:string"/>
+	<xs:attribute name="colwidth" type="colwidthAttType"/>
+	<xs:simpleType name="colwidthAttType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d+(\.\d+)?\s*(\*|cm|in|mm|pc|pt)(\+\d+(\.\d+)?\s*(cm|in|mm|pc|pt))?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="colsep" type="yesOrNoAttType"/>
+	<xs:attribute name="rowsep" type="yesOrNoAttType"/>
+	<xs:element name="spanspec" type="spanspecElemType"/>
+	<xs:complexType name="spanspecElemType">
+		<xs:attribute ref="namest" use="required"/>
+		<xs:attribute ref="nameend" use="required"/>
+		<xs:attribute ref="spanname" use="required"/>
+		<xs:attribute ref="align" default="center"/>
+		<xs:attribute ref="charoff"/>
+		<xs:attribute ref="char"/>
+		<xs:attribute ref="colsep"/>
+		<xs:attribute ref="rowsep"/>
+	</xs:complexType>
+	<xs:attribute name="namest" type="xs:NMTOKEN"/>
+	<xs:attribute name="nameend" type="xs:NMTOKEN"/>
+	<xs:attribute name="spanname" type="xs:NMTOKEN"/>
+	<xs:element name="captionBody" type="captionBodyElemType"/>
+	<xs:complexType name="captionBodyElemType">
+		<xs:sequence>
+			<xs:element ref="captionRow" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="valign" default="top"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="captionRow" type="captionRowElemType"/>
+	<xs:complexType name="captionRowElemType">
+		<xs:sequence>
+			<xs:element ref="captionEntry" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="rowsep"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="captionEntry" type="captionEntryElemType"/>
+	<xs:complexType name="captionEntryElemType">
+		<xs:choice minOccurs="0">
+			<xs:element ref="caption"/>
+			<xs:element ref="captionText"/>
+		</xs:choice>
+		<xs:attribute ref="colname"/>
+		<xs:attribute ref="namest"/>
+		<xs:attribute ref="nameend"/>
+		<xs:attribute ref="spanname"/>
+		<xs:attribute ref="morerows"/>
+		<xs:attribute ref="colsep"/>
+		<xs:attribute ref="rowsep"/>
+		<xs:attribute ref="valign"/>
+		<xs:attribute ref="alignCaptionEntry"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="caption" type="captionElemType"/>
+	<xs:complexType name="captionElemType">
+		<xs:sequence>
+			<xs:element ref="captionLine" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="color"/>
+		<xs:attribute ref="captionWidth"/>
+		<xs:attribute ref="captionHeight"/>
+		<xs:attribute ref="systemIdentCode"/>
+		<xs:attribute ref="alignCaption" default="left"/>
+		<xs:attribute ref="tableOfContentType"/>
+		<xs:attribute ref="captionType"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="captionLine" type="captionLineElemType"/>
+	<xs:complexType name="captionLineElemType" mixed="true">
+		<xs:sequence>
+			<xs:element ref="acronymTerm" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:attribute name="color" type="colorAttType" default="co09"/>
+	<xs:simpleType name="colorAttType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="co00"/>
+			<xs:enumeration value="co01"/>
+			<xs:enumeration value="co02"/>
+			<xs:enumeration value="co03"/>
+			<xs:enumeration value="co04"/>
+			<xs:enumeration value="co05"/>
+			<xs:enumeration value="co06"/>
+			<xs:enumeration value="co07"/>
+			<xs:enumeration value="co08"/>
+			<xs:enumeration value="co09"/>
+			<xs:enumeration value="co10"/>
+			<xs:enumeration value="co11"/>
+			<xs:enumeration value="co12"/>
+			<xs:enumeration value="co13"/>
+			<xs:enumeration value="co14"/>
+			<xs:enumeration value="co15"/>
+			<xs:enumeration value="co16"/>
+			<xs:enumeration value="co17"/>
+			<xs:enumeration value="co18"/>
+			<xs:enumeration value="co19"/>
+			<xs:enumeration value="co20"/>
+			<xs:enumeration value="co21"/>
+			<xs:enumeration value="co22"/>
+			<xs:enumeration value="co23"/>
+			<xs:enumeration value="co24"/>
+			<xs:enumeration value="co25"/>
+			<xs:enumeration value="co26"/>
+			<xs:enumeration value="co27"/>
+			<xs:enumeration value="co28"/>
+			<xs:enumeration value="co29"/>
+			<xs:enumeration value="co30"/>
+			<xs:enumeration value="co31"/>
+			<xs:enumeration value="co32"/>
+			<xs:enumeration value="co33"/>
+			<xs:enumeration value="co34"/>
+			<xs:enumeration value="co35"/>
+			<xs:enumeration value="co36"/>
+			<xs:enumeration value="co37"/>
+			<xs:enumeration value="co38"/>
+			<xs:enumeration value="co39"/>
+			<xs:enumeration value="co40"/>
+			<xs:enumeration value="co41"/>
+			<xs:enumeration value="co42"/>
+			<xs:enumeration value="co43"/>
+			<xs:enumeration value="co44"/>
+			<xs:enumeration value="co45"/>
+			<xs:enumeration value="co46"/>
+			<xs:enumeration value="co47"/>
+			<xs:enumeration value="co48"/>
+			<xs:enumeration value="co49"/>
+			<xs:enumeration value="co50"/>
+			<xs:enumeration value="co51"/>
+			<xs:enumeration value="co52"/>
+			<xs:enumeration value="co53"/>
+			<xs:enumeration value="co54"/>
+			<xs:enumeration value="co55"/>
+			<xs:enumeration value="co56"/>
+			<xs:enumeration value="co57"/>
+			<xs:enumeration value="co58"/>
+			<xs:enumeration value="co59"/>
+			<xs:enumeration value="co60"/>
+			<xs:enumeration value="co61"/>
+			<xs:enumeration value="co62"/>
+			<xs:enumeration value="co63"/>
+			<xs:enumeration value="co64"/>
+			<xs:enumeration value="co65"/>
+			<xs:enumeration value="co66"/>
+			<xs:enumeration value="co67"/>
+			<xs:enumeration value="co68"/>
+			<xs:enumeration value="co69"/>
+			<xs:enumeration value="co70"/>
+			<xs:enumeration value="co71"/>
+			<xs:enumeration value="co72"/>
+			<xs:enumeration value="co73"/>
+			<xs:enumeration value="co74"/>
+			<xs:enumeration value="co75"/>
+			<xs:enumeration value="co76"/>
+			<xs:enumeration value="co77"/>
+			<xs:enumeration value="co78"/>
+			<xs:enumeration value="co79"/>
+			<xs:enumeration value="co80"/>
+			<xs:enumeration value="co81"/>
+			<xs:enumeration value="co82"/>
+			<xs:enumeration value="co83"/>
+			<xs:enumeration value="co84"/>
+			<xs:enumeration value="co85"/>
+			<xs:enumeration value="co86"/>
+			<xs:enumeration value="co87"/>
+			<xs:enumeration value="co88"/>
+			<xs:enumeration value="co89"/>
+			<xs:enumeration value="co90"/>
+			<xs:enumeration value="co91"/>
+			<xs:enumeration value="co92"/>
+			<xs:enumeration value="co93"/>
+			<xs:enumeration value="co94"/>
+			<xs:enumeration value="co95"/>
+			<xs:enumeration value="co96"/>
+			<xs:enumeration value="co97"/>
+			<xs:enumeration value="co98"/>
+			<xs:enumeration value="co99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="captionWidth" type="xs:string"/>
+	<xs:attribute name="captionHeight" type="xs:string"/>
+	<xs:attribute name="systemIdentCode" type="xs:string"/>
+	<xs:attribute name="alignCaption" type="alignCaptionAttType"/>
+	<xs:simpleType name="alignCaptionAttType">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="left"/>
+			<xs:enumeration value="right"/>
+			<xs:enumeration value="center"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="tableOfContentType" type="tableOfContentTypeAttType" default="none"/>
+	<xs:simpleType name="tableOfContentTypeAttType">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="none"/>
+			<xs:enumeration value="redtoc"/>
+			<xs:enumeration value="comdtoc"/>
+			<xs:enumeration value="ambertoc"/>
+			<xs:enumeration value="greentoc"/>
+			<xs:enumeration value="yelowtoc"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="captionType" type="captionTypeAttType" default="primary"/>
+	<xs:simpleType name="captionTypeAttType">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="primary"/>
+			<xs:enumeration value="secondary"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="captionText" type="captionTextElemType"/>
+	<xs:complexType name="captionTextElemType" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="internalRef"/>
+			<xs:element ref="indexFlag"/>
+			<xs:element ref="changeInline"/>
+			<xs:element ref="emphasis"/>
+			<xs:element ref="subScript"/>
+			<xs:element ref="superScript"/>
+			<xs:element ref="dmRef"/>
+			<xs:element ref="pmRef"/>
+			<xs:element ref="externalPubRef"/>
+			<xs:element ref="acronym"/>
+			<xs:element ref="acronymTerm"/>
+		</xs:choice>
 		<xs:attributeGroup ref="changeAttGroup"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
+	<xs:attribute name="morerows" type="xs:nonNegativeInteger" default="0"/>
+	<xs:attribute name="valign" type="valignAttType"/>
+	<xs:simpleType name="valignAttType">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="top"/>
+			<xs:enumeration value="bottom"/>
+			<xs:enumeration value="middle"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="alignCaptionEntry" type="alignCaptionEntryAttType"/>
+	<xs:simpleType name="alignCaptionEntryAttType">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="left"/>
+			<xs:enumeration value="right"/>
+			<xs:enumeration value="center"/>
+			<xs:enumeration value="justify"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="cols" type="xs:positiveInteger"/>
 	<xs:group name="listElemGroup">
 		<xs:choice>
 			<xs:element ref="sequentialList"/>
@@ -5092,7 +5363,10 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 				<xs:element ref="warningsAndCautions"/>
 				<xs:element ref="warningsAndCautionsRef"/>
 			</xs:choice>
-			<xs:element ref="procedure"/>
+			<xs:choice>
+				<xs:element ref="faultReporting"/>
+				<xs:element ref="faultIsolation"/>
+			</xs:choice>
 		</xs:sequence>
 		<xs:attribute ref="id"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
@@ -5205,13 +5479,29 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
 	<xs:attribute name="cautionIdentNumber" type="xs:string"/>
-	<xs:element name="procedure" type="procedureElemType"/>
-	<xs:complexType name="procedureElemType">
+	<xs:element name="faultReporting" type="faultReportingElemType"/>
+	<xs:complexType name="faultReportingElemType">
 		<xs:sequence>
 			<xs:element ref="commonInfo" minOccurs="0"/>
-			<xs:element ref="preliminaryRqmts"/>
-			<xs:element ref="mainProcedure"/>
-			<xs:element ref="closeRqmts"/>
+			<xs:element ref="preliminaryRqmts" minOccurs="0"/>
+			<xs:choice>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="isolatedFault"/>
+					<xs:element ref="isolatedFaultAlts"/>
+				</xs:choice>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="detectedFault"/>
+					<xs:element ref="detectedFaultAlts"/>
+				</xs:choice>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="observedFault"/>
+					<xs:element ref="observedFaultAlts"/>
+				</xs:choice>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="correlatedFault"/>
+					<xs:element ref="correlatedFaultAlts"/>
+				</xs:choice>
+			</xs:choice>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:element name="commonInfo" type="commonInfoElemType"/>
@@ -5414,196 +5704,9 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 	<xs:group name="ncpElemGroup">
 		<xs:choice>
 			<xs:element ref="note"/>
-			<xs:element ref="circuitBreakerDescrGroup"/>
 			<xs:element ref="para"/>
 		</xs:choice>
 	</xs:group>
-	<xs:element name="circuitBreakerDescrGroup" type="circuitBreakerDescrGroupElemType"/>
-	<xs:complexType name="circuitBreakerDescrGroupElemType">
-		<xs:sequence>
-			<xs:element ref="circuitBreakerDescrSubGroup" maxOccurs="unbounded"/>
-			<xs:element ref="footnote" minOccurs="0" maxOccurs="unbounded"/>
-		</xs:sequence>
-		<xs:attribute ref="applicRefId"/>
-		<xs:attribute ref="circuitBreakerAction"/>
-		<xs:attribute ref="checkSum"/>
-		<xs:attribute ref="id"/>
-		<xs:attributeGroup ref="changeAttGroup"/>
-		<xs:attributeGroup ref="securityAttGroup"/>
-		<xs:attribute ref="controlAuthorityRefs"/>
-	</xs:complexType>
-	<xs:element name="circuitBreakerDescrSubGroup" type="circuitBreakerDescrSubGroupElemType"/>
-	<xs:complexType name="circuitBreakerDescrSubGroupElemType">
-		<xs:sequence>
-			<xs:element ref="functionalItemRef" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:sequence>
-				<xs:element ref="circuitBreakerDescr" maxOccurs="unbounded"/>
-			</xs:sequence>
-		</xs:sequence>
-		<xs:attribute ref="circuitBreakerAction"/>
-		<xs:attribute ref="checkSum"/>
-		<xs:attribute ref="applicRefId"/>
-		<xs:attribute ref="id"/>
-		<xs:attributeGroup ref="changeAttGroup"/>
-		<xs:attributeGroup ref="securityAttGroup"/>
-		<xs:attribute ref="controlAuthorityRefs"/>
-	</xs:complexType>
-	<xs:element name="circuitBreakerDescr" type="circuitBreakerDescrElemType"/>
-	<xs:complexType name="circuitBreakerDescrElemType">
-		<xs:sequence>
-			<xs:element ref="circuitBreakerRef"/>
-			<xs:element ref="name"/>
-			<xs:choice minOccurs="0">
-				<xs:element ref="internalRef"/>
-				<xs:element ref="accessPointRef"/>
-			</xs:choice>
-			<xs:element ref="circuitBreakerLocation" minOccurs="0"/>
-			<xs:element ref="footnoteRemarks" minOccurs="0"/>
-		</xs:sequence>
-		<xs:attribute ref="applicRefId"/>
-		<xs:attribute ref="id"/>
-		<xs:attributeGroup ref="changeAttGroup"/>
-		<xs:attributeGroup ref="securityAttGroup"/>
-		<xs:attribute ref="controlAuthorityRefs"/>
-	</xs:complexType>
-	<xs:element name="accessPointRef" type="accessPointRefElemType"/>
-	<xs:complexType name="accessPointRefElemType">
-		<xs:sequence>
-			<xs:element ref="name" minOccurs="0"/>
-			<xs:element ref="shortName" minOccurs="0"/>
-			<xs:element ref="refs" minOccurs="0"/>
-		</xs:sequence>
-		<xs:attribute ref="applicRefId"/>
-		<xs:attribute ref="accessPointNumber"/>
-		<xs:attribute ref="accessPointTypeValue"/>
-		<xs:attribute ref="id"/>
-		<xs:attribute ref="lsarData"/>
-		<xs:attributeGroup ref="changeAttGroup"/>
-		<xs:attributeGroup ref="securityAttGroup"/>
-		<xs:attribute ref="controlAuthorityRefs"/>
-	</xs:complexType>
-	<xs:attribute name="accessPointNumber" type="xs:string"/>
-	<xs:attribute name="accessPointTypeValue" type="accessPointTypeValueAttType"/>
-	<xs:simpleType name="accessPointTypeValueAttType">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="accpnl01"/>
-			<xs:enumeration value="accpnl02"/>
-			<xs:enumeration value="accpnl03"/>
-			<xs:enumeration value="accpnl04"/>
-			<xs:enumeration value="accpnl05"/>
-			<xs:enumeration value="accpnl06"/>
-			<xs:enumeration value="accpnl07"/>
-			<xs:enumeration value="accpnl08"/>
-			<xs:enumeration value="accpnl09"/>
-			<xs:enumeration value="accpnl10"/>
-			<xs:enumeration value="accpnl11"/>
-			<xs:enumeration value="accpnl12"/>
-			<xs:enumeration value="accpnl13"/>
-			<xs:enumeration value="accpnl14"/>
-			<xs:enumeration value="accpnl15"/>
-			<xs:enumeration value="accpnl16"/>
-			<xs:enumeration value="accpnl17"/>
-			<xs:enumeration value="accpnl18"/>
-			<xs:enumeration value="accpnl19"/>
-			<xs:enumeration value="accpnl20"/>
-			<xs:enumeration value="accpnl21"/>
-			<xs:enumeration value="accpnl22"/>
-			<xs:enumeration value="accpnl23"/>
-			<xs:enumeration value="accpnl24"/>
-			<xs:enumeration value="accpnl25"/>
-			<xs:enumeration value="accpnl26"/>
-			<xs:enumeration value="accpnl27"/>
-			<xs:enumeration value="accpnl28"/>
-			<xs:enumeration value="accpnl29"/>
-			<xs:enumeration value="accpnl30"/>
-			<xs:enumeration value="accpnl31"/>
-			<xs:enumeration value="accpnl32"/>
-			<xs:enumeration value="accpnl33"/>
-			<xs:enumeration value="accpnl34"/>
-			<xs:enumeration value="accpnl35"/>
-			<xs:enumeration value="accpnl36"/>
-			<xs:enumeration value="accpnl37"/>
-			<xs:enumeration value="accpnl38"/>
-			<xs:enumeration value="accpnl39"/>
-			<xs:enumeration value="accpnl40"/>
-			<xs:enumeration value="accpnl41"/>
-			<xs:enumeration value="accpnl42"/>
-			<xs:enumeration value="accpnl43"/>
-			<xs:enumeration value="accpnl44"/>
-			<xs:enumeration value="accpnl45"/>
-			<xs:enumeration value="accpnl46"/>
-			<xs:enumeration value="accpnl47"/>
-			<xs:enumeration value="accpnl48"/>
-			<xs:enumeration value="accpnl49"/>
-			<xs:enumeration value="accpnl50"/>
-			<xs:enumeration value="accpnl51"/>
-			<xs:enumeration value="accpnl52"/>
-			<xs:enumeration value="accpnl53"/>
-			<xs:enumeration value="accpnl54"/>
-			<xs:enumeration value="accpnl55"/>
-			<xs:enumeration value="accpnl56"/>
-			<xs:enumeration value="accpnl57"/>
-			<xs:enumeration value="accpnl58"/>
-			<xs:enumeration value="accpnl59"/>
-			<xs:enumeration value="accpnl60"/>
-			<xs:enumeration value="accpnl61"/>
-			<xs:enumeration value="accpnl62"/>
-			<xs:enumeration value="accpnl63"/>
-			<xs:enumeration value="accpnl64"/>
-			<xs:enumeration value="accpnl65"/>
-			<xs:enumeration value="accpnl66"/>
-			<xs:enumeration value="accpnl67"/>
-			<xs:enumeration value="accpnl68"/>
-			<xs:enumeration value="accpnl69"/>
-			<xs:enumeration value="accpnl70"/>
-			<xs:enumeration value="accpnl71"/>
-			<xs:enumeration value="accpnl72"/>
-			<xs:enumeration value="accpnl73"/>
-			<xs:enumeration value="accpnl74"/>
-			<xs:enumeration value="accpnl75"/>
-			<xs:enumeration value="accpnl76"/>
-			<xs:enumeration value="accpnl77"/>
-			<xs:enumeration value="accpnl78"/>
-			<xs:enumeration value="accpnl79"/>
-			<xs:enumeration value="accpnl80"/>
-			<xs:enumeration value="accpnl81"/>
-			<xs:enumeration value="accpnl82"/>
-			<xs:enumeration value="accpnl83"/>
-			<xs:enumeration value="accpnl84"/>
-			<xs:enumeration value="accpnl85"/>
-			<xs:enumeration value="accpnl86"/>
-			<xs:enumeration value="accpnl87"/>
-			<xs:enumeration value="accpnl88"/>
-			<xs:enumeration value="accpnl89"/>
-			<xs:enumeration value="accpnl90"/>
-			<xs:enumeration value="accpnl91"/>
-			<xs:enumeration value="accpnl92"/>
-			<xs:enumeration value="accpnl93"/>
-			<xs:enumeration value="accpnl94"/>
-			<xs:enumeration value="accpnl95"/>
-			<xs:enumeration value="accpnl96"/>
-			<xs:enumeration value="accpnl97"/>
-			<xs:enumeration value="accpnl98"/>
-			<xs:enumeration value="accpnl99"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:attribute name="lsarData" type="yesOrNoAttType" default="0"/>
-	<xs:element name="circuitBreakerLocation" type="circuitBreakerLocationElemType"/>
-	<xs:complexType name="circuitBreakerLocationElemType" mixed="true">
-		<xs:attribute ref="id"/>
-		<xs:attributeGroup ref="changeAttGroup"/>
-		<xs:attributeGroup ref="securityAttGroup"/>
-		<xs:attribute ref="controlAuthorityRefs"/>
-	</xs:complexType>
-	<xs:element name="footnoteRemarks" type="footnoteRemarksElemType"/>
-	<xs:complexType name="footnoteRemarksElemType">
-		<xs:choice maxOccurs="unbounded">
-			<xs:element ref="simplePara"/>
-			<xs:element ref="footnoteRef"/>
-		</xs:choice>
-		<xs:attribute ref="applicRefId"/>
-		<xs:attribute ref="controlAuthorityRefs"/>
-	</xs:complexType>
 	<xs:group name="fmftElemGroup">
 		<xs:choice>
 			<xs:element ref="figure"/>
@@ -5736,53 +5839,6 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		<xs:attribute ref="char"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
-	<xs:element name="colspec" type="colspecElemType"/>
-	<xs:complexType name="colspecElemType">
-		<xs:attribute ref="colnum"/>
-		<xs:attribute ref="colname"/>
-		<xs:attribute ref="align"/>
-		<xs:attribute ref="charoff"/>
-		<xs:attribute ref="char"/>
-		<xs:attribute ref="colwidth"/>
-		<xs:attribute ref="colsep"/>
-		<xs:attribute ref="rowsep"/>
-	</xs:complexType>
-	<xs:attribute name="colnum" type="xs:positiveInteger"/>
-	<xs:attribute name="colname" type="xs:NMTOKEN"/>
-	<xs:attribute name="align" type="alignAttType"/>
-	<xs:simpleType name="alignAttType">
-		<xs:restriction base="xs:NMTOKEN">
-			<xs:enumeration value="left"/>
-			<xs:enumeration value="right"/>
-			<xs:enumeration value="center"/>
-			<xs:enumeration value="justify"/>
-			<xs:enumeration value="char"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:attribute name="charoff" type="xs:string"/>
-	<xs:attribute name="char" type="xs:string"/>
-	<xs:attribute name="colwidth" type="colwidthAttType"/>
-	<xs:simpleType name="colwidthAttType">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="\d+(\.\d+)?\s*(\*|cm|in|mm|pc|pt)(\+\d+(\.\d+)?\s*(cm|in|mm|pc|pt))?"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:attribute name="colsep" type="yesOrNoAttType"/>
-	<xs:attribute name="rowsep" type="yesOrNoAttType"/>
-	<xs:element name="spanspec" type="spanspecElemType"/>
-	<xs:complexType name="spanspecElemType">
-		<xs:attribute ref="namest" use="required"/>
-		<xs:attribute ref="nameend" use="required"/>
-		<xs:attribute ref="spanname" use="required"/>
-		<xs:attribute ref="align" default="center"/>
-		<xs:attribute ref="charoff"/>
-		<xs:attribute ref="char"/>
-		<xs:attribute ref="colsep"/>
-		<xs:attribute ref="rowsep"/>
-	</xs:complexType>
-	<xs:attribute name="namest" type="xs:NMTOKEN"/>
-	<xs:attribute name="nameend" type="xs:NMTOKEN"/>
-	<xs:attribute name="spanname" type="xs:NMTOKEN"/>
 	<xs:element name="thead" type="theadElemType"/>
 	<xs:complexType name="theadElemType">
 		<xs:sequence>
@@ -5830,16 +5886,7 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		<xs:attribute ref="cautionRefs"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
-	<xs:attribute name="morerows" type="xs:nonNegativeInteger" default="0"/>
 	<xs:attribute name="rotate" type="yesOrNoAttType" default="0"/>
-	<xs:attribute name="valign" type="valignAttType"/>
-	<xs:simpleType name="valignAttType">
-		<xs:restriction base="xs:NMTOKEN">
-			<xs:enumeration value="top"/>
-			<xs:enumeration value="bottom"/>
-			<xs:enumeration value="middle"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:attribute name="warningRefs" type="xs:IDREFS"/>
 	<xs:attribute name="cautionRefs" type="xs:IDREFS"/>
 	<xs:element name="tfoot" type="tfootElemType"/>
@@ -5857,7 +5904,6 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		</xs:sequence>
 		<xs:attribute ref="valign" default="top"/>
 	</xs:complexType>
-	<xs:attribute name="cols" type="xs:positiveInteger"/>
 	<xs:attribute name="tgstyle" type="xs:NMTOKEN"/>
 	<xs:attribute name="tabstyle" type="xs:NMTOKEN"/>
 	<xs:attribute name="tocentry" type="yesOrNoAttType" default="1"/>
@@ -6054,6 +6100,128 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
 	<xs:attribute name="zoneNumber" type="xs:string"/>
+	<xs:attribute name="lsarData" type="yesOrNoAttType" default="0"/>
+	<xs:element name="accessPointRef" type="accessPointRefElemType"/>
+	<xs:complexType name="accessPointRefElemType">
+		<xs:sequence>
+			<xs:element ref="name" minOccurs="0"/>
+			<xs:element ref="shortName" minOccurs="0"/>
+			<xs:element ref="refs" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="accessPointNumber"/>
+		<xs:attribute ref="accessPointTypeValue"/>
+		<xs:attribute ref="id"/>
+		<xs:attribute ref="lsarData"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:attribute name="accessPointNumber" type="xs:string"/>
+	<xs:attribute name="accessPointTypeValue" type="accessPointTypeValueAttType"/>
+	<xs:simpleType name="accessPointTypeValueAttType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="accpnl01"/>
+			<xs:enumeration value="accpnl02"/>
+			<xs:enumeration value="accpnl03"/>
+			<xs:enumeration value="accpnl04"/>
+			<xs:enumeration value="accpnl05"/>
+			<xs:enumeration value="accpnl06"/>
+			<xs:enumeration value="accpnl07"/>
+			<xs:enumeration value="accpnl08"/>
+			<xs:enumeration value="accpnl09"/>
+			<xs:enumeration value="accpnl10"/>
+			<xs:enumeration value="accpnl11"/>
+			<xs:enumeration value="accpnl12"/>
+			<xs:enumeration value="accpnl13"/>
+			<xs:enumeration value="accpnl14"/>
+			<xs:enumeration value="accpnl15"/>
+			<xs:enumeration value="accpnl16"/>
+			<xs:enumeration value="accpnl17"/>
+			<xs:enumeration value="accpnl18"/>
+			<xs:enumeration value="accpnl19"/>
+			<xs:enumeration value="accpnl20"/>
+			<xs:enumeration value="accpnl21"/>
+			<xs:enumeration value="accpnl22"/>
+			<xs:enumeration value="accpnl23"/>
+			<xs:enumeration value="accpnl24"/>
+			<xs:enumeration value="accpnl25"/>
+			<xs:enumeration value="accpnl26"/>
+			<xs:enumeration value="accpnl27"/>
+			<xs:enumeration value="accpnl28"/>
+			<xs:enumeration value="accpnl29"/>
+			<xs:enumeration value="accpnl30"/>
+			<xs:enumeration value="accpnl31"/>
+			<xs:enumeration value="accpnl32"/>
+			<xs:enumeration value="accpnl33"/>
+			<xs:enumeration value="accpnl34"/>
+			<xs:enumeration value="accpnl35"/>
+			<xs:enumeration value="accpnl36"/>
+			<xs:enumeration value="accpnl37"/>
+			<xs:enumeration value="accpnl38"/>
+			<xs:enumeration value="accpnl39"/>
+			<xs:enumeration value="accpnl40"/>
+			<xs:enumeration value="accpnl41"/>
+			<xs:enumeration value="accpnl42"/>
+			<xs:enumeration value="accpnl43"/>
+			<xs:enumeration value="accpnl44"/>
+			<xs:enumeration value="accpnl45"/>
+			<xs:enumeration value="accpnl46"/>
+			<xs:enumeration value="accpnl47"/>
+			<xs:enumeration value="accpnl48"/>
+			<xs:enumeration value="accpnl49"/>
+			<xs:enumeration value="accpnl50"/>
+			<xs:enumeration value="accpnl51"/>
+			<xs:enumeration value="accpnl52"/>
+			<xs:enumeration value="accpnl53"/>
+			<xs:enumeration value="accpnl54"/>
+			<xs:enumeration value="accpnl55"/>
+			<xs:enumeration value="accpnl56"/>
+			<xs:enumeration value="accpnl57"/>
+			<xs:enumeration value="accpnl58"/>
+			<xs:enumeration value="accpnl59"/>
+			<xs:enumeration value="accpnl60"/>
+			<xs:enumeration value="accpnl61"/>
+			<xs:enumeration value="accpnl62"/>
+			<xs:enumeration value="accpnl63"/>
+			<xs:enumeration value="accpnl64"/>
+			<xs:enumeration value="accpnl65"/>
+			<xs:enumeration value="accpnl66"/>
+			<xs:enumeration value="accpnl67"/>
+			<xs:enumeration value="accpnl68"/>
+			<xs:enumeration value="accpnl69"/>
+			<xs:enumeration value="accpnl70"/>
+			<xs:enumeration value="accpnl71"/>
+			<xs:enumeration value="accpnl72"/>
+			<xs:enumeration value="accpnl73"/>
+			<xs:enumeration value="accpnl74"/>
+			<xs:enumeration value="accpnl75"/>
+			<xs:enumeration value="accpnl76"/>
+			<xs:enumeration value="accpnl77"/>
+			<xs:enumeration value="accpnl78"/>
+			<xs:enumeration value="accpnl79"/>
+			<xs:enumeration value="accpnl80"/>
+			<xs:enumeration value="accpnl81"/>
+			<xs:enumeration value="accpnl82"/>
+			<xs:enumeration value="accpnl83"/>
+			<xs:enumeration value="accpnl84"/>
+			<xs:enumeration value="accpnl85"/>
+			<xs:enumeration value="accpnl86"/>
+			<xs:enumeration value="accpnl87"/>
+			<xs:enumeration value="accpnl88"/>
+			<xs:enumeration value="accpnl89"/>
+			<xs:enumeration value="accpnl90"/>
+			<xs:enumeration value="accpnl91"/>
+			<xs:enumeration value="accpnl92"/>
+			<xs:enumeration value="accpnl93"/>
+			<xs:enumeration value="accpnl94"/>
+			<xs:enumeration value="accpnl95"/>
+			<xs:enumeration value="accpnl96"/>
+			<xs:enumeration value="accpnl97"/>
+			<xs:enumeration value="accpnl98"/>
+			<xs:enumeration value="accpnl99"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:element name="workLocation" type="workLocationElemType"/>
 	<xs:complexType name="workLocationElemType" mixed="true">
 		<xs:sequence>
@@ -6363,7 +6531,6 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 			<xs:element ref="symbol"/>
 			<xs:element ref="subScript"/>
 			<xs:element ref="superScript"/>
-			<xs:element ref="footnoteRef"/>
 			<xs:element ref="acronym"/>
 			<xs:element ref="acronymTerm"/>
 			<xs:element ref="terminologyRef"/>
@@ -6497,6 +6664,96 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 		<xs:attributeGroup ref="securityAttGroup"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
+	<xs:element name="circuitBreakerDescrGroup" type="circuitBreakerDescrGroupElemType"/>
+	<xs:complexType name="circuitBreakerDescrGroupElemType">
+		<xs:sequence>
+			<xs:element ref="circuitBreakerDescrSubGroup" maxOccurs="unbounded"/>
+			<xs:element ref="footnote" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="circuitBreakerAction"/>
+		<xs:attribute ref="checkSum"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="circuitBreakerDescrSubGroup" type="circuitBreakerDescrSubGroupElemType"/>
+	<xs:complexType name="circuitBreakerDescrSubGroupElemType">
+		<xs:sequence>
+			<xs:element ref="functionalItemRef" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:sequence>
+				<xs:element ref="circuitBreakerDescr" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:sequence>
+		<xs:attribute ref="circuitBreakerAction"/>
+		<xs:attribute ref="checkSum"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="circuitBreakerDescr" type="circuitBreakerDescrElemType"/>
+	<xs:complexType name="circuitBreakerDescrElemType">
+		<xs:sequence>
+			<xs:element ref="circuitBreakerRef"/>
+			<xs:element ref="name"/>
+			<xs:choice minOccurs="0">
+				<xs:element ref="internalRef"/>
+				<xs:element ref="accessPointRef"/>
+			</xs:choice>
+			<xs:element ref="circuitBreakerLocation" minOccurs="0"/>
+			<xs:element ref="footnoteRemarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="circuitBreakerLocation" type="circuitBreakerLocationElemType"/>
+	<xs:complexType name="circuitBreakerLocationElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="footnoteRemarks" type="footnoteRemarksElemType"/>
+	<xs:complexType name="footnoteRemarksElemType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="simplePara"/>
+			<xs:element ref="footnoteRef"/>
+		</xs:choice>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="footnoteRef" type="footnoteRefElemType"/>
+	<xs:complexType name="footnoteRefElemType">
+		<xs:attribute ref="internalRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="footnote" type="footnoteElemType"/>
+	<xs:complexType name="footnoteElemType">
+		<xs:sequence>
+			<xs:element ref="para" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="footnoteMark"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:attribute name="footnoteMark" type="footnoteMarkAttType" default="num"/>
+	<xs:simpleType name="footnoteMarkAttType">
+		<xs:restriction base="xs:NMTOKEN">
+			<xs:enumeration value="num"/>
+			<xs:enumeration value="sym"/>
+			<xs:enumeration value="alpha"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:element name="reqCondPm" type="reqCondPmElemType"/>
 	<xs:complexType name="reqCondPmElemType">
 		<xs:sequence>
@@ -7558,241 +7815,774 @@ The details for copyright can be found in the S1000D Specification.</xs:document
 			<xs:element ref="caution" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:group>
-	<xs:element name="mainProcedure" type="mainProcedureElemType"/>
-	<xs:complexType name="mainProcedureElemType">
+	<xs:element name="isolatedFault" type="isolatedFaultElemType"/>
+	<xs:complexType name="isolatedFaultElemType">
+		<xs:sequence>
+			<xs:element ref="faultDescr"/>
+			<xs:element ref="detectionInfo" minOccurs="0"/>
+			<xs:element ref="locateAndRepair"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="id" use="required"/>
+		<xs:attribute ref="faultCode" use="required"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultDescr" type="faultDescrElemType"/>
+	<xs:complexType name="faultDescrElemType">
+		<xs:sequence>
+			<xs:element ref="descr" minOccurs="0"/>
+			<xs:element ref="detailedFaultDescr" minOccurs="0"/>
+			<xs:element ref="refs" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="descr" type="descrElemType"/>
+	<xs:complexType name="descrElemType" mixed="true">
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="detailedFaultDescr" type="detailedFaultDescrElemType"/>
+	<xs:complexType name="detailedFaultDescrElemType">
+		<xs:sequence>
+			<xs:element ref="viewLocation" minOccurs="0"/>
+			<xs:element ref="systemLocation" minOccurs="0"/>
+			<xs:element ref="systemName"/>
+			<xs:element ref="faultySubSystem" minOccurs="0"/>
+			<xs:element ref="systemIdent" minOccurs="0"/>
+			<xs:element ref="systemPosition" minOccurs="0"/>
+			<xs:element ref="faultEquip" minOccurs="0"/>
+			<xs:element ref="faultMessageIndication" minOccurs="0"/>
+			<xs:element ref="faultMessageBody"/>
+			<xs:element ref="faultCond" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="viewLocation" type="viewLocationElemType"/>
+	<xs:complexType name="viewLocationElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="systemLocation" type="systemLocationElemType"/>
+	<xs:complexType name="systemLocationElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="systemName" type="systemNameElemType"/>
+	<xs:complexType name="systemNameElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultySubSystem" type="faultySubSystemElemType"/>
+	<xs:complexType name="faultySubSystemElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="systemIdent" type="systemIdentElemType"/>
+	<xs:complexType name="systemIdentElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="systemPosition" type="systemPositionElemType"/>
+	<xs:complexType name="systemPositionElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultEquip" type="faultEquipElemType"/>
+	<xs:complexType name="faultEquipElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultMessageIndication" type="faultMessageIndicationElemType"/>
+	<xs:complexType name="faultMessageIndicationElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultMessageBody" type="faultMessageBodyElemType"/>
+	<xs:complexType name="faultMessageBodyElemType" mixed="true">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element ref="functionalItemRef" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultCond" type="faultCondElemType"/>
+	<xs:complexType name="faultCondElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="detectionInfo" type="detectionInfoElemType"/>
+	<xs:complexType name="detectionInfoElemType">
+		<xs:sequence>
+			<xs:element ref="detectedLruItem"/>
+		</xs:sequence>
+		<xs:attribute ref="detectionType"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="detectedLruItem" type="detectedLruItemElemType"/>
+	<xs:complexType name="detectedLruItemElemType">
+		<xs:sequence>
+			<xs:element ref="lru" maxOccurs="unbounded"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+			<xs:element ref="detectedSruItem" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="faultProbability"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="lru" type="lruElemType"/>
+	<xs:complexType name="lruElemType">
+		<xs:sequence>
+			<xs:element ref="name" minOccurs="0"/>
+			<xs:element ref="shortName" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="catalogSeqNumberRef"/>
+				<xs:element ref="natoStockNumber" minOccurs="0"/>
+				<xs:element ref="identNumber"/>
+				<xs:element ref="partRef" minOccurs="0"/>
+				<xs:element ref="functionalItemRef"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="detectedSruItem" type="detectedSruItemElemType"/>
+	<xs:complexType name="detectedSruItemElemType">
+		<xs:sequence>
+			<xs:element ref="sru" maxOccurs="unbounded"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="faultProbability"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="sru" type="sruElemType"/>
+	<xs:complexType name="sruElemType">
+		<xs:sequence>
+			<xs:element ref="name" minOccurs="0"/>
+			<xs:element ref="shortName" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="catalogSeqNumberRef"/>
+				<xs:element ref="natoStockNumber" minOccurs="0"/>
+				<xs:element ref="identNumber"/>
+				<xs:element ref="partRef" minOccurs="0"/>
+				<xs:element ref="functionalItemRef"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:attribute name="faultProbability" type="xs:string"/>
+	<xs:attribute name="detectionType" type="xs:string"/>
+	<xs:element name="locateAndRepair" type="locateAndRepairElemType"/>
+	<xs:complexType name="locateAndRepairElemType">
+		<xs:sequence>
+			<xs:element ref="locateAndRepairLruItem"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="locateAndRepairLruItem" type="locateAndRepairLruItemElemType"/>
+	<xs:complexType name="locateAndRepairLruItemElemType">
+		<xs:sequence>
+			<xs:element ref="lru" maxOccurs="unbounded"/>
+			<xs:element ref="repair" minOccurs="0"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+			<xs:element ref="locateAndRepairSruItem" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="faultProbability"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="repair" type="repairElemType"/>
+	<xs:complexType name="repairElemType">
+		<xs:sequence>
+			<xs:element ref="refs"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="locateAndRepairSruItem" type="locateAndRepairSruItemElemType"/>
+	<xs:complexType name="locateAndRepairSruItemElemType">
+		<xs:sequence>
+			<xs:element ref="sru" maxOccurs="unbounded"/>
+			<xs:element ref="repair" minOccurs="0"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="faultProbability"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:attribute name="faultCode" type="xs:string"/>
+	<xs:element name="isolatedFaultAlts" type="isolatedFaultAltsElemType"/>
+	<xs:complexType name="isolatedFaultAltsElemType">
+		<xs:sequence>
+			<xs:element ref="isolatedFault" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="detectedFault" type="detectedFaultElemType"/>
+	<xs:complexType name="detectedFaultElemType">
+		<xs:sequence>
+			<xs:element ref="faultDescr"/>
+			<xs:element ref="detectionInfo" minOccurs="0"/>
+			<xs:element ref="isolateDetectedFault" minOccurs="0"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="id" use="required"/>
+		<xs:attribute ref="faultCode" use="required"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="isolateDetectedFault" type="isolateDetectedFaultElemType"/>
+	<xs:complexType name="isolateDetectedFaultElemType">
+		<xs:choice>
+			<xs:element ref="faultIsolationRef"/>
+			<xs:element ref="lruItem" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="faultIsolationRef" type="faultIsolationRefElemType"/>
+	<xs:complexType name="faultIsolationRefElemType">
+		<xs:sequence>
+			<xs:element ref="refs"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="lruItem" type="lruItemElemType"/>
+	<xs:complexType name="lruItemElemType">
+		<xs:sequence>
+			<xs:element ref="lru" maxOccurs="unbounded"/>
+			<xs:element ref="faultIsolationTest" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="repair" minOccurs="0"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+			<xs:element ref="sruItem" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="faultProbability"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultIsolationTest" type="faultIsolationTestElemType"/>
+	<xs:complexType name="faultIsolationTestElemType">
+		<xs:sequence>
+			<xs:element ref="testDescr" minOccurs="0"/>
+			<xs:element ref="testParameters" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="testProcedure" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="testType" use="required"/>
+		<xs:attribute ref="testCode" use="required"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="testDescr" type="testDescrElemType"/>
+	<xs:complexType name="testDescrElemType">
+		<xs:sequence>
+			<xs:element ref="testName"/>
+			<xs:element ref="refs" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="testName" type="xs:string"/>
+	<xs:element name="testParameters" type="testParametersElemType"/>
+	<xs:complexType name="testParametersElemType">
+		<xs:attribute ref="from"/>
+		<xs:attribute ref="to"/>
+		<xs:attribute ref="unitOfMeasure"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:attribute name="from" type="xs:string"/>
+	<xs:attribute name="to" type="xs:string"/>
+	<xs:element name="testProcedure" type="testProcedureElemType"/>
+	<xs:complexType name="testProcedureElemType">
+		<xs:sequence>
+			<xs:element ref="refs"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:attribute name="testType" type="xs:string"/>
+	<xs:attribute name="testCode" type="xs:string"/>
+	<xs:element name="sruItem" type="sruItemElemType"/>
+	<xs:complexType name="sruItemElemType">
+		<xs:sequence>
+			<xs:element ref="sru" maxOccurs="unbounded"/>
+			<xs:element ref="faultIsolationTest" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="repair" minOccurs="0"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="faultProbability"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="detectedFaultAlts" type="detectedFaultAltsElemType"/>
+	<xs:complexType name="detectedFaultAltsElemType">
+		<xs:sequence>
+			<xs:element ref="detectedFault" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="observedFault" type="observedFaultElemType"/>
+	<xs:complexType name="observedFaultElemType">
+		<xs:sequence>
+			<xs:element ref="faultDescr"/>
+			<xs:element ref="contextAndIsolationInfo" maxOccurs="unbounded"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="id" use="required"/>
+		<xs:attribute ref="faultCode"/>
+		<xs:attribute ref="faultType"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="contextAndIsolationInfo" type="contextAndIsolationInfoElemType"/>
+	<xs:complexType name="contextAndIsolationInfoElemType">
+		<xs:sequence>
+			<xs:element ref="faultContext" minOccurs="0"/>
+			<xs:element ref="isolationInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="faultContext" type="xs:string"/>
+	<xs:element name="isolationInfo" type="isolationInfoElemType"/>
+	<xs:complexType name="isolationInfoElemType">
+		<xs:choice>
+			<xs:element ref="faultIsolationRef"/>
+			<xs:element ref="diagnosticProcess"/>
+			<xs:element ref="lruItem" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="diagnosticProcess" type="diagnosticProcessElemType"/>
+	<xs:complexType name="diagnosticProcessElemType">
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="diagnosticsReason"/>
+				<xs:element ref="repair"/>
+			</xs:sequence>
+			<xs:element ref="locateAndRepairLruItem"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="diagnosticsReason" type="xs:string"/>
+	<xs:attribute name="faultType" type="xs:string"/>
+	<xs:element name="observedFaultAlts" type="observedFaultAltsElemType"/>
+	<xs:complexType name="observedFaultAltsElemType">
+		<xs:sequence>
+			<xs:element ref="observedFault" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="correlatedFault" type="correlatedFaultElemType"/>
+	<xs:complexType name="correlatedFaultElemType">
+		<xs:sequence>
+			<xs:element ref="basicCorrelatedFaults"/>
+			<xs:element ref="isolateDetectedFault"/>
+			<xs:element ref="remarks" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id" use="required"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="basicCorrelatedFaults" type="basicCorrelatedFaultsElemType"/>
+	<xs:complexType name="basicCorrelatedFaultsElemType">
+		<xs:sequence>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="warningMalfunction" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="warningMalfunctionAlts" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:choice>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="assocWarningMalfunction" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element ref="assocWarningMalfunctionAlts" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="bitMessage" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="bitMessageAlts" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="warningMalfunction" type="assocWarningMalfunctionElemType"/>
+	<xs:complexType name="assocWarningMalfunctionElemType">
+		<xs:sequence>
+			<xs:element ref="fault"/>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="dmRef" minOccurs="0"/>
+				<xs:element ref="faultDescr" minOccurs="0"/>
+				<xs:element ref="detectionInfo" minOccurs="0"/>
+			</xs:sequence>
+		</xs:sequence>
+		<xs:attribute ref="faultPartCategory"/>
+		<xs:attribute ref="subCategory"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="fault" type="faultElemType"/>
+	<xs:complexType name="faultElemType">
+		<xs:attribute ref="faultCode" use="required"/>
+	</xs:complexType>
+	<xs:attribute name="faultPartCategory" type="xs:string"/>
+	<xs:attribute name="subCategory" type="xs:string"/>
+	<xs:element name="warningMalfunctionAlts" type="warningMalfunctionAltsElemType"/>
+	<xs:complexType name="warningMalfunctionAltsElemType">
+		<xs:sequence>
+			<xs:element ref="warningMalfunction" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="assocWarningMalfunction" type="assocWarningMalfunctionElemType"/>
+	<xs:element name="assocWarningMalfunctionAlts" type="assocWarningMalfunctionAltsElemType"/>
+	<xs:complexType name="assocWarningMalfunctionAltsElemType">
+		<xs:sequence>
+			<xs:element ref="assocWarningMalfunction" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="bitMessage" type="assocWarningMalfunctionElemType"/>
+	<xs:element name="bitMessageAlts" type="bitMessageAltsElemType"/>
+	<xs:complexType name="bitMessageAltsElemType">
+		<xs:sequence>
+			<xs:element ref="bitMessage" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="correlatedFaultAlts" type="correlatedFaultAltsElemType"/>
+	<xs:complexType name="correlatedFaultAltsElemType">
+		<xs:sequence>
+			<xs:element ref="correlatedFault" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultIsolation" type="faultIsolationElemType"/>
+	<xs:complexType name="faultIsolationElemType">
+		<xs:sequence>
+			<xs:element ref="commonInfo" minOccurs="0"/>
+			<xs:element ref="preliminaryRqmts" minOccurs="0"/>
+			<xs:element ref="faultIsolationProcedure" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="faultIsolationProcedure" type="faultIsolationProcedureElemType"/>
+	<xs:complexType name="faultIsolationProcedureElemType">
+		<xs:sequence>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="fault"/>
+				<xs:element ref="faultDescr"/>
+			</xs:sequence>
+			<xs:element ref="possibleCauseGroup" minOccurs="0"/>
+			<xs:element ref="isolationProcedure"/>
+		</xs:sequence>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="possibleCauseGroup" type="possibleCauseGroupElemType"/>
+	<xs:complexType name="possibleCauseGroupElemType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="lru"/>
+			<xs:element ref="wiringPossibleCause"/>
+			<xs:element ref="otherPossibleCause"/>
+			<xs:element ref="sru"/>
+		</xs:choice>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="wiringPossibleCause" type="wiringPossibleCauseElemType"/>
+	<xs:complexType name="wiringPossibleCauseElemType">
+		<xs:sequence>
+			<xs:element ref="wiringPossibleCauseFrom"/>
+			<xs:element ref="wiringPossibleCauseTo" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="wiringPossibleCauseFrom" type="wiringPossibleCauseFromElemType"/>
+	<xs:complexType name="wiringPossibleCauseFromElemType">
+		<xs:group ref="wiringPossibleCauseGroup"/>
+	</xs:complexType>
+	<xs:group name="wiringPossibleCauseGroup">
+		<xs:choice>
+			<xs:element ref="name"/>
+			<xs:sequence>
+				<xs:element ref="functionalItemRef"/>
+				<xs:element ref="contactIdentification" minOccurs="0"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="contactIdentification" type="contactIdentificationElemType"/>
+	<xs:complexType name="contactIdentificationElemType">
+		<xs:attribute ref="contactIdent" use="required"/>
+	</xs:complexType>
+	<xs:attribute name="contactIdent" type="xs:string"/>
+	<xs:element name="wiringPossibleCauseTo" type="wiringPossibleCauseToElemType"/>
+	<xs:complexType name="wiringPossibleCauseToElemType">
+		<xs:group ref="wiringPossibleCauseGroup"/>
+	</xs:complexType>
+	<xs:element name="otherPossibleCause" type="otherPossibleCauseElemType"/>
+	<xs:complexType name="otherPossibleCauseElemType" mixed="true">
+		<xs:attribute ref="id"/>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="isolationProcedure" type="isolationProcedureElemType"/>
+	<xs:complexType name="isolationProcedureElemType">
+		<xs:sequence>
+			<xs:element ref="preliminaryRqmts"/>
+			<xs:element ref="isolationMainProcedure"/>
+			<xs:element ref="closeRqmts"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attributeGroup ref="checkAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="isolationMainProcedure" type="isolationMainProcedureElemType"/>
+	<xs:complexType name="isolationMainProcedureElemType">
 		<xs:choice maxOccurs="unbounded">
 			<xs:choice>
-				<xs:element ref="proceduralStep"/>
-				<xs:element ref="proceduralStepAlts"/>
+				<xs:element ref="isolationStep"/>
+				<xs:element ref="isolationStepAlts"/>
+			</xs:choice>
+			<xs:choice>
+				<xs:element ref="isolationProcedureEnd"/>
+				<xs:element ref="isolationProcedureEndAlts"/>
 			</xs:choice>
 			<xs:group ref="fmftElemGroup"/>
 		</xs:choice>
 		<xs:attribute ref="id"/>
 		<xs:attributeGroup ref="changeAttGroup"/>
-		<xs:attributeGroup ref="securityAttGroup"/>
-		<xs:attributeGroup ref="checkAttGroup"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
-	<xs:element name="proceduralStep" type="proceduralStepElemType"/>
-	<xs:complexType name="proceduralStepElemType">
+	<xs:element name="isolationStep" type="isolationStepElemType"/>
+	<xs:complexType name="isolationStepElemType">
 		<xs:sequence>
-			<xs:choice>
-				<xs:sequence>
-					<xs:element ref="title"/>
-					<xs:group ref="warningAndCautionElemGroup"/>
-					<xs:choice minOccurs="0" maxOccurs="unbounded">
-						<xs:group ref="ncpElemGroup"/>
-						<xs:group ref="fmftElemGroup"/>
-						<xs:element ref="caption"/>
-					</xs:choice>
-				</xs:sequence>
-				<xs:sequence>
-					<xs:group ref="warningAndCautionElemGroup"/>
-					<xs:choice maxOccurs="unbounded">
-						<xs:group ref="ncpElemGroup"/>
-						<xs:group ref="fmftElemGroup"/>
-						<xs:element ref="caption"/>
-					</xs:choice>
-				</xs:sequence>
-			</xs:choice>
-			<xs:choice minOccurs="0" maxOccurs="unbounded">
-				<xs:element ref="proceduralStep"/>
-				<xs:element ref="proceduralStepAlts"/>
-			</xs:choice>
+			<xs:group ref="isolationStepHeadingElemGroup"/>
+			<xs:sequence minOccurs="0">
+				<xs:group ref="isolationStepActionElemGroup" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="isolationStepQuestion"/>
+				<xs:element ref="isolationStepAnswer"/>
+			</xs:sequence>
 		</xs:sequence>
 		<xs:attribute ref="applicRefId"/>
-		<xs:attribute ref="cautionRefs"/>
-		<xs:attribute ref="id"/>
-		<xs:attribute ref="itemCharacteristic"/>
+		<xs:attribute ref="id" use="required"/>
 		<xs:attribute ref="keepWithNext"/>
 		<xs:attribute ref="warningRefs"/>
-		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="cautionRefs"/>
 		<xs:attributeGroup ref="checkAttGroup"/>
-		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
-	<xs:element name="caption" type="captionElemType"/>
-	<xs:complexType name="captionElemType">
+	<xs:group name="isolationStepHeadingElemGroup">
 		<xs:sequence>
-			<xs:element ref="captionLine" maxOccurs="unbounded"/>
+			<xs:element ref="title" minOccurs="0"/>
+			<xs:group ref="warningAndCautionElemGroup"/>
 		</xs:sequence>
-		<xs:attribute ref="color"/>
-		<xs:attribute ref="captionWidth"/>
-		<xs:attribute ref="captionHeight"/>
-		<xs:attribute ref="systemIdentCode"/>
-		<xs:attribute ref="alignCaption" default="left"/>
-		<xs:attribute ref="tableOfContentType"/>
-		<xs:attribute ref="captionType"/>
+	</xs:group>
+	<xs:group name="isolationStepActionElemGroup">
+		<xs:choice>
+			<xs:element ref="note"/>
+			<xs:element ref="action"/>
+			<xs:element ref="actionAlts"/>
+			<xs:group ref="fmftElemGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="action" type="actionElemType"/>
+	<xs:complexType name="actionElemType" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="textElemGroup"/>
+			<xs:element ref="randomList"/>
+		</xs:choice>
 		<xs:attribute ref="applicRefId"/>
 		<xs:attribute ref="id"/>
 		<xs:attributeGroup ref="changeAttGroup"/>
 		<xs:attributeGroup ref="securityAttGroup"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
-	<xs:element name="captionLine" type="captionLineElemType"/>
-	<xs:complexType name="captionLineElemType" mixed="true">
+	<xs:element name="actionAlts" type="actionAltsElemType"/>
+	<xs:complexType name="actionAltsElemType">
 		<xs:sequence>
-			<xs:element ref="acronymTerm" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="action" maxOccurs="unbounded"/>
 		</xs:sequence>
-	</xs:complexType>
-	<xs:attribute name="color" type="colorAttType" default="co09"/>
-	<xs:simpleType name="colorAttType">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="co00"/>
-			<xs:enumeration value="co01"/>
-			<xs:enumeration value="co02"/>
-			<xs:enumeration value="co03"/>
-			<xs:enumeration value="co04"/>
-			<xs:enumeration value="co05"/>
-			<xs:enumeration value="co06"/>
-			<xs:enumeration value="co07"/>
-			<xs:enumeration value="co08"/>
-			<xs:enumeration value="co09"/>
-			<xs:enumeration value="co10"/>
-			<xs:enumeration value="co11"/>
-			<xs:enumeration value="co12"/>
-			<xs:enumeration value="co13"/>
-			<xs:enumeration value="co14"/>
-			<xs:enumeration value="co15"/>
-			<xs:enumeration value="co16"/>
-			<xs:enumeration value="co17"/>
-			<xs:enumeration value="co18"/>
-			<xs:enumeration value="co19"/>
-			<xs:enumeration value="co20"/>
-			<xs:enumeration value="co21"/>
-			<xs:enumeration value="co22"/>
-			<xs:enumeration value="co23"/>
-			<xs:enumeration value="co24"/>
-			<xs:enumeration value="co25"/>
-			<xs:enumeration value="co26"/>
-			<xs:enumeration value="co27"/>
-			<xs:enumeration value="co28"/>
-			<xs:enumeration value="co29"/>
-			<xs:enumeration value="co30"/>
-			<xs:enumeration value="co31"/>
-			<xs:enumeration value="co32"/>
-			<xs:enumeration value="co33"/>
-			<xs:enumeration value="co34"/>
-			<xs:enumeration value="co35"/>
-			<xs:enumeration value="co36"/>
-			<xs:enumeration value="co37"/>
-			<xs:enumeration value="co38"/>
-			<xs:enumeration value="co39"/>
-			<xs:enumeration value="co40"/>
-			<xs:enumeration value="co41"/>
-			<xs:enumeration value="co42"/>
-			<xs:enumeration value="co43"/>
-			<xs:enumeration value="co44"/>
-			<xs:enumeration value="co45"/>
-			<xs:enumeration value="co46"/>
-			<xs:enumeration value="co47"/>
-			<xs:enumeration value="co48"/>
-			<xs:enumeration value="co49"/>
-			<xs:enumeration value="co50"/>
-			<xs:enumeration value="co51"/>
-			<xs:enumeration value="co52"/>
-			<xs:enumeration value="co53"/>
-			<xs:enumeration value="co54"/>
-			<xs:enumeration value="co55"/>
-			<xs:enumeration value="co56"/>
-			<xs:enumeration value="co57"/>
-			<xs:enumeration value="co58"/>
-			<xs:enumeration value="co59"/>
-			<xs:enumeration value="co60"/>
-			<xs:enumeration value="co61"/>
-			<xs:enumeration value="co62"/>
-			<xs:enumeration value="co63"/>
-			<xs:enumeration value="co64"/>
-			<xs:enumeration value="co65"/>
-			<xs:enumeration value="co66"/>
-			<xs:enumeration value="co67"/>
-			<xs:enumeration value="co68"/>
-			<xs:enumeration value="co69"/>
-			<xs:enumeration value="co70"/>
-			<xs:enumeration value="co71"/>
-			<xs:enumeration value="co72"/>
-			<xs:enumeration value="co73"/>
-			<xs:enumeration value="co74"/>
-			<xs:enumeration value="co75"/>
-			<xs:enumeration value="co76"/>
-			<xs:enumeration value="co77"/>
-			<xs:enumeration value="co78"/>
-			<xs:enumeration value="co79"/>
-			<xs:enumeration value="co80"/>
-			<xs:enumeration value="co81"/>
-			<xs:enumeration value="co82"/>
-			<xs:enumeration value="co83"/>
-			<xs:enumeration value="co84"/>
-			<xs:enumeration value="co85"/>
-			<xs:enumeration value="co86"/>
-			<xs:enumeration value="co87"/>
-			<xs:enumeration value="co88"/>
-			<xs:enumeration value="co89"/>
-			<xs:enumeration value="co90"/>
-			<xs:enumeration value="co91"/>
-			<xs:enumeration value="co92"/>
-			<xs:enumeration value="co93"/>
-			<xs:enumeration value="co94"/>
-			<xs:enumeration value="co95"/>
-			<xs:enumeration value="co96"/>
-			<xs:enumeration value="co97"/>
-			<xs:enumeration value="co98"/>
-			<xs:enumeration value="co99"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:attribute name="captionWidth" type="xs:string"/>
-	<xs:attribute name="captionHeight" type="xs:string"/>
-	<xs:attribute name="systemIdentCode" type="xs:string"/>
-	<xs:attribute name="alignCaption" type="alignCaptionAttType"/>
-	<xs:simpleType name="alignCaptionAttType">
-		<xs:restriction base="xs:NMTOKEN">
-			<xs:enumeration value="left"/>
-			<xs:enumeration value="right"/>
-			<xs:enumeration value="center"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:attribute name="tableOfContentType" type="tableOfContentTypeAttType" default="none"/>
-	<xs:simpleType name="tableOfContentTypeAttType">
-		<xs:restriction base="xs:NMTOKEN">
-			<xs:enumeration value="none"/>
-			<xs:enumeration value="redtoc"/>
-			<xs:enumeration value="comdtoc"/>
-			<xs:enumeration value="ambertoc"/>
-			<xs:enumeration value="greentoc"/>
-			<xs:enumeration value="yelowtoc"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:attribute name="captionType" type="captionTypeAttType" default="primary"/>
-	<xs:simpleType name="captionTypeAttType">
-		<xs:restriction base="xs:NMTOKEN">
-			<xs:enumeration value="primary"/>
-			<xs:enumeration value="secondary"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:element name="proceduralStepAlts" type="proceduralStepAltsElemType"/>
-	<xs:complexType name="proceduralStepAltsElemType">
-		<xs:sequence>
-			<xs:element ref="proceduralStep" maxOccurs="unbounded"/>
-		</xs:sequence>
-		<xs:attribute ref="altsName"/>
 		<xs:attribute ref="id"/>
 		<xs:attributeGroup ref="changeAttGroup"/>
 		<xs:attributeGroup ref="securityAttGroup"/>
 		<xs:attribute ref="controlAuthorityRefs"/>
 	</xs:complexType>
-	<xs:attribute name="altsName" type="xs:string"/>
-	<xs:attribute name="itemCharacteristic" type="itemCharacteristicAttType"/>
-	<xs:simpleType name="itemCharacteristicAttType">
-		<xs:restriction base="xs:NMTOKENS">
-			<xs:pattern value="ic\d{2}( ic\d{2})*"/>
-		</xs:restriction>
-	</xs:simpleType>
+	<xs:element name="isolationStepQuestion" type="isolationStepQuestionElemType"/>
+	<xs:complexType name="isolationStepQuestionElemType" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="superScript"/>
+			<xs:element ref="subScript"/>
+		</xs:choice>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="isolationStepAnswer" type="isolationStepAnswerElemType"/>
+	<xs:complexType name="isolationStepAnswerElemType">
+		<xs:choice>
+			<xs:element ref="yesNoAnswer"/>
+			<xs:element ref="listOfChoices"/>
+		</xs:choice>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="yesNoAnswer" type="yesNoAnswerElemType"/>
+	<xs:complexType name="yesNoAnswerElemType">
+		<xs:sequence>
+			<xs:element ref="yesAnswer"/>
+			<xs:element ref="noAnswer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="yesAnswer" type="yesAnswerElemType"/>
+	<xs:complexType name="yesAnswerElemType">
+		<xs:attribute ref="nextActionRefId" use="required"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:attribute name="nextActionRefId" type="xs:IDREF"/>
+	<xs:element name="noAnswer" type="noAnswerElemType"/>
+	<xs:complexType name="noAnswerElemType">
+		<xs:attribute ref="nextActionRefId" use="required"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="listOfChoices" type="listOfChoicesElemType"/>
+	<xs:complexType name="listOfChoicesElemType">
+		<xs:sequence>
+			<xs:element ref="choice" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="choice" type="choiceElemType"/>
+	<xs:complexType name="choiceElemType" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="subScript"/>
+			<xs:element ref="superScript"/>
+		</xs:choice>
+		<xs:attribute ref="nextActionRefId" use="required"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
 	<xs:attribute name="keepWithNext" type="yesOrNoAttType" default="0"/>
 	<xs:attributeGroup name="checkAttGroup">
 		<xs:attribute ref="independentCheck"/>
 		<xs:attribute ref="skillLevelCode"/>
 	</xs:attributeGroup>
 	<xs:attribute name="independentCheck" type="xs:string"/>
+	<xs:element name="isolationStepAlts" type="isolationStepAltsElemType"/>
+	<xs:complexType name="isolationStepAltsElemType">
+		<xs:sequence>
+			<xs:element ref="isolationStep" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="isolationProcedureEnd" type="isolationProcedureEndElemType"/>
+	<xs:complexType name="isolationProcedureEndElemType">
+		<xs:sequence>
+			<xs:group ref="isolationStepHeadingElemGroup"/>
+			<xs:group ref="isolationStepActionElemGroup" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="applicRefId"/>
+		<xs:attribute ref="id" use="required"/>
+		<xs:attribute ref="warningRefs"/>
+		<xs:attribute ref="cautionRefs"/>
+		<xs:attributeGroup ref="checkAttGroup"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
+	<xs:element name="isolationProcedureEndAlts" type="isolationProcedureEndAltsElemType"/>
+	<xs:complexType name="isolationProcedureEndAltsElemType">
+		<xs:sequence>
+			<xs:element ref="isolationProcedureEnd" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id"/>
+		<xs:attributeGroup ref="changeAttGroup"/>
+		<xs:attributeGroup ref="securityAttGroup"/>
+		<xs:attribute ref="controlAuthorityRefs"/>
+	</xs:complexType>
 	<xs:element name="closeRqmts" type="closeRqmtsElemType"/>
 	<xs:complexType name="closeRqmtsElemType">
 		<xs:sequence>

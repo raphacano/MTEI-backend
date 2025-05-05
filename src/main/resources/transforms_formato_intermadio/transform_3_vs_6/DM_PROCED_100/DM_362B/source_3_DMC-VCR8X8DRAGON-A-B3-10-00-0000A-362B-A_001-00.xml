@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dmodule [
-<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1.svg" NDATA svg>
-<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-3883B-00002-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-3883B-00002-A-01-1.svg" NDATA svg>
-<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1.svg" NDATA svg>
-<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1.svg" NDATA svg>
-<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1.svg" NDATA svg>
-<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1.svg" NDATA svg>
-
-<!NOTATION svg SYSTEM "svg">
-<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+	<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1.svg" NDATA svg>
+	<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-3883B-00002-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-3883B-00002-A-01-1.svg" NDATA svg>
+	<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1.svg" NDATA svg>
+	<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1.svg" NDATA svg>
+	<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1.svg" NDATA svg>
+	<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1.svg" NDATA svg>
+	<!NOTATION svg SYSTEM "svg">
+	<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
 ]>
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_flat/proced.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<rdf:Description>
@@ -69,7 +68,11 @@
 						<itemloc>D</itemloc>
 					</avee>
 					<issno issno="001" inwork="00" type="new"/>
-					<dmtitle><techname>SISTEMA GENERAL</techname><infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname></dmtitle></refdm>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
 			</actref>
 			<applic>
 				<displaytext>
@@ -151,7 +154,12 @@
 					</evaluate>
 				</applic>
 			</inlineapplics>
-			<techstd><tpbase>S1000D</tpbase><authex/><notes/></techstd><brexref>
+			<techstd>
+				<tpbase>S1000D</tpbase>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
 				<refdm>
 					<avee>
 						<modelic>VCR8X8DRAGON</modelic>
@@ -166,7 +174,11 @@
 						<incodev>A</incodev>
 						<itemloc>D</itemloc>
 					</avee>
-					<dmtitle><techname>SISTEMA GENERAL</techname><infoname>Business rules</infoname></dmtitle></refdm>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Business rules</infoname>
+					</dmtitle>
+				</refdm>
 			</brexref>
 			<qa>
 				<firstver type="tabtop"/>
@@ -290,19 +302,25 @@
 				</reqpers>
 				<supequip>
 					<supeqli>
-						<supequi id="seq-0001"><nomen>EQUIPO BASICO DE HERRAMIENTAS (METRICO) DE MECANICO/AUTOMOCION (2 ESC.)</nomen>
-							<nsn nsn="5180331032620"/><identno>
+						<supequi id="seq-0001">
+							<nomen>EQUIPO BASICO DE HERRAMIENTAS (METRICO) DE MECANICO/AUTOMOCION (2 ESC.)</nomen>
+							<nsn nsn="5180331032620"/>
+							<identno>
 								<mfc>7857B</mfc>
 								<pnr>E.B.H.M.A. (METRICO)</pnr>
 							</identno>
 							<qty uom="EA">1</qty>
-						</supequi><supequi id="seq-0002"><nomen>KIT TEST DE PRESION</nomen>
-							<nsn nsn="TBD"/><identno>
+						</supequi>
+						<supequi id="seq-0002">
+							<nomen>KIT TEST DE PRESION</nomen>
+							<nsn nsn="TBD"/>
+							<identno>
 								<mfc>0131B</mfc>
 								<pnr>0908004700</pnr>
 							</identno>
 							<qty uom="EA">1</qty>
-						</supequi></supeqli>
+						</supequi>
+					</supeqli>
 				</supequip>
 				<supplies>
 					<supplyli>

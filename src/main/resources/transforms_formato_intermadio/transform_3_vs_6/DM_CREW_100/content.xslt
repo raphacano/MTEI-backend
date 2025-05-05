@@ -116,6 +116,13 @@
         <supportEquipDescr id="{@id}">
             <name><xsl:value-of select="nomen"/></name>
             <identNumber>
+            
+                <xsl:if test="nsn/@nsn">
+                     <xsl:attribute name="nsn">
+                        <xsl:value-of select="nsn/@nsn"/>
+                    </xsl:attribute>
+                </xsl:if>
+                
                 <manufacturerCode><xsl:value-of select="identno/mfc"/></manufacturerCode>
                 <partAndSerialNumber>
                     <partNumber><xsl:value-of select="identno/pnr"/></partNumber>

@@ -56,6 +56,13 @@
         <equip>
           <name><xsl:value-of select="equip/nomen"/></name>
           <identNumber>
+          
+			<xsl:if test="nsn/@nsn">
+				 <xsl:attribute name="nsn">
+					<xsl:value-of select="nsn/@nsn"/>
+				</xsl:attribute>
+			</xsl:if>
+                
             <manufacturerCode><xsl:value-of select="equip/identno/mfc"/></manufacturerCode>
             <partAndSerialNumber>
               <partNumber><xsl:value-of select="equip/identno/pnr"/></partNumber>
