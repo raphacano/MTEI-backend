@@ -71,7 +71,8 @@
 				</dmRef>
 			</applicCrossRefTableRef>
 			 <applic>
-                <displayText><simplePara><xsl:value-of select="applic/displaytext"/></simplePara></displayText>
+               <!-- <displayText><simplePara><xsl:value-of select="applic/displaytext"/></simplePara></displayText>-->
+                <xsl:apply-templates select="applic/displaytext"/>
                 <xsl:apply-templates select="applic/evaluate"/>
             </applic>			
 			<techStandard>
@@ -125,4 +126,25 @@
 	</xsl:template>
 
 
+    <xsl:template match="displaytext">
+        <displayText>
+            <simplePara>
+            <!--    <xsl:apply-templates select="*"/> -->
+                 <xsl:apply-templates select="@*|node()"/>
+            </simplePara>
+        </displayText>
+    </xsl:template>
+    
+<!--    <xsl:template match="displaytext/text()">
+        <subScript>
+            <xsl:value-of select="normalize-space(.)"/>
+        </subScript>
+    </xsl:template>-->
+    
+    <xsl:template match="p">
+        <subScript>
+            <xsl:apply-templates select="@*|node()"/>
+        </subScript>
+    </xsl:template>
+  
 </xsl:stylesheet>

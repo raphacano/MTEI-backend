@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/ipd.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="C1" subSystemCode="7" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="941" infoCodeVariant="A" itemLocationCode="D"/>
+				<language languageIsoCode="es" countryIsoCode="ES"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2024" month="11" day="19"/>
+				<dmTitle>
+					<techName>GIRÓSCOPOS</techName>
+					<infoName>Datos de artículos del catálogo ilustrado</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="9AEWB">
+				<enterpriseName>TESS-DEFENCE SA</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="010CB">
+				<enterpriseName>ESCRIBANO MECHANICAL AND ENGINEERING SL</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>
+						<subScript>VCI Linea</subScript>
+						<subScript>VCI CC</subScript>
+						<subScript>VCI PCSC</subScript>
+						<subScript>VCI PCCIA</subScript>
+					</simplePara>
+				</displayText>
+				<evaluate andOr="or">
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="Linea"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="CC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCSC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCCIA"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<illustratedPartsCatalog>
+			<figure id="fig-0001">
+				<title>GIRÓSCOPOS - UNIDAD DEL SENSOR DE MOVIMIENTO (MSU)</title>
+				<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-C17000-A-010CB-21901-A-01-1" id="fig-0001-gra-0001"/>
+				<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-C17000-A-010CB-21902-A-01-1" id="fig-0001-gra-0002">
+					<hotspot id="fig-0001-hot-0001" applicationStructureIdent="hot-0001" applicationStructureName="1" hotspotType="" hotspotTitle="PROTECTOR MSU" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0002" applicationStructureIdent="hot-0002" applicationStructureName="2" hotspotType="" hotspotTitle="TORNILLO DIN 912 M5x12" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0003" applicationStructureIdent="hot-0003" applicationStructureName="3" hotspotType="" hotspotTitle="ARANDELA CURVA DIN 127 B M5" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0004" applicationStructureIdent="hot-0004" applicationStructureName="4" hotspotType="" hotspotTitle="ARANDELA PLANA DIN 125 M5" objectDescr=""/>
+				</graphic>
+				<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-C17000-A-010CB-21903-A-01-1" id="fig-0001-gra-0003">
+					<hotspot id="fig-0001-hot-0005" applicationStructureIdent="hot-0005" applicationStructureName="5" hotspotType="" hotspotTitle="MSU" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0006" applicationStructureIdent="hot-0006" applicationStructureName="6" hotspotType="" hotspotTitle="TORNILLO DIN 912 M6x22" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0007" applicationStructureIdent="hot-0007" applicationStructureName="7" hotspotType="" hotspotTitle="ARANDELA CURVA DIN 127 B M6" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0008" applicationStructureIdent="hot-0008" applicationStructureName="8" hotspotType="" hotspotTitle="ARANDELA PLANA DIN 433 M6" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0009" applicationStructureIdent="hot-0009" applicationStructureName="9" hotspotType="" hotspotTitle="J2-W30-21G" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0010" applicationStructureIdent="hot-0010" applicationStructureName="10" hotspotType="" hotspotTitle="J3-W30-22F" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0011" applicationStructureIdent="hot-0011" applicationStructureName="11" hotspotType="" hotspotTitle="TORNILLO DIN 933 M6x10" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0012" applicationStructureIdent="hot-0012" applicationStructureName="12" hotspotType="" hotspotTitle="ARANDELA PLANA DIN 9021 M6" objectDescr=""/>
+					<hotspot id="fig-0001-hot-0013" applicationStructureIdent="hot-0013" applicationStructureName="13" hotspotType="" hotspotTitle="TOMA DE TIERRA MSU" objectDescr=""/>
+				</graphic>
+			</figure>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="001">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="010CB" partNumberValue="W30-M-1DQ0000000"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>PROTECTOR MSU</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="002">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>6</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN912M5x12"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>TORNILLO DIN 912 M5x12</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="003">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>6</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN127BM5"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>ARANDELA CURVA DIN 127 B M5</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="004">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>6</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN125M5"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>ARANDELA PLANA DIN 125 M5</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="005">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="010CB" partNumberValue="W30-A-1J00000000B"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>MSU</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="006">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>4</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN912M6x22"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>TORNILLO DIN 912 M6x22</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="007">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>4</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN127BM6"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>ARANDELA CURVA DIN 127 B M6</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="008">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>4</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN433M6"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>ARANDELA PLANA DIN 433 M6</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="009">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="010CB" partNumberValue="W30-W-1E12600000B"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>J2-W30-21G</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="010">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="010CB" partNumberValue="W30-W-1E19100000B"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>J3-W30-22F</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="011">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>2</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN933M6x10"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>TORNILLO DIN 933 M6x10</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="012">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>2</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="DIN9021M6"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>ARANDELA PLANA DIN 9021 M6</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+			<catalogSeqNumber indenture="1" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" figureNumber="01" figureNumberVariant="A" item="013">
+				<itemSeqNumber itemSeqNumberValue="00A">
+					<reasonForSelection reasonForSelectionValue="1"/>
+					<quantityPerNextHigherAssy>1</quantityPerNextHigherAssy>
+					<partRef manufacturerCodeValue="TBD" partNumberValue="CM2-04900000305"/>
+					<partSegment>
+						<itemIdentData>
+							<descrForPart>TOMA DE TIERRA MSU</descrForPart>
+						</itemIdentData>
+						<techData>
+							<physicalSecurityPilferageCode>U</physicalSecurityPilferageCode>
+							<unitOfIssue>EA</unitOfIssue>
+							<specialStorage>0</specialStorage>
+						</techData>
+					</partSegment>
+					<partLocationSegment/>
+					<locationRcmdSegment>
+						<locationRcmd>
+							<service></service>
+							<sourceMaintRecoverability></sourceMaintRecoverability>
+							<modelVersion modelVersionValue=""/>
+						</locationRcmd>
+					</locationRcmdSegment>
+				</itemSeqNumber>
+			</catalogSeqNumber>
+		</illustratedPartsCatalog>
+	</content>
+</dmodule>

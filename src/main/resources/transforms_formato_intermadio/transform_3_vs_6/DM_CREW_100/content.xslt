@@ -176,20 +176,39 @@
     </xsl:template>
 
     
-     <xsl:template match="xref">
-		<internalRef internalRefId="{@xrefid}">
-		  <xsl:attribute name="internalRefTargetType">
-			<xsl:choose>
-			  <xsl:when test="@xidtype = 'supply'">irtt04</xsl:when>
-			  <xsl:when test="@xidtype = 'supequip'">irtt05</xsl:when>
-			   <xsl:when test="@xidtype = 'figure'">irtt06</xsl:when>
-			   <xsl:when test="@xidtype = 'hotspot'">irtt07</xsl:when>
-			   <xsl:when test="@xidtype = 'table'">irtt03</xsl:when>
-			   <xsl:when test="@xidtype = 'para'">irtt02</xsl:when>
-			</xsl:choose>
+ 	<xsl:template match="xref">
+	  <internalRef internalRefId="{@xrefid}">
+		<xsl:attribute name="internalRefTargetType">
+		  <xsl:choose>
+			<xsl:when test="@xidtype = 'figure'">irtt01</xsl:when>
+			<xsl:when test="@xidtype = 'table'">irtt02</xsl:when>
+			<xsl:when test="@xidtype = 'multimedia'">irtt03</xsl:when>
+			<xsl:when test="@xidtype = 'supply'">irtt04</xsl:when>
+			<xsl:when test="@xidtype = 'supequip'">irtt05</xsl:when>
+			<xsl:when test="@xidtype = 'spare'">irtt06</xsl:when>
+			<xsl:when test="@xidtype = 'para'">irtt07</xsl:when>
+			<xsl:when test="@xidtype = 'step'">irtt08</xsl:when>
+			<xsl:when test="@xidtype = 'graphic'">irtt09</xsl:when>
+			<xsl:when test="@xidtype = 'multimediaobject'">irtt10</xsl:when>
+			<xsl:when test="@xidtype = 'hotspot'">irtt11</xsl:when>
+			<xsl:when test="@xidtype = 'param'">irtt12</xsl:when>
+			<xsl:when test="@xidtype = 'zone'">irtt13</xsl:when>
+			<xsl:when test="@xidtype = 'worklocation'">irtt14</xsl:when>
+			<xsl:when test="@xidtype = 'servicebulletinmaterialset'">irtt15</xsl:when>
+			<xsl:when test="@xidtype = 'accesspoint'">irtt16</xsl:when>
+		  </xsl:choose>
+		</xsl:attribute>
+		<!-- Añadir atributo 'titulo' solo para xidtype='hotspot' -->
+		<xsl:if test="@xidtype = 'hotspot'">
+		  <xsl:attribute name="titulo">
+			<xsl:variable name="figPart" select="substring-after(@xrefid, 'fig-')"/>
+			<xsl:variable name="figNumber" select="number(substring-before($figPart, '-'))"/>
+			<xsl:variable name="hotNumber" select="number(substring-after(@xrefid, 'hot-'))"/>
+			<xsl:value-of select="concat($figNumber, '/', $hotNumber)"/>
 		  </xsl:attribute>
-		</internalRef>
-   </xsl:template>
+		</xsl:if>
+	  </internalRef>
+	</xsl:template>
 
 
     <xsl:template match="multimedia">

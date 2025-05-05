@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Arbortext, Inc., 1988-2014, v.4002-->
-<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\descript_custom.xsd">
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
@@ -50,7 +50,9 @@
 			</applicCrossRefTableRef>
 			<applic>
 				<displayText>
-					<simplePara>Pizarro VCIC</simplePara>
+					<simplePara>
+						<subScript>Pizarro VCIC</subScript>
+					</simplePara>
 				</displayText>
 			</applic>
 			<techStandard>
@@ -81,7 +83,7 @@
 				<title>GRUPO MOTOPROPULSOR</title>
 				<figure id="fig-0001">
 					<title>Vista delantera izquierda</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01001-A-01-1">
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01001-A-01-1" id="fig-0001-gra-0001">
 						<hotspot id="fig-0001-hot-0009" applicationStructureIdent="hot-0009" applicationStructureName="9" hotspotType="" hotspotTitle="SOPORTE DELANTERO" objectDescr=""/>
 					</graphic>
 					<legend>
@@ -97,7 +99,7 @@
 				</figure>
 				<figure id="fig-0002">
 					<title>Vista trasera izquierda</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01002-A-01-1">
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01002-A-01-1" id="fig-0002-gra-0001">
 						<hotspot id="fig-0002-hot-0009" applicationStructureIdent="hot-0009" applicationStructureName="9" hotspotType="" hotspotTitle="SOPORTES TRASEROS" objectDescr=""/>
 					</graphic>
 					<legend>
@@ -113,7 +115,7 @@
 				</figure>
 				<figure id="fig-0003">
 					<title>Vista delantera derecha</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01003-A-01-1"/>
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01003-A-01-1" id="fig-0003-gra-0001"/>
 					<legend>
 						<definitionList>
 							<definitionListItem>
@@ -223,7 +225,7 @@ DE CARBURANTE DEL MOTOR</para>
 				</figure>
 				<figure id="fig-0004">
 					<title>Vista trasera derecha</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01004-A-01-1">
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01004-A-01-1" id="fig-0004-gra-0001">
 						<hotspot id="fig-0004-hot-0008" applicationStructureIdent="hot-0008" applicationStructureName="8" hotspotType="" hotspotTitle="SOPORTES TRASEROS" objectDescr=""/>
 					</graphic>
 					<legend>
@@ -241,17 +243,17 @@ DE CARBURANTE DEL MOTOR</para>
 filtro de aire, refrigerador del aire de admisión, alternador, motor de arranque, caja de
 transferencia y la transmisión forman una unidad compacta que se denomina grupo motopropulsor
 (GMP).</para>
-				<para>El GMP dispone de un soporte delantero <internalRef internalRefId="fig-0001-hot-0009" internalRefTargetType="irtt07"/> y <internalRef internalRefId="fig-0005-hot-0003" internalRefTargetType="irtt07"/>, un soporte central <internalRef internalRefId="fig-0005-hot-0002" internalRefTargetType="irtt07"/>, situado entre
-el motor y la caja de transferencia y dos soportes traseros <internalRef internalRefId="fig-0002-hot-0009" internalRefTargetType="irtt07"/>, <internalRef internalRefId="fig-0004-hot-0008" internalRefTargetType="irtt07"/> y <internalRef internalRefId="fig-0005-hot-0001" internalRefTargetType="irtt07"/> situados sobre la
+				<para>El GMP dispone de un soporte delantero <internalRef internalRefId="fig-0001-hot-0009" internalRefTargetType="irtt11" titulo="1/9"/> y <internalRef internalRefId="fig-0005-hot-0003" internalRefTargetType="irtt11" titulo="5/3"/>, un soporte central <internalRef internalRefId="fig-0005-hot-0002" internalRefTargetType="irtt11" titulo="5/2"/>, situado entre
+el motor y la caja de transferencia y dos soportes traseros <internalRef internalRefId="fig-0002-hot-0009" internalRefTargetType="irtt11" titulo="2/9"/>, <internalRef internalRefId="fig-0004-hot-0008" internalRefTargetType="irtt11" titulo="4/8"/> y <internalRef internalRefId="fig-0005-hot-0001" internalRefTargetType="irtt11" titulo="5/1"/> situados sobre la
 carcasa de los frenos que lleva la transmisión. El soporte delantero del motor se apoya y sujeta
-mediante unas pestañas en los dos apoyos <internalRef internalRefId="fig-0005-hot-0003" internalRefTargetType="irtt07"/> que lleva el casco: el soporte central en el apoyo
-<internalRef internalRefId="fig-0005-hot-0002" internalRefTargetType="irtt07"/> y los dos soportes traseros en los dos apoyos <internalRef internalRefId="fig-0005-hot-0001" internalRefTargetType="irtt07"/> fijándose mediante tornillos.</para>
+mediante unas pestañas en los dos apoyos <internalRef internalRefId="fig-0005-hot-0003" internalRefTargetType="irtt11" titulo="5/3"/> que lleva el casco: el soporte central en el apoyo
+<internalRef internalRefId="fig-0005-hot-0002" internalRefTargetType="irtt11" titulo="5/2"/> y los dos soportes traseros en los dos apoyos <internalRef internalRefId="fig-0005-hot-0001" internalRefTargetType="irtt11" titulo="5/1"/> fijándose mediante tornillos.</para>
 				<para>Los soportes son amortiguadores para evitar que las vibraciones del GMP se transmitan al
 casco y, a su vez, permiten un fácil desmontaje. El apoyo central tiene como finalidad la absorción
 de los esfuerzos flectores.</para>
 				<figure id="fig-0005">
 					<title>Soportes del GMP</title>
-					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01005-A-01-1">
+					<graphic infoEntityIdent="ICN-PIZARRO-A-A10000-A-F4884-01005-A-01-1" id="fig-0005-gra-0001">
 						<hotspot id="fig-0005-hot-0001" applicationStructureIdent="hot-0001" applicationStructureName="1" hotspotType="" hotspotTitle="SOPORTES TRASEROS" objectDescr=""/>
 						<hotspot id="fig-0005-hot-0002" applicationStructureIdent="hot-0002" applicationStructureName="2" hotspotType="" hotspotTitle="SOPORTE CENTRAL" objectDescr=""/>
 						<hotspot id="fig-0005-hot-0003" applicationStructureIdent="hot-0003" applicationStructureName="3" hotspotType="" hotspotTitle="SOPORTE DELANTERO" objectDescr=""/>

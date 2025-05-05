@@ -102,8 +102,13 @@
     </itemSeqNumber>
   </xsl:template>
   
-      <xsl:template match="graphic">
+    <xsl:template match="graphic">
         <graphic infoEntityIdent="{@boardno}">
+			<xsl:if test="@id">
+				<xsl:attribute name="id">
+					<xsl:value-of select="@id"/>
+				</xsl:attribute>
+			</xsl:if>
             <xsl:apply-templates select="hotspot"/>
         </graphic>
     </xsl:template>

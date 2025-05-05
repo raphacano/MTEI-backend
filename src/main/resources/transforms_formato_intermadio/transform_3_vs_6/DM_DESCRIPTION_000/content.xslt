@@ -83,7 +83,12 @@
 
 
     <xsl:template match="graphic">
-        <graphic infoEntityIdent="{@boardno}" >
+        <graphic infoEntityIdent="{@boardno}">
+			<xsl:if test="@id">
+				<xsl:attribute name="id">
+					<xsl:value-of select="@id"/>
+				</xsl:attribute>
+			</xsl:if>
             <xsl:apply-templates select="hotspot"/>
         </graphic>
     </xsl:template>
@@ -104,26 +109,40 @@
 		</xsl:copy>
 	</xsl:template>
 
-    <xsl:template match="xref">
-		<internalRef internalRefId="{@xrefid}">
-		  <xsl:attribute name="internalRefTargetType">
-			<xsl:choose>
-			  <xsl:when test="@xidtype = 'supply'">irtt04</xsl:when>
-			  <xsl:when test="@xidtype = 'supequip'">irtt05</xsl:when>
-			   <xsl:when test="@xidtype = 'figure'">irtt06</xsl:when>
-			   <xsl:when test="@xidtype = 'hotspot'">irtt07</xsl:when>
-			   <xsl:when test="@xidtype = 'table'">irtt03</xsl:when>
-			   <xsl:when test="@xidtype = 'para'">irtt02</xsl:when>
-			</xsl:choose>
+ 	<xsl:template match="xref">
+	  <internalRef internalRefId="{@xrefid}">
+		<xsl:attribute name="internalRefTargetType">
+		  <xsl:choose>
+			<xsl:when test="@xidtype = 'figure'">irtt01</xsl:when>
+			<xsl:when test="@xidtype = 'table'">irtt02</xsl:when>
+			<xsl:when test="@xidtype = 'multimedia'">irtt03</xsl:when>
+			<xsl:when test="@xidtype = 'supply'">irtt04</xsl:when>
+			<xsl:when test="@xidtype = 'supequip'">irtt05</xsl:when>
+			<xsl:when test="@xidtype = 'spare'">irtt06</xsl:when>
+			<xsl:when test="@xidtype = 'para'">irtt07</xsl:when>
+			<xsl:when test="@xidtype = 'step'">irtt08</xsl:when>
+			<xsl:when test="@xidtype = 'graphic'">irtt09</xsl:when>
+			<xsl:when test="@xidtype = 'multimediaobject'">irtt10</xsl:when>
+			<xsl:when test="@xidtype = 'hotspot'">irtt11</xsl:when>
+			<xsl:when test="@xidtype = 'param'">irtt12</xsl:when>
+			<xsl:when test="@xidtype = 'zone'">irtt13</xsl:when>
+			<xsl:when test="@xidtype = 'worklocation'">irtt14</xsl:when>
+			<xsl:when test="@xidtype = 'servicebulletinmaterialset'">irtt15</xsl:when>
+			<xsl:when test="@xidtype = 'accesspoint'">irtt16</xsl:when>
+		  </xsl:choose>
+		</xsl:attribute>
+		<!-- Añadir atributo 'titulo' solo para xidtype='hotspot' -->
+		<xsl:if test="@xidtype = 'hotspot'">
+		  <xsl:attribute name="titulo">
+			<xsl:variable name="figPart" select="substring-after(@xrefid, 'fig-')"/>
+			<xsl:variable name="figNumber" select="number(substring-before($figPart, '-'))"/>
+			<xsl:variable name="hotNumber" select="number(substring-after(@xrefid, 'hot-'))"/>
+			<xsl:value-of select="concat($figNumber, '/', $hotNumber)"/>
 		  </xsl:attribute>
-		</internalRef>
-   </xsl:template>
+		</xsl:if>
+	  </internalRef>
+	</xsl:template>
 
-	 <xsl:template match="item">
-        <listItem>
-            <xsl:apply-templates/>
-        </listItem>
-    </xsl:template>
 
 	<xsl:template match="subpara1|subpara2|subpara3|subpara4|subpara5|subpara6|subpara7">
 		<levelledPara>
@@ -233,28 +252,22 @@
     </xsl:template>
 
     
-      <xsl:template match="randlist">
-        <randomList listItemPrefix="{@prefix}">
-            <xsl:for-each select="item">
-                <listItem>
-                    <para><xsl:value-of select="."/></para>
-                </listItem>
-            </xsl:for-each>
-        </randomList>
-    </xsl:template>
 
-    <xsl:template match="randlist/item">
-        <listItem>
-            <xsl:apply-templates/>
-        </listItem>
-    </xsl:template>
     
+	<xsl:template match="randlist">
+		<randomList listItemPrefix="{@prefix}">
+			<xsl:apply-templates/>
+		</randomList>
+	</xsl:template>    
+
+
     <xsl:template match="acronym">
 		<acronym reasonForUpdateRefIds="{@id}" 
 				  derivativeClassificationRefId="{@id}" id="{@id}" controlAuthorityRefs="{@id}">
 		  <xsl:apply-templates select="node()"/>
 		</acronym>
   </xsl:template>
+
 
   <xsl:template match="acroterm">
 		<acronymTerm>
@@ -279,10 +292,7 @@
 	
 	<xsl:template match="deflist">
         <definitionList>
-<!--            <definitionListHeader>
-                <termTitle>Component</termTitle>
-                <definitionTitle>Functional description</definitionTitle>
-            </definitionListHeader>-->
+
             <xsl:for-each select="term">
                 <definitionListItem>
                     <listItemTerm>
@@ -306,9 +316,19 @@
         </listItemDefinition>
     </xsl:template>
     
+    
     <xsl:template match="item">
         <listItem>
-            <para><xsl:apply-templates/></para>
+            <xsl:choose>
+                <xsl:when test="para">
+                    <xsl:apply-templates/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <para>
+                        <xsl:apply-templates/>
+                    </para>
+                </xsl:otherwise>
+            </xsl:choose>
         </listItem>
     </xsl:template>
 

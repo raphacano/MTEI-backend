@@ -120,22 +120,22 @@
 <randomList listItemPrefix="pf02">
 								<listItem>
 									<para>
-										<internalRef internalRefId="par-0001" internalRefTargetType="irtt02"/>
+										<internalRef internalRefId="par-0001" internalRefTargetType="irtt07"/>
 									</para>
 								</listItem>
 								<listItem>
 									<para>
-										<internalRef internalRefId="par-0002" internalRefTargetType="irtt02"/>
+										<internalRef internalRefId="par-0002" internalRefTargetType="irtt07"/>
 									</para>
 								</listItem>
 								<listItem>
 									<para>
-										<internalRef internalRefId="par-0003" internalRefTargetType="irtt02"/>
+										<internalRef internalRefId="par-0003" internalRefTargetType="irtt07"/>
 									</para>
 								</listItem>
 								<listItem>
 									<para>
-										<internalRef internalRefId="par-0004" internalRefTargetType="irtt02"/>
+										<internalRef internalRefId="par-0004" internalRefTargetType="irtt07"/>
 									</para>
 								</listItem>
 							</randomList></para>
@@ -153,7 +153,7 @@
 								</dmRefIdent>
 							</dmRef>
 . The shifters are on the handlebar.</para>
-						<para>A description of the two <internalRef internalRefId="tab-0001" internalRefTargetType="irtt03"/>
+						<para>A description of the two <internalRef internalRefId="tab-0001" internalRefTargetType="irtt02"/>
 follows.</para>
 						<table id="tab-0001" tocentry="1">
 							<tgroup cols="2" align="left">
@@ -161,28 +161,28 @@ follows.</para>
 								<colspec colnum="2" colname="col02" colwidth="1.50*"/>
 								<thead valign="bottom">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Shifter Location</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Affected Gears</para>
 										</entry>
 									</row>
 								</thead>
 								<tbody valign="top">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Left</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>The buttons on the left shifter changes the gears on the front derailleur.</para>
 										</entry>
 									</row>
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Right</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>The buttons on the right shifter changes the gears on the rear derailleur.</para>
 										</entry>
 									</row>
@@ -197,7 +197,7 @@ follows.</para>
 						</warning>
 						<para>You can decrease the speed of the bike with the brakes. You operate the brakes with the brake levers on the handlebar.</para>
 						<para>A description of the brake levers 
-<internalRef internalRefId="tab-0002" internalRefTargetType="irtt03"/>
+<internalRef internalRefId="tab-0002" internalRefTargetType="irtt02"/>
 .</para>
 						<table id="tab-0002" tocentry="1">
 							<tgroup cols="2" align="left">
@@ -205,28 +205,28 @@ follows.</para>
 								<colspec colnum="2" colname="col02" colwidth="1.50*"/>
 								<thead valign="bottom">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Brake Lever Location</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Affected Gears</para>
 										</entry>
 									</row>
 								</thead>
 								<tbody valign="top">
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Left</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>This lever operates the front brake.</para>
 										</entry>
 									</row>
 									<row>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>Right</para>
 										</entry>
-										<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<entry>
 											<para>This lever operates the rear brake.</para>
 										</entry>
 									</row>

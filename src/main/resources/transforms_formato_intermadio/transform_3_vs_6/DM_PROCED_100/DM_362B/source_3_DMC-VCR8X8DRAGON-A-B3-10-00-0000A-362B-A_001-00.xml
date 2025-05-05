@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dmodule [
+<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-3883B-00002-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-3883B-00002-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1.svg" NDATA svg>
+<!ENTITY ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1.svg" NDATA svg>
+
+<!NOTATION svg SYSTEM "svg">
+<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_flat/proced.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<rdf:Description>
+		<dc:title/>
+		<dc:creator/>
+		<dc:subject/>
+		<dc:publisher/>
+		<dc:contributor/>
+		<dc:date>2022-10-30</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier/>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>B3</chapnum>
+					<section>1</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00A</discodev>
+					<incode>362</incode>
+					<incodev>B</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>AMORTIGUACIÓN DE LA SUSPENSIÓN</techname>
+				<infoname>Verificación de presión</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="31" month="07" year="2024"/>
+			<language country="ES" language="es"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="TESS-DEFENCE SA">9AEWB</rpc>
+			<orig origname="SANTA BARBARA SISTEMAS SA">0131B</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="001" inwork="00" type="new"/>
+					<dmtitle><techname>SISTEMA GENERAL</techname><infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname></dmtitle></refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>VCI Linea</p>
+					<p>VCI CC</p>
+					<p>VCI PCSC</p>
+					<p>VCI PCCIA</p>
+					<p>VCZ Linea</p>
+					<p>VCZ PCSC</p>
+				</displaytext>
+				<evaluate operator="or">
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="CC"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCCIA"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<inlineapplics>
+				<applic id="app-0010">
+					<displaytext>
+						<p>VCI Linea</p>
+						<p>VCI CC</p>
+						<p>VCI PCSC</p>
+						<p>VCI PCCIA</p>
+					</displaytext>
+					<evaluate operator="or">
+						<evaluate operator="and">
+							<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+							<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+							<assert actidref="variante" actreftype="prodattr" actvalues="CC"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+							<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+							<assert actidref="variante" actreftype="prodattr" actvalues="PCCIA"/>
+						</evaluate>
+					</evaluate>
+				</applic>
+				<applic id="app-0009">
+					<displaytext>
+						<p>VCZ Linea</p>
+						<p>VCZ PCSC</p>
+					</displaytext>
+					<evaluate operator="or">
+						<evaluate operator="and">
+							<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+							<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+							<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+						</evaluate>
+					</evaluate>
+				</applic>
+			</inlineapplics>
+			<techstd><tpbase>S1000D</tpbase><authex/><notes/></techstd><brexref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle><techname>SISTEMA GENERAL</techname><infoname>Business rules</infoname></dmtitle></refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+		</status>
+	</idstatus>
+	<content>
+		<refs>
+			<refdm>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00A</discodev>
+					<incode>131</incode>
+					<incodev>I</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+				<dmtitle>
+					<techname>SISTEMA GENERAL</techname>
+					<infoname>Procedimientos de operación normal</infoname>
+				</dmtitle>
+			</refdm>
+			<refdm>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>B3</chapnum>
+					<section>1</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00A</discodev>
+					<incode>131</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+				<dmtitle>
+					<techname>AMORTIGUACIÓN DE LA SUSPENSIÓN</techname>
+					<infoname>Procedimientos de operación normal</infoname>
+				</dmtitle>
+			</refdm>
+			<refdm>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>B3</chapnum>
+					<section>1</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00A</discodev>
+					<incode>362</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+				<dmtitle>
+					<techname>AMORTIGUACIÓN DE LA SUSPENSIÓN</techname>
+					<infoname>Verificación de presión</infoname>
+				</dmtitle>
+			</refdm>
+			<refdm>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00A</discodev>
+					<incode>131</incode>
+					<incodev>U</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+				<dmtitle>
+					<techname>SISTEMA GENERAL</techname>
+					<infoname>Procedimientos de operación normal</infoname>
+				</dmtitle>
+			</refdm>
+		</refs>
+		<proced>
+			<prelreqs>
+				<pmd>
+					<opndurn prelreqs="0,33" proced="0,33" closeup="0,33"/>
+				</pmd>
+				<reqconds>
+					<reqcondm>
+						<reqcond>Elevar el vehiculo</reqcond>
+						<refdm>
+							<avee>
+								<modelic>VCR8X8DRAGON</modelic>
+								<sdc>A</sdc>
+								<chapnum>00</chapnum>
+								<section>0</section>
+								<subsect>0</subsect>
+								<subject>00</subject>
+								<discode>00</discode>
+								<discodev>00A</discodev>
+								<incode>131</incode>
+								<incodev>I</incodev>
+								<itemloc>A</itemloc>
+							</avee>
+							<dmtitle>
+								<techname>SISTEMA GENERAL</techname>
+								<infoname>Procedimientos de operación normal</infoname>
+							</dmtitle>
+						</refdm>
+					</reqcondm>
+				</reqconds>
+				<reqpers>
+					<person man="1"/>
+					<perscat category="MPT ETEC MANTO. VEHICULOS"/>
+					<perskill skill="sk02"/>
+					<trade>TPAMV</trade>
+					<esttime>0,33</esttime>
+				</reqpers>
+				<supequip>
+					<supeqli>
+						<supequi id="seq-0001"><nomen>EQUIPO BASICO DE HERRAMIENTAS (METRICO) DE MECANICO/AUTOMOCION (2 ESC.)</nomen>
+							<nsn nsn="5180331032620"/><identno>
+								<mfc>7857B</mfc>
+								<pnr>E.B.H.M.A. (METRICO)</pnr>
+							</identno>
+							<qty uom="EA">1</qty>
+						</supequi><supequi id="seq-0002"><nomen>KIT TEST DE PRESION</nomen>
+							<nsn nsn="TBD"/><identno>
+								<mfc>0131B</mfc>
+								<pnr>0908004700</pnr>
+							</identno>
+							<qty uom="EA">1</qty>
+						</supequi></supeqli>
+				</supequip>
+				<supplies>
+					<supplyli>
+						<supply id="sup-0001">
+							<nomen>NITROGENO TECNICO</nomen>
+							<identno>
+								<mfc>R2945</mfc>
+								<pnr>0726911</pnr>
+							</identno>
+							<qty uom="EA">1</qty>
+						</supply>
+					</supplyli>
+				</supplies>
+				<spares>
+					<nospares/>
+				</spares>
+				<safety>
+					<safecond>
+						<warning>
+							<symbol boardno="ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1"/>
+							<para>Uso de <acronym id="acr-0222">
+									<acroterm>EPI</acroterm>
+									<acrodef>Equipos de Protección Individual</acrodef>
+								</acronym>
+							</para>
+							<para>¡Peligro de lesiones! <randlist prefix="pf02">
+									<item>Utilice guantes, gafas y protecciones adecuadas para la seguridad personal.</item>
+								</randlist>
+							</para>
+						</warning>
+						<warning>
+							<symbol boardno="ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1"/>
+							<para>¡Peligro de daños personales por trabajo debajo del vehículo!</para>
+							<para>Mover el vehículo puede causar lesiones o la muerte del personal.</para>
+							<randlist prefix="pf02">
+								<item>Compruebe que el vehículo está estacionado en suelo firme y nivelado antes de que el personal pase por debajo del vehículo.</item>
+								<item>Apague el motor y aplique el freno de estacionamiento.</item>
+								<item>No mueva el vehículo cuando se encuentra personal debajo de este.</item>
+							</randlist>
+						</warning>
+						<warning>
+							<symbol boardno="ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1"/>
+							<para>¡Peligro de lesiones o muerte!</para>
+							<para>El vehículo elevado puede caerse, volcar o realizar movimientos inesperados, pudiendo producir lesiones graves o incluso la muerte.</para>
+							<para>
+								<randlist prefix="pf02">
+									<item>No permanezca debajo del vehículo elevado.</item>
+								</randlist>
+							</para>
+							<para>
+								<randlist prefix="pf02">
+									<item>Evite que el vehículo elevado con eslingas se balancee.</item>
+								</randlist>
+							</para>
+						</warning>
+						<caution>
+							<symbol boardno="ICN-VCR8X8DRAGON-A-000000-A-3883B-00002-A-01-1"/>
+							<para>¡Daños en el hidroneumático!</para>
+							<para>El llenado de un hidroneumático en un orden incorrecto puede provocar daños materiales por sobrepresión del hidroneumático.</para>
+							<para>
+								<randlist prefix="pf02">
+									<item>El orden de llenado de un hidroneumático completamente vacío de gas es obligatorio.</item>
+									<item>La presión de gas de la etapa 2 debe ser correcta antes de llenar el gas de la etapa 1.</item>
+								</randlist>
+							</para>
+						</caution>
+					</safecond>
+				</safety>
+			</prelreqs>
+			<mainfunc>
+				<step1>
+					<para>Verificación de la presión en la etapa 1 del amortiguador hidroneumático</para>
+					<note>
+						<para>La comprobación se realizará mínimo cada año.</para>
+					</note>
+					<step2>
+						<para>Poner el <acronym id="acr-0089">
+								<acroterm>HMS</acroterm>
+								<acrodef>Height Management System (Sistema de gestión de altura)</acrodef>
+							</acronym> a la posición elevada. Ver <refdm>
+								<avee>
+									<modelic>VCR8X8DRAGON</modelic>
+									<sdc>A</sdc>
+									<chapnum>B3</chapnum>
+									<section>1</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>00</discode>
+									<discodev>00A</discodev>
+									<incode>131</incode>
+									<incodev>A</incodev>
+									<itemloc>A</itemloc>
+								</avee>
+								<dmtitle>
+									<techname>AMORTIGUACIÓN DE LA SUSPENSIÓN</techname>
+									<infoname>Procedimientos de operación normal</infoname>
+								</dmtitle>
+							</refdm>.</para>
+					</step2>
+					<step2>
+						<para>Conectar la válvula con manómetro <xref xidtype="hotspot" xrefid="fig-0002-hot-0004"/> con la botella de <xref xrefid="sup-0001" xidtype="supply"/>, <xref xidtype="hotspot" xrefid="fig-0002-hot-0013"/> con la llave fija plana.</para>
+					</step2>
+					<step2>
+						<para>Cerrar la válvula de descarga <xref xidtype="hotspot" xrefid="fig-0002-hot-0012"/>.</para>
+					</step2>
+					<step2>
+						<para>Conectar la manguera <xref xidtype="hotspot" xrefid="fig-0002-hot-0005"/> a la válvula con manómetro <xref xidtype="hotspot" xrefid="fig-0002-hot-0004"/> y al <xref xrefid="seq-0002" xidtype="supequip"/>, <xref xidtype="hotspot" xrefid="fig-0002-hot-0011"/> con la llave fija plana.</para>
+					</step2>
+					<step2>
+						<para>Cerrar la válvula de llenado <xref xidtype="hotspot" xrefid="fig-0002-hot-0009"/> del <xref xrefid="seq-0002" xidtype="supequip"/>, <xref xidtype="hotspot" xrefid="fig-0002-hot-0011"/>.</para>
+					</step2>
+					<step2>
+						<para>Cerrar la válvula de alivio <xref xidtype="hotspot" xrefid="fig-0002-hot-0008"/> del <xref xrefid="seq-0002" xidtype="supequip"/>, <xref xidtype="hotspot" xrefid="fig-0002-hot-0011"/>.</para>
+					</step2>
+					<step2>
+						<para>Abrir la válvula <xref xidtype="hotspot" xrefid="fig-0002-hot-0014"/> de la botella de <xref xrefid="sup-0001" xidtype="supply"/>, <xref xidtype="hotspot" xrefid="fig-0002-hot-0013"/>.</para>
+					</step2>
+					<step2>
+						<para>Sujetar la manguera de conexión de llenado de gas <xref xidtype="hotspot" xrefid="fig-0002-hot-0007"/> en una dirección segura.</para>
+					</step2>
+					<step2>
+						<para>Abrir la válvula de llenado <xref xidtype="hotspot" xrefid="fig-0002-hot-0009"/> por un instante para limpiar las líneas.</para>
+					</step2>
+					<step2>
+						<para>Desbloquear el pestillo <xref xidtype="hotspot" xrefid="fig-0001-hot-0001"/>.</para>
+					</step2>
+					<step2>
+						<para>Abrir la tapa <xref xidtype="hotspot" xrefid="fig-0001-hot-0002"/>
+						</para>
+					</step2>
+					<step2>
+						<para>Conectar la manguera de conexión de llenado de gas <xref xidtype="hotspot" xrefid="fig-0002-hot-0007"/> a la conexión de llenado <xref xidtype="hotspot" xrefid="fig-0001-hot-0003"/> que se vaya a verificar con la llave fija plana.</para>
+					</step2>
+					<step2>
+						<para>Conectar el adaptador de alimentación <xref xidtype="hotspot" xrefid="fig-0002-hot-0006"/> al multímetro digital <xref xidtype="hotspot" xrefid="fig-0002-hot-0010"/>.</para>
+					</step2>
+					<step2>
+						<para>Presionar el botón "<emphasis>ON</emphasis> en el multímetro digital <xref xidtype="hotspot" xrefid="fig-0002-hot-0010"/>.</para>
+					</step2>
+					<step2>
+						<para>Comprobar la presión en el multímetro digital <xref xidtype="hotspot" xrefid="fig-0002-hot-0010"/>.</para>
+					</step2>
+					<step2>
+						<para>Si la presión es demasiado baja proceder de la siguiente manera: </para>
+						<note>
+							<para>Si la etapa 1 se encuentra completamente descargada debe ser llenada primero la etapa 2. Ver <refdm>
+									<avee>
+										<modelic>VCR8X8DRAGON</modelic>
+										<sdc>A</sdc>
+										<chapnum>B3</chapnum>
+										<section>1</section>
+										<subsect>0</subsect>
+										<subject>00</subject>
+										<discode>00</discode>
+										<discodev>00A</discodev>
+										<incode>362</incode>
+										<incodev>A</incodev>
+										<itemloc>A</itemloc>
+									</avee>
+									<dmtitle>
+										<techname>AMORTIGUACIÓN DE LA SUSPENSIÓN</techname>
+										<infoname>Verificación de presión</infoname>
+									</dmtitle>
+								</refdm>.</para>
+						</note>
+						<step3>
+							<para>Abrir la válvula de llenado <xref xidtype="hotspot" xrefid="fig-0002-hot-0009"/> y cargar 5 bares por encima del valor nominal</para>
+						</step3>
+						<step3>
+							<para>Cerrar la válvula de llenado <xref xidtype="hotspot" xrefid="fig-0002-hot-0009"/>.</para>
+						</step3>
+						<step3>
+							<para>Esperar hasta que la presión se estabilice y volver a cargar si es necesario.</para>
+						</step3>
+						<step3>
+							<para>Abrir la válvula de alivio <xref xidtype="hotspot" xrefid="fig-0002-hot-0008"/> y ajustar al valor nominal.</para>
+						</step3>
+						<step3>
+							<para>Cerrar la válvula de alivio <xref xidtype="hotspot" xrefid="fig-0002-hot-0008"/>.</para>
+						</step3>
+						<step3>
+							<para>Esperar entre 5 minutos y 10 minutos y volver a comprobar la presión en el multímetro digital <xref xidtype="hotspot" xrefid="fig-0002-hot-0010"/>.</para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Si la presión es demasiado alta proceder de la siguiente manera:</para>
+						<step3>
+							<para>Abrir la válvula de alivio <xref xidtype="hotspot" xrefid="fig-0002-hot-0008"/> hasta alcanzar el valor nominal.</para>
+						</step3>
+						<step3>
+							<para>Cerrar la válvula de alivio <xref xidtype="hotspot" xrefid="fig-0002-hot-0008"/>.</para>
+						</step3>
+						<step3>
+							<para>Esperar entre 5 minutos y 10 minutos y volver a comprobar la presión en el multímetro digital <xref xidtype="hotspot" xrefid="fig-0002-hot-0010"/>.</para>
+						</step3>
+					</step2>
+					<step2>
+						<para>Desconectar la manguera de conexión de llenado de gas <xref xidtype="hotspot" xrefid="fig-0002-hot-0007"/> del conector de llenado <xref xidtype="hotspot" xrefid="fig-0001-hot-0003"/> con la llave fija plana.</para>
+					</step2>
+					<step2>
+						<para>Cerrar la tapa <xref xidtype="hotspot" xrefid="fig-0001-hot-0002"/>.</para>
+					</step2>
+					<step2>
+						<para>Bloquear el pestillo <xref xidtype="hotspot" xrefid="fig-0001-hot-0001"/>
+						</para>
+					</step2>
+					<step2>
+						<para>Cerrar la válvula <xref xidtype="hotspot" xrefid="fig-0002-hot-0014"/>.</para>
+					</step2>
+					<step2>
+						<para>Desconectar la manguera <xref xidtype="hotspot" xrefid="fig-0002-hot-0005"/> de la válvula con manómetro <xref xidtype="hotspot" xrefid="fig-0002-hot-0004"/> y del <xref xrefid="seq-0002" xidtype="supequip"/>, <xref xidtype="hotspot" xrefid="fig-0002-hot-0011"/> con la llave fija plana.</para>
+					</step2>
+					<step2>
+						<para>Desconectar la válvula con manómetro <xref xidtype="hotspot" xrefid="fig-0002-hot-0004"/> de la botella de <xref xrefid="sup-0001" xidtype="supply"/>, <xref xidtype="hotspot" xrefid="fig-0002-hot-0013"/> con la llave fija plana.</para>
+					</step2>
+					<step2>
+						<para>Limpieza de la zona de trabajo:</para>
+						<step3>
+							<para>Retirar las herramientas, utillaje y consumibles empleados en el área de trabajo.</para>
+						</step3>
+						<step3>
+							<para>Comprobar que el área de trabajo esté limpia y libre de materiales no deseados.</para>
+						</step3>
+					</step2>
+					<step2 refapplic="app-0009">
+						<table id="tab-0001" frame="topbot">
+							<title>Conexiones de prueba y presión hidráulica:</title>
+							<tgroup colsep="0" cols="7">
+								<colspec colname="col1"/>
+								<colspec colname="col2"/>
+								<colspec colname="col3"/>
+								<colspec colname="col4"/>
+								<colspec colname="col5"/>
+								<colspec colname="col6"/>
+								<colspec colname="col7"/>
+								<thead>
+									<row rowsep="1">
+										<entry align="left" colname="col1" colsep="0" rowsep="1" valign="middle" rotate="0">ID</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="1" valign="middle" rotate="0">Peso</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="1" valign="middle" rotate="0">0 °C</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="1" valign="middle" rotate="0">10°C </entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="1" valign="middle" rotate="0">20°C </entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="1" valign="middle" rotate="0">0°C </entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="1" valign="middle" rotate="0">40°C </entry>
+									</row>
+								</thead>
+								<tbody>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">1AR + 2AR</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">8805 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">50 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">52 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">54 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">55 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">57 bar </entry>
+									</row>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">1AL+2AL</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">8805 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">50 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">52 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">54 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">55 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">57 bar </entry>
+									</row>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">3AR+4AR</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">8332 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">47 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">49 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">50 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">52 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">54 bar </entry>
+									</row>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">3AL+4AL</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">8332 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">47 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">49 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">50 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">52 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">54 bar </entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<figure id="fig-0001">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic id="fig-0001-gra-0001" boardno="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1">
+								<hotspot apsid="hot-0001" apsname="1" id="fig-0001-hot-0001" title="Pestillo"/>
+								<hotspot apsid="hot-0002" apsname="2" id="fig-0001-hot-0002" title="Tapa"/>
+								<hotspot apsid="hot-0003" apsname="3" id="fig-0001-hot-0003" title="Conexión de llenado"/>
+							</graphic>
+							<legend>
+								<deflist>
+									<term>1</term>
+									<def>PESTILLO</def>
+									<term>2</term>
+									<def>TAPA</def>
+									<term>3</term>
+									<def>CONEXIONES DE LLENADO</def>
+								</deflist>
+							</legend>
+						</figure>
+						<figure id="fig-0002">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic id="fig-0002-gra-0001" boardno="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1">
+								<hotspot apsid="hot-0004" apsname="4" id="fig-0002-hot-0004" title="Válvula con manómetro"/>
+								<hotspot apsid="hot-0005" apsname="5" id="fig-0002-hot-0005" title="Manguera"/>
+								<hotspot apsid="hot-0006" apsname="6" id="fig-0002-hot-0006" title="Adaptador de alimentación"/>
+								<hotspot apsid="hot-0007" apsname="7" id="fig-0002-hot-0007" title="Manguera de conexión de llenado de gas"/>
+								<hotspot apsid="hot-0008" apsname="8" id="fig-0002-hot-0008" title="Válvula de alivio"/>
+								<hotspot apsid="hot-0009" apsname="9" id="fig-0002-hot-0009" title="Válvula de llenado"/>
+								<hotspot apsid="hot-0010" apsname="10" id="fig-0002-hot-0010" title="Multímetro digital"/>
+								<hotspot apsid="hot-0011" apsname="11" id="fig-0002-hot-0011" title="Kit de test de presión"/>
+								<hotspot apsid="hot-0012" apsname="12" id="fig-0002-hot-0012" title="Válvula de descarga"/>
+								<hotspot apsid="hot-0013" apsname="13" id="fig-0002-hot-0013" title="Botella de nitrógeno"/>
+								<hotspot apsid="hot-0014" apsname="14" id="fig-0002-hot-0014" title="Válvula"/>
+							</graphic>
+							<legend>
+								<deflist>
+									<term>4</term>
+									<def>VÁLVULA CON MANÓMETRO</def>
+									<term>5</term>
+									<def>MANGUERA</def>
+									<term>6</term>
+									<def>ADAPTADOR DE ALIMENTACIÓN</def>
+									<term>7</term>
+									<def>MANGUERA DE CONEXIÓN DE LLENADO DE GAS</def>
+									<term>8</term>
+									<def>VÁLVULA DE ALIVIO</def>
+									<term>9</term>
+									<def>VÁLVULA DE LLENADO</def>
+									<term>10</term>
+									<def>MULTÍMETRO DIGITAL</def>
+									<term>11</term>
+									<def>KIT DE TEST DE PRESIÓN</def>
+									<term>12</term>
+									<def>VÁLVULA DE DESCARGA</def>
+									<term>13</term>
+									<def>BOTELLA DE NITRÓGENO</def>
+									<term>14</term>
+									<def>VÁLVULA</def>
+								</deflist>
+							</legend>
+						</figure>
+					</step2>
+					<step2 refapplic="app-0010">
+						<table id="tab-0002" frame="topbot">
+							<title>Conexiones de prueba y presión hidráulica:</title>
+							<tgroup colsep="0" cols="7">
+								<colspec colname="col1"/>
+								<colspec colname="col2"/>
+								<colspec colname="col3"/>
+								<colspec colname="col4"/>
+								<colspec colname="col5"/>
+								<colspec colname="col6"/>
+								<colspec colname="col7"/>
+								<thead>
+									<row rowsep="1">
+										<entry align="left" colname="col1" colsep="0" rowsep="1" valign="middle" rotate="0">ID</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="1" valign="middle" rotate="0">Peso</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="1" valign="middle" rotate="0">0 °C</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="1" valign="middle" rotate="0">10°C </entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="1" valign="middle" rotate="0">20°C </entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="1" valign="middle" rotate="0">0°C </entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="1" valign="middle" rotate="0">40°C </entry>
+									</row>
+								</thead>
+								<tbody>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">1AR+2AR</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">7258 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">40 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">42 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">43 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">44 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">46 bar </entry>
+									</row>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">1AL+2AL</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">7258 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">40 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">42 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">43 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">44 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">46 bar </entry>
+									</row>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">3AR+4AR</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">8993 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">51 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">53 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">55 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">57 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">59 bar </entry>
+									</row>
+									<row rowsep="0">
+										<entry align="left" colname="col1" colsep="0" rowsep="0" valign="middle" rotate="0">3AL+4AL</entry>
+										<entry align="left" colname="col2" colsep="0" rowsep="0" valign="middle" rotate="0">8993 Kg</entry>
+										<entry align="left" colname="col3" colsep="0" rowsep="0" valign="middle" rotate="0">51 bar</entry>
+										<entry align="left" colname="col4" colsep="0" rowsep="0" valign="middle" rotate="0">53 bar</entry>
+										<entry align="left" colname="col5" colsep="0" rowsep="0" valign="middle" rotate="0">55 bar</entry>
+										<entry align="left" colname="col6" colsep="0" rowsep="0" valign="middle" rotate="0">57 bar</entry>
+										<entry align="left" colname="col7" colsep="0" rowsep="0" valign="middle" rotate="0">59 bar </entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<figure id="fig-0003">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic id="fig-0003-gra-0001" boardno="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1">
+								<hotspot apsid="hot-0001" apsname="1" id="fig-0003-hot-0001" title="Pestillo"/>
+								<hotspot apsid="hot-0002" apsname="2" id="fig-0003-hot-0002" title="Tapa"/>
+								<hotspot apsid="hot-0003" apsname="3" id="fig-0003-hot-0003" title="Conexión de llenado"/>
+							</graphic>
+							<legend>
+								<deflist>
+									<term>1</term>
+									<def>PESTILLO</def>
+									<term>2</term>
+									<def>TAPA</def>
+									<term>3</term>
+									<def>CONEXIONES DE LLENADO</def>
+								</deflist>
+							</legend>
+						</figure>
+						<figure id="fig-0004">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic id="fig-0004-gra-0001" boardno="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1">
+								<hotspot apsid="hot-0004" apsname="4" id="fig-0004-hot-0004" title="Válvula con manómetro"/>
+								<hotspot apsid="hot-0005" apsname="5" id="fig-0004-hot-0005" title="Manguera"/>
+								<hotspot apsid="hot-0006" apsname="6" id="fig-0004-hot-0006" title="Adaptador de alimentación"/>
+								<hotspot apsid="hot-0007" apsname="7" id="fig-0004-hot-0007" title="Manguera de conexión de llenado de gas"/>
+								<hotspot apsid="hot-0008" apsname="8" id="fig-0004-hot-0008" title="Válvula de alivio"/>
+								<hotspot apsid="hot-0009" apsname="9" id="fig-0004-hot-0009" title="Válvula de llenado"/>
+								<hotspot apsid="hot-0010" apsname="10" id="fig-0004-hot-0010" title="Multímetro digital"/>
+								<hotspot apsid="hot-0011" apsname="11" id="fig-0004-hot-0011" title="Kit de test de presión"/>
+								<hotspot apsid="hot-0012" apsname="12" id="fig-0004-hot-0012" title="Válvula de descarga"/>
+								<hotspot apsid="hot-0013" apsname="13" id="fig-0004-hot-0013" title="Botella de nitrógeno"/>
+								<hotspot apsid="hot-0014" apsname="14" id="fig-0004-hot-0014" title="Válvula"/>
+							</graphic>
+							<legend>
+								<deflist>
+									<term>4</term>
+									<def>VÁLVULA CON MANÓMETRO</def>
+									<term>5</term>
+									<def>MANGUERA</def>
+									<term>6</term>
+									<def>ADAPTADOR DE ALIMENTACIÓN</def>
+									<term>7</term>
+									<def>MANGUERA DE CONEXIÓN DE LLENADO DE GAS</def>
+									<term>8</term>
+									<def>VÁLVULA DE ALIVIO</def>
+									<term>9</term>
+									<def>VÁLVULA DE LLENADO</def>
+									<term>10</term>
+									<def>MULTÍMETRO DIGITAL</def>
+									<term>11</term>
+									<def>KIT DE TEST DE PRESIÓN</def>
+									<term>12</term>
+									<def>VÁLVULA DE DESCARGA</def>
+									<term>13</term>
+									<def>BOTELLA DE NITRÓGENO</def>
+									<term>14</term>
+									<def>VÁLVULA</def>
+								</deflist>
+							</legend>
+						</figure>
+					</step2>
+				</step1>
+			</mainfunc>
+			<closereqs>
+				<reqconds>
+					<reqcondm>
+						<reqcond>Bajar el vehiculo</reqcond>
+						<refdm>
+							<avee>
+								<modelic>VCR8X8DRAGON</modelic>
+								<sdc>A</sdc>
+								<chapnum>00</chapnum>
+								<section>0</section>
+								<subsect>0</subsect>
+								<subject>00</subject>
+								<discode>00</discode>
+								<discodev>00A</discodev>
+								<incode>131</incode>
+								<incodev>U</incodev>
+								<itemloc>A</itemloc>
+							</avee>
+							<dmtitle>
+								<techname>SISTEMA GENERAL</techname>
+								<infoname>Procedimientos de operación normal</infoname>
+							</dmtitle>
+						</refdm>
+					</reqcondm>
+				</reqconds>
+			</closereqs>
+		</proced>
+	</content>
+</dmodule>

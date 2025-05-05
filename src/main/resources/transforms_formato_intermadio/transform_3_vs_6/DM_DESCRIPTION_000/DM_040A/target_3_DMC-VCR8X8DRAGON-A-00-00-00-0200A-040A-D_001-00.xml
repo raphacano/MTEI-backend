@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\descript_custom.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="02" disassyCodeVariant="00A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
+				<language languageIsoCode="es" countryIsoCode="ES"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2024" month="04" day="12"/>
+				<dmTitle>
+					<techName>SISTEMA GENERAL</techName>
+					<infoName>Descripción física y funcional</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="9AEWB">
+				<enterpriseName>TESS-DEFENCE SA</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="010CB">
+				<enterpriseName>ESCRIBANO MECHANICAL AND ENGINEERING SL</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>
+						<subScript>VCZ Linea</subScript>
+						<subScript>VCZ PCSC</subScript>
+						<subScript>VCPC PCBON</subScript>
+						<subScript>VCOAV VCOAV</subScript>
+					</simplePara>
+				</displayText>
+				<evaluate andOr="or">
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="Linea"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCSC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCPC"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCBON"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCOAV"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="VCOAV"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<description>
+			<levelledPara>
+				<title>Sistema Guardian 2.0</title>
+				<para>El sistema Guardian 2.0 es una <acronym reasonForUpdateRefIds="acr-0069" derivativeClassificationRefId="acr-0069" id="acr-0069" controlAuthorityRefs="acr-0069">
+						<acronymTerm>WS</acronymTerm>
+						<acronymDefinition reasonForUpdateRefIds="acr-0069" derivativeClassificationRefId="acr-0069" controlAuthorityRefs="acr-0069">Weapon Station (Estación de Armas)</acronymDefinition>
+					</acronym> giro estabilizada en dos ejes, controlada de manera remota que puede ser operada tanto de día como de noche.</para>
+				<figure id="fig-0001">
+					<title>Sistema Guardian 2.0</title>
+					<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-000000-A-010CB-02008-A-01-1" id="fig-0001-gra-0001"/>
+				</figure>
+				<para>El sistema Guardian 2.0 está especialmente diseñado para ser capaz de montar y operar con los siguientes tipos de armas:<randomList listItemPrefix="pf02">
+						<listItem>
+							<para>Ametralladora ligera 5.56 mm MG4 <acronym reasonForUpdateRefIds="acr-0055" derivativeClassificationRefId="acr-0055" id="acr-0055" controlAuthorityRefs="acr-0055">
+									<acronymTerm>LMG</acronymTerm>
+									<acronymDefinition reasonForUpdateRefIds="acr-0055" derivativeClassificationRefId="acr-0055" controlAuthorityRefs="acr-0055">Light Machine Gun (Ametralladora Ligera)</acronymDefinition>
+								</acronym></para>
+						</listItem>
+						<listItem>
+							<para>Ametralladora media 7.62 mm MG3 <acronym reasonForUpdateRefIds="acr-0062" derivativeClassificationRefId="acr-0062" id="acr-0062" controlAuthorityRefs="acr-0062">
+									<acronymTerm>MMG</acronymTerm>
+									<acronymDefinition reasonForUpdateRefIds="acr-0062" derivativeClassificationRefId="acr-0062" controlAuthorityRefs="acr-0062">Medium Machine Gun (Ametralladora Media)</acronymDefinition>
+								</acronym></para>
+						</listItem>
+						<listItem>
+							<para>Ametralladora pesada 12.70 mm M2 (<acronym reasonForUpdateRefIds="acr-0051" derivativeClassificationRefId="acr-0051" id="acr-0051" controlAuthorityRefs="acr-0051">
+									<acronymTerm>HMG</acronymTerm>
+									<acronymDefinition reasonForUpdateRefIds="acr-0051" derivativeClassificationRefId="acr-0051" controlAuthorityRefs="acr-0051">Heavy Machine Gun (Ametralladora Pesada)</acronymDefinition>
+								</acronym></para>
+						</listItem>
+						<listItem>
+							<para>Lanzagranadas de 40 mm MK19</para>
+						</listItem>
+					</randomList>La <acronymTerm>MMG</acronymTerm> y <acronymTerm>LMG</acronymTerm> son instalados y operados mediante el uso del <acronym reasonForUpdateRefIds="acr-0043" derivativeClassificationRefId="acr-0043" id="acr-0043" controlAuthorityRefs="acr-0043">
+						<acronymTerm>CAK</acronymTerm>
+						<acronymDefinition reasonForUpdateRefIds="acr-0043" derivativeClassificationRefId="acr-0043" controlAuthorityRefs="acr-0043">Carriage Adjustment Kit (Kit de Ajuste del Afuste)</acronymDefinition>
+					</acronym>, mientras que la <acronymTerm>HMG</acronymTerm> y el lanzagranadas podrán instalarse y operarse sin dispositivos mecánicos adicionales.</para>
+				<para>Equipado con:<randomList listItemPrefix="pf02">
+						<listItem>
+							<para>Una <acronym reasonForUpdateRefIds="acr-0054" derivativeClassificationRefId="acr-0054" id="acr-0054" controlAuthorityRefs="acr-0054">
+									<acronymTerm>IRcam</acronymTerm>
+									<acronymDefinition reasonForUpdateRefIds="acr-0054" derivativeClassificationRefId="acr-0054" controlAuthorityRefs="acr-0054">InfraRed Camera (Cámara Infrarrojos)</acronymDefinition>
+								</acronym></para>
+						</listItem>
+						<listItem>
+							<para>Una <acronym reasonForUpdateRefIds="acr-0067" derivativeClassificationRefId="acr-0067" id="acr-0067" controlAuthorityRefs="acr-0067">
+									<acronymTerm>VScam</acronymTerm>
+									<acronymDefinition reasonForUpdateRefIds="acr-0067" derivativeClassificationRefId="acr-0067" controlAuthorityRefs="acr-0067">Visible-Spectrum Camera (Cámara Diurna)</acronymDefinition>
+								</acronym></para>
+						</listItem>
+						<listItem>
+							<para>Un puntero láser</para>
+						</listItem>
+						<listItem>
+							<para>Un telémetro láser (<acronym reasonForUpdateRefIds="acr-0058" derivativeClassificationRefId="acr-0058" id="acr-0058" controlAuthorityRefs="acr-0058">
+									<acronymTerm>LRF</acronymTerm>
+									<acronymDefinition reasonForUpdateRefIds="acr-0058" derivativeClassificationRefId="acr-0058" controlAuthorityRefs="acr-0058">Laser Range Finder (Telémetro Laser)</acronymDefinition>
+								</acronym>)</para>
+						</listItem>
+					</randomList>El operador es capaz de localizar, apuntar y abatir blancos tanto de día como de noche, en  estático o en  movimiento. A estas capacidades se suma la de seguimiento automático de blancos, que permite mantener el arma apuntando a un objetivo de manera automática, utilizando el vídeo de ambas cámaras.</para>
+				<para>El sistema cuenta con dos puestos de control y la <acronymTerm>WS</acronymTerm> puede ser operada tanto por un tirador como por un jefe de vehículo, según se haya seleccionado, mediante el uso del selector de prioridad del joystick del Jefe de Vehículo (El botón de prioridad está en joystick del jefe de vehículo).</para>
+				<para>El sistema está compuesto por dos partes principales:<randomList listItemPrefix="pf02">
+						<listItem>
+							<para>Subsistema <acronymTerm>WS</acronymTerm>. Ver tarea (<dmRef>
+									<dmRefIdent>
+										<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="C6" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>ARMA GENERAL</techName>
+											<infoName>Descripción física y funcional</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef>).</para>
+						</listItem>
+						<listItem>
+							<para>Sección de Control (C2). Ver tarea (<dmRef>
+									<dmRefIdent>
+										<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="C2" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="01" disassyCodeVariant="00A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>SISTEMAS DE CONTROL DE FUEGO GENERAL</techName>
+											<infoName>Descripción física y funcional</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef>).</para>
+						</listItem>
+					</randomList></para>
+				<figure id="fig-0002">
+					<title>Arquitectura del sistema Guardian 2.0</title>
+					<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-000000-A-010CB-02009-A-01-1" id="fig-0002-gra-0001"/>
+				</figure>
+				<figure id="fig-0003">
+					<title>Sistema de Mando y Control</title>
+					<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-000000-A-010CB-02010-A-01-1" id="fig-0003-gra-0001"/>
+				</figure>
+			</levelledPara>
+		</description>
+	</content>
+</dmodule>

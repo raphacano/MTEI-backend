@@ -225,37 +225,37 @@
 										<colspec colnum="3" colname="col3" colwidth="1*"/>
 										<thead valign="bottom">
 											<row>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>Tire Pressures</para>
 												</entry>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>Min</para>
 												</entry>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>Max</para>
 												</entry>
 											</row>
 										</thead>
 										<tbody valign="top">
 											<row>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>Off Road</para>
 												</entry>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>35lbs</para>
 												</entry>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>40lbs</para>
 												</entry>
 											</row>
 											<row>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>On Road</para>
 												</entry>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>55lbs</para>
 												</entry>
-												<entry xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<entry>
 													<para>60lbs</para>
 												</entry>
 											</row>

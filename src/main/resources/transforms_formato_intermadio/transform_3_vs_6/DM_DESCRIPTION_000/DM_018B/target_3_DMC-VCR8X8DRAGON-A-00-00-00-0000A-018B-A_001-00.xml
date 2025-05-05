@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\descript_custom.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="018" infoCodeVariant="B" itemLocationCode="A"/>
+				<language languageIsoCode="es" countryIsoCode="ES"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2024" month="04" day="12"/>
+				<dmTitle>
+					<techName>SISTEMA GENERAL</techName>
+					<infoName>Introducción</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="9AEWB">
+				<enterpriseName>TESS-DEFENCE SA</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="9AEWB">
+				<enterpriseName>TESS-DEFENCE SA</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>
+						<subScript>VCR 8X8 DRAGON</subScript>
+					</simplePara>
+				</displayText>
+				<evaluate andOr="or">
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="Linea"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="CC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCSC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCCIA"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="Linea"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCSC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCPC"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCBON"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCOAV"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="VCOAV"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<description>
+			<levelledPara>
+				<title>Introducción</title>
+				<para>Esta sección contiene la información para la operación del vehículo VCR 8X8 Dragón incluyendo:<randomList listItemPrefix="pf02">
+						<listItem>
+							<para>Puesta en movimiento y conducción.</para>
+						</listItem>
+						<listItem>
+							<para>Maniobra marcha atrás.</para>
+						</listItem>
+						<listItem>
+							<para>Arranque en pendiente.</para>
+						</listItem>
+						<listItem>
+							<para>Bajada de pendientes.</para>
+						</listItem>
+						<listItem>
+							<para>Conducción por diferentes tipos de terreno.</para>
+						</listItem>
+						<listItem>
+							<para>Subida de un escalón.</para>
+						</listItem>
+						<listItem>
+							<para>Cruce de zanja.</para>
+						</listItem>
+						<listItem>
+							<para>Conducción sobre obstáculos.</para>
+						</listItem>
+						<listItem>
+							<para>Operación en pendiente lateral.</para>
+						</listItem>
+						<listItem>
+							<para>Vadeo</para>
+						</listItem>
+						<listItem>
+							<para>Remolque a tracción.</para>
+						</listItem>
+						<listItem>
+							<para>Estacionamiento del vehículo en una parada de misión.</para>
+						</listItem>
+						<listItem>
+							<para>Estacionamiento del vehículo después de las operaciones.</para>
+						</listItem>
+						<listItem>
+							<para>General - Bloqueo del vehículo.</para>
+						</listItem>
+						<listItem>
+							<para>Parada durante marcha.</para>
+						</listItem>
+						<listItem>
+							<para>Cambio de sentido.</para>
+						</listItem>
+						<listItem>
+							<para>Lista de comprobaciones.</para>
+						</listItem>
+						<listItem>
+							<para>Encendido esclavo.</para>
+						</listItem>
+						<listItem>
+							<para>Operación del acelerador de emergencia.</para>
+						</listItem>
+						<listItem>
+							<para>Conducción con neumáticos defectuosos.</para>
+						</listItem>
+						<listItem>
+							<para>Arranque del motor remolcado.</para>
+						</listItem>
+					</randomList></para>
+				<para>También incluye el manejo del software asociado a la operación.</para>
+			</levelledPara>
+		</description>
+	</content>
+</dmodule>

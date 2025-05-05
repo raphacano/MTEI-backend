@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/prdcrossreftable.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00P" infoCodeVariant="A" itemLocationCode="D"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
+				<issueInfo issueNumber="002" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2007" month="08" day="21"/>
+				<dmTitle>
+					<techName>Mountain bicycle</techName>
+					<infoName>Products cross-reference table</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="changed">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="SF815">
+				<enterpriseName>SIOM</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="SF815">
+				<enterpriseName>SIOM</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>All</simplePara>
+				</displayText>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03">
+				<simplePara>CPF 2006-47AA: New PCT data module type</simplePara>
+				<simplePara>Reference to BREX file changed from default to specific for the Bike Samples</simplePara>
+			</reasonForUpdate>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<productCrossRefTable>
+			<product>
+				<assign applicPropertyIdent="SerialNo" applicPropertyType="prodattr" applicPropertyValue="1B070643"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="model" applicPropertyType="prodattr" applicPropertyValue="Brook trekker"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValue="Mk9"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="versrank" applicPropertyType="prodattr" applicPropertyValue="2"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="SB-S001" applicPropertyType="condition" applicPropertyValue="Pre"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="SerialNo" applicPropertyType="prodattr" applicPropertyValue="1B070644"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="model" applicPropertyType="prodattr" applicPropertyValue="Brook trekker"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValue="Mk9"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="versrank" applicPropertyType="prodattr" applicPropertyValue="1"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="SB-S001" applicPropertyType="condition" applicPropertyValue="Post"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="SerialNo" applicPropertyType="prodattr" applicPropertyValue="1B070701"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="model" applicPropertyType="prodattr" applicPropertyValue="Mountain storm"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValue="Mk1"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="versrank" applicPropertyType="prodattr" applicPropertyValue="1"/>
+			</product>
+			<product>
+				<assign applicPropertyIdent="SB-S001" applicPropertyType="condition" applicPropertyValue="Pre"/>
+			</product>
+		</productCrossRefTable>
+	</content>
+</dmodule>

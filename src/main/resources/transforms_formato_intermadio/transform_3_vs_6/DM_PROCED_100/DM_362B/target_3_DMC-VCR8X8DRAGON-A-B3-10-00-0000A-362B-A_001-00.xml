@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\proced_custom.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="B3" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="362" infoCodeVariant="B" itemLocationCode="A"/>
+				<language languageIsoCode="es" countryIsoCode="ES"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2024" month="07" day="31"/>
+				<dmTitle>
+					<techName>AMORTIGUACIÓN DE LA SUSPENSIÓN</techName>
+					<infoName>Verificación de presión</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="9AEWB">
+				<enterpriseName>TESS-DEFENCE SA</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="0131B">
+				<enterpriseName>SANTA BARBARA SISTEMAS SA</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>
+						<subScript>VCI Linea</subScript>
+						<subScript>VCI CC</subScript>
+						<subScript>VCI PCSC</subScript>
+						<subScript>VCI PCCIA</subScript>
+						<subScript>VCZ Linea</subScript>
+						<subScript>VCZ PCSC</subScript>
+					</simplePara>
+				</displayText>
+				<evaluate andOr="or">
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="Linea"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="CC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCSC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCI"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCCIA"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="Linea"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCSC"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<refs>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="131" infoCodeVariant="I" itemLocationCode="A"/>
+				</dmRefIdent>
+				<dmRefAddressItems>
+					<dmTitle>
+						<techName>SISTEMA GENERAL</techName>
+						<infoName>Procedimientos de operación normal</infoName>
+					</dmTitle>
+				</dmRefAddressItems>
+			</dmRef>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="B3" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="131" infoCodeVariant="A" itemLocationCode="A"/>
+				</dmRefIdent>
+				<dmRefAddressItems>
+					<dmTitle>
+						<techName>AMORTIGUACIÓN DE LA SUSPENSIÓN</techName>
+						<infoName>Procedimientos de operación normal</infoName>
+					</dmTitle>
+				</dmRefAddressItems>
+			</dmRef>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="B3" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="362" infoCodeVariant="A" itemLocationCode="A"/>
+				</dmRefIdent>
+				<dmRefAddressItems>
+					<dmTitle>
+						<techName>AMORTIGUACIÓN DE LA SUSPENSIÓN</techName>
+						<infoName>Verificación de presión</infoName>
+					</dmTitle>
+				</dmRefAddressItems>
+			</dmRef>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="131" infoCodeVariant="U" itemLocationCode="A"/>
+				</dmRefIdent>
+				<dmRefAddressItems>
+					<dmTitle>
+						<techName>SISTEMA GENERAL</techName>
+						<infoName>Procedimientos de operación normal</infoName>
+					</dmTitle>
+				</dmRefAddressItems>
+			</dmRef>
+		</refs>
+		<procedure>
+			<preliminaryRqmts>
+				<productionMaintData>
+					<taskDuration unitOfMeasure="HOUR" startupDuration="0,33" procedureDuration="0,33" closeupDuration="0,33"/>
+				</productionMaintData>
+				<reqCondGroup>
+					<reqCondDm>
+						<reqCond>Elevar el vehiculo</reqCond>
+						<dmRef>
+							<dmRefIdent>
+								<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="131" infoCodeVariant="I" itemLocationCode="A"/>
+							</dmRefIdent>
+							<dmRefAddressItems>
+								<dmTitle>
+									<techName>SISTEMA GENERAL</techName>
+									<infoName>Procedimientos de operación normal</infoName>
+								</dmTitle>
+							</dmRefAddressItems>
+						</dmRef>
+					</reqCondDm>
+				</reqCondGroup>
+				<reqPersons>
+					<person man="1">
+						<personCategory personCategoryCode="MPT ETEC MANTO. VEHICULOS"/>
+						<personSkill skillLevelCode="sk02"/>
+						<trade>TPAMV</trade>
+						<estimatedTime unitOfMeasure="h">0.33</estimatedTime>
+					</person>
+				</reqPersons>
+				<reqSupportEquips>
+					<supportEquipDescrGroup>
+						<supportEquipDescr id="seq-0001">
+							<name>EQUIPO BASICO DE HERRAMIENTAS (METRICO) DE MECANICO/AUTOMOCION (2 ESC.)</name>
+							<identNumber>
+								<manufacturerCode>7857B</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>E.B.H.M.A. (METRICO)</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">1</reqQuantity>
+						</supportEquipDescr>
+						<supportEquipDescr id="seq-0002">
+							<name>KIT TEST DE PRESION</name>
+							<identNumber>
+								<manufacturerCode>0131B</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>0908004700</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">1</reqQuantity>
+						</supportEquipDescr>
+					</supportEquipDescrGroup>
+				</reqSupportEquips>
+				<reqSupplies>
+					<supplyDescrGroup>
+						<supplyDescr id="sup-0001">
+							<name>NITROGENO TECNICO</name>
+							<identNumber>
+								<manufacturerCode>R2945</manufacturerCode>
+								<partAndSerialNumber>
+									<partNumber>0726911</partNumber>
+								</partAndSerialNumber>
+							</identNumber>
+							<reqQuantity unitOfMeasure="EA">1</reqQuantity>
+						</supplyDescr>
+					</supplyDescrGroup>
+				</reqSupplies>
+				<reqSpares>
+					<noSpares/>
+				</reqSpares>
+				<reqSafety>
+					<safetyRqmts>
+						<warning>
+							<symbol infoEntityIdent="ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1"/>
+							<warningAndCautionPara>Uso de <acronym reasonForUpdateRefIds="acr-0222" derivativeClassificationRefId="acr-0222" id="acr-0222" controlAuthorityRefs="acr-0222">
+									<acronymTerm>EPI</acronymTerm>
+									<acronymDefinition reasonForUpdateRefIds="acr-0222" derivativeClassificationRefId="acr-0222" controlAuthorityRefs="acr-0222">Equipos de Protección Individual</acronymDefinition>
+								</acronym>¡Peligro de lesiones! <attentionRandomList listItemPrefix="pf02">
+									<attentionRandomListItem>
+										<attentionListItemPara>Utilice guantes, gafas y protecciones adecuadas para la seguridad personal.</attentionListItemPara>
+									</attentionRandomListItem>
+								</attentionRandomList></warningAndCautionPara>
+						</warning>
+						<warning>
+							<symbol infoEntityIdent="ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1"/>
+							<warningAndCautionPara>¡Peligro de daños personales por trabajo debajo del vehículo!Mover el vehículo puede causar lesiones o la muerte del personal.</warningAndCautionPara>
+						</warning>
+						<warning>
+							<symbol infoEntityIdent="ICN-VCR8X8DRAGON-A-000000-A-3883B-00001-A-01-1"/>
+							<warningAndCautionPara>¡Peligro de lesiones o muerte!El vehículo elevado puede caerse, volcar o realizar movimientos inesperados, pudiendo producir lesiones graves o incluso la muerte.<attentionRandomList listItemPrefix="pf02">
+									<attentionRandomListItem>
+										<attentionListItemPara>No permanezca debajo del vehículo elevado.</attentionListItemPara>
+									</attentionRandomListItem>
+								</attentionRandomList><attentionRandomList listItemPrefix="pf02">
+									<attentionRandomListItem>
+										<attentionListItemPara>Evite que el vehículo elevado con eslingas se balancee.</attentionListItemPara>
+									</attentionRandomListItem>
+								</attentionRandomList></warningAndCautionPara>
+						</warning>
+					</safetyRqmts>
+				</reqSafety>
+			</preliminaryRqmts>
+			<mainProcedure>
+				<proceduralStep>
+					<para>Verificación de la presión en la etapa 1 del amortiguador hidroneumático</para>
+					<note>
+						<notePara>La comprobación se realizará mínimo cada año.</notePara>
+					</note>
+					<proceduralStep>
+						<para>Poner el <acronym reasonForUpdateRefIds="acr-0089" derivativeClassificationRefId="acr-0089" id="acr-0089" controlAuthorityRefs="acr-0089">
+								<acronymTerm>HMS</acronymTerm>
+								<acronymDefinition reasonForUpdateRefIds="acr-0089" derivativeClassificationRefId="acr-0089" controlAuthorityRefs="acr-0089">Height Management System (Sistema de gestión de altura)</acronymDefinition>
+							</acronym> a la posición elevada. Ver <dmRef>
+								<dmRefIdent>
+									<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="B3" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="131" infoCodeVariant="A" itemLocationCode="A"/>
+								</dmRefIdent>
+								<dmRefAddressItems>
+									<dmTitle>
+										<techName>AMORTIGUACIÓN DE LA SUSPENSIÓN</techName>
+										<infoName>Procedimientos de operación normal</infoName>
+									</dmTitle>
+								</dmRefAddressItems>
+							</dmRef>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Conectar la válvula con manómetro <internalRef internalRefId="fig-0002-hot-0004" internalRefTargetType="irtt11" titulo="2/4"/> con la botella de <internalRef internalRefId="sup-0001" internalRefTargetType="irtt04"/>, <internalRef internalRefId="fig-0002-hot-0013" internalRefTargetType="irtt11" titulo="2/13"/> con la llave fija plana.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Cerrar la válvula de descarga <internalRef internalRefId="fig-0002-hot-0012" internalRefTargetType="irtt11" titulo="2/12"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Conectar la manguera <internalRef internalRefId="fig-0002-hot-0005" internalRefTargetType="irtt11" titulo="2/5"/> a la válvula con manómetro <internalRef internalRefId="fig-0002-hot-0004" internalRefTargetType="irtt11" titulo="2/4"/> y al <internalRef internalRefId="seq-0002" internalRefTargetType="irtt05"/>, <internalRef internalRefId="fig-0002-hot-0011" internalRefTargetType="irtt11" titulo="2/11"/> con la llave fija plana.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Cerrar la válvula de llenado <internalRef internalRefId="fig-0002-hot-0009" internalRefTargetType="irtt11" titulo="2/9"/> del <internalRef internalRefId="seq-0002" internalRefTargetType="irtt05"/>, <internalRef internalRefId="fig-0002-hot-0011" internalRefTargetType="irtt11" titulo="2/11"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Cerrar la válvula de alivio <internalRef internalRefId="fig-0002-hot-0008" internalRefTargetType="irtt11" titulo="2/8"/> del <internalRef internalRefId="seq-0002" internalRefTargetType="irtt05"/>, <internalRef internalRefId="fig-0002-hot-0011" internalRefTargetType="irtt11" titulo="2/11"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Abrir la válvula <internalRef internalRefId="fig-0002-hot-0014" internalRefTargetType="irtt11" titulo="2/14"/> de la botella de <internalRef internalRefId="sup-0001" internalRefTargetType="irtt04"/>, <internalRef internalRefId="fig-0002-hot-0013" internalRefTargetType="irtt11" titulo="2/13"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Sujetar la manguera de conexión de llenado de gas <internalRef internalRefId="fig-0002-hot-0007" internalRefTargetType="irtt11" titulo="2/7"/> en una dirección segura.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Abrir la válvula de llenado <internalRef internalRefId="fig-0002-hot-0009" internalRefTargetType="irtt11" titulo="2/9"/> por un instante para limpiar las líneas.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Desbloquear el pestillo <internalRef internalRefId="fig-0001-hot-0001" internalRefTargetType="irtt11" titulo="1/1"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Abrir la tapa <internalRef internalRefId="fig-0001-hot-0002" internalRefTargetType="irtt11" titulo="1/2"/></para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Conectar la manguera de conexión de llenado de gas <internalRef internalRefId="fig-0002-hot-0007" internalRefTargetType="irtt11" titulo="2/7"/> a la conexión de llenado <internalRef internalRefId="fig-0001-hot-0003" internalRefTargetType="irtt11" titulo="1/3"/> que se vaya a verificar con la llave fija plana.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Conectar el adaptador de alimentación <internalRef internalRefId="fig-0002-hot-0006" internalRefTargetType="irtt11" titulo="2/6"/> al multímetro digital <internalRef internalRefId="fig-0002-hot-0010" internalRefTargetType="irtt11" titulo="2/10"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Presionar el botón "<emphasis>ON</emphasis> en el multímetro digital <internalRef internalRefId="fig-0002-hot-0010" internalRefTargetType="irtt11" titulo="2/10"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Comprobar la presión en el multímetro digital <internalRef internalRefId="fig-0002-hot-0010" internalRefTargetType="irtt11" titulo="2/10"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Si la presión es demasiado baja proceder de la siguiente manera: </para>
+						<note>
+							<notePara>Si la etapa 1 se encuentra completamente descargada debe ser llenada primero la etapa 2. Ver <dmRef>
+									<dmRefIdent>
+										<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="B3" subSystemCode="1" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="362" infoCodeVariant="A" itemLocationCode="A"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>AMORTIGUACIÓN DE LA SUSPENSIÓN</techName>
+											<infoName>Verificación de presión</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+								</dmRef>.</notePara>
+						</note>
+						<proceduralStep>
+							<para>Abrir la válvula de llenado <internalRef internalRefId="fig-0002-hot-0009" internalRefTargetType="irtt11" titulo="2/9"/> y cargar 5 bares por encima del valor nominal</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Cerrar la válvula de llenado <internalRef internalRefId="fig-0002-hot-0009" internalRefTargetType="irtt11" titulo="2/9"/>.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Esperar hasta que la presión se estabilice y volver a cargar si es necesario.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Abrir la válvula de alivio <internalRef internalRefId="fig-0002-hot-0008" internalRefTargetType="irtt11" titulo="2/8"/> y ajustar al valor nominal.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Cerrar la válvula de alivio <internalRef internalRefId="fig-0002-hot-0008" internalRefTargetType="irtt11" titulo="2/8"/>.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Esperar entre 5 minutos y 10 minutos y volver a comprobar la presión en el multímetro digital <internalRef internalRefId="fig-0002-hot-0010" internalRefTargetType="irtt11" titulo="2/10"/>.</para>
+						</proceduralStep>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Si la presión es demasiado alta proceder de la siguiente manera:</para>
+						<proceduralStep>
+							<para>Abrir la válvula de alivio <internalRef internalRefId="fig-0002-hot-0008" internalRefTargetType="irtt11" titulo="2/8"/> hasta alcanzar el valor nominal.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Cerrar la válvula de alivio <internalRef internalRefId="fig-0002-hot-0008" internalRefTargetType="irtt11" titulo="2/8"/>.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Esperar entre 5 minutos y 10 minutos y volver a comprobar la presión en el multímetro digital <internalRef internalRefId="fig-0002-hot-0010" internalRefTargetType="irtt11" titulo="2/10"/>.</para>
+						</proceduralStep>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Desconectar la manguera de conexión de llenado de gas <internalRef internalRefId="fig-0002-hot-0007" internalRefTargetType="irtt11" titulo="2/7"/> del conector de llenado <internalRef internalRefId="fig-0001-hot-0003" internalRefTargetType="irtt11" titulo="1/3"/> con la llave fija plana.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Cerrar la tapa <internalRef internalRefId="fig-0001-hot-0002" internalRefTargetType="irtt11" titulo="1/2"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Bloquear el pestillo <internalRef internalRefId="fig-0001-hot-0001" internalRefTargetType="irtt11" titulo="1/1"/></para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Cerrar la válvula <internalRef internalRefId="fig-0002-hot-0014" internalRefTargetType="irtt11" titulo="2/14"/>.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Desconectar la manguera <internalRef internalRefId="fig-0002-hot-0005" internalRefTargetType="irtt11" titulo="2/5"/> de la válvula con manómetro <internalRef internalRefId="fig-0002-hot-0004" internalRefTargetType="irtt11" titulo="2/4"/> y del <internalRef internalRefId="seq-0002" internalRefTargetType="irtt05"/>, <internalRef internalRefId="fig-0002-hot-0011" internalRefTargetType="irtt11" titulo="2/11"/> con la llave fija plana.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Desconectar la válvula con manómetro <internalRef internalRefId="fig-0002-hot-0004" internalRefTargetType="irtt11" titulo="2/4"/> de la botella de <internalRef internalRefId="sup-0001" internalRefTargetType="irtt04"/>, <internalRef internalRefId="fig-0002-hot-0013" internalRefTargetType="irtt11" titulo="2/13"/> con la llave fija plana.</para>
+					</proceduralStep>
+					<proceduralStep>
+						<para>Limpieza de la zona de trabajo:</para>
+						<proceduralStep>
+							<para>Retirar las herramientas, utillaje y consumibles empleados en el área de trabajo.</para>
+						</proceduralStep>
+						<proceduralStep>
+							<para>Comprobar que el área de trabajo esté limpia y libre de materiales no deseados.</para>
+						</proceduralStep>
+					</proceduralStep>
+					<proceduralStep>
+						<table id="tab-0001" frame="topbot" tocentry="1">
+							<title>Conexiones de prueba y presión hidráulica:</title>
+							<tgroup colsep="0" cols="7" align="left">
+								<colspec colname="col1"/>
+								<colspec colname="col2"/>
+								<colspec colname="col3"/>
+								<colspec colname="col4"/>
+								<colspec colname="col5"/>
+								<colspec colname="col6"/>
+								<colspec colname="col7"/>
+								<thead valign="bottom">
+									<row rowsep="1">
+										<entry>
+											<para>ID</para>
+										</entry>
+										<entry>
+											<para>Peso</para>
+										</entry>
+										<entry>
+											<para>0 °C</para>
+										</entry>
+										<entry>
+											<para>10°C </para>
+										</entry>
+										<entry>
+											<para>20°C </para>
+										</entry>
+										<entry>
+											<para>0°C </para>
+										</entry>
+										<entry>
+											<para>40°C </para>
+										</entry>
+									</row>
+								</thead>
+								<tbody valign="top">
+									<row rowsep="0">
+										<entry>
+											<para>1AR + 2AR</para>
+										</entry>
+										<entry>
+											<para>8805 Kg</para>
+										</entry>
+										<entry>
+											<para>50 bar</para>
+										</entry>
+										<entry>
+											<para>52 bar</para>
+										</entry>
+										<entry>
+											<para>54 bar</para>
+										</entry>
+										<entry>
+											<para>55 bar</para>
+										</entry>
+										<entry>
+											<para>57 bar </para>
+										</entry>
+									</row>
+									<row rowsep="0">
+										<entry>
+											<para>1AL+2AL</para>
+										</entry>
+										<entry>
+											<para>8805 Kg</para>
+										</entry>
+										<entry>
+											<para>50 bar</para>
+										</entry>
+										<entry>
+											<para>52 bar</para>
+										</entry>
+										<entry>
+											<para>54 bar</para>
+										</entry>
+										<entry>
+											<para>55 bar</para>
+										</entry>
+										<entry>
+											<para>57 bar </para>
+										</entry>
+									</row>
+									<row rowsep="0">
+										<entry>
+											<para>3AR+4AR</para>
+										</entry>
+										<entry>
+											<para>8332 Kg</para>
+										</entry>
+										<entry>
+											<para>47 bar</para>
+										</entry>
+										<entry>
+											<para>49 bar</para>
+										</entry>
+										<entry>
+											<para>50 bar</para>
+										</entry>
+										<entry>
+											<para>52 bar</para>
+										</entry>
+										<entry>
+											<para>54 bar </para>
+										</entry>
+									</row>
+									<row rowsep="0">
+										<entry>
+											<para>3AL+4AL</para>
+										</entry>
+										<entry>
+											<para>8332 Kg</para>
+										</entry>
+										<entry>
+											<para>47 bar</para>
+										</entry>
+										<entry>
+											<para>49 bar</para>
+										</entry>
+										<entry>
+											<para>50 bar</para>
+										</entry>
+										<entry>
+											<para>52 bar</para>
+										</entry>
+										<entry>
+											<para>54 bar </para>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<figure id="fig-0001">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00006-A-01-1" id="fig-0001-gra-0001">
+								<hotspot applicationStructureIdent="hot-0001" applicationStructureName="1" id="fig-0001-hot-0001" hotspotTitle="Pestillo"/>
+								<hotspot applicationStructureIdent="hot-0002" applicationStructureName="2" id="fig-0001-hot-0002" hotspotTitle="Tapa"/>
+								<hotspot applicationStructureIdent="hot-0003" applicationStructureName="3" id="fig-0001-hot-0003" hotspotTitle="Conexión de llenado"/>
+							</graphic>
+							<legend>
+								<definitionList>
+									<definitionListItem>
+										<listItemTerm>1</listItemTerm>
+										<listItemDefinition>
+											<para>PESTILLO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>2</listItemTerm>
+										<listItemDefinition>
+											<para>TAPA</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>3</listItemTerm>
+										<listItemDefinition>
+											<para>CONEXIONES DE LLENADO</para>
+										</listItemDefinition>
+									</definitionListItem>
+								</definitionList>
+							</legend>
+						</figure>
+						<figure id="fig-0002">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00007-A-01-1" id="fig-0002-gra-0001">
+								<hotspot applicationStructureIdent="hot-0004" applicationStructureName="4" id="fig-0002-hot-0004" hotspotTitle="Válvula con manómetro"/>
+								<hotspot applicationStructureIdent="hot-0005" applicationStructureName="5" id="fig-0002-hot-0005" hotspotTitle="Manguera"/>
+								<hotspot applicationStructureIdent="hot-0006" applicationStructureName="6" id="fig-0002-hot-0006" hotspotTitle="Adaptador de alimentación"/>
+								<hotspot applicationStructureIdent="hot-0007" applicationStructureName="7" id="fig-0002-hot-0007" hotspotTitle="Manguera de conexión de llenado de gas"/>
+								<hotspot applicationStructureIdent="hot-0008" applicationStructureName="8" id="fig-0002-hot-0008" hotspotTitle="Válvula de alivio"/>
+								<hotspot applicationStructureIdent="hot-0009" applicationStructureName="9" id="fig-0002-hot-0009" hotspotTitle="Válvula de llenado"/>
+								<hotspot applicationStructureIdent="hot-0010" applicationStructureName="10" id="fig-0002-hot-0010" hotspotTitle="Multímetro digital"/>
+								<hotspot applicationStructureIdent="hot-0011" applicationStructureName="11" id="fig-0002-hot-0011" hotspotTitle="Kit de test de presión"/>
+								<hotspot applicationStructureIdent="hot-0012" applicationStructureName="12" id="fig-0002-hot-0012" hotspotTitle="Válvula de descarga"/>
+								<hotspot applicationStructureIdent="hot-0013" applicationStructureName="13" id="fig-0002-hot-0013" hotspotTitle="Botella de nitrógeno"/>
+								<hotspot applicationStructureIdent="hot-0014" applicationStructureName="14" id="fig-0002-hot-0014" hotspotTitle="Válvula"/>
+							</graphic>
+							<legend>
+								<definitionList>
+									<definitionListItem>
+										<listItemTerm>4</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA CON MANÓMETRO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>5</listItemTerm>
+										<listItemDefinition>
+											<para>MANGUERA</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>6</listItemTerm>
+										<listItemDefinition>
+											<para>ADAPTADOR DE ALIMENTACIÓN</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>7</listItemTerm>
+										<listItemDefinition>
+											<para>MANGUERA DE CONEXIÓN DE LLENADO DE GAS</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>8</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA DE ALIVIO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>9</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA DE LLENADO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>10</listItemTerm>
+										<listItemDefinition>
+											<para>MULTÍMETRO DIGITAL</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>11</listItemTerm>
+										<listItemDefinition>
+											<para>KIT DE TEST DE PRESIÓN</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>12</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA DE DESCARGA</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>13</listItemTerm>
+										<listItemDefinition>
+											<para>BOTELLA DE NITRÓGENO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>14</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA</para>
+										</listItemDefinition>
+									</definitionListItem>
+								</definitionList>
+							</legend>
+						</figure>
+					</proceduralStep>
+					<proceduralStep>
+						<table id="tab-0002" frame="topbot" tocentry="1">
+							<title>Conexiones de prueba y presión hidráulica:</title>
+							<tgroup colsep="0" cols="7" align="left">
+								<colspec colname="col1"/>
+								<colspec colname="col2"/>
+								<colspec colname="col3"/>
+								<colspec colname="col4"/>
+								<colspec colname="col5"/>
+								<colspec colname="col6"/>
+								<colspec colname="col7"/>
+								<thead valign="bottom">
+									<row rowsep="1">
+										<entry>
+											<para>ID</para>
+										</entry>
+										<entry>
+											<para>Peso</para>
+										</entry>
+										<entry>
+											<para>0 °C</para>
+										</entry>
+										<entry>
+											<para>10°C </para>
+										</entry>
+										<entry>
+											<para>20°C </para>
+										</entry>
+										<entry>
+											<para>0°C </para>
+										</entry>
+										<entry>
+											<para>40°C </para>
+										</entry>
+									</row>
+								</thead>
+								<tbody valign="top">
+									<row rowsep="0">
+										<entry>
+											<para>1AR+2AR</para>
+										</entry>
+										<entry>
+											<para>7258 Kg</para>
+										</entry>
+										<entry>
+											<para>40 bar</para>
+										</entry>
+										<entry>
+											<para>42 bar</para>
+										</entry>
+										<entry>
+											<para>43 bar</para>
+										</entry>
+										<entry>
+											<para>44 bar</para>
+										</entry>
+										<entry>
+											<para>46 bar </para>
+										</entry>
+									</row>
+									<row rowsep="0">
+										<entry>
+											<para>1AL+2AL</para>
+										</entry>
+										<entry>
+											<para>7258 Kg</para>
+										</entry>
+										<entry>
+											<para>40 bar</para>
+										</entry>
+										<entry>
+											<para>42 bar</para>
+										</entry>
+										<entry>
+											<para>43 bar</para>
+										</entry>
+										<entry>
+											<para>44 bar</para>
+										</entry>
+										<entry>
+											<para>46 bar </para>
+										</entry>
+									</row>
+									<row rowsep="0">
+										<entry>
+											<para>3AR+4AR</para>
+										</entry>
+										<entry>
+											<para>8993 Kg</para>
+										</entry>
+										<entry>
+											<para>51 bar</para>
+										</entry>
+										<entry>
+											<para>53 bar</para>
+										</entry>
+										<entry>
+											<para>55 bar</para>
+										</entry>
+										<entry>
+											<para>57 bar</para>
+										</entry>
+										<entry>
+											<para>59 bar </para>
+										</entry>
+									</row>
+									<row rowsep="0">
+										<entry>
+											<para>3AL+4AL</para>
+										</entry>
+										<entry>
+											<para>8993 Kg</para>
+										</entry>
+										<entry>
+											<para>51 bar</para>
+										</entry>
+										<entry>
+											<para>53 bar</para>
+										</entry>
+										<entry>
+											<para>55 bar</para>
+										</entry>
+										<entry>
+											<para>57 bar</para>
+										</entry>
+										<entry>
+											<para>59 bar </para>
+										</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<figure id="fig-0003">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00004-A-01-1" id="fig-0003-gra-0001">
+								<hotspot applicationStructureIdent="hot-0001" applicationStructureName="1" id="fig-0003-hot-0001" hotspotTitle="Pestillo"/>
+								<hotspot applicationStructureIdent="hot-0002" applicationStructureName="2" id="fig-0003-hot-0002" hotspotTitle="Tapa"/>
+								<hotspot applicationStructureIdent="hot-0003" applicationStructureName="3" id="fig-0003-hot-0003" hotspotTitle="Conexión de llenado"/>
+							</graphic>
+							<legend>
+								<definitionList>
+									<definitionListItem>
+										<listItemTerm>1</listItemTerm>
+										<listItemDefinition>
+											<para>PESTILLO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>2</listItemTerm>
+										<listItemDefinition>
+											<para>TAPA</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>3</listItemTerm>
+										<listItemDefinition>
+											<para>CONEXIONES DE LLENADO</para>
+										</listItemDefinition>
+									</definitionListItem>
+								</definitionList>
+							</legend>
+						</figure>
+						<figure id="fig-0004">
+							<title>Amortiguador hidroneumático - Verificación de presión</title>
+							<graphic infoEntityIdent="ICN-VCR8X8DRAGON-A-B31000-A-0131B-00005-A-01-1" id="fig-0004-gra-0001">
+								<hotspot applicationStructureIdent="hot-0004" applicationStructureName="4" id="fig-0004-hot-0004" hotspotTitle="Válvula con manómetro"/>
+								<hotspot applicationStructureIdent="hot-0005" applicationStructureName="5" id="fig-0004-hot-0005" hotspotTitle="Manguera"/>
+								<hotspot applicationStructureIdent="hot-0006" applicationStructureName="6" id="fig-0004-hot-0006" hotspotTitle="Adaptador de alimentación"/>
+								<hotspot applicationStructureIdent="hot-0007" applicationStructureName="7" id="fig-0004-hot-0007" hotspotTitle="Manguera de conexión de llenado de gas"/>
+								<hotspot applicationStructureIdent="hot-0008" applicationStructureName="8" id="fig-0004-hot-0008" hotspotTitle="Válvula de alivio"/>
+								<hotspot applicationStructureIdent="hot-0009" applicationStructureName="9" id="fig-0004-hot-0009" hotspotTitle="Válvula de llenado"/>
+								<hotspot applicationStructureIdent="hot-0010" applicationStructureName="10" id="fig-0004-hot-0010" hotspotTitle="Multímetro digital"/>
+								<hotspot applicationStructureIdent="hot-0011" applicationStructureName="11" id="fig-0004-hot-0011" hotspotTitle="Kit de test de presión"/>
+								<hotspot applicationStructureIdent="hot-0012" applicationStructureName="12" id="fig-0004-hot-0012" hotspotTitle="Válvula de descarga"/>
+								<hotspot applicationStructureIdent="hot-0013" applicationStructureName="13" id="fig-0004-hot-0013" hotspotTitle="Botella de nitrógeno"/>
+								<hotspot applicationStructureIdent="hot-0014" applicationStructureName="14" id="fig-0004-hot-0014" hotspotTitle="Válvula"/>
+							</graphic>
+							<legend>
+								<definitionList>
+									<definitionListItem>
+										<listItemTerm>4</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA CON MANÓMETRO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>5</listItemTerm>
+										<listItemDefinition>
+											<para>MANGUERA</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>6</listItemTerm>
+										<listItemDefinition>
+											<para>ADAPTADOR DE ALIMENTACIÓN</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>7</listItemTerm>
+										<listItemDefinition>
+											<para>MANGUERA DE CONEXIÓN DE LLENADO DE GAS</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>8</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA DE ALIVIO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>9</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA DE LLENADO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>10</listItemTerm>
+										<listItemDefinition>
+											<para>MULTÍMETRO DIGITAL</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>11</listItemTerm>
+										<listItemDefinition>
+											<para>KIT DE TEST DE PRESIÓN</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>12</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA DE DESCARGA</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>13</listItemTerm>
+										<listItemDefinition>
+											<para>BOTELLA DE NITRÓGENO</para>
+										</listItemDefinition>
+									</definitionListItem>
+									<definitionListItem>
+										<listItemTerm>14</listItemTerm>
+										<listItemDefinition>
+											<para>VÁLVULA</para>
+										</listItemDefinition>
+									</definitionListItem>
+								</definitionList>
+							</legend>
+						</figure>
+					</proceduralStep>
+				</proceduralStep>
+			</mainProcedure>
+			<closeRqmts>
+				<reqCondGroup>
+					<reqCondDm>
+						<reqCond>Bajar el vehiculo</reqCond>
+						<dmRef>
+							<dmRefIdent>
+								<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="131" infoCodeVariant="U" itemLocationCode="A"/>
+							</dmRefIdent>
+							<dmRefAddressItems>
+								<dmTitle>
+									<techName>SISTEMA GENERAL</techName>
+									<infoName>Procedimientos de operación normal</infoName>
+								</dmTitle>
+							</dmRefAddressItems>
+						</dmRef>
+					</reqCondDm>
+				</reqCondGroup>
+			</closeRqmts>
+		</procedure>
+	</content>
+</dmodule>

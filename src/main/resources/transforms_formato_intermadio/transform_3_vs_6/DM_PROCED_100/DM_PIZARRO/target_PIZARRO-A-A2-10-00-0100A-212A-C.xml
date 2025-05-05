@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd">
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\proced_custom.xsd">
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
@@ -49,7 +49,9 @@
 			</applicCrossRefTableRef>
 			<applic>
 				<displayText>
-					<simplePara>Pizarro VCIC</simplePara>
+					<simplePara>
+						<subScript>Pizarro VCIC</subScript>
+					</simplePara>
 				</displayText>
 			</applic>
 			<techStandard>
@@ -182,13 +184,13 @@
 							<para>Desenroscar el tornillo de hexágono interior
 de la tapa del enfriador de aceite (donde
 va montada la válvula de desvío de
-aceite del filtro) <internalRef internalRefId="fig-0001" internalRefTargetType="irtt06"/>.</para>
+aceite del filtro) <internalRef internalRefId="fig-0001" internalRefTargetType="irtt01"/>.</para>
 						</proceduralStep>
 						<proceduralStep>
-							<para>Enroscar el <internalRef internalRefId="seq-0002" internalRefTargetType="irtt05"/><internalRef internalRefId="fig-0001-hot-0002" internalRefTargetType="irtt07"/> (Herramienta
+							<para>Enroscar el <internalRef internalRefId="seq-0002" internalRefTargetType="irtt05"/><internalRef internalRefId="fig-0001-hot-0002" internalRefTargetType="irtt11" titulo="1/2"/> (Herramienta
 nº 15). Unir al racor adaptador el
 tubo flexible del depósito de llenado de
-aceite (Herramienta nº 14) <internalRef internalRefId="fig-0001" internalRefTargetType="irtt06"/>.</para>
+aceite (Herramienta nº 14) <internalRef internalRefId="fig-0001" internalRefTargetType="irtt01"/>.</para>
 							<note>
 								<notePara>No desmontar la válvula de desvío de aceite.</notePara>
 							</note>
@@ -215,10 +217,10 @@ bombea aire.</notePara>
 hexágono interior con una junta nueva, apretar el tornillo con un par de 60 N.m.</para>
 						</proceduralStep>
 						<proceduralStep>
-							<para>Montar las tapas de balancines <internalRef internalRefId="fig-0002-hot-0001" internalRefTargetType="irtt07"/> de
+							<para>Montar las tapas de balancines <internalRef internalRefId="fig-0002-hot-0001" internalRefTargetType="irtt11" titulo="2/1"/> de
 los cilindros primero y último con juntas
-<internalRef internalRefId="fig-0002-hot-0003" internalRefTargetType="irtt07"/> nuevas.</para>
-							<para>Enroscar los tornillos <internalRef internalRefId="fig-0002-hot-0002" internalRefTargetType="irtt07"/> y apretarlos
+<internalRef internalRefId="fig-0002-hot-0003" internalRefTargetType="irtt11" titulo="2/3"/> nuevas.</para>
+							<para>Enroscar los tornillos <internalRef internalRefId="fig-0002-hot-0002" internalRefTargetType="irtt11" titulo="2/2"/> y apretarlos
 con un par de 25 N.m.</para>
 						</proceduralStep>
 						<proceduralStep>
@@ -272,6 +274,18 @@ deberá indicar presión de aceite.</para>
 											<listItemTerm>1</listItemTerm>
 											<listItemDefinition>
 												<para>TAPAS DE BALANCINES</para>
+											</listItemDefinition>
+										</definitionListItem>
+										<definitionListItem>
+											<listItemTerm>2</listItemTerm>
+											<listItemDefinition>
+												<para>TORNILLOS</para>
+											</listItemDefinition>
+										</definitionListItem>
+										<definitionListItem>
+											<listItemTerm>3</listItemTerm>
+											<listItemDefinition>
+												<para>JUNTAS</para>
 											</listItemDefinition>
 										</definitionListItem>
 									</definitionList>

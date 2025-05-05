@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/proced.xsd">
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\proced_custom.xsd">
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
 				<dmCode modelIdentCode="S1000DBIKE" systemDiffCode="AAA" systemCode="D00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="AA" infoCode="151" infoCodeVariant="A" itemLocationCode="A"/>
-				<language countryIsoCode="US" languageIsoCode="en"/>
+				<language languageIsoCode="sx" countryIsoCode="US"/>
 				<issueInfo issueNumber="005" inWork="00"/>
 			</dmIdent>
 			<dmAddressItems>

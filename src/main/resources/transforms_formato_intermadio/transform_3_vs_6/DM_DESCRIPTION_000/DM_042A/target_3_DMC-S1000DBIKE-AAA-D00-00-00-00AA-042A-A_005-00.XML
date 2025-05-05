@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_6/xml_schema_flat/descript.xsd">
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\temp\MTEI\workspace\MTEI-backend\src\main\resources\transforms_formato_intermadio\xsd_v6\descript_custom.xsd">
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
@@ -243,8 +243,8 @@ description of them.
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -262,8 +262,8 @@ bicycle to have movement. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -317,8 +317,8 @@ bicycle. The brake levers are also on the handle bar. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -329,8 +329,8 @@ bicycle. The brake levers are also on the handle bar. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -348,8 +348,8 @@ tube. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -360,8 +360,8 @@ tube. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -387,8 +387,8 @@ decrease the speed of the bicycle. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -410,8 +410,8 @@ derailleur move towards a smaller diameter chain ring. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -442,8 +442,8 @@ freewheel. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -475,8 +475,8 @@ Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
@@ -504,16 +504,15 @@ sprocket is at the front and the largest at the rear. Refer to
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
-												<techName/>
-												<infoName/>
+												<techName></techName>
+												<infoName></infoName>
 											</dmTitle>
 										</dmRefAddressItems>
 									</dmRef>
  for a functional description of the derailleur system.</para>
 							</listItemDefinition>
 						</definitionListItem>
-					</definitionList>
-				</para>
+					</definitionList></para>
 			</levelledPara>
 		</description>
 	</content>

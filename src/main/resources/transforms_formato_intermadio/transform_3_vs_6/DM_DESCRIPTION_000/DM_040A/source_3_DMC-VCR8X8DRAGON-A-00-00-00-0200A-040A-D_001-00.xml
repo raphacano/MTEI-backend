@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2014, v.4002-->
+<!DOCTYPE dmodule [
+<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-010CB-02008-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-010CB-02008-A-01-1.SVG" NDATA svg>
+<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-010CB-02009-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-010CB-02009-A-01-1.SVG" NDATA svg>
+<!ENTITY ICN-VCR8X8DRAGON-A-000000-A-010CB-02010-A-01-1 SYSTEM "ICN-VCR8X8DRAGON-A-000000-A-010CB-02010-A-01-1.SVG" NDATA svg>
+<!NOTATION svg SYSTEM "svg">
+<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities"> 
+]>
+<dmodule xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_flat/descript.xsd">
+	<rdf:Description>
+		<dc:title>SISTEMA GENERAL - Descripción física y funcional</dc:title>
+		<dc:creator>010CB</dc:creator>
+		<dc:subject>SISTEMA GENERAL - Descripción física y funcional</dc:subject>
+		<dc:publisher>9AEWB</dc:publisher>
+		<dc:contributor>010CB</dc:contributor>
+		<dc:date>2022-10-30</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>VCR8X8DRAGON-A-00-00-00-0200A-040A-D</dc:identifier>
+		<dc:language>es</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>02</discode>
+					<discodev>00A</discodev>
+					<incode>040</incode>
+					<incodev>A</incodev>
+					<itemloc>D</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>SISTEMA GENERAL</techname>
+				<infoname>Descripción física y funcional</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="12" month="04" year="2024"/>
+			<language country="ES" language="es"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="TESS-DEFENCE SA">9AEWB</rpc>
+			<orig origname="ESCRIBANO MECHANICAL AND ENGINEERING SL">010CB</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>VCZ Linea</p><p>VCZ PCSC</p><p>VCPC PCBON</p><p>VCOAV VCOAV</p>
+				</displaytext>
+				<evaluate operator="or">
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCPC"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCBON"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCOAV"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="VCOAV"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techstd>
+				<tpbase>S1000D</tpbase>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Business rules</infoname>
+					</dmtitle>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+		</status>
+	</idstatus>
+	<content>
+		<descript>
+			<para0>
+				<title>Sistema Guardian 2.0</title>
+				<para>El sistema Guardian 2.0 es una <acronym id="acr-0069">
+						<acroterm>WS</acroterm>
+						<acrodef>Weapon Station (Estación de Armas)</acrodef>
+					</acronym> giro estabilizada en dos ejes, controlada de manera remota que puede ser operada tanto de día como de noche.</para>
+				<figure id="fig-0001">
+					<title>Sistema Guardian 2.0</title>
+					<graphic boardno="ICN-VCR8X8DRAGON-A-000000-A-010CB-02008-A-01-1" id="fig-0001-gra-0001"/>
+				</figure>
+				<para>El sistema Guardian 2.0 está especialmente diseñado para ser capaz de montar y operar con los siguientes tipos de armas:<randlist>
+						<item>Ametralladora ligera 5.56 mm MG4 <acronym id="acr-0055">
+								<acroterm>LMG</acroterm>
+								<acrodef>Light Machine Gun (Ametralladora Ligera)</acrodef>
+							</acronym>
+						</item>
+						<item>Ametralladora media 7.62 mm MG3 <acronym id="acr-0062">
+								<acroterm>MMG</acroterm>
+								<acrodef>Medium Machine Gun (Ametralladora Media)</acrodef>
+							</acronym>
+						</item>
+						<item>Ametralladora pesada 12.70 mm M2 (<acronym id="acr-0051">
+								<acroterm>HMG</acroterm>
+								<acrodef>Heavy Machine Gun (Ametralladora Pesada)</acrodef>
+							</acronym>
+						</item>
+						<item>Lanzagranadas de 40 mm MK19</item>
+					</randlist>La <acroterm xrefid="acr-0062">MMG</acroterm> y <acroterm xrefid="acr-0055">LMG</acroterm> son instalados y operados mediante el uso del <acronym id="acr-0043">
+						<acroterm>CAK</acroterm>
+						<acrodef>Carriage Adjustment Kit (Kit de Ajuste del Afuste)</acrodef>
+					</acronym>, mientras que la <acroterm xrefid="acr-0051">HMG</acroterm> y el lanzagranadas podrán instalarse y operarse sin dispositivos mecánicos adicionales.</para>
+				<para>Equipado con:<randlist>
+						<item>Una <acronym id="acr-0054">
+								<acroterm>IRcam</acroterm>
+								<acrodef>InfraRed Camera (Cámara Infrarrojos)</acrodef>
+							</acronym>
+						</item>
+						<item>Una <acronym id="acr-0067">
+								<acroterm>VScam</acroterm>
+								<acrodef>Visible-Spectrum Camera (Cámara Diurna)</acrodef>
+							</acronym>
+						</item>
+						<item>Un puntero láser</item>
+						<item>Un telémetro láser (<acronym id="acr-0058">
+								<acroterm>LRF</acroterm>
+								<acrodef>Laser Range Finder (Telémetro Laser)</acrodef>
+							</acronym>)</item>
+					</randlist>El operador es capaz de localizar, apuntar y abatir blancos tanto de día como de noche, en  estático o en  movimiento. A estas capacidades se suma la de seguimiento automático de blancos, que permite mantener el arma apuntando a un objetivo de manera automática, utilizando el vídeo de ambas cámaras.</para>
+				<para>El sistema cuenta con dos puestos de control y la <acroterm xrefid="acr-0069">WS</acroterm> puede ser operada tanto por un tirador como por un jefe de vehículo, según se haya seleccionado, mediante el uso del selector de prioridad del joystick del Jefe de Vehículo (El botón de prioridad está en joystick del jefe de vehículo).</para>
+				<para>El sistema está compuesto por dos partes principales:<randlist>
+						<item>Subsistema <acroterm xrefid="acr-0069">WS</acroterm>. Ver tarea (<refdm>
+								<avee>
+									<modelic>VCR8X8DRAGON</modelic>
+									<sdc>A</sdc>
+									<chapnum>C6</chapnum>
+									<section>0</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>01</discode>
+									<discodev>00A</discodev>
+									<incode>040</incode>
+									<incodev>A</incodev>
+									<itemloc>D</itemloc>
+								</avee>
+								<dmtitle>
+									<techname>ARMA GENERAL</techname>
+									<infoname>Descripción física y funcional</infoname>
+								</dmtitle>
+							</refdm>).</item>
+						<item>Sección de Control (C2). Ver tarea (<refdm>
+								<avee>
+									<modelic>VCR8X8DRAGON</modelic>
+									<sdc>A</sdc>
+									<chapnum>C2</chapnum>
+									<section>0</section>
+									<subsect>0</subsect>
+									<subject>00</subject>
+									<discode>01</discode>
+									<discodev>00A</discodev>
+									<incode>040</incode>
+									<incodev>A</incodev>
+									<itemloc>D</itemloc>
+								</avee>
+								<dmtitle>
+									<techname>SISTEMAS DE CONTROL DE FUEGO GENERAL</techname>
+									<infoname>Descripción física y funcional</infoname>
+								</dmtitle>
+							</refdm>).</item>
+					</randlist>
+				</para>
+				<figure id="fig-0002">
+					<title>Arquitectura del sistema Guardian 2.0</title>
+					<graphic boardno="ICN-VCR8X8DRAGON-A-000000-A-010CB-02009-A-01-1" id="fig-0002-gra-0001"/>
+				</figure>
+				<figure id="fig-0003">
+					<title>Sistema de Mando y Control</title>
+					<graphic boardno="ICN-VCR8X8DRAGON-A-000000-A-010CB-02010-A-01-1" id="fig-0003-gra-0001"/>
+				</figure>
+			</para0>
+		</descript>
+	</content>
+</dmodule>

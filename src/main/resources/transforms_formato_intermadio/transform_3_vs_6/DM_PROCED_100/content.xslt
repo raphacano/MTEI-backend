@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xlink="http://www.w3.org/1999/xlink" exclude-result-prefixes="xlink">
+<xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+    version="2.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    exclude-result-prefixes="  xlink ">
 
 	
 	<xsl:template match="content">
@@ -307,28 +311,49 @@
                  multimediaType="{@multimediaclass}"/>
     </xsl:template>
 	
-  <xsl:template match="xref">
-    <internalRef internalRefId="{@xrefid}">
-      <xsl:attribute name="internalRefTargetType">
-        <xsl:choose>
-          <xsl:when test="@xidtype = 'supply'">irtt04</xsl:when>
-          <xsl:when test="@xidtype = 'supequip'">irtt05</xsl:when>
-           <xsl:when test="@xidtype = 'figure'">irtt06</xsl:when>
-           <xsl:when test="@xidtype = 'hotspot'">irtt07</xsl:when>
-        </xsl:choose>
-      </xsl:attribute>
-    </internalRef>
-  </xsl:template>
+ 	<xsl:template match="xref">
+	  <internalRef internalRefId="{@xrefid}">
+		<xsl:attribute name="internalRefTargetType">
+		  <xsl:choose>
+			<xsl:when test="@xidtype = 'figure'">irtt01</xsl:when>
+			<xsl:when test="@xidtype = 'table'">irtt02</xsl:when>
+			<xsl:when test="@xidtype = 'multimedia'">irtt03</xsl:when>
+			<xsl:when test="@xidtype = 'supply'">irtt04</xsl:when>
+			<xsl:when test="@xidtype = 'supequip'">irtt05</xsl:when>
+			<xsl:when test="@xidtype = 'spare'">irtt06</xsl:when>
+			<xsl:when test="@xidtype = 'para'">irtt07</xsl:when>
+			<xsl:when test="@xidtype = 'step'">irtt08</xsl:when>
+			<xsl:when test="@xidtype = 'graphic'">irtt09</xsl:when>
+			<xsl:when test="@xidtype = 'multimediaobject'">irtt10</xsl:when>
+			<xsl:when test="@xidtype = 'hotspot'">irtt11</xsl:when>
+			<xsl:when test="@xidtype = 'param'">irtt12</xsl:when>
+			<xsl:when test="@xidtype = 'zone'">irtt13</xsl:when>
+			<xsl:when test="@xidtype = 'worklocation'">irtt14</xsl:when>
+			<xsl:when test="@xidtype = 'servicebulletinmaterialset'">irtt15</xsl:when>
+			<xsl:when test="@xidtype = 'accesspoint'">irtt16</xsl:when>
+		  </xsl:choose>
+		</xsl:attribute>
+		<!-- Añadir atributo 'titulo' solo para xidtype='hotspot' -->
+		<xsl:if test="@xidtype = 'hotspot'">
+		  <xsl:attribute name="titulo">
+			<xsl:variable name="figPart" select="substring-after(@xrefid, 'fig-')"/>
+			<xsl:variable name="figNumber" select="number(substring-before($figPart, '-'))"/>
+			<xsl:variable name="hotNumber" select="number(substring-after(@xrefid, 'hot-'))"/>
+			<xsl:value-of select="concat($figNumber, '/', $hotNumber)"/>
+		  </xsl:attribute>
+		</xsl:if>
+	  </internalRef>
+	</xsl:template>
   
-  	<xsl:template match="note/para">
+	<xsl:template match="note/para">
 		<notePara>
-			<xsl:value-of select="."/>
+			<xsl:apply-templates/>
 		</notePara>
 	</xsl:template>
 	
-  	<xsl:template match="caution/para">
+	<xsl:template match="caution/para">
 		<warningAndCautionPara>
-			<xsl:value-of select="."/>
+			<xsl:apply-templates/>
 		</warningAndCautionPara>
 	</xsl:template>
 	
@@ -354,7 +379,7 @@
                  hotspotTitle="{@title}"/>
     </xsl:template>
     
-    <xsl:template match="legend">
+<!--    <xsl:template match="legend">
         <legend>
             <definitionList>
                 <definitionListItem>
@@ -367,20 +392,45 @@
                 </definitionListItem>
             </definitionList>
         </legend>
-    </xsl:template>
+    </xsl:template>-->
+    
+    <xsl:template match="legend">
+		<legend>
+			<definitionList>
+				<!-- Process each term/def pair -->
+				<xsl:for-each select="deflist/term">
+					<definitionListItem>
+						<listItemTerm>
+							<xsl:value-of select="."/>
+						</listItemTerm>
+						<listItemDefinition>
+							<para>
+								<xsl:value-of select="following-sibling::def[1]"/>
+							</para>
+						</listItemDefinition>
+					</definitionListItem>
+				</xsl:for-each>
+			</definitionList>
+		</legend>
+	</xsl:template>
   
 	<xsl:template match="closereqs">
 		<closeRqmts>
 			<reqCondGroup>
 				<xsl:choose>
+					<!-- Handle reqconds with reqcond children -->
 					<xsl:when test="reqconds/reqcond">
 						<xsl:for-each select="reqconds/reqcond">
-							<reqCondNoRef>
+							<reqCondNoRef>  <!-- ADDED WRAPPER ELEMENT -->
 								<reqCond>
-									<xsl:value-of select="."/>
+									<xsl:value-of select="normalize-space(.)"/>
 								</reqCond>
 							</reqCondNoRef>
 						</xsl:for-each>
+					</xsl:when>
+					<!-- Handle other valid cases -->
+					<xsl:when test="reqconds/reqcondm">
+						<xsl:apply-templates select="reqconds/*"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<noConds/>
@@ -390,15 +440,30 @@
 		</closeRqmts>
 	</xsl:template>
 	
+
+    
 	<xsl:template match="randlist">
-        <randomList listItemPrefix="{@prefix}">
-            <xsl:for-each select="item">
-                <listItem>
-                    <para><xsl:value-of select="."/></para>
-                </listItem>
-            </xsl:for-each>
-        </randomList>
-    </xsl:template>
+		<xsl:choose>
+			<xsl:when test="ancestor::warning">
+				<attentionRandomList listItemPrefix="{@prefix}">
+					<xsl:for-each select="item">
+						<attentionRandomListItem>
+							<attentionListItemPara><xsl:value-of select="."/></attentionListItemPara>
+						</attentionRandomListItem>
+					</xsl:for-each>
+				</attentionRandomList>
+			</xsl:when>
+			<xsl:otherwise>
+				<randomList listItemPrefix="{@prefix}">
+					<xsl:for-each select="item">
+						<listItem>
+							<para><xsl:value-of select="."/></para>
+						</listItem>
+					</xsl:for-each>
+				</randomList>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
     
     
    <xsl:template match="acronym">
@@ -433,6 +498,14 @@
             <para><xsl:apply-templates/></para>
         </entry>
     </xsl:template>
+    
+<!--    <xsl:template match="entry">
+		<xsl:copy copy-namespaces="no">
+		  <para>
+			<xsl:apply-templates select="node()"/>
+		  </para>
+		</xsl:copy>
+	</xsl:template>-->
 	
 	<xsl:template match="*">
 		<xsl:element name="{local-name()}">

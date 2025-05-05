@@ -203,7 +203,7 @@
                   <para>Data about the controls that follow is given in this document: <randomList listItemPrefix="pf02">
                         <listItem>
                            <para>
-                              <internalRef internalRefId="par-0001" internalRefTargetType="irtt07">Steering</internalRef>
+                              <internalRef internalRefId="par-0001" internalRefTargetType="irtt07" targetTitle="PEPE">Steering</internalRef>
                            </para>
                         </listItem>
                         <listItem>

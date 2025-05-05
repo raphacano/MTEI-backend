@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dmodule [
+	<!NOTATION svg SYSTEM "svg">
+	<!ENTITY % ISOEntities PUBLIC "ISO 8879-1986//ENTITIES ISO Character Entities 20030531//EN//XML" "http://www.s1000d.org/S1000D_3-0-1/ent/xml/ISOEntities">
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0-1/xml_schema_flat/descript.xsd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<rdf:Description>
+		<dc:title>SISTEMA GENERAL - Introducción</dc:title>
+		<dc:creator>9AEWB</dc:creator>
+		<dc:subject>SISTEMA GENERAL - Introducción</dc:subject>
+		<dc:publisher>3883B</dc:publisher>
+		<dc:contributor>9AEWB</dc:contributor>
+		<dc:date>2022-12-20</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier> VCR8X8DRAGON-A-00-00-00-0000A-018B-A</dc:identifier>
+		<dc:language>es-ES</dc:language>
+		<dc:rights>01</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>00A</discodev>
+					<incode>018</incode>
+					<incodev>B</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>SISTEMA GENERAL</techname>
+				<infoname>Introducción</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="12" month="04" year="2024"/>
+			<language country="ES" language="es"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="TESS-DEFENCE SA">9AEWB</rpc>
+			<orig origname="TESS-DEFENCE SA">9AEWB</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>VCR 8X8 DRAGON</p>
+				</displaytext>
+				<evaluate operator="or">
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="CC"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCI"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCCIA"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCPC"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCBON"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCOAV"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="VCOAV"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techstd>
+				<tpbase>S1000D</tpbase>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Business rules</infoname>
+					</dmtitle>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+		</status>
+	</idstatus>
+	<content>
+		<descript>
+			<para0>
+				<title>Introducción</title>
+				<para>Esta sección contiene la información para la operación del vehículo VCR 8X8 Dragón incluyendo:<randlist prefix="pf02">
+						<item>Puesta en movimiento y conducción.</item>
+						<item>Maniobra marcha atrás.</item>
+						<item>Arranque en pendiente.</item>
+						<item>Bajada de pendientes.</item>
+						<item>Conducción por diferentes tipos de terreno.</item>
+						<item>Subida de un escalón.</item>
+						<item>Cruce de zanja.</item>
+						<item>Conducción sobre obstáculos.</item>
+						<item>Operación en pendiente lateral.</item>
+						<item>Vadeo</item>
+						<item>Remolque a tracción.</item>
+						<item>Estacionamiento del vehículo en una parada de misión.</item>
+						<item>Estacionamiento del vehículo después de las operaciones.</item>
+						<item>General - Bloqueo del vehículo.</item>
+						<item>Parada durante marcha.</item>
+						<item>Cambio de sentido.</item>
+						<item>Lista de comprobaciones.</item>
+						<item>Encendido esclavo.</item>
+						<item>Operación del acelerador de emergencia.</item>
+						<item>Conducción con neumáticos defectuosos.</item>
+						<item>Arranque del motor remolcado.</item>
+					</randlist>
+				</para>
+				<para>También incluye el manejo del software asociado a la operación.</para>
+			</para0>
+		</descript>
+	</content>
+</dmodule>
