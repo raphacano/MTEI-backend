@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE dmodule [
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0/xml_schema_flat/wrngdata.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+	<rdf:Description>
+		<dc:title>Wiring - Equipment lists</dc:title>
+		<dc:creator>U8025</dc:creator>
+		<dc:subject>Wiring - Equipment lists</dc:subject>
+		<dc:publisher>U8025</dc:publisher>
+		<dc:contributor>U8025</dc:contributor>
+		<dc:date>2007-07-31</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>S1000DLIGHTING-AAA-D00-00-00-00AA-056A-A_005-00</dc:identifier>
+		<dc:language>sx-US</dc:language>
+		<dc:rights>01_cc51_cv51</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DLIGHTING</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>AA</discodev>
+					<incode>056</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Wiring</techname>
+				<infoname>Equipment lists</infoname>
+			</dmtitle>
+			<issno issno="005" inwork="00" type="changed"/>
+			<issdate year="2007" month="07" day="31"/>
+		</dmaddres>
+		<status>
+			<security class="01" commcls="cc51" caveat="cv51"/>
+			<datarest>
+				<instruct>
+					<distrib>To be made available to all S1000D users.</distrib>
+					<expcont mark="1" change="modify" rfc="CPF 2006-48AA"><expstatement>
+						<p>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</p>
+					</expstatement></expcont>
+					<handling>There are no specific handling instructions for this data module.</handling>
+					<destruct>Users may destroy this data module in accordance with their own local procedures.</destruct>
+					<disclose>There are no dissemination limitations that apply to this data module.</disclose>
+				</instruct>
+			</datarest>
+			<rpc rpcname="UK MoD">U8025</rpc>
+			<orig origname="UK MoD">U8025</orig>
+			<actref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-0000-00AA-00WA-D">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</actref>
+			<applic mark="1" change="modify" rfc="CPF 2006-47AA">
+				<displaytext>Mountain bicycle and (Mountain storm Mk1 or Brook trekker Mk9)</displaytext>
+				<evaluate operator="and">
+					<assert actidref="type" actreftype="prodattr" actvalues="Mountain bicycle"/>
+					<evaluate operator="or">
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Mountain storm"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk1"/>
+							<assert actidref="versrank" actreftype="prodattr" actvalues="1~3"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Brook trekker"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk9"/>
+							<assert actidref="versrank" actreftype="prodattr" actvalues="1~2"/>
+						</evaluate>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<inlineapplics>
+				<applic id="app-0001" mark="1" change="modify" rfc="CPF 2006-47AA">
+					<displaytext>Mountain bicycle and (Mountain storm Mk1 or Brook trekker Mk9)</displaytext>
+					<evaluate operator="and">
+						<assert actidref="type" actreftype="prodattr" actvalues="Mountain bicycle"/>
+						<evaluate operator="or">
+							<evaluate operator="and">
+								<assert actidref="model" actreftype="prodattr" actvalues="Mountain storm"/>
+								<assert actidref="version" actreftype="prodattr" actvalues="Mk1"/>
+								<assert actidref="versrank" actreftype="prodattr" actvalues="1~3"/>
+							</evaluate>
+							<evaluate operator="and">
+								<assert actidref="model" actreftype="prodattr" actvalues="Brook trekker"/>
+								<assert actidref="version" actreftype="prodattr" actvalues="Mk9"/>
+								<assert actidref="versrank" actreftype="prodattr" actvalues="1~2"/>
+							</evaluate>
+						</evaluate>
+					</evaluate>
+				</applic>
+			</inlineapplics>
+			<techstd>
+				<autandtp>
+					<authblk>20010131</authblk>
+					<tpbase>Bike book</tpbase>
+				</autandtp>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-00-00AA-022A-D_005">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="005"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<sbc>LT</sbc>
+			<skill skill="sk01"/>
+			<rfu>
+				<p>CPF 2006-47AA: Applicability structure change and addition of actref element</p>
+				<p>CPF 2006-47AA: Moved applicability from content section to inlineapplics in the status section</p>
+				<p>CPF 2006-48AA: Export control structure change, addition of container elements</p>
+				<p>CPF 2006-52AA: Electrical equipment structure change, addition of instinfo and qty elements</p>
+				<p>CPF 2006-52AA: Sibling plug id structure change, addition of rfd element</p>
+				<p>CPF 2006-52AA: Next higher assembly structure change, addition of rfd element</p>
+				<p>CPF 2006-52AA: Transverse link structure change, addition of eeconnection element</p>
+			</rfu>
+		</status>
+	</idstatus>
+	<content>
+		<wrngdata>
+			<elecequips>
+				<elecequip refapplic="app-0001">
+					<rfd>L1</rfd>
+					<pnr>Front light</pnr>
+					<clc>16</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Handle bars</instloc>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>L2</rfd>
+					<pnr>Rear light</pnr>
+					<clc>16</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Seat post</instloc>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd contextid="PN-AC-12561" mfc="F0001" originator="orig01">Batt</rfd>
+					<pnr>Battery</pnr>
+					<clc>16</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>Gen</rfd>
+					<pnr>Generator</pnr>
+					<clc>16</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Steering tube</instloc>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>Rel</rfd>
+					<pnr>Relay</pnr>
+					<clc>10</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>VV1</rfd>
+					<pnr>Distribution module</pnr>
+					<trl>
+						<eeconnection>	
+							<contact ident="1 +"/>
+							<contact ident="2 +"/>
+							<contact ident="3 +"/>
+							<contact ident="4 +"/>
+						</eeconnection>
+						<eeconnection>
+							<contact ident="1 -"/>
+							<contact ident="2 -"/>
+							<contact ident="3 -"/>
+							<contact ident="4 -"/>
+						</eeconnection>
+					</trl>
+					<clc>07</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>S1</rfd>
+					<pnr>Switch</pnr>
+					<clc>15</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Handle bars</instloc>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd contextid="PN-AC-12561" mfc="F0001" originator="orig01">C_Batt</rfd>
+					<pnr>Connector</pnr>
+					<clc>3</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+						<sibplugid><rfd>C_Bike</rfd></sibplugid>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>C_Bike</rfd>
+					<pnr>Receptacle</pnr>
+					<clc>3</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+						<sibplugid><rfd contextid="PN-AC-12561" mfc="F0001" originator="orig01">C_Batt</rfd></sibplugid>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>Diode</rfd>
+					<pnr>Diode</pnr>
+					<clc>18</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<qty>2</qty>
+					<instinfo instid="d1">
+						<instloc>Frame</instloc>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+						<posnhassy pos="LH"></posnhassy>
+					</instinfo>
+					<instinfo instid="d2">
+						<instloc>Frame</instloc>
+						<nhassy><rfd>ELO-Box</rfd></nhassy>
+						<posnhassy pos="RH"></posnhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>Sensor</rfd>
+					<pnr>Speed sensor</pnr>
+					<clc>16</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Steering tube</instloc>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001">
+					<rfd>T01</rfd>
+					<pnr>Tachometer</pnr>
+					<clc>16</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Handle bars</instloc>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001" chginfo="add">
+					<rfd>ELO-Box</rfd>
+					<pnr>Electronic Box 01</pnr>
+					<maxposition>5</maxposition>
+					<clc>13</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001" chginfo="add">
+					<rfd>FT1</rfd>
+					<pnr>GT-002-WD</pnr>
+					<clc>11</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+   					<nhassy><rfd>ELO-Box</rfd></nhassy>
+   					<posnhassy pos="P1"></posnhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001" chginfo="add">
+					<rfd>FT2</rfd>
+					<pnr>GT-004-WD</pnr>
+					<clc>11</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+   					<nhassy><rfd>ELO-Box</rfd></nhassy>
+   					<posnhassy pos="P2"></posnhassy>
+					</instinfo>
+				</elecequip>
+				<elecequip refapplic="app-0001" chginfo="add">
+					<rfd>FT3</rfd>
+					<pnr>GT-004-WD</pnr>
+					<clc>11</clc>
+					<rpc rpcname="UK MoD">U8025</rpc>
+					<instinfo>
+						<instloc>Frame</instloc>
+   					<nhassy><rfd>ELO-Box</rfd></nhassy>
+   					<posnhassy pos="P3"></posnhassy>
+					</instinfo>
+				</elecequip>
+			</elecequips>
+		</wrngdata>
+	</content>
+</dmodule>
