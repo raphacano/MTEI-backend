@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE dmodule [
+]>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0/xml_schema_flat/wrngflds.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+	<rdf:Description>
+		<dc:title>Wiring data - Field description</dc:title>
+		<dc:creator>U8025</dc:creator>
+		<dc:subject>Wiring data - Field description</dc:subject>
+		<dc:publisher>U8025</dc:publisher>
+		<dc:contributor>U8025</dc:contributor>
+		<dc:date>2007-07-31</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>S1000DLIGHTING-AAA-D00-00-00-00AA-029A-A_004-00</dc:identifier>
+		<dc:language>en-US</dc:language>
+		<dc:rights>01_cc51_cv51</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>S1000DLIGHTING</modelic>
+					<sdc>AAA</sdc>
+					<chapnum>D00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>00</discode>
+					<discodev>AA</discodev>
+					<incode>029</incode>
+					<incodev>A</incodev>
+					<itemloc>A</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>Wiring data</techname>
+				<infoname>Field description</infoname>
+			</dmtitle>
+			<issno issno="004" inwork="00" type="changed"/>
+			<issdate year="2007" month="07" day="31"/>
+			<language language="en" country="US"/>
+		</dmaddres>
+		<status>
+			<security class="01" commcls="cc51" caveat="cv51"/>
+			<datarest>
+				<instruct>
+					<distrib>To be made available to all S1000D users.</distrib>
+					<expcont mark="1" change="modify" rfc="CPF 2006-48AA"><expstatement>
+						<p>Export of this data module to all countries that are the residence of organizations that are users of S1000D is permitted. Storage of this data module is to be at the discretion of the organization.</p>
+					</expstatement></expcont>
+					<handling>There are no specific handling instructions for this data
+module.</handling>
+					<destruct>Users may destroy this data module in accordance with their own local
+procedures.</destruct>
+					<disclose>There are no dissemination limitations that apply to this data
+module.</disclose>
+				</instruct>
+			</datarest>
+			<rpc rpcname="UK MoD">U8025</rpc>
+			<orig origname="UK MoD">U8025</orig>
+			<actref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-0000-00AA-00WA-D">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+				</refdm>
+			</actref>
+			<applic mark="1" change="modify" rfc="CPF 2006-47AA">
+				<displaytext>Mountain bicycle and (Mountain storm Mk1 or Brook trekker Mk9)</displaytext>
+				<evaluate operator="and">
+					<assert actidref="type" actreftype="prodattr" actvalues="Mountain bicycle"/>
+					<evaluate operator="or">
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Mountain storm"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk1"/>
+						</evaluate>
+						<evaluate operator="and">
+							<assert actidref="model" actreftype="prodattr" actvalues="Brook trekker"/>
+							<assert actidref="version" actreftype="prodattr" actvalues="Mk9"/>
+						</evaluate>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<brexref>
+				<refdm xlink:type="simple" xlink:actuate="onRequest" xlink:show="replace" xlink:href="URN:S1000D:DMC-S1000DBIKE-AAA-D00-00-00-00AA-022A-D_005">
+					<avee>
+						<modelic>S1000DBIKE</modelic>
+						<sdc>AAA</sdc>
+						<chapnum>D00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>AA</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<issno issno="005"/>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+			<rfu>
+				<p>CPF 2006-47AA: Applicability structure change and addition of actref element</p>
+				<p>CPF 2006-48AA: Export control structure change, addition of container elements</p>
+				<p>CPF 2006-52AA: Wire data description structure change, addition of dsc.pnr, dsc.wicircode, dsc.wisecid and dsc.groupcode elements</p>
+				<p>CPF 2006-52AA: Harness data description structure change, addition of dsc.mint, dsc.maxt, dsc.harnenv and dsc.sleeve elements</p>
+				<p>CPF 2006-52AA: Electrical equipment data description structure change, addition of dsc.qty element</p>
+			</rfu>
+		</status>
+	</idstatus>
+	<content>
+		<wrngflds>
+			<dsc.wires>
+				<dsc.wireno>
+					<fldname>Wire number</fldname>
+					<dscr>The wire number is the unique identifier for all electrical wires installed
+on the bicycle.</dscr>
+				</dsc.wireno>
+				<dsc.wiretype>
+					<fldname>Wire type</fldname>
+					<dscr>Wire type identifies the electrical wire in coded form, eg AP.</dscr>
+				</dsc.wiretype>
+				<dsc.wiregauge>
+					<fldname>Wire gauge</fldname>
+					<dscr>Wire gauge identifies the gauge of the wire in coded form, eg. 010.</dscr>
+				</dsc.wiregauge>
+				<dsc.pnr>
+					<fldname>Wire part number</fldname>
+					<dscr>Wire part number gives the part number of the wire.</dscr>
+				</dsc.pnr>
+				<dsc.harnid>
+					<fldname>Harness ident</fldname>
+					<dscr>Harness ident identifies the harness in which the wire is pre-assembled.</dscr>
+				</dsc.harnid>
+				<dsc.wireseqno>
+					<fldname>Wire sequential number</fldname>
+					<dscr>Contains the sequential number of the wire, e.g. in the harness.</dscr>
+				</dsc.wireseqno>
+				<dsc.wicircode>
+					<fldname>Wire information circuit code</fldname>
+					<dscr>Contains the identifier of the circuit to which the wire belongs.</dscr>
+				</dsc.wicircode>
+				<dsc.wisecid>
+					<fldname>Wire information wire section identification</fldname>
+					<dscr>Contains the identifier of the section to which the wire belongs.</dscr>
+				</dsc.wisecid>
+				<dsc.length>
+					<fldname>Length</fldname>
+					<dscr>Length identifies the length of the wire. The given value is approximately
+10% higher than necessary to install the wire on the bicycle.</dscr>
+				</dsc.length>
+				<dsc.colour>
+					<fldname>Color</fldname>
+					<dscr>Color identifies the color of the wire sheating.</dscr>
+				</dsc.colour>
+				<dsc.twist>
+					<fldname>Twisting</fldname>
+					<dscr>Twistig identifies wires, which are twisted together with a unique identifier.</dscr>
+				</dsc.twist>
+				<dsc.rfd>
+					<fldname>Electric ident</fldname>
+					<dscr>Electric ident shows the electrical identification, to which the wire
+is connected. It is available for all electrical equipment, eg L1.</dscr>
+				</dsc.rfd>
+				<dsc.contact>
+					<fldname>Contact</fldname>
+					<dscr>Contact identifies the electrical contact to which the wire is connected.</dscr>
+				</dsc.contact>
+				<dsc.groupcode>
+					<fldname>Group code</fldname>
+					<dscr>Identifies wires, which are connected to the same terminal lug.</dscr>
+				</dsc.groupcode>
+				<dsc.screen>
+					<fldname>Screens</fldname>
+					<dscr>Screens identifies all screens that shield the wire. Wires shielded
+by the same screen are identified by the same screens value.</dscr>
+				</dsc.screen>
+				<dsc.rpc>
+					<fldname>Responsible partner company</fldname>
+					<dscr>The responsible partner company indicates the company responsible for
+the integration of the wire to the bicycle.</dscr>
+				</dsc.rpc>
+				<dsc.feedthru>
+					<fldname>Feed-through</fldname>
+					<dscr>Identifies bunges through which the wire is routed.</dscr>
+				</dsc.feedthru>
+				<dsc.nhassy>
+					<fldname>Next higher assembly</fldname>
+					<dscr>Identifies the next higher assenbly, in which the wire is installed.</dscr>
+				</dsc.nhassy>
+			</dsc.wires>
+			<dsc.harness>
+				<dsc.harnid>
+					<fldname>Harness ident</fldname>
+					<dscr>Harness ident identifies pre-assembled wires, which are installed on
+the bicycle.</dscr>
+				</dsc.harnid>
+				<dsc.pnr>
+					<fldname>Harness Part number</fldname>
+					<dscr>Harness part number gives the part number of the harness identified
+by the harness ident.</dscr>
+				</dsc.pnr>
+				<dsc.harnvar>
+					<fldname>Harness variant</fldname>
+					<dscr>Harness variant identifies the variant of the harness in addition to
+the harness part number.</dscr>
+				</dsc.harnvar>
+				<dsc.harnissue>
+					<fldname>Harness issue</fldname>
+					<dscr>Harness issue identifies the production variant of the harness in addition
+to the harness part number.</dscr>
+				</dsc.harnissue>
+				<dsc.nomenc>
+					<fldname>Harness nomenclature</fldname>
+					<dscr>Harness nomenclature identifies the harness by using a specific name.</dscr>
+				</dsc.nomenc>
+				<dsc.emc-code>
+					<fldname>Harness separation code</fldname>
+					<dscr>Harness separation code gives the separation code of the harness.</dscr>
+				</dsc.emc-code>
+				<dsc.mint>
+					<fldname>Minimum temperature</fldname>
+					<dscr>Minimum temperature gives the minimum environment temperature in which the 
+harness can be used.</dscr>
+				</dsc.mint>
+				<dsc.maxt>
+					<fldname>Maximum temperature</fldname>
+					<dscr>Maximum temperature gives the maximum environment temperature in which the 
+harness can be used.</dscr>
+				</dsc.maxt>
+				<dsc.harnenv>
+					<fldname>Harness environment</fldname>
+					<dscr>Harness environment indicates that a harness is used in high vibriation 
+or/and hydraulic areas.</dscr>
+				</dsc.harnenv>
+				<dsc.sleeve>
+					<fldname>Harness sleeve</fldname>
+					<dscr>Gives the part number and/or the material of the sleeves used on the harness.</dscr>
+				</dsc.sleeve>
+				<dsc.rpc>
+					<fldname>Responsible partner company</fldname>
+					<dscr>The responsible partner company indicates the company responsible for
+the integration of the harness to the bicycle.</dscr>
+				</dsc.rpc>
+			</dsc.harness>
+			<dsc.elecequip>
+				<dsc.rfd>
+					<fldname>Electric ident</fldname>
+					<dscr>Electric ident shows the electrical identification, which is available
+for all electrical equipment, eg L1.</dscr>
+				</dsc.rfd>
+				<dsc.pnr>
+					<fldname>Part identification</fldname>
+					<dscr>Part identification shows the part number of the equipment. In most
+cases the part number is identical to the part desciption.</dscr>
+				</dsc.pnr>
+				<dsc.instloc>
+					<fldname>Location</fldname>
+					<dscr>Location shows the installation position of the equipment on the bicycle.</dscr>
+				</dsc.instloc>
+				<dsc.nhassy>
+					<fldname>Next higher assenmbly</fldname>
+					<dscr>Next higher assenmbly identifies the box or panel, in which the equipment is installed.</dscr>
+				</dsc.nhassy>
+				<dsc.posnhassy>
+					<fldname>Position on next higher assenmbly</fldname>
+					<dscr>Gives the position on the next higher assenmbly, in which the equipment is installed.</dscr>
+				</dsc.posnhassy>
+				<dsc.maxposition>
+					<fldname>Maximum number of mounting positions</fldname>
+					<dscr>Gives the maximum number of mounting positions on the next higher assembly.</dscr>
+				</dsc.maxposition>
+				<dsc.sibplugid>
+					<fldname>Sibling plug identification</fldname>
+					<dscr>Sibling plug identification contains the electric ident of the mating connector.</dscr>
+				</dsc.sibplugid>
+				<dsc.trl>
+					<fldname>Transverse link</fldname>
+					<dscr>Transverse link shows external or internal electrical connections of the equipment.</dscr>
+				</dsc.trl>
+				<dsc.rpc>
+					<fldname>Responsible partner company</fldname>
+					<dscr>The responsible partner company indicates the company responsible for
+the integration of the equipment to the bicycle.</dscr>
+				</dsc.rpc>
+				<dsc.qty>
+					<fldname>Quantity</fldname>
+					<dscr>Gives the quantity of multiple occurence equipment.</dscr>
+				</dsc.qty>
+			</dsc.elecequip>
+		</wrngflds>
+	</content>
+</dmodule>
