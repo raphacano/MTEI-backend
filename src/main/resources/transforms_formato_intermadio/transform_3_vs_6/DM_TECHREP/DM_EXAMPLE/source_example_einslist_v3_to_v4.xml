@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_3-0/xml_schema_flat/techrep.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://www.purl.org/dc/elements/1.1/">
+	<rdf:Description>
+		<dc:title>Technical Repository example</dc:title>
+		<dc:creator>U8025</dc:creator>
+		<dc:subject>Technical Repository example</dc:subject>
+		<dc:publisher>U8025</dc:publisher>
+		<dc:contributor>U8025</dc:contributor>
+		<dc:date>2007-07-31</dc:date>
+		<dc:type>text</dc:type>
+		<dc:format>text/xml</dc:format>
+		<dc:identifier>S1000DLIGHTING-AAA-D00-00-00-00AA-029A-A_004-00</dc:identifier>
+		<dc:language>en-US</dc:language>
+		<dc:rights>01_cc51_cv51</dc:rights>
+	</rdf:Description>
+	<idstatus>
+		<dmaddres>
+			<dmc>
+				<avee>
+					<modelic>VCR8X8DRAGON</modelic>
+					<sdc>A</sdc>
+					<chapnum>00</chapnum>
+					<section>0</section>
+					<subsect>0</subsect>
+					<subject>00</subject>
+					<discode>02</discode>
+					<discodev>00A</discodev>
+					<incode>040</incode>
+					<incodev>A</incodev>
+					<itemloc>D</itemloc>
+				</avee>
+			</dmc>
+			<dmtitle>
+				<techname>SISTEMA GENERAL</techname>
+				<infoname>Descripción física y funcional</infoname>
+			</dmtitle>
+			<issno inwork="00" issno="001" type="new"/>
+			<issdate day="12" month="04" year="2024"/>
+			<language country="ES" language="es"/>
+		</dmaddres>
+		<status>
+			<security class="01"/>
+			<rpc rpcname="TESS-DEFENCE SA">9AEWB</rpc>
+			<orig origname="ESCRIBANO MECHANICAL AND ENGINEERING SL">010CB</orig>
+			<actref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>00W</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Tabla de referencias cruzadas de aplicabilidad (ACT)</infoname>
+					</dmtitle>
+				</refdm>
+			</actref>
+			<applic>
+				<displaytext>
+					<p>VCZ Linea</p>
+					<p>VCZ PCSC</p>
+					<p>VCPC PCBON</p>
+					<p>VCOAV VCOAV</p>
+				</displaytext>
+				<evaluate operator="or">
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="Linea"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCZ"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCSC"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCPC"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="PCBON"/>
+					</evaluate>
+					<evaluate operator="and">
+						<assert actidref="version" actreftype="prodattr" actvalues="VCOAV"/>
+						<assert actidref="variante" actreftype="prodattr" actvalues="VCOAV"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techstd>
+				<tpbase>S1000D</tpbase>
+				<authex/>
+				<notes/>
+			</techstd>
+			<brexref>
+				<refdm>
+					<avee>
+						<modelic>VCR8X8DRAGON</modelic>
+						<sdc>A</sdc>
+						<chapnum>00</chapnum>
+						<section>0</section>
+						<subsect>0</subsect>
+						<subject>00</subject>
+						<discode>00</discode>
+						<discodev>00A</discodev>
+						<incode>022</incode>
+						<incodev>A</incodev>
+						<itemloc>D</itemloc>
+					</avee>
+					<dmtitle>
+						<techname>SISTEMA GENERAL</techname>
+						<infoname>Business rules</infoname>
+					</dmtitle>
+				</refdm>
+			</brexref>
+			<qa>
+				<firstver type="tabtop"/>
+			</qa>
+		</status>
+	</idstatus>
+	<content>
+		<techrep>
+			<einlist>
+				<eininfo>
+					<einid einnbr="String" eintype="exact"/>
+					<nomen>text</nomen>
+					<sns>text</sns>
+					<einref type="String">
+						<ein einnbr="String">
+							<nomen>text</nomen>
+							<refs>
+								<refdm>
+									<applic>
+										<displaytext>
+											<p>
+												<subscrpt>String</subscrpt>
+											</p>
+										</displaytext>
+										<assert>text</assert>
+									</applic>
+									<dmcextension>
+										<dmeproducer>String</dmeproducer>
+										<dmecode>String</dmecode>
+									</dmcextension>
+									<age>
+										<modelic>MZC</modelic>
+										<supeqvc>1</supeqvc>
+										<ecscs>ZC</ecscs>
+										<eidc>00</eidc>
+										<cidc>00</cidc>
+										<discode>02</discode>
+										<discodev>ZV</discodev>
+										<incode>ZN1</incode>
+										<incodev>Z</incodev>
+										<itemloc>B</itemloc>
+									</age>
+									<issno issno="006"/>
+									<dmtitle>
+										<techname>String</techname>
+										<infoname>String</infoname>
+									</dmtitle>
+									<language language="aa"/>
+								</refdm>
+								<reftp>
+									<applic>
+										<displaytext>
+											<p>
+												<subscrpt>String</subscrpt>
+											</p>
+										</displaytext>
+										<assert>text</assert>
+									</applic>
+									<xref>
+										<applic>
+											<displaytext>
+												<p>
+													<subscrpt>String</subscrpt>
+												</p>
+											</displaytext>
+											<assert>text</assert>
+										</applic>
+										<subscrpt>String</subscrpt>
+									</xref>
+									<xlink:resource xlink:label="NMTOKEN"/>
+								</reftp>
+							</refs>
+						</ein>
+					</einref>
+					<einalt>
+						<applic>
+							<displaytext>
+								<p>
+									<subscrpt>String</subscrpt>
+								</p>
+							</displaytext>
+							<assert>text</assert>
+						</applic>
+						<nomen>text</nomen>
+						<nature>text</nature>
+						<location>
+							<zone>
+								<nomen>text</nomen>
+								<refs>
+									<refdm>
+										<applic>
+											<displaytext>
+												<p>
+													<subscrpt>String</subscrpt>
+												</p>
+											</displaytext>
+											<assert>text</assert>
+										</applic>
+										<dmcextension>
+											<dmeproducer>String</dmeproducer>
+											<dmecode>String</dmecode>
+										</dmcextension>
+										<age>
+											<modelic>MPC</modelic>
+											<supeqvc>2</supeqvc>
+											<ecscs>PC</ecscs>
+											<eidc>00</eidc>
+											<cidc>00</cidc>
+											<discode>03</discode>
+											<discodev>PV</discodev>
+											<incode>PN1</incode>
+											<incodev>P</incodev>
+											<itemloc>T</itemloc>
+										</age>
+										<issno issno="006"/>
+										<dmtitle>
+											<techname>String</techname>
+											<infoname>String</infoname>
+										</dmtitle>
+										<language language="aa"/>
+									</refdm>
+									<reftp>
+										<applic>
+											<displaytext>
+												<p>
+													<subscrpt>String</subscrpt>
+												</p>
+											</displaytext>
+											<assert>text</assert>
+										</applic>
+										<xref>
+											<applic>
+												<displaytext>
+													<p>
+														<subscrpt>String</subscrpt>
+													</p>
+												</displaytext>
+												<assert>text</assert>
+											</applic>
+											<subscrpt>String</subscrpt>
+										</xref>
+										<xlink:resource xlink:label="NMTOKEN"/>
+									</reftp>
+								</refs>
+							</zone>
+						</location>
+						<accessfrom>
+							<zone>
+								<nomen>text</nomen>
+								<refs>
+									<refdm>
+										<applic>
+											<displaytext>
+												<p>
+													<subscrpt>String</subscrpt>
+												</p>
+											</displaytext>
+											<assert>text</assert>
+										</applic>
+										<dmcextension>
+											<dmeproducer>String</dmeproducer>
+											<dmecode>String</dmecode>
+										</dmcextension>
+										<age>
+											<modelic>S1M</modelic>
+											<supeqvc>3</supeqvc>
+											<ecscs>S1</ecscs>
+											<eidc>01</eidc>
+											<cidc>01</cidc>
+											<discode>04</discode>
+											<discodev>V1</discodev>
+											<incode>IN4</incode>
+											<incodev>A</incodev>
+											<itemloc>A</itemloc>
+										</age>
+										<issno issno="006"/>
+										<dmtitle>
+											<techname>String</techname>
+											<infoname>String</infoname>
+										</dmtitle>
+										<language language="aa"/>
+									</refdm>
+									<reftp>
+										<applic>
+											<displaytext>
+												<p>
+													<subscrpt>String</subscrpt>
+												</p>
+											</displaytext>
+											<assert>text</assert>
+										</applic>
+										<xref>
+											<applic>
+												<displaytext>
+													<p>
+														<subscrpt>String</subscrpt>
+													</p>
+												</displaytext>
+												<assert>text</assert>
+											</applic>
+											<subscrpt>String</subscrpt>
+										</xref>
+										<xlink:resource xlink:label="NMTOKEN"/>
+									</reftp>
+								</refs>
+							</zone>
+						</accessfrom>
+						<sns>text</sns>
+						<qty>text</qty>
+						<einref type="String">
+							<ein einnbr="String">
+								<nomen>text</nomen>
+								<refs>
+									<refdm>
+										<applic>
+											<displaytext>
+												<p>
+													<subscrpt>String</subscrpt>
+												</p>
+											</displaytext>
+											<assert>text</assert>
+										</applic>
+										<dmcextension>
+											<dmeproducer>String</dmeproducer>
+											<dmecode>String</dmecode>
+										</dmcextension>
+										<age>
+											<modelic>S2M</modelic>
+											<supeqvc>4</supeqvc>
+											<ecscs>S2</ecscs>
+											<eidc>02</eidc>
+											<cidc>02</cidc>
+											<discode>05</discode>
+											<discodev>V2</discodev>
+											<incode>IN5</incode>
+											<incodev>C</incodev>
+											<itemloc>A</itemloc>
+										</age>
+										<issno issno="006"/>
+										<dmtitle>
+											<techname>String</techname>
+											<infoname>String</infoname>
+										</dmtitle>
+										<language language="aa"/>
+									</refdm>
+									<reftp>
+										<applic>
+											<displaytext>
+												<p>
+													<subscrpt>String</subscrpt>
+												</p>
+											</displaytext>
+											<assert>text</assert>
+										</applic>
+										<xref>
+											<applic>
+												<displaytext>
+													<p>
+														<subscrpt>String</subscrpt>
+													</p>
+												</displaytext>
+												<assert>text</assert>
+											</applic>
+											<subscrpt>String</subscrpt>
+										</xref>
+										<xlink:resource xlink:label="NMTOKEN"/>
+									</reftp>
+								</refs>
+							</ein>
+						</einref>
+					</einalt>
+					<refs>
+						<refdm>
+							<applic>
+								<displaytext>
+									<p>
+										<subscrpt>String</subscrpt>
+									</p>
+								</displaytext>
+								<assert>text</assert>
+							</applic>
+							<dmcextension>
+								<dmeproducer>String</dmeproducer>
+								<dmecode>String</dmecode>
+							</dmcextension>
+							<age>
+								<modelic>S3M</modelic>
+								<supeqvc>5</supeqvc>
+								<ecscs>S3</ecscs>
+								<eidc>03</eidc>
+								<cidc>03</cidc>
+								<discode>06</discode>
+								<discodev>V</discodev>
+								<incode>IN6</incode>
+								<incodev>E</incodev>
+								<itemloc>A</itemloc>
+							</age>
+							<issno issno="006"/>
+							<dmtitle>
+								<techname>String</techname>
+								<infoname>String</infoname>
+							</dmtitle>
+							<language language="aa"/>
+						</refdm>
+						<reftp>
+							<applic>
+								<displaytext>
+									<p>
+										<subscrpt>String</subscrpt>
+									</p>
+								</displaytext>
+								<assert>text</assert>
+							</applic>
+							<xref>
+								<applic>
+									<displaytext>
+										<p>
+											<subscrpt>String</subscrpt>
+										</p>
+									</displaytext>
+									<assert>text</assert>
+								</applic>
+								<subscrpt>String</subscrpt>
+							</xref>
+							<xlink:resource xlink:label="NMTOKEN"/>
+						</reftp>
+					</refs>
+				</eininfo>
+			</einlist>
+		
+		</techrep>
+	</content>
+</dmodule>
