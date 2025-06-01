@@ -99,72 +99,46 @@
 	</identAndStatusSection>
 	<content>
 		<techRepository>
-			<circuitBreakerRepository>
-				<circuitBreakerSpec>
-					<circuitBreakerIdent circuitBreakerNumber="String"/>
-					<name>nomen</name>
-					<functionalPhysicalAreaRef subSubSystemCode="0" subSystemCode="0" assyCode="00" systemCode="00">
-						<dmRef>
-							<dmRefIdent>
-								<identExtension extensionCode="String" extensionProducer="String"/>
-								<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
-								<issueInfo issueNumber="000" inWork="00"/>
-							</dmRefIdent>
-							<dmRefAddressItems>
-								<dmTitle>
-									<techName>String</techName>
-									<infoName>String</infoName>
-								</dmTitle>
-							</dmRefAddressItems>
-							<behavior/>
-						</dmRef>
-					</functionalPhysicalAreaRef>
-					<circuitBreakerAlt>
-						<name>nomen</name>
-						<circuitBreakerClass circuitBreakerType="elmec"/>
-						<location>
-							<zoneRef>
-								<name>text</name>
-								<refs>
-									<dmRef>
-										<dmRefIdent>
-											<identExtension extensionProducer="dmeproducer" extensionCode="dmecode"/>
-											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
-											<issueInfo issueNumber="000" inWork="00"/>
-										</dmRefIdent>
-										<dmRefAddressItems>
-											<dmTitle>
-												<techName>techname</techName>
-												<infoName>infoname</infoName>
-											</dmTitle>
-										</dmRefAddressItems>
-										<behavior/>
-									</dmRef>
-								</refs>
-							</zoneRef>
-						</location>
-						<functionalItemRefGroup functionalItemRefType="String">
-							<functionalItemRef functionalItemNumber="String">
-								<name>text</name>
-								<refs>
-									<dmRef>
-										<dmRefIdent>
-											<identExtension extensionProducer="String" extensionCode="String"/>
-											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
-											<issueInfo issueNumber="000" inWork="00"/>
-										</dmRefIdent>
-										<dmRefAddressItems>
-											<dmTitle>
-												<techName>String</techName>
-												<infoName>String</infoName>
-											</dmTitle>
-										</dmRefAddressItems>
-										<behavior/>
-									</dmRef>
-								</refs>
-							</functionalItemRef>
-						</functionalItemRefGroup>
-					</circuitBreakerAlt>
+			<supplyRepository>
+				<supplySpec>
+					<supplyIdent supplyNumberType="spec" supplyNumber="String"/>
+					<name>text</name>
+					<shortName>String</shortName>
+					<specificationGroup>
+						<specDocument/>
+					</specificationGroup>
+					<supplierGroup>
+						<suppliedBy locallySuppliedFlag="0">
+							<shippingInfo>
+								<packaging>text</packaging>
+							</shippingInfo>
+						</suppliedBy>
+					</supplierGroup>
+					<natoStockNumber>
+						<fullNatoStockNumber>String</fullNatoStockNumber>
+						<refs>
+							<dmRef>
+								<dmRefIdent>
+									<identExtension extensionProducer="String" extensionCode="String"/>
+									<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+									<issueInfo issueNumber="000" inWork="00"/>
+								</dmRefIdent>
+								<dmRefAddressItems>
+									<dmTitle>
+										<techName>String</techName>
+										<infoName>String</infoName>
+									</dmTitle>
+								</dmRefAddressItems>
+								<behavior/>
+							</dmRef>
+						</refs>
+					</natoStockNumber>
+					<quantity>
+						<quantityGroup>
+							<quantityValue>9.2</quantityValue>
+							<quantityTolerance>8.9</quantityTolerance>
+						</quantityGroup>
+					</quantity>
 					<refs>
 						<dmRef>
 							<dmRefIdent>
@@ -181,8 +155,11 @@
 							<behavior/>
 						</dmRef>
 					</refs>
-				</circuitBreakerSpec>
-			</circuitBreakerRepository>
+					<lowestAuthorizedLevelGroup>
+						<lowestAuthorizedLevel lowestLevel="la37"/>
+					</lowestAuthorizedLevelGroup>
+				</supplySpec>
+			</supplyRepository>
 		</techRepository>
 	</content>
 </dmodule>

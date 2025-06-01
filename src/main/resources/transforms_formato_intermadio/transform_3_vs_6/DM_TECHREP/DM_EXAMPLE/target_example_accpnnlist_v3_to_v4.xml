@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-0/xml_schema_flat/techrep.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="02" disassyCodeVariant="00A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
+				<language languageIsoCode="en" countryIsoCode="US"/>
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate year="2024" month="04" day="12"/>
+				<dmTitle>
+					<techName>SISTEMA GENERAL</techName>
+					<infoName>Descripción física y funcional</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="new">
+			<security securityClassification="01"/>
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution></dataDistribution>
+					<exportControl>
+						<exportRegistrationStmt>
+							<simplePara></simplePara>
+						</exportRegistrationStmt>
+					</exportControl>
+					<dataHandling></dataHandling>
+					<dataDestruction></dataDestruction>
+					<dataDisclosure></dataDisclosure>
+				</restrictionInstructions>
+				<restrictionInfo>
+					<policyStatement></policyStatement>
+					<dataConds></dataConds>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="9AEWB">
+				<enterpriseName>TESS-DEFENCE SA</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="010CB">
+				<enterpriseName>ESCRIBANO MECHANICAL AND ENGINEERING SL</enterpriseName>
+			</originator>
+			<applicCrossRefTableRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="00W" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</applicCrossRefTableRef>
+			<applic>
+				<displayText>
+					<simplePara>
+						<subScript>VCZ Linea</subScript>
+						<subScript>VCZ PCSC</subScript>
+						<subScript>VCPC PCBON</subScript>
+						<subScript>VCOAV VCOAV</subScript>
+					</simplePara>
+				</displayText>
+				<evaluate andOr="or">
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="Linea"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCZ"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCSC"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCPC"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="PCBON"/>
+					</evaluate>
+					<evaluate andOr="and">
+						<assert applicPropertyIdent="version" applicPropertyType="prodattr" applicPropertyValues="VCOAV"/>
+						<assert applicPropertyIdent="variante" applicPropertyType="prodattr" applicPropertyValues="VCOAV"/>
+					</evaluate>
+				</evaluate>
+			</applic>
+			<techStandard>
+				<authorityInfoAndTp>
+					<authorityInfo></authorityInfo>
+					<techPubBase></techPubBase>
+				</authorityInfoAndTp>
+				<authorityExceptions/>
+				<authorityNotes/>
+			</techStandard>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="VCR8X8DRAGON" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="00A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<systemBreakdownCode></systemBreakdownCode>
+			<reasonForUpdate id="rfu_general" updateReasonType="urt03"/>
+		</dmStatus>
+	</identAndStatusSection>
+	<content>
+		<techRepository>
+			<accessPointRepository>
+				<figure>
+					<title>
+						<functionalItemRef functionalItemNumber="String">
+							<name>text</name>
+							<refs>
+								<dmRef>
+									<dmRefIdent>
+										<identExtension extensionProducer="String" extensionCode="String"/>
+										<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+										<issueInfo issueNumber="000" inWork="00"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>String</techName>
+											<infoName>String</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+									<behavior/>
+								</dmRef>
+							</refs>
+						</functionalItemRef>
+					</title>
+					<graphic infoEntityIdent="ENTITY">
+						<hotspot>
+							<internalRef>
+								<subScript>String</subScript>
+							</internalRef>
+						</hotspot>
+						<reasonForAmendment>
+							<functionalItemRef functionalItemNumber="String">
+								<name>text</name>
+								<refs>
+									<dmRef>
+										<dmRefIdent>
+											<identExtension extensionProducer="String" extensionCode="String"/>
+											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+											<issueInfo issueNumber="000" inWork="00"/>
+										</dmRefIdent>
+										<dmRefAddressItems>
+											<dmTitle>
+												<techName>String</techName>
+												<infoName>String</infoName>
+											</dmTitle>
+										</dmRefAddressItems>
+										<behavior/>
+									</dmRef>
+								</refs>
+							</functionalItemRef>
+						</reasonForAmendment>
+					</graphic>
+					<legend>
+						<definitionList>
+							<title>
+								<functionalItemRef functionalItemNumber="String">
+									<name>text</name>
+									<refs>
+										<dmRef>
+											<dmRefIdent>
+												<identExtension extensionProducer="String" extensionCode="String"/>
+												<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+												<issueInfo issueNumber="000" inWork="00"/>
+											</dmRefIdent>
+											<dmRefAddressItems>
+												<dmTitle>
+													<techName>String</techName>
+													<infoName>String</infoName>
+												</dmTitle>
+											</dmRefAddressItems>
+											<behavior/>
+										</dmRef>
+									</refs>
+								</functionalItemRef>
+							</title>
+							<definitionListHeader>
+								<termTitle>
+									<functionalItemRef functionalItemNumber="String">
+										<name>text</name>
+										<refs>
+											<dmRef>
+												<dmRefIdent>
+													<identExtension extensionProducer="String" extensionCode="String"/>
+													<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+													<issueInfo issueNumber="000" inWork="00"/>
+												</dmRefIdent>
+												<dmRefAddressItems>
+													<dmTitle>
+														<techName>String</techName>
+														<infoName>String</infoName>
+													</dmTitle>
+												</dmRefAddressItems>
+												<behavior/>
+											</dmRef>
+										</refs>
+									</functionalItemRef>
+								</termTitle>
+								<definitionTitle>
+									<functionalItemRef functionalItemNumber="String">
+										<name>text</name>
+										<refs>
+											<dmRef>
+												<dmRefIdent>
+													<identExtension extensionProducer="String" extensionCode="String"/>
+													<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+													<issueInfo issueNumber="000" inWork="00"/>
+												</dmRefIdent>
+												<dmRefAddressItems>
+													<dmTitle>
+														<techName>String</techName>
+														<infoName>String</infoName>
+													</dmTitle>
+												</dmRefAddressItems>
+												<behavior/>
+											</dmRef>
+										</refs>
+									</functionalItemRef>
+								</definitionTitle>
+							</definitionListHeader>
+							<definitionListItem>
+								<listItemTerm>
+									<functionalItemRef functionalItemNumber="String">
+										<name>text</name>
+										<refs>
+											<dmRef>
+												<dmRefIdent>
+													<identExtension extensionProducer="String" extensionCode="String"/>
+													<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+													<issueInfo issueNumber="000" inWork="00"/>
+												</dmRefIdent>
+												<dmRefAddressItems>
+													<dmTitle>
+														<techName>String</techName>
+														<infoName>String</infoName>
+													</dmTitle>
+												</dmRefAddressItems>
+												<behavior/>
+											</dmRef>
+										</refs>
+									</functionalItemRef>
+								</listItemTerm>
+								<listItemDefinition>
+									<para>
+										<functionalItemRef functionalItemNumber="String">
+											<name>text</name>
+											<refs>
+												<dmRef>
+													<dmRefIdent>
+														<identExtension extensionProducer="String" extensionCode="String"/>
+														<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+														<issueInfo issueNumber="000" inWork="00"/>
+													</dmRefIdent>
+													<dmRefAddressItems>
+														<dmTitle>
+															<techName>String</techName>
+															<infoName>String</infoName>
+														</dmTitle>
+													</dmRefAddressItems>
+													<behavior/>
+												</dmRef>
+											</refs>
+										</functionalItemRef>
+									</para>
+								</listItemDefinition>
+							</definitionListItem>
+						</definitionList>
+					</legend>
+				</figure>
+				<accessPointSpec>
+					<accessPointIdent accessPointNumber="String"/>
+					<accessPointRefGroup accessPointRefType="String">
+						<accessPointRef>
+							<name>text</name>
+							<refs>
+								<dmRef>
+									<dmRefIdent>
+										<identExtension extensionProducer="String" extensionCode="String"/>
+										<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+										<issueInfo issueNumber="000" inWork="00"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>String</techName>
+											<infoName>String</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+									<behavior/>
+								</dmRef>
+							</refs>
+						</accessPointRef>
+					</accessPointRefGroup>
+					<accessPointAlt>
+						<accessPointType accessPointTypeValue="accpnl80"/>
+						<zoneRef>
+							<name>text</name>
+							<refs>
+								<dmRef>
+									<dmRefIdent>
+										<identExtension extensionProducer="String" extensionCode="String"/>
+										<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+										<issueInfo issueNumber="000" inWork="00"/>
+									</dmRefIdent>
+									<dmRefAddressItems>
+										<dmTitle>
+											<techName>String</techName>
+											<infoName>String</infoName>
+										</dmTitle>
+									</dmRefAddressItems>
+									<behavior/>
+								</dmRef>
+							</refs>
+						</zoneRef>
+						<accessTo>
+							<functionalItemRef functionalItemNumber="String">
+								<name>text</name>
+								<refs>
+									<dmRef>
+										<dmRefIdent>
+											<identExtension extensionProducer="String" extensionCode="String"/>
+											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+											<issueInfo issueNumber="000" inWork="00"/>
+										</dmRefIdent>
+										<dmRefAddressItems>
+											<dmTitle>
+												<techName>String</techName>
+												<infoName>String</infoName>
+											</dmTitle>
+										</dmRefAddressItems>
+										<behavior/>
+									</dmRef>
+								</refs>
+							</functionalItemRef>
+							<otherItems>text</otherItems>
+						</accessTo>
+						<accessPointRefGroup accessPointRefType="String">
+							<accessPointRef>
+								<name>text</name>
+								<refs>
+									<dmRef>
+										<dmRefIdent>
+											<identExtension extensionProducer="String" extensionCode="String"/>
+											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="0" subSystemCode="0" itemLocationCode="0" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+											<issueInfo issueNumber="000" inWork="00"/>
+										</dmRefIdent>
+										<dmRefAddressItems>
+											<dmTitle>
+												<techName>String</techName>
+												<infoName>String</infoName>
+											</dmTitle>
+										</dmRefAddressItems>
+										<behavior/>
+									</dmRef>
+								</refs>
+							</accessPointRef>
+						</accessPointRefGroup>
+						<fastener>
+							<fastenerType>text</fastenerType>
+							<fastenerQuantity>text</fastenerQuantity>
+						</fastener>
+						<quantity>
+							<quantityGroup>
+								<quantityValue>9.9</quantityValue>
+								<quantityTolerance>8.8</quantityTolerance>
+							</quantityGroup>
+						</quantity>
+						<hoursToOpen>text</hoursToOpen>
+						<internalRef>
+							<subScript>String</subScript>
+						</internalRef>
+					</accessPointAlt>
+				</accessPointSpec>
+			</accessPointRepository>
+		</techRepository>
+	</content>
+</dmodule>

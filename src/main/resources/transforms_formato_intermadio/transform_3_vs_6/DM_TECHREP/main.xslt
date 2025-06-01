@@ -5,7 +5,8 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    exclude-result-prefixes="dc rdf xlink xsi">
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    exclude-result-prefixes="dc rdf xlink xsi xs">
 
     <xsl:output method="xml" indent="yes"/>
 

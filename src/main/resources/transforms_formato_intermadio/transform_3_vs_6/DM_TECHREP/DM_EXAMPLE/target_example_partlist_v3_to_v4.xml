@@ -99,58 +99,49 @@
 	</identAndStatusSection>
 	<content>
 		<techRepository>
-			<functionalItemRepository>
-				<functionalItemSpec>
-					<functionalItemIdent functionalItemType="exact" functionalItemNumber="String"/>
-					<name>text</name>
-					<functionalPhysicalAreaRef subSubSystemCode="E" subSystemCode="V" assyCode="03" systemCode="S3">
-						<dmRef>
-							<dmRefIdent>
-								<identExtension extensionCode="String" extensionProducer="String"/>
-								<dmCode systemDiffCode="5" subSubSystemCode="E" infoCodeVariant="E" subSystemCode="V" itemLocationCode="A" disassyCodeVariant="V" modelIdentCode="S3M" assyCode="03" disassyCode="06" systemCode="S3" infoCode="IN6"/>
-								<issueInfo issueNumber="006" inWork="00"/>
-							</dmRefIdent>
-							<dmRefAddressItems>
-								<dmTitle>
-									<techName>String</techName>
-									<infoName>String</infoName>
-								</dmTitle>
-							</dmRefAddressItems>
-							<behavior/>
-						</dmRef>
-					</functionalPhysicalAreaRef>
-					<functionalItemRefGroup functionalItemRefType="String">
-						<functionalItemRef functionalItemNumber="String">
-							<name>text</name>
-							<refs>
-								<dmRef>
-									<dmRefIdent>
-										<identExtension extensionProducer="String" extensionCode="String"/>
-										<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="Z" subSystemCode="1" itemLocationCode="B" disassyCodeVariant="ZV" modelIdentCode="MZC" assyCode="00" disassyCode="02" systemCode="ZC" infoCode="ZN1"/>
-										<issueInfo issueNumber="006" inWork="00"/>
-									</dmRefIdent>
-									<dmRefAddressItems>
-										<dmTitle>
-											<techName>String</techName>
-											<infoName>String</infoName>
-										</dmTitle>
-									</dmRefAddressItems>
-									<behavior/>
-								</dmRef>
-							</refs>
-						</functionalItemRef>
-					</functionalItemRefGroup>
-					<functionalItemAlt>
-						<name>text</name>
-						<location>
-							<zoneRef>
-								<name>text</name>
+			<partRepository>
+				<partSpec>
+					<partIdent partNumberValue="String" manufacturerCodeValue="String"/>
+					<itemIdentData>
+						<name>nomen</name>
+						<partKeyword>kwd</partKeyword>
+						<shortName>opn</shortName>
+						<overLengthPartNumber>stocknbr pnr</overLengthPartNumber>
+						<stockNumber>stocknbr pnr</stockNumber>
+						<natoStockNumber>
+							<fullNatoStockNumber></fullNatoStockNumber>
+						</natoStockNumber>
+					</itemIdentData>
+					<procurementData>
+						<supplierCode>procdata spl</supplierCode>
+						<optionalSupplierCode>procdata osc</optionalSupplierCode>
+						<buyerFurnishedEquipFlag/>
+					</procurementData>
+					<techData>
+						<sparePartClass sparePartClassCode="techdata spc"/>
+						<usageCategory usageCategoryCode="techdata usgcat"/>
+						<specDocument/>
+						<quantity>
+							<quantityGroup>
+								<quantityValue>9.9</quantityValue>
+								<quantityTolerance>8.8</quantityTolerance>
+							</quantityGroup>
+						</quantity>
+						<physicalSecurityPilferageCode>text</physicalSecurityPilferageCode>
+						<fitmentCode fitmentCodeValue="1"/>
+						<unitOfIssue>text</unitOfIssue>
+						<specialStorage>text</specialStorage>
+						<calibrationMarker>text</calibrationMarker>
+					</techData>
+					<partRefGroup>
+						<replacedBy replacementCode="partref rplby">
+							<partRef partNumberValue="part pnr" manufacturerCodeValue="part mfc">
 								<refs>
 									<dmRef>
 										<dmRefIdent>
 											<identExtension extensionProducer="String" extensionCode="String"/>
-											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="P" subSystemCode="2" itemLocationCode="T" disassyCodeVariant="PV" modelIdentCode="MPC" assyCode="00" disassyCode="03" systemCode="PC" infoCode="PN1"/>
-											<issueInfo issueNumber="006" inWork="00"/>
+											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="A" subSystemCode="0" itemLocationCode="D" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+											<issueInfo issueNumber="000" inWork="00"/>
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
@@ -161,39 +152,15 @@
 										<behavior/>
 									</dmRef>
 								</refs>
-							</zoneRef>
-						</location>
-						<accessFrom>
-							<zoneRef>
-								<name>text</name>
-								<refs>
-									<dmRef>
-										<dmRefIdent>
-											<identExtension extensionProducer="String" extensionCode="String"/>
-											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="A" subSystemCode="3" itemLocationCode="A" disassyCodeVariant="V1" modelIdentCode="S1M" assyCode="01" disassyCode="04" systemCode="S1" infoCode="IN4"/>
-											<issueInfo issueNumber="006" inWork="00"/>
-										</dmRefIdent>
-										<dmRefAddressItems>
-											<dmTitle>
-												<techName>String</techName>
-												<infoName>String</infoName>
-											</dmTitle>
-										</dmRefAddressItems>
-										<behavior/>
-									</dmRef>
-								</refs>
-							</zoneRef>
-						</accessFrom>
-						<reqQuantity>text</reqQuantity>
-						<functionalItemRefGroup functionalItemRefType="String">
+							</partRef>
 							<functionalItemRef functionalItemNumber="String">
 								<name>text</name>
 								<refs>
 									<dmRef>
 										<dmRefIdent>
 											<identExtension extensionProducer="String" extensionCode="String"/>
-											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="C" subSystemCode="4" itemLocationCode="A" disassyCodeVariant="V2" modelIdentCode="S2M" assyCode="02" disassyCode="05" systemCode="S2" infoCode="IN5"/>
-											<issueInfo issueNumber="006" inWork="00"/>
+											<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="A" subSystemCode="0" itemLocationCode="E" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+											<issueInfo issueNumber="000" inWork="00"/>
 										</dmRefIdent>
 										<dmRefAddressItems>
 											<dmTitle>
@@ -205,14 +172,15 @@
 									</dmRef>
 								</refs>
 							</functionalItemRef>
-						</functionalItemRefGroup>
-					</functionalItemAlt>
+							<replacementCond>text</replacementCond>
+						</replacedBy>
+					</partRefGroup>
 					<refs>
 						<dmRef>
 							<dmRefIdent>
 								<identExtension extensionProducer="String" extensionCode="String"/>
-								<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="E" subSystemCode="5" itemLocationCode="A" disassyCodeVariant="V" modelIdentCode="S3M" assyCode="03" disassyCode="06" systemCode="S3" infoCode="IN6"/>
-								<issueInfo issueNumber="006" inWork="00"/>
+								<dmCode systemDiffCode="0" subSubSystemCode="0" infoCodeVariant="A" subSystemCode="0" itemLocationCode="F" disassyCodeVariant="0" modelIdentCode="00" assyCode="00" disassyCode="00" systemCode="00" infoCode="000"/>
+								<issueInfo issueNumber="000" inWork="00"/>
 							</dmRefIdent>
 							<dmRefAddressItems>
 								<dmTitle>
@@ -223,8 +191,8 @@
 							<behavior/>
 						</dmRef>
 					</refs>
-				</functionalItemSpec>
-			</functionalItemRepository>
+				</partSpec>
+			</partRepository>
 		</techRepository>
 	</content>
 </dmodule>
