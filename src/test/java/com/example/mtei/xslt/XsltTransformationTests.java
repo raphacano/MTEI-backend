@@ -30,7 +30,7 @@ import org.junit.jupiter.api.TestInstance;
 public class XsltTransformationTests {
 
     // Base directory for transforms relative to project root
-    private static final Path TRANSFORMS_BASE_DIR = Paths.get("src", "main", "resources", "transforms_formato_intermadio");
+    private static final Path TRANSFORMS_BASE_DIR = Paths.get("src", "main", "resources", "transforms_formato_intermedio");
     private static final String SOURCE_PREFIX = "source_"; // Needed for temp file naming
     private static final String TEMP_PREFIX = "temp_";     // Needed for temp file naming
 

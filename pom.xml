@@ -10,10 +10,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>mtei-backend</artifactId>
+    <artifactId>ietm-xslt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>MTEI backend</name>
-    <description>Backend service for MTEI</description>
+    <name>ietm-xslt</name>
+    <description>IETM for XSLT transformations</description>
 
     <properties>
         <!-- Use a recent stable Java version (e.g., 17 or 21) -->
@@ -65,31 +65,28 @@
 		<dependency> <!-- Para comparación robusta de XML -->
 		    <groupId>org.xmlunit</groupId>
 		    <artifactId>xmlunit-core</artifactId>
-		    <version>2.9.1</version> <!-- Usa la última versión estable -->
+		    <!-- Usa la última versión estable -->
 		    <scope>test</scope>
 		</dependency>
 		<dependency> <!-- Para aserciones con XMLUnit -->
 		    <groupId>org.xmlunit</groupId>
 		    <artifactId>xmlunit-matchers</artifactId>
-		    <version>2.9.1</version> <!-- Usa la misma versión que xmlunit-core -->
+		    <!-- Usa la misma versión que xmlunit-core -->
 		    <scope>test</scope>
 		</dependency>
 		<!-- Si usas AssertJ (muy común con Spring Boot) puedes usar xmlunit-assertj -->
 		<dependency>
 		    <groupId>org.xmlunit</groupId>
 		    <artifactId>xmlunit-assertj</artifactId>
-		    <version>2.9.1</version> <!-- Usa la misma versión que xmlunit-core -->
+		    <!-- Usa la misma versión que xmlunit-core -->
 		    <scope>test</scope>
 		</dependency>   
-        
-        
-        <!-- Añadir a pom.xml si necesitas XSLT 2.0/3.0 -->
+        		
 		<dependency>
 		    <groupId>net.sf.saxon</groupId>
 		    <artifactId>Saxon-HE</artifactId>
-		    <version>11.4</version> <!-- O la versión más reciente -->
-		    <scope>test</scope>
-		</dependency>
+		    <version>12.4</version> <!-- Use the latest stable version -->
+		</dependency>		
 		
     </dependencies>
 
